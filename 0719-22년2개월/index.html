@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22년2개월</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .swiper-button-next::after,
+.swiper-button-prev::after {
+    color: #3d0249; /* 원하는 화살표 색상으로 변경 */
+}
+
+        .swiper-pagination-bullet {
+            background: #fdfdfd;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #440044;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h2><img src="./image/logo.png" alt=""></h2>
+            <p><b>"당신을 만나기까지"</b> 22년 2개월</p>
+        </div>
+    </header>
+    <main>
+        <div class="maincontents">
+            <div class="video">
+                <video src="./image/230924 22년 2개월 스페셜 커튼콜 '유치한 연극' 이재환.mp4" autoplay muted loop></video>
+            </div>
+            <ul class="main flex alignc">
+                <li class="story"><a href="#">스토리</a></li>
+                <li class="char"><a href="#">캐릭터</a></li>
+            </ul>
+        </div>
+        <div class="mainvisual flex">
+            <img src="./image/나비.png" alt="">
+        </div>
+    </main>
+    <section id="sect1">
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+        <figure><img src="./image/story.png" alt="">
+            <a href="#" class="close">
+                <img src="./image/close.png" alt="">
+            </a>
+
+        </figure>
+    </section>
+    <section id="sect2">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./image/ja.jfif" alt=""></div>
+                <div class="swiper-slide"><img src="./image/ca1.png" alt=""></div>
+                <div class="swiper-slide"><img src="./image/ca2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./image/ca3.png" alt=""></div>
+                <div class="swiper-slide"><img src="./image/ca4.png" alt=""></div>
+                <div class="swiper-slide"><img src="./image/ca5.jpg" alt=""></div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <a href="#" class="close-sect2"><img src="./image/close.png" alt=""></a>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: false,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

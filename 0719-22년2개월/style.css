@@ -1,0 +1,195 @@
+body {
+    background-image: url(./image/poster1.webp);
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.flex {
+    display: flex;
+}
+
+.alignc {
+    align-items: center;
+}
+
+.just b {
+    justify-content: space-between;
+}
+
+header {
+    position: fixed;
+    left: 10%;
+    top: 13%;
+    color: white;
+    z-index: 99;
+}
+
+header .title img {
+    width: 130px;
+}
+
+header p {
+    color: white;
+    font-size: 13px;
+}
+
+header p b {
+    color: rgb(183, 12, 250);
+}
+
+main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.maincontents {
+    width: 800px;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    z-index: 5;
+}
+
+main .video {
+    position: relative;
+}
+
+main .video video {
+    width: 100%;
+    border: 3px solid #000;
+}
+
+ul.main {
+    position: relative;
+    color: white;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    font-size: 14px;
+}
+
+ul.main a {
+    display: block;
+    padding: 8px 25px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+
+ul.main li:nth-child(1) a:hover {
+    background-color: rgba(50, 0, 59, 0.5);
+
+}
+
+ul.main li:nth-child(2) a:hover {
+    background-color: rgba(0, 59, 18, 0.5);
+}
+
+.mainvisual img {
+    width: 150px;
+}
+
+.mainvisual.on {
+    transform: translateX(500px);
+
+}
+
+.mainvisual {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    transition: .1s;
+}
+
+#sect1 {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    left: 60%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: none;
+}
+
+#sect1 figure {
+    display: none;
+}
+
+#sect1 span {
+    display: block;
+    position: absolute;
+    background: #fffefe;
+}
+
+#sect1 span.top {
+    width: 0%;
+    height: 3px;
+    left: 0;
+    top: 0;
+}
+
+#sect1 span.right {
+    width: 3px;
+    height: 0%;
+    right: 0;
+    top: 0;
+}
+
+#sect1 span.bottom {
+    width: 0%;
+    height: 3px;
+    right: 0;
+    bottom: 0;
+}
+
+#sect1 span.left {
+    width: 3px;
+    height: 0%;
+    left: 0;
+    bottom: 0;
+}
+
+a.close {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 0;
+    top: -35px;
+    display: block;
+}
+
+a.close img {
+    width: 100%; /* 부모 요소에 맞추어 이미지 크기 조정 */
+    height: 100%;
+    display: block; /* 이미지의 기본 display 속성 설정 */
+}
+#sect2 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    top: 55%;
+    transform: translateY(-50%);
+    display: none;
+    background: #000;
+    overflow: hidden;
+}
+
+#sect2 .close-sect2 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#sect2 .close-sect2 img {
+    width: 100%;
+    height: 100%;
+}
