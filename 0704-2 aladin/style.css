@@ -1,0 +1,227 @@
+body {
+    background-color: rgb(176, 216, 255);
+}
+
+header {
+    background-color: white;
+    height: 102px;
+    background-image: url(./image/bg_header_wrap.gif);
+    border-bottom: 2px solid #000;
+}
+
+.flex {
+    display: flex;
+}
+
+
+nav {
+    align-self: flex-end;
+}
+
+nav ul {
+    gap: 124px;
+}
+
+nav ul li:hover a {
+    background-position-y: -70px;
+}
+
+nav ul li a {
+    background-image: url(./image/bg_gnb.jpg);
+    height: 60px;
+    display: block;
+    color: transparent;
+}
+
+nav ul li:nth-child(1) a {
+    width: 82px;
+}
+
+nav ul li:nth-child(2) a {
+    width: 96px;
+    background-position-x: -90px;
+}
+
+nav ul li:nth-child(3) a {
+    width: 60px;
+    background-position-x: -204px;
+}
+
+nav ul li:nth-child(4) a {
+    width: 79px;
+    background-position-x: -271px;
+}
+
+header .container {
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+main {
+    width: 712px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+aside {
+    width: 470px;
+}
+
+main>div {
+    height: 205px;
+    width: 226px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.wrap {
+    position: relative;
+    margin-top: 30px;
+}
+
+div.bg1 {
+    background-image: url(./image/bg_1.jpg);
+}
+
+div.bg2 {
+    background-image: url(./image/bg_2.jpg);
+}
+
+div.bg3 {
+    background-image: url(./image/bg_3.jpg);
+}
+
+div.bg4 {
+    background-image: url(./image/bg_4.jpg);
+}
+
+div.bgla1 {
+    background-image: url(./image/bg_la-1.jpg);
+}
+
+div.bg5 {
+    background-image: url(./image/bg_5.jpg);
+}
+
+div.bg6 {
+    background-image: url(./image/bg_6.jpg);
+}
+
+div.bg7 {
+    background-image: url(./image/bg_7.jpg);
+}
+
+div.bgla2 {
+    background-image: url(./image/bg_la-2.jpg);
+}
+
+div.bg8 {
+    background-image: url(./image/bg_8.jpg);
+}
+
+main>div.wid2 {
+    width: 469px;
+}
+
+main>div.ve:hover {
+    background-position-y: -206px;
+    transition: 0.35s;
+}
+
+main>div.ho:hover {
+    background-position-x: -226px;
+    transition: 0.35s;
+}
+
+.input {
+    line-height: 2;
+    padding: 0 0 10px 0;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+input[type='text'],
+input[type='password'] {
+    width: 340px;
+    padding: 15px 30px;
+}
+
+input[type='submit'] {
+    width: 119px;
+    background-color: rgb(86, 151, 216);
+    border: none;
+    border-radius: 2px;
+    height: 98px;
+    color: white;
+    font-size: 15px;
+}
+
+aside {
+    margin-left: 18px;
+}
+
+.gnb {
+    font-size: 13px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.gnb ul {
+    gap: 10px;
+}
+
+.input-text input {
+    display: block;
+}
+
+.gnb {
+    gap: 10px;
+    justify-content: center
+}
+
+.slide_wrap {
+    overflow: hidden;
+    width: 470px;
+    height: 650px;
+    margin-top: 80px;
+}
+
+.slide1 {
+    width: 100%;
+    height: 100%;
+  
+    opacity: 1;
+    transition: 1s;
+    background-image: url(./image/aside2-1.jpg);
+}
+
+
+.slide1:hover {
+    background-position-x: -470px;
+    transition: 0.5s;
+}
+
+footer .container {
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-top: 2px solid rgb(86, 151, 216);
+    justify-content: space-between;
+    color: rgb(88, 90, 107);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+footer .sym {
+    align-self: flex-end;
+    font-size: 20px;
+    gap: 30px;
+}
