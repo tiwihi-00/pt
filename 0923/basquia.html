@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./basquia.css">
+</head>
+
+<body>
+	<main>
+		<div class="hslide_container">
+			<div class="hslide_wrap">
+				<div class="hslide hslide3"></div>
+				<div class="hslide hslide1">
+
+				</div>
+				<div class="hslide hslide2"></div>
+
+			</div>
+		</div>
+		<div class="vslide_container">
+			<div class="vslide_wrap">
+				<div class="vslide vslide3"></div>
+				<div class="vslide vslide1"></div>
+				<div class="vslide vslide2"></div>
+
+			</div>
+		</div>
+		<a href="#" class="prev arrow"><img src="./image/rollBtn_prev.png" alt="">
+			<p>prev</p>
+		</a>
+		<a href="#" class="next arrow">
+			<p>next</p><img src="./image/rollBtn_next.png" alt="">
+		</a>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script>
+		$('a.next').click(function () {
+			$('.hslide_wrap').animate({ 'left': '-100%' }, function () {
+				$('.hslide').first().appendTo('.hslide_wrap')
+				$('.hslide_wrap').css({ 'left': '0%' })
+			})
+			$('.vslide_wrap').animate({ 'top': '-100%' }, function () {
+				$('.vslide').first().appendTo('.vslide_wrap')
+				$('.vslide_wrap').css({ 'top': '0' })
+			})
+		})
+		$('a.prev').click(function () {
+			$('.hslide_wrap').animate({ 'left': '100%' }, function () {
+				$('.hslide').last().prependTo('.hslide_wrap')
+				$('.hslide_wrap').css({ 'left': '0' })
+			})
+			$('.vslide_wrap').animate({ 'top': '-100%' }, function () {
+				$('.vslide').last().prependTo('.hslide_wrap')
+				$('.vslide_wrap').css({ 'top': '100%' })
+			})
+		})
+
+
+
+
+
+
+	</script>
+</body>
+
+</html>

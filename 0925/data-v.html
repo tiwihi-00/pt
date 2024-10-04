@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../reset.css">
+	<style>
+		.frame{
+			width: 400px;
+		}
+		figure img{width: 100%;}
+		ul li{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="frame">
+		<figure>
+		<img src="../0923/image/a410640164a15.jpg" alt="">
+		</figure>
+		<ul>
+			<li data-bg ="../0923/image/basquiat1.jpg">basquia</li>
+			<li data-bg ="../0923/image/basquiat2.jpg">crown</li>
+			<li data-bg ="../0923/image/basquiat6.jpg">AAAAA</li>
+		</ul>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script>
+		// $('li a').click(function(e){
+		// 	e.preventDefault()
+		// 	const img = $(this).attr('href')
+		// 	$('figure img').attr('src', img)
+		// })
+		
+		// document.querySelectorAll('li a').forEach(function(a){
+		// 	a.addEventListener('click', function(e){
+		// 		e.preventDefault()
+		// 	let img =	this.getAttribute('href')
+		// 	document.querySelector('figure img'), setAttribute('src', img)
+		// 	})
+		// })
+
+		//  $('li').click(function(){
+		// 	const img = $(this).data('bg')		
+		// 	$('figure img').attr('src', img)
+		// })
+
+		document.querySelectorAll('li').forEach(function(a){
+			a.addEventListener('click', function(e){
+				e.preventDefault()
+			let img =	this.dataset.bg
+			
+			document.querySelector('figure img'). setAttribute('src', img)
+			})
+		})
+
+
+
+	</script>
+	
+</body>
+</html>

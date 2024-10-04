@@ -1,0 +1,133 @@
+@import url(../reset.css);
+@import url(../font/font.css);
+
+@mixin flex-align($justfy) {
+	display: flex;
+	justify-content: $justfy;
+	align-items: center;
+}
+
+main {
+	width: 100%;
+	height: 100vh;
+
+
+	.hslide_container {
+		width: 50%;
+		height: 100vh;
+		overflow: hidden;
+
+		.hslide_wrap {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			position: relative;
+			
+			flex-wrap: wrap;
+			top: 0;
+			.hslide {
+				width: 100%;
+				height: 100%;
+				background-repeat: no-repeat;
+				background-size: cover;
+
+				&.hslide1 {
+					background-image: url(./image/basquiat1.jpg);
+				}
+
+				&.hslide2 {
+					background-image: url(./image/basquiat2.jpg);
+				}
+
+				&.hslide3 {
+					background-image: url(./image/basquiat3.jpg);
+				}
+			}
+		}
+	}
+
+	.vslide_container {
+		width: 50%;
+		height: 100vh;
+		overflow: hidden;
+
+		.vslide_wrap {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			
+
+			.vslide {
+				width: 100%;
+				height: 100%;
+				background-repeat: no-repeat;
+				background-size: cover;
+
+				&.vslide1 {
+					background-image: url(./image/basquiat4.jpg);
+				}
+
+				&.vslide2 {
+					background-image: url(./image/basquiat5.jpg);
+				}
+
+				&.vslide3 {
+					background-image: url(./image/basquiat6.jpg);
+				}
+			}
+		}
+
+
+	}
+
+	a.arrow {
+		position: absolute;
+		bottom: 5%;
+		width: 30px;
+		z-index: 40;
+		font-family: Amaticr;
+		font-size: 30px;
+		display: flex;
+		align-items: center;
+
+		p {
+			padding: 15px;
+
+			&:hover {
+				font-family: AmaticB;
+				color: #D80101;
+			}
+		}
+
+		&.prev {
+			left: 5%;
+		}
+
+		&.next {
+			right: 10%;
+		}
+	}
+}
+
+@media screen and (max-width: 640px) {
+	main {
+
+		.hslide_container,
+		.vslide_container {
+			width: 100%;
+			height: 50vh;
+		}
+	}
+}
+
+@media screen and (min-width: 641px) {
+	main {
+		display: flex;
+		flex-wrap: wrap;
+
+		.hslide_container,
+		.vslide_container {
+			width: 50%;
+		}
+	}
+}
