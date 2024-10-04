@@ -267,7 +267,7 @@ section#sect1 .friend {
   gap: 60px;
   display: flex;
   left: 50%;
-  top: 680px;
+  top: 600px;
   transform: translateX(-50%);
   z-index: 99;
 }
