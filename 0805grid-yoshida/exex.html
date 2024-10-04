@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Menu</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .menu-icon { cursor: pointer; padding: 10px; background: #333; color: #fff; }
+        .menu { display: none; list-style-type: none; padding: 0; margin: 0; }
+        .menu li { padding: 10px; cursor: pointer; }
+        .menu li.on { background: #ddd; }
+        .content { display: none; padding: 20px; }
+        .content.on { display: block; }
+    </style>
+</head>
+<body>
+    <div class="menu-icon">Menu</div>
+    <ul class="menu">
+        <li data-target="content1">Content 1</li>
+        <li data-target="content2">Content 2</li>
+        <li data-target="content3">Content 3</li>
+    </ul>
+    <div id="content1" class="content">This is content 1</div>
+    <div id="content2" class="content">This is content 2</div>
+    <div id="content3" class="content">This is content 3</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.querySelector('.menu-icon');
+            const menu = document.querySelector('.menu');
+            const menuItems = document.querySelectorAll('.menu li');
+            const contents = document.querySelectorAll('.content');
+
+            menuIcon.addEventListener('click', function() {
+                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const target = this.getAttribute('data-target');
+                    
+                    menuItems.forEach(li => li.classList.remove('on'));
+                    this.classList.add('on');
+
+                    contents.forEach(content => {
+                        content.id === target ? content.classList.add('on') : content.classList.remove('on');
+                    });
+
+                    menu.style.display = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

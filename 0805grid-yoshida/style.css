@@ -1,0 +1,653 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    color: white;
+    overflow: hidden;
+}
+
+.wrap {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+p {
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    perspective: 900px;
+}
+
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 99;
+    padding:5px;
+    animation: icon-ani 1s infinite linear alternate;
+}
+
+
+@keyframes icon-ani{
+    0%{transform:scale(1);
+        background:rgba(0, 0, 0, 0.7);
+    }
+    100%{transform:scale(0.8);
+        background:rgba(0, 0, 0, 0.5);
+    }
+}
+
+.bar1.on{
+    transform: translate(0, 9px) rotate(-45deg);
+}
+.bar2.on{opacity: 0;}
+.bar3.on{transform: translate(0, -9px) rotate(45deg);}
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+    transform-origin: center;
+}
+
+header {
+    width: 150px;
+    height: 100%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    z-index: 99;
+    transform-origin: left center;
+    transform: rotateY(100deg);
+    transition: .35s;
+    opacity: 0;
+}
+
+header.on {
+    transform: rotateY(15deg);
+    opacity: 1;
+}
+
+header h1 {
+    font-size: 12px;
+    text-align: center;
+    line-height: 2;
+}
+
+header ul.menu li.on {
+    background-color: rgb(43, 1, 61);
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul.menu {
+    position: absolute;
+    width: 80%;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+nav ul.menu li a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 7px;
+    border: 1px solid #fff;
+    font-size: 14px;
+}
+
+nav ul.menu li:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+section {position: relative;
+    height: 100%;
+    width: 100%;
+    transform-origin: right center;
+    transition: .35s;
+}
+
+section.on{
+    transform: rotateY(-5deg);
+}
+body.bg0{
+background: #000;
+}
+body.bg1{
+    background-color: #090139;
+}
+body.bg2{
+    background-color: rgb(124, 207, 255);
+}
+article{
+    gap: 12px;
+    position: absolute;
+    opacity: 0;
+    perspective: 900px;
+}
+article.on{
+    opacity: 1;
+    z-index: 99;
+}
+article>div{transform: rotateY(180deg);
+    transition: 1s;
+}
+article.on>div{
+    transform: rotateY(0);
+    transition: 1s ease-out;
+}
+
+/* arti1 */
+
+.arti1 {
+    position: absolute; width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    background-color: black;
+}
+
+.bum1 {
+    grid-column: 1/span 3;
+    grid-row: 1/span 3;
+    overflow: hidden;
+}
+
+.bum1 figure {
+    width: 100T;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.bum1 img {
+    width: 100T;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bum1:hover figure {
+    transform: scale(1.2);
+    opacity: .3;
+    transition: 2s;
+}
+
+
+.bum2 {
+    grid-column: 4/span 1;
+    grid-row: 1/span 3;
+    background-image: url(./image/낙원\ 포스터.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.bum3 {
+    grid-column: 5/span 2;
+    grid-row: 1/span 2;
+    background-image: url(./image/낙원4.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    overflow: hidden;
+    transition: opacity 2s ease-out;;
+    position: relative;
+}
+
+.bum3 .overlay_bum {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    line-height: 2;
+}
+
+.bum3:hover .overlay_bum {
+    opacity: 1;
+}
+
+
+.bum4 {
+    grid-column: 1/span 2;
+    grid-row: 4/span 1;
+    color: white;
+    text-align: right;
+}
+
+.bum4 h2 {
+    padding-top: 20px;
+}
+
+
+.bum5 {
+    grid-column: 3/span 2;
+    grid-row: 4/span 3;
+    background-image: url(./image/낙원3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.bum5 .overlay_bum {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    line-height: 2;
+}
+
+.bum5:hover .overlay_bum {
+    opacity: 1;
+}
+
+
+.bum6 {
+    grid-column: 5/span 2;
+    grid-row: 3/span 4;
+    background-image: url(./image/낙원2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.bum7 {
+    grid-column: 1/span 2;
+    grid-row: 5/span 2;
+    background-image: url(./image/낙원5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+/* arti2 */
+
+
+.arti2 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    background-color: #090139;
+
+}
+
+
+.no1 {
+    grid-column: 1/span 2;
+    grid-row: 1/span 1;
+    background-image: url(./image/분노3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.no2 {
+    grid-column: 3/span 2;
+    grid-row: 1/span 4;
+    overflow: hidden;
+}
+
+.no2 figure {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.no2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.no2:hover figure {
+    transform: scale(1.1);
+    opacity: 0.8;
+    transition: 2s;
+}
+
+.no3 {
+    grid-column: 5/span 2;
+    grid-row: 1/span 2;
+    background-image: url(./image/분노1.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.no4 {
+    grid-column: 1/span 2;
+    grid-row: 2/span 1;
+    background-image: url(./image/분노4.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.overlay_no {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(9, 1, 57, .7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.no4:hover .overlay_no {
+    opacity: 1;
+}
+
+
+
+.no5 {
+    grid-column: 1/span 2;
+    grid-row: 3/span 1;
+    text-align: right;
+    line-height: 1.5;
+}
+
+.boldf p {
+    color: rgb(80, 149, 253);
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.no6 {
+    grid-column: 5/span 2;
+    grid-row: 3/span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.no6vi {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.no7 {
+    grid-column: 1/span 2;
+    grid-row: 4/span 2;
+    background-image: url(./image/분노2.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.no8 {
+    grid-column: 3/span 2;
+    grid-row: 5/span 1;
+
+}
+
+.no8 p {
+    color: rgb(80, 149, 253);
+    padding-bottom: 20px;
+}
+
+.no9 {
+    grid-column: 5/span 2;
+    grid-row: 5/span 1;
+    background-image: url(./image/분노5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.no9:hover .overlay_no {
+    opacity: 1;
+}
+
+
+
+/* arti3 */
+.arti3 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    background-color: rgb(124, 207, 255);
+
+}
+
+.yono1 {
+    grid-column: 1/span 2;
+    grid-row: 1/span 1;
+    text-align: right;
+}
+
+
+.yono1 p {
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+}
+
+.yono2 {
+    grid-column: 3/span 2;
+    grid-row: 1/span 2;
+    background-image: url(./image/yoko.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.yono3 {
+    grid-column: 5/span 1;
+    grid-row: 1/span 2;
+    background-image: url(./image/yoko6.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.yono3:hover {
+    opacity: .7;
+}
+
+
+
+.yono4 {
+    grid-column: 6/span 1;
+    grid-row: 1/span 3;
+    background-image: url(./image/yoko9.webp);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.yono5 {
+    grid-column: 1/span 2;
+    grid-row: 2/span 5;
+    overflow: hidden;
+}
+
+.yono5 figure {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.yono5:hover figure {
+    transform: scale(1.2);
+    opacity: .7;
+    transition: 2s;
+}
+
+.yono5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.yono6 {
+    grid-column: 3/span 2;
+    grid-row: 3/span 2;
+}
+
+.yono6v {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.yono7 {
+    grid-column: 5/span 1;
+    grid-row: 3/span 1;
+}
+
+.yono7 p {
+    text-align: right;
+}
+
+.color {
+    color: rgb(2, 65, 102);
+    line-height: 1.5;
+}
+
+.yono8 {
+    grid-column: 3/span 1;
+    grid-row: 5/span 2;
+
+}
+
+.yono8 .point {
+    font-weight: bold;
+    color: rgb(1, 37, 66);
+    font-size: 15px;
+    padding-top: 15px;
+    line-height: 1.5;
+}
+
+
+.yono9 {
+    grid-column: 4/span 1;
+    grid-row: 5/span 2;
+    background-image: url(./image/yoko12.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.yono9 .overtext {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    text-align: right;
+    opacity: 0;
+}
+
+.yono9 .overtext p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: rgb(31, 114, 161);
+}
+
+.yono9:hover .overtext {
+    opacity: 1;
+}
+
+
+.yono10 {
+    grid-column: 5/span 2;
+    grid-row: 4/span 3;
+    background-image: url(./image/yoko10.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.yono10 .overlay_yono {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(124, 192, 255, .7);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yono10:hover .overlay_yono {
+    opacity: 1;
+    line-height: 2;
+}

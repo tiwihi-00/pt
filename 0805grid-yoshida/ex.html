@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container {
+    border: 1px solid #5003b6;
+    display: grid;
+    height: 50vh;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(5, minmax(100px, 1fr)); */
+    grid-template-columns: repeat(5, 1fr);
+    /* 열 값 */
+
+    grid-template-rows: repeat(1fr);
+    /* 횡 값 */
+
+    /* column-gap: 10px;
+    row-gap: 10px; */
+    gap: 10px;
+
+}
+
+.item {
+    border: 1px solid #b1fc03;
+}
+.item1{
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+        <div class="item">item 9</div>
+        <div class="item">item 10</div>
+        <div class="item">item 11</div>
+
+    </div>
+</body>
+</html>
