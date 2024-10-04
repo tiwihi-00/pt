@@ -1,0 +1,87 @@
+@import url(./reset.css);
+
+header {
+	max-width: 1400px;
+	height: 100px;
+	display: flex;
+	justify-content: flex-end;
+	margin: auto;
+
+	nav {
+		width: 50%;
+		height: 100%;
+	
+
+		ul {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			gap: 40px;
+			align-items: center;
+
+			li {
+				flex: 1;
+
+				a {
+					display: inline-block;
+					padding: 20px;
+
+					&.on {
+						background-color: black;
+						color: white;
+					}
+				}
+
+
+			}
+
+
+		}
+
+	}
+}
+
+.container {
+	.grid-item {
+		position: relative;
+		overflow: hidden;
+
+		&:hover .summary {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.summary {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 100%;
+			height: 100%;
+			z-index: 5;
+			transition: opacity 0.3s ease, visibility 0.3s ease;
+			background-color: rgba(1, 33, 56, 0.5);
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			visibility: hidden;
+
+			h4 {
+				color: white;
+				font-family: scdream7;
+				font-size: 26px;
+
+			}
+
+			span {
+				color: white;
+				font-family: scdream4;
+				font-size: 18px;
+				width: 100%;
+
+			}
+		}
+
+	}
+}
