@@ -53,11 +53,11 @@ header {
 
 		.summary {
 			position: absolute;
-			left: 50%;
-			top: 50%;
+			left: 0;
+			top: 0;
 			width: 100%;
 			height: 100%;
-			transform: translate(-50%, -50%);
+			
 			z-index: 5;
 			transition: opacity 0.3s ease, visibility 0.3s ease;
 			background-color: rgba(1, 33, 56, 0.5);
