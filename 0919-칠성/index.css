@@ -1,130 +1,114 @@
-@import url(../../reset.css);
+@import url(../reset.css);
+@import url(/font/font.css);
 header {
   position: fixed;
+  left: 0;
   top: 0;
   width: 100%;
-  height: auto;
-  z-index: 99;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100px;
   background-color: white;
   border-bottom: 1px solid #efefef;
-}
-header.on {
-  top: -100px;
-}
-header h1 {
-  position: absolute;
-  left: 40px;
-  top: 26px;
-}
-header nav {
-  width: 786px;
-  left: 40px;
-  color: #333;
-  line-height: 100px;
-  font-size: 15px;
-}
-header nav ul {
-  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
 }
-header ul.gnb {
-  position: absolute;
-  right: 40px;
-  width: 237px;
+header nav {
+  width: 55%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: score5;
+}
+header .gnb {
+  width: 204px;
   height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: score5;
+  gap: 5px;
 }
-header ul.gnb li {
+header .gnb li {
   font-size: 13px;
 }
-header ul.gnb li.search {
-  width: 10px;
-  height: 10px;
-  background-image: url(./image/searchPop_searchBtn.png);
-  background-size: contain;
+header .gnb li.search {
+  width: 18px;
+  height: 100%;
+  background-image: url(./image/header_sch.png);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
-header ul.gnb li.none {
+header .gnb li.none {
   color: transparent;
 }
-header ul.gnb li.mall {
-  width: 40px;
-  height: 30px;
+header .gnb li.mall {
   background-image: url(./image/logo_chill_mall.png);
-  background-size: contain;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 section#sect1 {
   height: 100vh;
 }
 section#sect1 .swiper .swiper-slide p {
+  font-family: score2;
   color: white;
-  font-size: 40px;
-  line-height: 60px;
-  opacity: 1;
-  transition: 0.65s;
+  line-height: 1.7;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-50%);
 }
 section#sect1 .swiper .swiper-slide.slide1 {
-  background: url(./image/1.png);
+  background-image: url(./image/1.png);
 }
 section#sect1 .swiper .swiper-slide.slide2 {
-  background: url(./image/2.png);
+  background-image: url(./image/2.png);
 }
 section#sect1 .swiper .swiper-slide.slide3 {
-  background: url(./image/3.png);
+  background-image: url(./image/3.png);
 }
 section#sect1 .swiper .swiper-slide.slide4 {
-  background: url(./image/4.png);
+  background-image: url(./image/4.png);
 }
 section#sect1 .swiper .swiper-slide.slide5 {
-  background: url(./image/5.jpg);
+  background-image: url(./image/5.jpg);
 }
 section#sect1 .swiper .swiper-slide.slide6 {
-  background: url(./image/6.jpg);
+  background-image: url(./image/6.jpg);
 }
 section#sect1 .swiper .swiper-slide.slide7 {
-  background: url(./image/7.jpg);
+  background-image: url(./image/7.jpg);
 }
 section#sect1 .swiper .slide_menu {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  gap: 16px;
-  transform: translate(-50%, -50%);
+  gap: 15px;
   z-index: 20;
 }
 section#sect1 .swiper .slide_menu .paging_menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
 }
 section#sect1 .swiper .slide_menu .paging_menu li {
   width: 30px;
   height: 30px;
   color: transparent;
   cursor: pointer;
-  gap: 24px;
-  background-image: url(../0919/image/mainRoll_indi.png);
+  background-image: url(./image/mainRoll_indi.png);
 }
 section#sect1 .swiper .slide_menu .paging_menu li.on {
-  background-image: url(../0919/image/mainRoll_indi_on.png);
+  background-image: url(./image/mainRoll_indi_on.png);
 }
 section#sect1 .swiper .slide_menu a.pause {
   display: inline-block;
@@ -134,82 +118,143 @@ section#sect1 .swiper .slide_menu a.pause {
   background-image: url(./image/btn_pause.png);
 }
 section#sect1 .swiper .slide_menu a.pause.active {
-  background: url(./image/btn_play.png);
+  background-image: url(./image/btn_play.png);
 }
-section#sect1 a.arrow {
+section#sect1 .swiper a.arrow {
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   z-index: 40;
 }
-section#sect1 a.arrow.prev {
+section#sect1 .swiper a.arrow.prev {
   left: 5%;
 }
-section#sect1 a.arrow.next {
+section#sect1 .swiper a.arrow.next {
   right: 5%;
 }
-section#sect2 .container {
-  width: 1024px;
+section#sect2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+section#sect2 .sticky {
+  color: white;
+  width: 100%;
+  text-align: center;
+  position: sticky;
+  top: 150px;
+  color: #919191;
+}
+section#sect2 .sticky h2 {
+  font-family: score9;
+  font-size: 240px;
+}
+section#sect2 .sticky p {
+  font-family: score2;
+  font-size: 24px;
+}
+section#sect2 .two_menu {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+section#sect2 .two_menu li {
+  width: calc(50% - 20px);
+  height: 492px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+section#sect2 .two_menu li:nth-child(even) {
+  top: 100px;
+}
+section#sect2 .two_menu li .li_title {
+  position: absolute;
+  color: white;
+  left: 10%;
+  top: 10%;
+  text-align: left;
+}
+section#sect2 .two_menu li .li_title h3 {
+  font-family: score9;
+  font-size: 100px;
+  display: inline-block;
+}
+section#sect2 .two_menu li .li_title h3 b {
+  font-size: 20px;
+  font-family: score2;
+}
+section#sect2 .two_menu li.t_menu1 {
+  background-image: url(./image/mainCon_one_list_bg1.jpg);
+}
+section#sect2 .two_menu li.t_menu2 {
+  background-image: url(./image/mainCon_one_list_bg2.jpg);
+}
+section#sect2 .two_menu li.t_menu3 {
+  background-image: url(./image/mainCon_one_list_bg3.jpg);
+}
+section#sect2 .two_menu li.t_menu4 {
+  background-image: url(./image/mainCon_one_list_bg4.jpg);
 }
 section#sect3 {
   position: relative;
   width: 100%;
-  height: 1200px;
-  padding: 150px 0 0;
+  height: 1000px;
   background-color: rgba(39, 145, 115, 0.9);
 }
 section#sect3 .sticky {
   color: white;
+  width: 100%;
   text-align: center;
   position: sticky;
-  width: 100%;
   top: 150px;
 }
 section#sect3 .sticky h2 {
-  font-size: 200px;
+  font-family: score9;
+  font-size: 240px;
 }
 section#sect3 .sticky p {
-  margin-top: 40px;
+  font-family: score2;
   font-size: 24px;
 }
 section#sect3 .tab_contents {
   width: 1024px;
-  height: 470px;
-  margin: auto;
-  position: relative;
   background-color: white;
+  height: 470px;
+  position: relative;
+  margin: auto;
 }
 section#sect3 .tab_contents article {
   width: 100%;
   height: 100%;
   position: absolute;
-  padding: 80px 0 0;
-  transition: 3s;
 }
 section#sect3 .tab_contents article.on {
   z-index: 30;
 }
 section#sect3 .tab_contents article .visual .sub_title {
   color: #333;
-  width: 100%;
-  z-index: 1;
+  width: 80%;
 }
 section#sect3 .tab_contents article .visual .sub_title h4 {
+  font-family: score2;
   font-size: 50px;
-  font-weight: lighter;
   position: absolute;
   top: 60px;
   left: 40px;
-  letter-spacing: -2px;
   opacity: 0;
   transition: 0.3s;
   transform: translateY(50px);
 }
 section#sect3 .tab_contents article .visual .sub_title h3 {
+  font-family: score2;
   font-size: 80px;
-  font-weight: lighter;
-  margin-top: 20px;
-  letter-spacing: -2px;
   position: absolute;
   top: 110px;
   left: 40px;
@@ -218,11 +263,10 @@ section#sect3 .tab_contents article .visual .sub_title h3 {
   transform: translateY(50px);
 }
 section#sect3 .tab_contents article .visual .sub_title p {
-  font-size: 18px;
-  line-height: 28px;
-  margin-top: 35px;
-  color: #666;
+  font-family: score4;
+  font-size: 19px;
   position: absolute;
+  width: 60%;
   top: 215px;
   left: 40px;
   opacity: 0;
@@ -231,6 +275,7 @@ section#sect3 .tab_contents article .visual .sub_title p {
 }
 section#sect3 .tab_contents article .visual .btns {
   display: flex;
+  gap: 10px;
   text-align: center;
   font-size: 20px;
   position: absolute;
@@ -242,7 +287,6 @@ section#sect3 .tab_contents article .visual .btns {
   z-index: 50;
 }
 section#sect3 .tab_contents article .visual .btns button {
-  margin-right: 10px;
   display: block;
   width: 180px;
   height: 60px;
@@ -299,10 +343,10 @@ section#sect3 .tab_contents article#icis .sub_title p {
   top: 280px;
 }
 section#sect3 .tab_contents article#cloud .sub_title h3 {
-  top: 150px;
+  top: 180px;
 }
 section#sect3 .tab_contents article#cloud .sub_title p {
-  top: 250px;
+  top: 290px;
 }
 section#sect3 .menu-item {
   width: 100%;
@@ -349,23 +393,42 @@ section#sect3 .menu-item ul.tab_menu a.on {
   opacity: 1;
   font-weight: bold;
 }
-section#sect4 {
+
+footer {
+  width: 100%;
+  margin: auto;
+  padding-top: 80px;
   position: relative;
-  width: 100%;
-  height: 100vh;
 }
-section#sect4 .sticky {
-  color: #2c997b;
+footer .f_first {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .f_first select {
+  height: 30px;
+}
+footer .f_two {
+  width: 60%;
   text-align: center;
-  position: sticky;
-  width: 100%;
-  top: 150px;
+  margin: auto;
+  padding-top: 30px;
+  color: #919191;
 }
-section#sect4 .sticky h2 {
-  font-size: 200px;
-  line-height: 170px;
+footer .f_two ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  font-size: 15px;
 }
-section#sect4 .sticky p {
-  margin-top: 40px;
-  font-size: 24px;
+footer .f_two .copyright {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+footer .f_two .copyright .pin {
+  color: #bbb;
+  font-size: 12px;
+  font-family: score2;
+  padding-top: 20px;
 }
