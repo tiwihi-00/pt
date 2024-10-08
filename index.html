@@ -233,45 +233,45 @@
 		</div>
 	</div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-		<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
-		<script src="/js/jquery.hoverdir.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-		<script>
-			// external js: isotope.pkgd.js, imagesloaded.pkgd.js
+	<script src="/js/jquery.hoverdir.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script>
+		// external js: isotope.pkgd.js, imagesloaded.pkgd.js
 
-			// init Isotope
-			var $grid = $('.grid').isotope({
-				itemSelector: '.grid-item',
-				masonry: {
-					columnWidth: '.grid-item',
-					gutter: 18
-				}
-			});
-			// layout Isotope after each image loads
-			$grid.imagesLoaded().progress(function () {
-				$grid.isotope('layout');
-			});
-			// filter items on button click
-			$('.menu').on('click', 'li a', function (e) {
-				e.preventDefault();
-				$('.menu li a').removeClass('on');
-				$(this).addClass('on');
-				var filterValue = $(this).attr('data-filter');
-				$grid.isotope({ filter: filterValue });
-			});
+		// init Isotope
+		var $grid = $('.grid').isotope({
+			itemSelector: '.grid-item',
+			masonry: {
+				columnWidth: '.grid-item',
+				gutter: 18
+			}
+		});
+		// layout Isotope after each image loads
+		$grid.imagesLoaded().progress(function () {
+			$grid.isotope('layout');
+		});
+		// filter items on button click
+		$('.menu').on('click', 'li a', function (e) {
+			e.preventDefault();
+			$('.menu li a').removeClass('on');
+			$(this).addClass('on');
+			var filterValue = $(this).attr('data-filter');
+			$grid.isotope({ filter: filterValue });
+		});
 
 
-			$('.grid-item').each(function () { $(this).hoverdir(); })
+		$('.grid-item').each(function () { $(this).hoverdir(); })
 
-			Fancybox.bind("[data-fancybox]", {
-				
-			});
-			//https://isotope.metafizzy.co/filtering
-			//https://tympanus.net/codrops/?s=hover+dir&search-type=posts
-		</script>
+		Fancybox.bind("[data-fancybox]", {
+
+		});
+		//https://isotope.metafizzy.co/filtering
+		//https://tympanus.net/codrops/?s=hover+dir&search-type=posts
+	</script>
 </body>
 
 </html>
