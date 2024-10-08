@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url(/pt/reset.css);
-@import url(/font/font.css);
+@import url(../reset.css);
+@import url(../font/font.css);
 main {
   width: 100%;
   max-width: 1920px;
@@ -50,13 +50,13 @@ main .vslide_container .vslide-wrap .vslide .vslide_inner li img {
 }
 main .vslide_container .vslide-wrap .vslide .vslide_inner li .summary {
   margin-top: 30px;
+  text-align: center;
   font-family: AmaticB;
   color: #D80101;
   font-size: 23px;
   line-height: 1.5;
   background-color: white;
   width: 100%;
-  margin-left: 20%;
 }
 main .vslide_container .f_logo {
   position: fixed;

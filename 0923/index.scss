@@ -1,5 +1,5 @@
-@import url(/pt/reset.css);
-@import url(/font/font.css);
+@import url(../reset.css);
+@import url(../font/font.css);
 
 @mixin flex-align($justfy) {
 	display: flex;
@@ -66,13 +66,14 @@ main {
 
 						.summary {
 							margin-top: 30px;
+							text-align: center;
 							font-family: AmaticB;
 							color: #D80101;
 							font-size: 23px;
 							line-height: 1.5;
 							background-color: white;
 							width: 100%;
-							margin-left: 20%;
+							
 						}
 					}
 				}
