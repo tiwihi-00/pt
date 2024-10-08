@@ -1,4 +1,4 @@
-@import url(../reset.css);
+@import url(/reset.css);
 @import url(/font/font.css);
 header {
   position: fixed;
@@ -20,7 +20,7 @@ header nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: score5;
+  font-family: scdream5;
 }
 header .gnb {
   width: 204px;
@@ -28,7 +28,7 @@ header .gnb {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: score5;
+  font-family: scdream5;
   gap: 5px;
 }
 header .gnb li {
@@ -55,7 +55,7 @@ section#sect1 {
   height: 100vh;
 }
 section#sect1 .swiper .swiper-slide p {
-  font-family: score2;
+  font-family: scdream2;
   color: white;
   line-height: 1.7;
   display: flex;
@@ -146,11 +146,11 @@ section#sect2 .sticky {
   color: #919191;
 }
 section#sect2 .sticky h2 {
-  font-family: score9;
+  font-family: scdream9;
   font-size: 240px;
 }
 section#sect2 .sticky p {
-  font-family: score2;
+  font-family: scdream2;
   font-size: 24px;
 }
 section#sect2 .two_menu {
@@ -177,18 +177,21 @@ section#sect2 .two_menu li:nth-child(even) {
 section#sect2 .two_menu li .li_title {
   position: absolute;
   color: white;
-  left: 10%;
+  left: 15%;
   top: 10%;
   text-align: left;
 }
+section#sect2 .two_menu li .li_title p {
+  font-family: scdream4;
+}
 section#sect2 .two_menu li .li_title h3 {
-  font-family: score9;
+  font-family: scdream9;
   font-size: 100px;
   display: inline-block;
 }
 section#sect2 .two_menu li .li_title h3 b {
   font-size: 20px;
-  font-family: score2;
+  font-family: scdream2;
 }
 section#sect2 .two_menu li.t_menu1 {
   background-image: url(./image/mainCon_one_list_bg1.jpg);
@@ -216,11 +219,11 @@ section#sect3 .sticky {
   top: 150px;
 }
 section#sect3 .sticky h2 {
-  font-family: score9;
+  font-family: scdream9;
   font-size: 240px;
 }
 section#sect3 .sticky p {
-  font-family: score2;
+  font-family: scdream2;
   font-size: 24px;
 }
 section#sect3 .tab_contents {
@@ -243,7 +246,7 @@ section#sect3 .tab_contents article .visual .sub_title {
   width: 80%;
 }
 section#sect3 .tab_contents article .visual .sub_title h4 {
-  font-family: score2;
+  font-family: scdream2;
   font-size: 50px;
   position: absolute;
   top: 60px;
@@ -253,7 +256,7 @@ section#sect3 .tab_contents article .visual .sub_title h4 {
   transform: translateY(50px);
 }
 section#sect3 .tab_contents article .visual .sub_title h3 {
-  font-family: score2;
+  font-family: scdream2;
   font-size: 80px;
   position: absolute;
   top: 110px;
@@ -263,7 +266,7 @@ section#sect3 .tab_contents article .visual .sub_title h3 {
   transform: translateY(50px);
 }
 section#sect3 .tab_contents article .visual .sub_title p {
-  font-family: score4;
+  font-family: scdream4;
   font-size: 19px;
   position: absolute;
   width: 60%;

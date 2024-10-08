@@ -1,4 +1,4 @@
-@import url(../reset.css);
+@import url(/reset.css);
 @import url(/font/font.css);
 $container: 1024px;
 
@@ -24,7 +24,7 @@ header {
 
 		ul {
 			@include flex-align(space-between);
-			font-family: score5;
+			font-family: scdream5;
 		}
 	}
 
@@ -32,7 +32,7 @@ header {
 		width: 204px;
 		height: 40px;
 		@include flex-align(space-between);
-		font-family: score5;
+		font-family: scdream5;
 		gap: 5px;
 
 		li {
@@ -68,7 +68,7 @@ section {
 		.swiper {
 			.swiper-slide {
 				p {
-					font-family: score2;
+					font-family: scdream2;
 					color: white;
 					line-height: 1.7;
 					display: flex;
@@ -176,13 +176,13 @@ section {
 			color: #919191;
 
 			h2 {
-				font-family: score9;
+				font-family: scdream9;
 				font-size: 240px;
 
 			}
 
 			p {
-				font-family: score2;
+				font-family: scdream2;
 				font-size: 24px;
 			}
 		}
@@ -212,18 +212,22 @@ section {
 				.li_title {
 					position: absolute;
 					color: white;
-					left: 10%;
+					left: 15%;
 					top: 10%;
 					text-align: left;
 
+					p {
+						font-family: scdream4;
+					}
+
 					h3 {
-						font-family: score9;
+						font-family: scdream9;
 						font-size: 100px;
 						display: inline-block;
 
 						b {
 							font-size: 20px;
-							font-family: score2;
+							font-family: scdream2;
 						}
 					}
 				}
@@ -269,12 +273,12 @@ section {
 			top: 150px;
 
 			h2 {
-				font-family: score9;
+				font-family: scdream9;
 				font-size: 240px;
 			}
 
 			p {
-				font-family: score2;
+				font-family: scdream2;
 				font-size: 24px;
 			}
 		}
@@ -301,7 +305,7 @@ section {
 						width: 80%;
 
 						h4 {
-							font-family: score2;
+							font-family: scdream2;
 							font-size: 50px;
 							position: absolute;
 							top: 60px;
@@ -312,7 +316,7 @@ section {
 						}
 
 						h3 {
-							font-family: score2;
+							font-family: scdream2;
 							font-size: 80px;
 							position: absolute;
 							top: 110px;
@@ -323,7 +327,7 @@ section {
 						}
 
 						p {
-							font-family: score4;
+							font-family: scdream4;
 							font-size: 19px;
 							position: absolute;
 							width: 60%;
@@ -530,7 +534,8 @@ footer {
 		.copyright {
 			padding-top: 40px;
 			padding-bottom: 80px;
-			.pin{
+
+			.pin {
 				color: #bbb;
 				font-size: 12px;
 				font-family: score2;
