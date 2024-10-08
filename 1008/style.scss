@@ -143,6 +143,12 @@ section {
 				top: 120px;
 				left: 10%;
 				z-index: 5;
+				& span {
+					display: inline-block;
+					opacity: 0;
+					transform: translateY(100%);
+					transition: 1s;
+				}
 			}
 		}
 

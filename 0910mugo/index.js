@@ -57,16 +57,16 @@ mElems.forEach((elem, index) => {
 });
 
 
-// function bannerRotate() {
-// 	$('.quickmenu_control').animate({ 'rotate': '+=10deg' }, 50, 'linear')
-// }
+function bannerRotate() {
+	$('.quickmenu_control').animate({ 'rotate': '+=10deg' }, 50, 'linear')
+}
 
-// let stopId
+let stopId
 
-// $('.quickmenu_wrap').mouseenter(function () {
-// 	stopId = setInterval(bannerRotate, 50)
-// })
-// $('.quickmenu_wrap').mouseleave(function () {
-// 	$('.quickmenu_control').stop(1, 0)
-// 	clearInterval(stopId)
-// })
+$('.quickmenu_wrap').mouseenter(function () {
+	stopId = setInterval(bannerRotate, 50)
+})
+$('.quickmenu_wrap').mouseleave(function () {
+	$('.quickmenu_control').stop(1, 0)
+	clearInterval(stopId)
+})
