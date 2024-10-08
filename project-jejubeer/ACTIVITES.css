@@ -1,0 +1,463 @@
+:root {
+    --main-color: #78f6ff;
+    --sub-color: #FF736A;
+    --sub2-color: #0A7DBE;
+    --sub3-color: #063884;
+    --sub4-color: #9747FF;
+    --sub5-color: #06B7AC;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.justb {
+    justify-content: space-between;
+}
+
+.justc {
+    justify-content: center;
+}
+
+.alinec {
+    align-items: center;
+}
+
+body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.head_container {
+    height: 70px;
+    width: 90%;
+    margin: auto;
+}
+
+nav {
+    width: 100%;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+nav a {
+    display: block;
+}
+
+nav ul {
+    gap: 15px;
+    color: white;
+    justify-content: right;
+}
+
+nav li.main_menu>a {
+    flex-grow: 1;
+}
+
+nav li.main_menu:hover>a {
+    font-weight: bold;
+    color: var(--sub5-color);
+}
+
+nav ul.sub_menu {
+    display: flex;
+    gap: 15px;
+    display: none;
+}
+
+nav ul.sub_menu li:hover a {
+    font-weight: bold;
+    color: var(--sub5-color);
+}
+
+main h2 {
+    color: #9747FF;
+    display: block;
+    background-color: rgba(255, 255, 255, .5);
+    border: 1px solid #9747FF;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.container {
+    margin: auto;
+    gap: 20px;
+}
+
+
+.slide {
+    width: 100%;
+    flex: 1;
+    position: relative;
+    opacity: .8;
+    transition: .4s;
+}
+
+.slide:hover {
+    flex: 5;
+    opacity: 1;
+}
+.slide:nth-child(4){
+    flex: 5;
+}
+.slide:not(:hover) {
+    flex: 1;
+}
+
+.slide figure {
+    width: 25%;
+    border-radius: 10px;
+}
+
+.slide figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+}
+
+.desc {
+    position: absolute;
+    left: 0%;
+    top: 105%;
+    display: none;
+}
+
+.desc.on {
+    display: block;
+}
+
+.desc_text li {
+    display: flex;
+    padding-top: 15px;
+}
+
+.desc_text.playlist h4 {
+    color: #063884;
+    font-size: 15px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.desc_box h3 {
+    color: #063884;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.desc p {
+    color: #9747FF;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.desc_text.playlist {
+    display: flex;
+    flex-direction: column;
+}
+
+.desc_text {
+    display: flex;
+}
+
+.desc_text img {
+    width: auto; 
+    height: 100%; 
+    max-height: 130px;
+    object-fit: contain; 
+}
+
+.desc_box img {
+    width: 180px;
+}
+.slide:nth-child(4) .desc_text img {
+    width:250px;
+    max-height: none;
+    object-fit: contain; 
+}
+
+footer {
+    margin-top: 300px;
+    padding: 20px;
+    background-color: #039edb;
+}
+
+
+.footerin {
+    margin: auto;
+    color: #01183a;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+footer ul {
+    gap: 20px;
+    font-weight: bold;
+}
+
+footer .war {
+    font-size: 12px;
+    color: #2f013d;
+}
+
+footer .copyright{
+    font-size: 13px;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+/* mobile */
+@media screen and (max-width: 580px) {
+    body {
+        background-image: url(./image/mobile\ sea.png);
+    }
+
+    nav {
+        display: none;
+    }
+
+    .head_container {
+        height: 50px;
+        width: 90%;
+    }
+
+    .head_container h1 img{
+        width: 80px;
+    }
+
+
+    .container {
+        max-width: 500px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    main h2 {
+        max-width: 500px;
+    }
+
+    .slide {
+        width: 100%;
+        display: block;
+    }
+
+    .slide figure {
+        flex-direction: column;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .slide:hover figure{
+        height: 300%;
+        opacity: 1;
+    }
+    
+    .slide:not(:hover) {
+        height: 80%;
+    }
+
+    .desc {
+        width: 100%;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+.desc h3{
+    width: 100px;
+}
+.desc h3 img{
+    width: 100%;
+}
+
+    .desc_text a {
+        width: 30%;
+    }
+
+    .desc_text {
+        width: 100%;
+    }
+
+    .desc_text p {
+        width: 70%;
+    }
+
+
+    .desc_box img {
+        padding-right: 10px;
+    }
+
+    .desc_box {
+        padding-top: 15px;
+    }
+    .footerin {
+        max-width: 500px;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+/* tablet */
+@media screen and (min-width: 581px) {
+
+    body {
+        background-image: url(./image/pc\ sea.jpg);
+    }
+
+	
+    .head_container {
+        width: 90%;
+    }
+
+		nav {
+			display: block;
+			font-size: 13px;
+			flex-shrink: 0;
+			width: 70%;
+	}
+    main h2 {
+        width: 90%;
+    }
+
+    .slide {
+        width: 90%;
+    }
+
+    .slide figure {
+        height: 400px;
+        width: 100%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .desc {
+        width: 100%;
+    }
+
+
+    .desc_text {
+        width: 90%;
+    }
+
+    .desc_box img {
+        padding-right: 30px;
+    }
+
+    .footerin {
+        max-width: 880px;
+    }
+
+
+
+}
+
+
+
+
+
+/* pc */
+@media screen and (min-width: 980px) {
+    body {
+        background-image: url(./image/pc\ sea.jpg);
+    }
+
+    .head_container {
+        width: 90%;
+
+    }
+
+
+    nav {
+        width: 70%;
+        font-size: 15px;
+    }
+
+    main h2 {
+        max-width: 1800px;
+    }
+
+    .slide {
+        width: 85%;
+    }
+
+    .slide figure {
+        height: 550px;
+        width: 100%;
+    }
+
+    .container {
+        max-width: 1800px;
+    }
+
+    .desc {
+        width: 100%;
+    }
+
+    .desc_text {
+        width: 85%;
+    }
+
+    .footerin {
+        max-width: 1800px;
+    }
+
+
+
+
+
+
+
+}

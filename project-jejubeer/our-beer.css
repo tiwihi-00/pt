@@ -1,0 +1,386 @@
+:root {
+    --main-color: #78f6ff;
+    --sub-color: #FF736A;
+    --sub2-color: #0A7DBE;
+    --sub3-color: #063884;
+    --sub4-color: #9747FF;
+    --sub5-color: #06B7AC;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.justb {
+    justify-content: space-between;
+}
+
+.justc {
+    justify-content: center;
+}
+
+.alinec {
+    align-items: center;
+}
+body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+		background-attachment: fixed;
+    height: 100vh;
+		width: 100vw;
+}
+
+
+.head_container {
+    height: 70px;
+    width: 90%;
+    margin: auto;
+}
+
+nav {
+    width: 100%;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+nav a {
+    display: block;
+}
+
+nav ul {
+    gap: 15px;
+    color: white;
+    justify-content: right;
+}
+
+nav li.main_menu>a {
+    flex-grow: 1;
+}
+
+nav li.main_menu:hover>a {
+    font-weight: bold;
+    color: var(--sub5-color);
+}
+
+nav ul.sub_menu {
+    display: flex;
+    gap: 15px;
+    display: none;
+}
+
+nav ul.sub_menu li:hover a {
+    font-weight: bold;
+    color: var(--sub5-color);
+}
+
+
+
+
+.desc p.info {
+    color: var(--sub2-color);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.product h3,
+.pair h3 {
+    color: var(--sub3-color);
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.product p,
+.pair p {
+    color: var(--sub3-color);
+    font-size: 14px;
+}
+
+
+.desc {
+    position: relative;
+    width: 60%;
+}
+
+.image-container {
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.wet1 {
+    background-image: url(./image/제주위트1.jpg);
+}
+
+.wet2 {
+    background-image: url(./image/제주위트2.jpg);
+}
+
+.wet3 {
+    background-image: url(./image/제주위트_3.jpg);
+}
+
+.pel1 {
+    background-image: url(./image/제주펠롱.jpg);
+}
+
+.pel2 {
+    background-image: url(./image/제주펠롱2.jpg);
+}
+
+.pel3 {
+    background-image: url(./image/제주펠롱3.jpg);
+}
+
+
+.mung1 {
+    background-image: url(./image/제주거멍.jpg);
+}
+
+.mung2 {
+    background-image: url(./image/제주거멍2.jpg);
+}
+
+.mung3 {
+    background-image: url(./image/제주거멍3.jpg);
+}
+
+.nubo1 {
+    background-image: url(./image/제주누보1.jpg);
+}
+
+.nubo2 {
+    background-image: url(./image/제주누보2.jpg);
+}
+
+.nubo3 {
+    background-image: url(./image/제주누보4.jpg);
+}
+
+
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #039edb;
+}
+
+
+.footerin {
+    margin: auto;
+    color: #01183a;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+footer ul {
+    gap: 20px;
+    font-weight: bold;
+}
+
+footer .war {
+    font-size: 12px;
+    color: #2f013d;
+}
+
+footer .copyright{
+    font-size: 13px;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+
+
+
+/* mobile */
+@media screen and (max-width: 580px) {
+    body {
+        background-image: url(./image/mobile\ sea.png);
+    }
+
+    nav {
+        display: none;
+    }
+
+    .head_container {
+        width: 90%;
+    }
+
+    
+    figure{
+        width: 100%;
+        height: 100%;
+    }
+
+		.image-container {
+			width: 90%;
+			height: 45%;
+	}
+
+
+    figure video{
+        width: 100%;
+        height: 100%;
+    }
+    .footerin {
+        max-width: 500px;
+				font-size: 13px;
+    }
+
+		.footerin ul{
+			flex-wrap: wrap;
+		}
+		.footerin li{
+			width: 28%;
+		}
+
+
+
+}
+
+
+
+
+/* tablet */
+@media screen and (min-width: 581px) {
+
+    body {
+        background-image: url(./image/pc\ sea.jpg);
+    }
+
+    .head_container {
+        width: 80%;
+    }
+
+
+    .image-container {
+        width: 80%;
+        height: 60%;
+
+    }
+
+    nav {
+        display: block;
+        font-size: 13px;
+				flex-shrink: 0;
+				width: 70%;
+    }
+
+    .head_container {
+        width: 90%;
+
+    }
+.desc {
+    top: 65%;
+}
+
+.footerin {
+    max-width: 880px;
+}
+
+
+
+
+
+}
+
+
+
+
+
+/* pc */
+@media screen and (min-width: 980px) {
+    body {
+        background-image: url(./image/pc\ sea.jpg);
+    }
+
+  
+    .head_container {
+			max-width: 1800px;
+
+	}
+
+    nav {
+        width: 70%;
+        font-size: 15px;
+    }
+
+    .image-container {
+        width: 60%;
+        height: 65%;
+    }
+
+
+    .desc {
+        top: 70%;
+        width: 60%;
+    }
+
+    .propair {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .propair>div {
+        width: 30%;
+    }
+
+    .desc p.info {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .product h3,
+    .pair h3 {
+        padding-top: 40px;
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .product p,
+    .pair p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+
+    .footerin {
+        max-width: 1800px;
+    }
+
+
+
+
+
+
+
+
+}

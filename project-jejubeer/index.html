@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUR BEER</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./our-beer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        .visual {
+            width: 100%;
+            height: 90vh;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+
+            display: flex;
+            justify-content: center;
+
+            height: 100%;
+
+        }
+
+        .swiper-slide figure {
+            width: 400px;
+            height: 380px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+
+        }
+
+
+        .desc {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head_container flex justb alinec">
+            <h1><a href="#"><img src="./image/제주맥주 logo.png" alt=""></a></h1>
+            <nav>
+                <ul class=" flex">
+                    <li class="main_menu">
+                        <a href="./index.html">OUR BEER</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">제주위트</a></li>
+                            <li><a href="#">제주펠롱</a></li>
+                            <li><a href="#">제주거멍</a></li>
+                            <li><a href="#">제주누보</a></li>
+                        </ul>
+                    </li>
+                    <li class="main_menu">
+                        <a href="./online-shop.html">ONLINE-SHOP</a>
+                        <ul class="sub_menu">
+                            <li><a href="#">ALL</a></li>
+                            <li><a href="#">제주누보</a></li>
+                            <li><a href="#">FOOD</a></li>
+                            <li><a href="#">GOODS</a></li>
+                        </ul>
+                    </li>
+                    <li class="main_menu">
+                        <a href="./ACTIVITES.html">ACTIVITES</a>
+                    </li>
+                    <li class="main_menu">
+                        <a href="./brewery.html">BREWERY</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <a href="#" class="mobile"><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </header>
+    <div class="visual">
+        <div class="swiper mySwiper swiper-h">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper mySwiper2 swiper-v">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="image-container wet1"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-container wet2"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-container wet3"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="desc">
+                            <p class="info">
+                                제주 감귤 껍질의 상큼함과 섬세한 꽃 향,<br />입안 가득 부드럽게 퍼지는 시트러스향이 만나 산뜻한 끝 맛을 선사하는 밀맥주입니다.
+                            </p>
+                            <div class="propair">
+                                <div class="product">
+                                    <h3>재료</h3>
+                                    <p>정제수, 보리맥아, 밀맥아, 홉, 제주산 감귤껍질, 코리엔더, 건조오렌지껍질 등</p>
+                                </div>
+                                <div class="pair">
+                                    <h3>푸드페어링</h3>
+                                    <p>각종 바베큐 및 스테이크류, 기름진 생선회, 파스타 등의 국수류에 더욱 잘 어울립니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper mySwiper2 swiper-v">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="image-container pel1"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-container pel2"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-container pel3"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="desc">
+                            <p class="info">
+                                ‘펠롱’은 반짝이라는 의미의 제주 방언입니다.<br />
+                                다양한 식물들이 조화를 이루어 제주 곶자왈을 만드는 것처럼 다양하고 <br />개성있는 홉을 블렌딩하여 반짝이는 시트러스 향을 느낄 수 있는 제주스러운 페일 에일입니다.
+                            </p>
+                            <div class="propair">
+                                <div class="product">
+                                    <h3>재료</h3>
+                                    <p>정제수, 보리맥아, 홉, 효모 등</p>
+                                </div>
+                                <div class="pair">
+                                    <h3>푸드페어링</h3>
+                                    <p>흑돼지 두루치기, 생선조림, 회무침 등의 매콤하거나 차가운 음식과 더욱 잘 어울립니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper mySwiper2 swiper-v">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="image-container mung1"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-container mung2"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-container mung3"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="desc">
+                            <p class="info">
+                                ‘거멍’은 '검다'라는 의미의 제주 방언입니다.<br />
+                                제주 흑보리와 초콜릿 밀을 사용하여 제주의 여름밤을 떠올리게 하는 경쾌한 흑맥주입니다.
+                            </p>
+                            <div class="propair">
+                                <div class="product">
+                                    <h3>재료</h3>
+                                    <p>정제수, 보리맥아, 초콜릿 밀 맥아, 제주 흑보리, 홉, 효모 등</p>
+                                </div>
+                                <div class="pair">
+                                    <h3>푸드페어링</h3>
+                                    <p>스테이크, 로스트 비프, 족발 등의 풍미가 짙은 고기 요리와 잘 어울립니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper mySwiper2 swiper-v">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="image-container nubo1"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-container nubo2"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-container nubo3"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="desc">
+                            <p class="info">
+                                ‘누보’의 뜻은 New&Fresh 를 뜻하는 프랑스어입니다.<br />
+                                제주누보는 프리미엄 논알콜로 유럽/미국산 프리미엄 맥주 원료를 사용하여 깊고 진한 맛을 살렸습니다.
+                            </p>
+                            <div class="propair">
+                                <div class="product">
+                                    <h3>재료</h3>
+                                    <p>정제수, 보리맥아, 호프펠렛, 감귤피, 효모 등</p>
+                                </div>
+                                <div class="pair">
+                                    <h3>푸드페어링</h3>
+                                    <p>감자칩, 팝콘과 같은 가벼운 간식, 멕시칸/타이푸드와 같이 매콤한 음식과 잘 어울립니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerin">
+            <ul class="flex">
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">OUR BEERS</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+            </ul>
+            <div class="copyright">
+                <p>
+                    제주맥주 주식회사(대표이사 신성현)<br />
+                    (본사) 제주특별자치도 제주시 한림읍 금능농공길 62-11
+                    <br />
+                    (서울사무실) 서울특별시 중구 동호로 228 동호 38빌딩 6층호스팅 <br />제공자 (주)아임웹 사업자등록번호 616-86-27415 <br />
+                    통신판매업신고번호 제 2020-제주한림-0101 호<br />고객센터 02-2235-5559 jejubeer@jejubeer.co.kr<br />
+                </p>
+                <div class="war">
+                    <p>
+                        경고 : 지나친 음주는 뇌졸중, 기억력 손상이나 치매를 유발합니다. <br />
+                        임신 중 음주는 기형아 출생 위험을 높입니다.<br />
+                        COPYRIGHT 2021@ JEJU BEER COMPANY
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 50, loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            direction: "vertical", loop: true,
+            // spaceBetween: 50,
+            // slidesPerView: "3",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

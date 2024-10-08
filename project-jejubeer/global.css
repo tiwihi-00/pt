@@ -1,0 +1,22 @@
+:root{
+    --main-color:#78f6ff;
+    --sub-color:#FF736A;
+    --sub2-color:#0A7DBE;
+    --sub3-color:#063884;
+    --sub4-color:#9747FF;
+}
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+    max-width: 100%;
+}
