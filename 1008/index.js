@@ -14,7 +14,7 @@
 // 페이지가 로드된 후 h2 요소를 선택하고 함수를 호출
 document.addEventListener('DOMContentLoaded', function () {
 	let h2 = document.querySelector('.secth-head h2');
-
+	
 	// 텍스트를 나누고 애니메이션 적용
 	splitText(h2);
 	moveUp(h2);
@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // h2 텍스트를 각 문자로 나누는 함수
 function splitText(h2) {
 	const txt = h2.innerText;
+	
 	let tags = '';
 	txt.split('').forEach((letter) => {
 		tags += `<span>${letter}</span>`;
@@ -36,6 +37,7 @@ function splitText(h2) {
 // 애니메이션으로 텍스트가 위로 올라가는 효과를 적용하는 함수
 function moveUp(h2) {
 	const spans = h2.querySelectorAll('span');
+	
 	spans.forEach((span, i) => {
 		span.style.transitionDelay = `${i * 0.1}s`;
 		span.style.transform = "translateY(0)";
@@ -61,6 +63,7 @@ listElems.forEach((li) => {
 
 	link.addEventListener('click', function (e) {
 		e.preventDefault();
+		
 		const href = this.getAttribute('href')
 		const secTop = document.querySelector(href)
 
