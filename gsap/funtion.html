@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>funtion</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&display=swap">
+</head>
+<style>
+	body {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		min-height: 100vh;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	.box {
+		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100px;
+		height: 100px;
+	}
+
+	.green {
+		background-color: green;
+	}
+
+	.purple {
+		background-color: purple;
+	}
+
+	.orange {
+		background-color: orange;
+	}
+</style>
+
+<body>
+	<div class="box green">no delay</div>
+	<div class="box purple">delay: 1</div>
+	<div class="box orange">delay: 2</div>
+
+
+	<h3>Click a box to transition out</h3>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+	<script src="./splitText.js"></script>
+	<script>
+
+		gsap.to(".green", {
+			rotation: 360,
+
+			duration: 1,
+		});
+		gsap.to(".purple", {
+			rotation: 360,
+			duration: 1,
+			delay: 1,
+		});
+		gsap.to(".orange", {
+			rotation: 360,
+			duration: 1,
+			delay: 2,
+		});
+	</script>
+</body>
+
+</html>

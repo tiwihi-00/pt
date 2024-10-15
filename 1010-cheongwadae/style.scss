@@ -357,10 +357,6 @@ header {
 }
 
 
-
-
-
-
 section {
 	height: 100vh;
 
@@ -369,25 +365,53 @@ section {
 			.desc {
 				color: white;
 				position: absolute;
-				font-family: scdream6;
+				font-family: YES24MyoungjoB;
 				left: 50%;
-					top: 50%;
-					font-size: 40px;
-					transform: translate(-50%, -50%);
+				top: 50%;
+				font-size: 2rem;
+				transform: translate(-50%, -50%);
 			}
 
 			&.slide1 {
 				background-image: url(./image/v_img01_sdown.jpg);
 
-			
+				.desc {
+					text-align: center;
+					line-height: 1;
+
+					p {
+						font-size: 18px;
+
+					}
+
+					h3 {
+						font-size: 35px;
+					}
+				}
+
 			}
 
 			&.slide2 {
 				background-image: url(./image/v_img02.jpg);
+
+				.desc {
+					text-align: left;
+					left: 20%;
+
+					p {
+						font-size: 23px;
+						line-height: 1.8;
+					}
+
+				}
 			}
 
 			&.slide3 {
 				background-image: url(./image/v_img03.jpg);
+
+				.desc {
+					top: 30%;
+				}
 			}
 
 			&.slide4 {
@@ -430,7 +454,7 @@ section {
 				.title {
 					width: 100%;
 					height: 100%;
-
+					font-family: YES24MyoungjoR;
 				}
 
 				.title-desc {
@@ -459,6 +483,7 @@ section {
 			display: flex;
 			width: 1000px;
 			height: 220px;
+			z-index: 300;
 
 			li {
 				background-color: rgba(0, 0, 0, .5);
@@ -476,6 +501,7 @@ section {
 					width: 100%;
 					height: 5px;
 					transition: height 0.35s;
+
 				}
 
 				&:nth-child(1)::after {
@@ -514,6 +540,7 @@ section {
 						p {
 							padding-top: 20px;
 						}
+
 					}
 				}
 			}
@@ -535,12 +562,14 @@ section {
 
 			.text-box {
 				.item {
+					padding-bottom: 50px;
+
 					.title {
 						font-size: 35px;
-						font-family: scdream5;
+
 						line-height: 1.6;
 						margin: 0 0 25px;
-
+						font-family: YES24MyoungjoR;
 					}
 
 					.title-desc {
@@ -554,6 +583,10 @@ section {
 					li {
 						width: 300px;
 						border-bottom: 1px solid rgba(255, 255, 255, 0.4862745098);
+
+						&:nth-child(2) a span img {
+							width: 29px;
+						}
 
 						a {
 							position: relative;
@@ -579,10 +612,22 @@ section {
 								width: 100%;
 								display: flex;
 								align-items: center;
-								justify-content: space-between;
 								gap: 10px;
 
-								img {
+								div {
+									width: 100%;
+									display: flex;
+									align-items: center;
+
+									gap: 10px;
+
+									img {
+										width: 20px;
+										object-fit: contain;
+									}
+								}
+
+								img.arrow {
 									width: 20px;
 								}
 							}
@@ -591,6 +636,93 @@ section {
 				}
 			}
 
+			.swiper2 {
+				position: relative;
+				overflow: hidden;
+				width: 470px;
+				height: 520px;
+				margin: 0;
+
+				.swiper-wrapper {
+					position: relative;
+					width: 100%;
+					height: 100%;
+					z-index: 100;
+					display: flex;
+					box-sizing: content-box;
+
+					.swiper-slide {
+						flex-shrink: 0;
+						width: 100%;
+						height: 100%;
+						position: relative;
+						padding: 90px 0 0 50px;
+						backface-visibility: hidden;
+						overflow: hidden;
+
+						.slide2-box {
+							border: 1px solid transparent;
+							width: 420px;
+							height: 430px;
+							position: relative;
+							background-color: rgba(0, 0, 0, .3);
+
+
+
+							img {
+								position: absolute;
+								z-index: 100;
+								width: 428px;
+								top: -90px;
+								left: -70px;
+							}
+
+							.text-box {
+								margin: 220px 0 0 0;
+								padding: 30px;
+
+								h3 {
+									font-family: scdream6;
+									padding-bottom: 15px;
+								}
+
+								p {
+									font-family: scdream3;
+									line-height: 1.7;
+								}
+							}
+						}
+					}
+				}
+
+				.btn-box {
+					z-index: 150;
+					position: absolute;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					gap: 15px;
+					right: 5%;
+					top: 60%;
+					width: 80px;
+
+					&::after {
+						content: '';
+						display: block;
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						transform: translate(-50%, -50%);
+						width: 2px;
+						height: 25px;
+						background-color: rgba(255, 255, 255, .6);
+					}
+
+					img {
+						width: 20px;
+					}
+				}
+			}
 		}
 
 	}
@@ -658,7 +790,7 @@ section {
 				.title {
 					font-size: 28px;
 					font-family: scdream7;
-
+					top: 40%;
 					margin: 0 0 35px 0;
 				}
 
@@ -673,7 +805,12 @@ section {
 
 					li {
 						width: 100%;
-						height: 80%;
+						height: 80px;
+
+						&:hover::after {
+							height: 100%;
+							width: 100%;
+						}
 
 						a {
 							position: relative;
@@ -682,14 +819,32 @@ section {
 							height: 100%;
 
 							.icon-box {
-
+								display: flex;
 								align-items: start;
 								justify-content: center;
 								padding: 0 0 0 30px;
 
+								&::after {
+									content: '';
+									position: absolute;
+									display: block;
+									right: 20px;
+									width: 20px;
+									height: 20px;
+									background-image: url(./image/right-arrow-w.png);
+									background-position: center;
+									background-size: contain;
+								}
+
 								img {
 									display: none;
 								}
+
+								p {
+									padding: 0;
+								}
+
+
 							}
 						}
 					}
@@ -698,14 +853,84 @@ section {
 		}
 
 		&.sect2 {
+			background-position: center;
 
 			.inner-box {
+				flex-direction: column;
+				justify-content: center;
+
 				.text-box {
+					width: calc(100% - 40px);
+					margin: auto;
+					margin-top: 80px;
+
 					.title {
+						width: 100%;
+						text-align: center;
 						font-size: 28px;
 						font-family: scdream5;
 						line-height: 1.6;
 						margin: 0 0 25px;
+					}
+
+					.title-desc {
+						width: 100%;
+						text-align: center;
+					}
+
+					ul {
+						margin: auto;
+						width: calc(100% - 40px);
+
+						li {
+							width: 100%;
+						}
+					}
+				}
+
+				.swiper2 {
+					width: calc(100% - 40px);
+					height: 220px;
+					bottom: 15px;
+					z-index: 400;
+
+					.swiper-wrapper {
+						.swiper-slide {
+							padding: 0;
+
+							.slide2-box {
+								display: flex;
+								width: 100%;
+								height: 100%;
+								padding: 10px;
+
+								img {
+									position: relative;
+									top: initial;
+									left: initial;
+									width: 278px;
+								}
+
+								.text-box {
+									margin: 0;
+									padding: 20px;
+								}
+							}
+						}
+					}
+
+					.btn-box {
+						top: 10%;
+						right: 0%;
+
+						&::after {
+							height: 20px;
+							top: 40%;
+						}
+
+						img {
+							width: 15px;
+						}
 					}
 				}
 			}
@@ -812,6 +1037,12 @@ section {
 					li {
 						a {
 							font-size: 16px;
+
+							.icon-box {
+								.hid-arrow {
+									display: none;
+								}
+							}
 						}
 					}
 				}

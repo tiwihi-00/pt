@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>gsap5</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+	<!-- Demo styles -->
+	<style>
+		html,
+		body {
+			position: relative;
+			height: 100%;
+		}
+
+		body {
+
+			margin: 0;
+			padding: 0;
+		}
+
+		.swiper {
+			width: 100%;
+			height: 100vh;
+		}
+
+		.swiper-slide {
+			background-position: center;
+			background-size: cover;
+		}
+
+		.swiper-slide img {
+			display: block;
+			width: 100%;
+		}
+
+		.desc {
+			position: absolute;
+			width: 100%;
+			height: 100vh;
+			font-size: 2rem;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Swiper -->
+	<div class="swiper mySwiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="desc text1">
+					<p>“청와대는 임기 시작인</p>
+						<p>5월10일에 개방하여</p>
+						<p>국민께 돌려드리겠습니다.”</p>
+				</div>
+				<img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+			</div>
+			<div class="swiper-slide">
+				<div class="desc text2">
+					<div class="desc">
+						<p>“청와대는 임기 시작인</p>
+						<p>5월10일에 개방하여</p>
+						<p>국민께 돌려드리겠습니다.”</p>
+					</div>
+				</div>
+				<img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+			</div>
+			<div class="swiper-slide">
+				<div class="desc text3">
+					<p>최고의 정원이라 불리는</p>
+					<p>녹지원과 상춘재를 모두</p>
+					<p>국민들의 품으로 돌려드리겠습니다.”</p>
+				</div>
+				<img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+			</div>
+			<div class="swiper-slide">
+				<div class="desc text4">
+					<p>북악산으로의 등반로</p> <p>역시 개방되는 것입니다.”</p>
+				</div>
+				<img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+			</div>
+		</div>
+
+		<div class="swiper-pagination"></div>
+	</div>
+
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+	<script src="./splitText.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+
+		
+		gsap.registerEffect({
+			name: 'textEffect',
+			extendTimeline: true,
+			defaults: {
+				x: 50,
+				y: -50,
+				opacity: 0
+			},
+			//effect:(targer, config)
+			effect: (target, { x, y, opacity }) => {
+				const { chars } = new SplitText(target, { type: 'chars' });
+				const tl = gsap.timeline();
+
+				tl.from(chars, {
+					opacity: opacity,
+					x: x,
+					scale:1.2,
+					stagger: .01
+				})
+
+				tl.to(chars, {
+					delay:2,
+					opacity: opacity,
+					y: y,
+					duration:1,
+					stagger: .01
+				})
+				return tl
+			}
+		});
+
+		const tl = gsap.timeline({ repeat: -1 })
+		tl.textEffect('.text1')
+			.textEffect('.text2')
+			.textEffect('.text3')
+			.textEffect('.text4')
+
+
+		var swiper = new Swiper(".mySwiper", {
+			spaceBetween: 30,
+			effect: "fade",
+			speed: 1000,
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		});
+	</script>
+</body>
+
+</html>

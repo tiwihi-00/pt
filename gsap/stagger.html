@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>gsap4</title>
+	<style>
+		body {
+			background-color: black;
+		}
+
+		.stage {
+			color: rgb(188, 123, 253);
+			width: 100%;
+			height: 60vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			font-size: 3rem;
+			text-align: center;
+		}
+
+		h2 {
+			font-size: 5rem;
+			color: aqua;
+		}
+
+		.desc {
+			perspective: 400px;
+		}
+
+		.desc div {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="stage">
+		<h2>With Me</h2>
+		<div class="desc">
+			<div class="text">Passion</div>
+			<div class="text">Experience</div>
+			<div class="text">Visual</div>
+			<div class="text">Ideas</div>
+			<div class="text">Details</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+	<script>
+
+const duration = 1;
+const count = gsap.utils.toArray('.text').length;
+const pause = 2;
+const stagger = duration + pause;
+const delay = stagger - (count - 1) + pause;
+
+const tl = gsap.timeline({
+  repeat: -1, 
+  repeatDelay: delay 
+});
+
+tl.from('.text', {
+  rotationX: -90,
+  y: 50, 
+  opacity: 0,
+  duration: duration,
+  stagger: {
+    each: stagger 
+  }
+});
+
+tl.to('.text', {
+  rotationX: 90, 
+  opacity: 0,
+  y: -50,
+  duration: duration,
+  stagger: {
+    each: stagger 
+  }
+}, stagger); 
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>animation</title>
+	<style>
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: coral;
+			border-radius: 50%;
+			position: absolute;
+			left: 0; top: 50px;
+			animation:bollAni 5s infinite alternate-reverse ease ;
+		}
+		@keyframes bollAni {
+			from{left:0;}
+			to{left:  calc(100% - 100px);}
+		}
+	</style>
+</head>
+<body>
+	<div>
+
+	</div>
+</body>
+</html>

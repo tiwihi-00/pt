@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>gsap3</title>
+	<style>
+		body {
+			background-color: black;
+		}
+
+		h1 {
+			color: aqua;
+			font-size: 3rem;
+		}
+
+		.stage {
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			white-space: nowrap;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="stage">
+		<h1>Flexible Visual Design</h1>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+	<script src="./splitText.js"></script>
+
+	<script>
+
+		const { chars } = new SplitText('h1', { type: 'chars' })
+
+		const disX = gsap.utils.distribute({
+			base: -200,
+			amount: 400,
+		})
+
+
+		const tl = gsap.timeline()
+		tl.from(chars, {
+			y: gsap.utils.wrap([-70, 70]),
+			filter: 'blur(5px)',
+			stagger: {
+				each: 0.1,
+				from: 'center',
+			}
+		})
+
+		tl.to(chars, {
+			delay: 1,
+			x: disX,
+			duration: 2,
+			ease:'power3.inOut'
+		})
+		tl.to(chars, {
+			delay: 1,
+			opacity: 0,
+			filter: 'blur(5px)',
+			stagger: {
+				each: 0.1,
+				from: 'end'
+			}
+		}
+
+		)
+	</script>
+</body>
+
+</html>

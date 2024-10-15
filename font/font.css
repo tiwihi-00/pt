@@ -70,3 +70,13 @@
 	font-family: scdream9;
 	src: url(./SCDream9.otf);
 }
+@font-face {
+	font-family: YES24MyoungjoB;
+	src: url(./YES24MyoungjoB.ttf);
+}
+@font-face {
+	font-family: YES24MyoungjoR;
+	src: url(./YES24MyoungjoR.ttf);
+	font-weight: normal;
+	font-style: normal;
+}

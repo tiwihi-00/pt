@@ -83,15 +83,47 @@ lies.forEach(function (lie) {
 
 const xbtn = document.querySelector('.close-map-btn');
 const sitemapBox = document.querySelector('.sitemap-box');
-const bar=document.querySelector('ul.gnb li.btn')
+const bar = document.querySelector('ul.gnb li.btn')
 
-bar.addEventListener('click', function(e){
-e.preventDefault()
-sitemapBox.classList.add('on')
+bar.addEventListener('click', function (e) {
+	e.preventDefault()
+	sitemapBox.classList.add('on')
 })
 
 xbtn.addEventListener('click', function (e) {
-  e.preventDefault();
-  sitemapBox.classList.remove('on');
-	
+	e.preventDefault();
+	sitemapBox.classList.remove('on');
+
+});
+
+// 슬라이드 박스 클릭 시 이벤트
+const sliElems = document.querySelectorAll('.slide2-box');
+console.log(sliElems);
+
+// sliElems.forEach(function(sliElem, idx) {
+//     sliElem.addEventListener('click', function(e) {
+//         e.preventDefault();
+
+//         sliElems.forEach(function(item) {
+//             item.classList.remove('on');
+//         });
+
+        
+//         sliElem.classList.add('on');
+
+       
+//         swiper2.slideToLoop(idx, 500);
+//     });
+// });
+
+
+document.querySelector('.left-btn').addEventListener('click', function(e) {
+    e.preventDefault();
+    swiper2.slidePrev();
+});
+
+
+document.querySelector('.right-btn').addEventListener('click', function(e) {
+    e.preventDefault();
+    swiper2.slideNext();
 });

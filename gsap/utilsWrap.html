@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>gsap2</title>
+	<style>
+		body {
+			background-color: black;
+
+		}
+
+		.stage {
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			visibility: hidden;
+		}
+
+		h1 {
+			color: white;
+			font-size: 3rem;
+
+		}
+	</style>
+</head>
+
+<body>
+	<div class="stage">
+		<h1>Flexible Visual Design</h1>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+	<script src="./splitText.js"></script>
+
+	<script>
+		//css에 설정되어 있는 값을 gsap에서 제어하는 방법
+		gsap.to('.stage', { autoAlpha: 1 })
+
+		//구조분해 할당
+		//변수에 값을 담으려면 하나씩 할당해야 한번에 여러개의 변수를 할당하기 위한 방법
+		//객체에는 여러가지 속성과 값들이 속해 있는데 필요한 값들을 가져오고자 할때
+		//객체.word, 객체.chars 이렇게 가져와야 하는 불편을 간단하게 지정하는 방법
+
+		const { chars, words } = new SplitText('h1', { type: 'chars words' })
+		var tl = gsap.timeline({
+			// repeat: -1,  // 무한 반복
+			// yoyo: true,  // yoyo 효과로 애니메이션이 역방향으로 재생
+		})
+		tl.from(chars, {
+			// x: 100,
+			color: 'cornflowerblue',
+			opacity: 1,
+			y: gsap.utils.wrap([-100, 100]),
+			stagger: {  //각각의 요소에 애니메이션 할당
+				each: .05,
+				from: 'end'//'center', 'random', 'edges'
+
+			}
+
+		})
+		gsap.to(words, {
+			// x: 100,
+			color: gsap.utils.wrap(['yellow', 'cornflowerblue']),
+			opacity: 1,
+			// y:gsap.utils.wrap ([0, 0, 0, 0, 0,0, 0, 0,100,100,100,100,100,100,0,0,0,0,0,0]),
+			y: (i) => {
+				// return i * 5
+				// if(i>7 && i<14){
+				// 	return-50
+				// }
+				if (i % 2 == 0) {
+					return 50
+				}
+			},
+			stagger: {
+				each: .05,
+				from: 'start'//'center', 'random', 'edges', 'end'
+
+			}
+
+		})
+
+	</script>
+</body>
+
+</html>

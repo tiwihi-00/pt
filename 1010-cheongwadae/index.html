@@ -24,16 +24,49 @@
 			width: 100%;
 			height: 100%;
 		}
-
+		
 		.swiper-slide {
 			background-position: center;
 			background-size: cover;
 		}
 
+	
 		.swiper-slide img {
 			display: block;
 			width: 100%;
 		}
+		
+
+		.desc {
+			position: absolute;
+			/* width: 100%;
+			height: 100vh; */
+			/* font-size: 2rem; */
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			color: white;
+		}
+		.swiper2 {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper2-slide {
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper2-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 	</style>
 
 </head>
@@ -220,50 +253,51 @@
 			<div class="swiper mySwiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide slide1">
-						<div class="desc">
-							2022. 05. 10.
-							청와대,국민 품으로
+						<div class="desc text1">
+							<p>2022. 05. 10.</p><br />
+							<h3>청와대,국민 품으로</h3>
 						</div>
 					</div>
 					<div class="swiper-slide slide2">
-						<div class="desc">
-							“청와대는 임기 시작인
-							5월10일에 개방하여
-							국민께 돌려드리겠습니다.”
+						<div class="desc text2">
+							<p>“청와대는 임기 시작인</p>
+							<p>5월10일에 개방하여</p>
+							<p>국민께 돌려드리겠습니다.”</p>
 						</div>
 					</div>
 					<div class="swiper-slide slide3">
-						<div class="desc">
-							“본관, 영빈관을 비롯하여..
+						<div class="desc text3">
+							<p>“본관,</p>
+							<p>영빈관을 비롯하여..</p>
 						</div>
 					</div>
 					<div class="swiper-slide slide4">
-						<div class="desc">
-							최고의 정원이라 불리는
-							녹지원과 상춘재를 모두
-							국민들의 품으로 돌려드리겠습니다.”
+						<div class="desc text4">
+							<p>최고의 정원이라 불리는</p>
+							<p>녹지원과 상춘재를 모두</p>
+							<p>국민들의 품으로 돌려드리겠습니다.”</p>
 						</div>
 					</div>
 					<div class="swiper-slide slide5">
-						<div class="desc">
-							북악산으로의 등반로 역시 개방되는 것입니다.”
+						<div class="desc text5">
+							<p>북악산으로의 등반로</p>
+							<p>역시 개방되는 것입니다.”</p>
 						</div>
 					</div>
 					<div class="swiper-slide slide6">
-						<div class="desc">
-							“경복궁 지하철역에서 경복궁을 거쳐 청와대를 거쳐..
+						<div class="desc text6">
+							<p>“경복궁 지하철역에서</p>
+							<p>경복궁을 거쳐 청와대를 거쳐..</p>
 						</div>
 					</div>
 					<div class="swiper-slide slide7">
-						<div class="desc">
-							약속 실천으로 시작합니다
+						<div class="desc text7">
+							<p>약속 실천으로 시작합니다</p>
 						</div>
 					</div>
 
 				</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-pagination"></div>
+
 			</div>
 		</section>
 		<section class="sect1">
@@ -286,7 +320,7 @@
 							<div class="icon-box">
 								<img src="./image/icon_sec1_1.png" alt="">
 								<p>지도로 보는 시설소개</p>
-								<img src="./image/right-arrow-w.png" alt="">
+
 							</div>
 						</a>
 					</li>
@@ -295,6 +329,7 @@
 							<div class="icon-box">
 								<img src="./image/icon_sec1_2.png" alt="">
 								<p>청와대 역사</p>
+
 							</div>
 						</a>
 					</li>
@@ -303,6 +338,7 @@
 							<div class="icon-box">
 								<img src="./image/icon_sec1_3.png" alt="">
 								<p>경내 주요 유적</p>
+
 							</div>
 						</a>
 					</li>
@@ -330,35 +366,182 @@
 						<li>
 							<a href="#;">
 								<span>
-									<div><img src="./image/section02_icon01.png" alt=""></div>
-									<p>관람시간 및 해설안내</p>
+									<div><img src="./image/section02_icon01.png" alt="">
+										<p>관람시간 및 해설안내</p>
+									</div>
+									<img class="arrow" src="./image/right-arrow-w.png" alt="">
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#;">
+								<span>
+									<div><img src="./image/section02_icon02.png" alt="">
+										<p>공연 프로그램</p>
+									</div>
+									<img class="arrow" src="./image/right-arrow-w.png" alt="">
+								</span>
 
-									<img src="./image/right-arrow-w.png" alt="">
-								</span>
 							</a>
 						</li>
 						<li>
 							<a href="#;">
 								<span>
-									<div><img src="./image/section02_icon02.png" alt=""></div>
-									<p>공연 프로그램</p>
-								</span>
-							</a>
-						</li>
-						<li>
-							<a href="#;">
-								<span>
-									<div><img src="./image/section02_icon03.png" alt=""></div>
-									<p>함께 가 볼 만한 장소</p>
+									<div><img src="./image/section02_icon03.png" alt="">
+										<p>함께 가 볼 만한 장소</p>
+									</div>
+									<img class="arrow" src="./image/right-arrow-w.png" alt="">
 								</span>
 							</a>
 						</li>
 					</ul>
 				</div>
+		
+			
+				<div class="swiper swiper2">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="slide2-box">
+								<img src="./image/img_event_6.jpg" alt="">
+								<div class="text-box">
+									<h3>전국을 누리다</h3>
+									<p>
+										전국 청와대 유관장소(세종 대통령기록관, 청주 청남대,
+										합천 청와대세트장)에서도 청와대 개방을 기념하는 특별한
+										행사를 누릴 수 있습니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide2-box">
+								<img src="./image/img_event_1.jpg" alt="">
+								<div class="text-box">
+									<h3>약속을 담다</h3>
+									<p>
+										74년 만에 국민의 품으로 완전히 돌아오는 역사적인 순간을
+										축하하는 공연들을 청와대 본관 앞 대정원에 담아봅니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide2-box">
+								<img src="./image/img_event_2.jpg" alt="">
+								<div class="text-box">
+									<h3>희망을 나누다</h3>
+									<p>
+										푸른 잔디가 펼쳐진 녹지원과 춘추관 앞에서 즐거운
+										문화예술로 푸른 희망을 나눕니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide2-box">
+								<img src="./image/img_event_3.jpg" alt="">
+								<div class="text-box">
+									<h3>역사를 그리다</h3>
+									<p>
+										국빈을 맞이하던 영빈관과 왕의 어머니들을 기리는 칠궁에서
+										다양한 역사공연이 그려집니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide2-box">
+								<img src="./image/img_event_4.jpg" alt="">
+								<div class="text-box">
+									<h3>자연을 품다</h3>
+									<p>
+										경복궁에서 청와대를 거쳐 북악산으로 이어지는 아름다운
+										길을 걸으며 문화유산을 만나고 자연도 품어봅니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide2-box">
+								<img src="./image/img_event_5.jpg" alt="">
+								<div class="text-box">
+									<h3>문화를 펼치다</h3>
+									<p>
+										청와대 곳곳에서 남녀노소 함께 즐기는 문화체험 축제의
+										장이 펼쳐집니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide2-box">
+								<img src="./image/img_event_6.jpg" alt="">
+								<div class="text-box">
+									<h3>전국을 누리다</h3>
+									<p>
+										전국 청와대 유관장소(세종 대통령기록관, 청주 청남대,
+										합천 청와대세트장)에서도 청와대 개방을 기념하는 특별한
+										행사를 누릴 수 있습니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide2-box">
+								<img src="./image/img_event_1.jpg" alt="">
+								<div class="text-box">
+									<h3>약속을 담다</h3>
+									<p>
+										74년 만에 국민의 품으로 완전히 돌아오는 역사적인 순간을
+										축하하는 공연들을 청와대 본관 앞 대정원에 담아봅니다.
+									</p>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+					<div class="btn-box">
+						<a href="">
+							<img class="left-btn" src="./image/left-arrow-w.png" alt="">
+							<img class="right-btn" src="./image/right-arrow-w.png" alt="">
+						</a>
+					</div>
+				</div>
+
 			</div>
 		</section>
 		<section class="sect3">
-
+			<div class="inner-box">
+				<div class="text-box">
+					<h2 class="title">청와대에서 북악산까지</h2>
+					<p class="title-desc">
+						청와대의 완전한 개방으로 광화문에서부터 북악산까지 이어지는 길
+						위에서<br>
+						때로는 느긋하게 산책하고 휴식하고, 때로는 역사와 문화를
+						탐방하시기 바랍니다.
+					</p>
+				</div>
+				<ul class="mn-list">
+					<li class="">
+						<a href="#;">
+							<div><img src="./image/section3_thumb01.png" alt=""></div>
+							<p>등산로 유적 탐방하기</p>
+						</a>
+					</li>
+					<li class="on">
+						<a href="#;">
+							<div><img src="./image/section3_thumb03.png" alt=""></div>
+							<p>등산로 추천코스 살펴보기</p>
+						</a>
+					</li>
+					<li>
+						<a href="#;">
+							<div><img src="./img/section3_thumb03.png" alt=""></div>
+							<p>앱 다운로드</p>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</section>
 		<section class="sect4">
 
@@ -367,25 +550,75 @@
 	<footer>
 
 	</footer>
-	<script src="./index.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+	<script src="./splitText.js"></script>
+	<script src="./index.js"></script>
 	<!-- Initialize Swiper -->
 	<script>
+		gsap.registerEffect({
+			name: 'textEffect',
+			extendTimeline: true,
+			defaults: {
+				x: 100,
+				y: -50,
+				opacity: 0
+			},
+			//effect:(targer, config)
+			effect: (target, { x, y, opacity }) => {
+				const { chars } = new SplitText(target, { type: 'chars' });
+				const tl = gsap.timeline();
+
+				tl.from(chars, {
+					opacity: opacity,
+					x: x,
+					// scale:1.2,
+					duration: 1,
+					stagger: .01
+				})
+
+				tl.to(chars, {
+					delay: 2,
+					opacity: opacity,
+					y: y,
+					// duration:1,
+					stagger: .01
+				})
+				return tl
+			}
+		});
+
+		const tl = gsap.timeline({ repeat: -1 })
+		tl.textEffect('.text1')
+			.textEffect('.text2')
+			.textEffect('.text3')
+			.textEffect('.text4')
+			.textEffect('.text5')
+			.textEffect('.text6')
+			.textEffect('.text7')
+
+
+
 		var swiper = new Swiper(".mySwiper", {
 			spaceBetween: 30,
 			effect: "fade",
+			speed: 1000,
 			autoplay: {
-				delay: 2500,
+				delay: 3000,
 				disableOnInteraction: false,
 			},
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
+
 			pagination: {
 				el: ".swiper-pagination",
 				clickable: true,
+			},
+		});
+
+		var swiper2 = new Swiper(".swiper2", {
+			loop:true,
+			pagination: {
+				el: ".swiper-pagination",
 			},
 		});
 	</script>
