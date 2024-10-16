@@ -127,3 +127,57 @@ document.querySelector('.right-btn').addEventListener('click', function(e) {
     e.preventDefault();
     swiper2.slideNext();
 });
+
+const homenus = document.querySelectorAll('ul.mn-list li')
+
+function hremoveOnClass() {
+	homenus.forEach(function (item) {
+		item.classList.remove('on');
+	});
+}
+
+
+homenus.forEach(function(homenu){
+	homenu.addEventListener('mouseenter', function(){
+		hremoveOnClass()
+		homenu.classList.add('on')
+	})
+});
+
+homenus.forEach(function(homenu){
+	homenu.addEventListener('mouseleave', function(){
+		hremoveOnClass()
+		
+	})
+});
+
+
+const inUl=document.querySelector('.in-ul')
+
+const inboxs=document.querySelectorAll('.in-box')
+
+const prevBtn=document.querySelector('.prev-btn')
+const nextBtn=document.querySelector('.next-btn')
+let currentIndex=0;
+const totalSlides=inboxs.length;
+
+function updateSlide(){
+	inUl.computedStyleMap.marginLeft=`-${currentIndex * 25}%`;
+}
+
+prevBtn.addEventListener('click', (e)=>{
+	e.preventDefault()
+	if(currentIndex > 0){
+		currentIndex--;
+		updateSlide();
+	}
+})
+
+nextBtn.addEventListener('click', (e)=>{
+	e.preventDefault()
+	if(currentIndex<totalSlides-1){
+		currentIndex++;
+		updateSlide();
+	}
+
+})

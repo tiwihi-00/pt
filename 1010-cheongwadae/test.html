@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+main{
+	display: flex;
+	flex-wrap: wrap;
+}
+		section{
+			border: 1px solid #000;
+			padding: 50px;
+			width: 100%;
+		}
+		@media screen and (max-width:500px) {
+			section{
+		
+			}
+		}
+		@media screen and (min-width:501px) {
+			section{
+				width: 20%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main>
+		
+		<section>sect1</section>
+		<section>sect2</section>
+		<section>sect3</section>
+		<section>sect4</section>
+		<section>sect5</section>
+	</main>
+</body>
+</html>
