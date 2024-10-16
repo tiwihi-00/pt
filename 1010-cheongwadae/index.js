@@ -1,5 +1,5 @@
 const liElems = document.querySelectorAll('ul.main-ul li.main-menu')
-console.log(liElems)
+
 const sections = document.querySelectorAll('section')
 const footer = document.querySelector('footer')
 const sectLast = sections[sections.length - 1]
@@ -98,7 +98,7 @@ xbtn.addEventListener('click', function (e) {
 
 // 슬라이드 박스 클릭 시 이벤트
 const sliElems = document.querySelectorAll('.slide2-box');
-console.log(sliElems);
+
 
 // sliElems.forEach(function(sliElem, idx) {
 //     sliElem.addEventListener('click', function(e) {
@@ -108,24 +108,24 @@ console.log(sliElems);
 //             item.classList.remove('on');
 //         });
 
-        
+
 //         sliElem.classList.add('on');
 
-       
+
 //         swiper2.slideToLoop(idx, 500);
 //     });
 // });
 
 
-document.querySelector('.left-btn').addEventListener('click', function(e) {
-    e.preventDefault();
-    swiper2.slidePrev();
+document.querySelector('.left-btn').addEventListener('click', function (e) {
+	e.preventDefault();
+	swiper2.slidePrev();
 });
 
 
-document.querySelector('.right-btn').addEventListener('click', function(e) {
-    e.preventDefault();
-    swiper2.slideNext();
+document.querySelector('.right-btn').addEventListener('click', function (e) {
+	e.preventDefault();
+	swiper2.slideNext();
 });
 
 const homenus = document.querySelectorAll('ul.mn-list li')
@@ -137,47 +137,60 @@ function hremoveOnClass() {
 }
 
 
-homenus.forEach(function(homenu){
-	homenu.addEventListener('mouseenter', function(){
+homenus.forEach(function (homenu) {
+	homenu.addEventListener('mouseenter', function () {
 		hremoveOnClass()
 		homenu.classList.add('on')
 	})
 });
 
-homenus.forEach(function(homenu){
-	homenu.addEventListener('mouseleave', function(){
+homenus.forEach(function (homenu) {
+	homenu.addEventListener('mouseleave', function () {
 		hremoveOnClass()
-		
+
 	})
 });
 
 
-const inUl=document.querySelector('.in-ul')
+const inUl = document.querySelector('.in-ul')
 
-const inboxs=document.querySelectorAll('.in-box')
+const inboxs = document.querySelectorAll('.in-box')
 
-const prevBtn=document.querySelector('.prev-btn')
-const nextBtn=document.querySelector('.next-btn')
-let currentIndex=0;
-const totalSlides=inboxs.length;
+const prevBtn = document.querySelector('.prev-btn')
+const nextBtn = document.querySelector('.next-btn')
+let currentIndex = 0;
+const totalSlides = inboxs.length;
 
-function updateSlide(){
-	inUl.computedStyleMap.marginLeft=`-${currentIndex * 25}%`;
+function updateSlide() {
+	inUl.computedStyleMap.marginLeft = `-${currentIndex * 25}%`;
 }
 
-prevBtn.addEventListener('click', (e)=>{
+prevBtn.addEventListener('click', (e) => {
 	e.preventDefault()
-	if(currentIndex > 0){
+	if (currentIndex > 0) {
 		currentIndex--;
 		updateSlide();
 	}
 })
 
-nextBtn.addEventListener('click', (e)=>{
+nextBtn.addEventListener('click', (e) => {
 	e.preventDefault()
-	if(currentIndex<totalSlides-1){
+	if (currentIndex < totalSlides - 1) {
 		currentIndex++;
 		updateSlide();
 	}
 
+})
+
+$(document).ready(function () {
+	$('li.lilist a').click(function (e) {
+		e.preventDefault();
+		let href = $(this).attr('href')
+	
+		$('li.lilist a').removeClass('on');
+		$(this).addClass('on')
+
+		$('.content').removeClass('on');
+		$(href).addClass('on');
+	})
 })

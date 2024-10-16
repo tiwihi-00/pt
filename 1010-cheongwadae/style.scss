@@ -866,6 +866,7 @@ section {
 						transition: .35s;
 						color: white;
 
+						
 						&:hover {
 							background-color: rgba(200, 83, 254, 0.5);
 						}
@@ -874,6 +875,10 @@ section {
 							display: block;
 							padding: 20px;
 							transition: .35s;
+							&.on {
+								background-color: #e33a56;
+							}
+	
 						}
 					}
 				}
@@ -894,14 +899,16 @@ section {
 						z-index: -1;
 						opacity: 0;
 						transition: .35s;
+
 						&.on {
 							z-index: 1;
 							opacity: 1;
 						}
+
 						.inner-box {
 							position: relative;
 							width: calc(100% - 60px);
-							// overflow: hidden;
+
 							height: 440px;
 
 							.in-ul {
@@ -910,6 +917,8 @@ section {
 								align-items: flex-start;
 								width: 100%;
 								flex-wrap: wrap;
+								gap: 40px;
+
 
 								a {
 
@@ -981,8 +990,7 @@ section {
 							}
 						}
 
-						&#review {
-							
+						&#review, &#news {
 
 							.in-ul {
 								gap: 40px;
@@ -995,6 +1003,7 @@ section {
 									background-color: white;
 									overflow: hidden;
 									transition: .35s;
+
 
 									a {
 										display: block;
@@ -1013,6 +1022,7 @@ section {
 											height: 250px;
 
 											img {
+
 												object-fit: cover;
 												object-position: center;
 												position: absolute;
@@ -1093,6 +1103,61 @@ section {
 								}
 							}
 						}
+
+						&#photo,
+						&#video {
+							.inner-box {
+								.in-ul {
+									flex-wrap: wrap;
+
+									.in-box {
+										overflow: hidden;
+										position: relative;
+										width: 100%;
+										height: 50%;
+
+										a {
+											width: 100%;
+											height: 100%;
+
+											&:hover img {
+												transform: scale(1.5);
+											}
+
+											&:hover p {
+												opacity: 1;
+											}
+
+											img {
+												object-fit: cover;
+												object-position: center;
+												display: block;
+												min-height: initial;
+											}
+
+											p {
+												position: absolute;
+												display: block;
+												z-index: 2;
+												left: 0;
+												bottom: 0;
+												color: white;
+												width: 100%;
+												padding: 15px 20px;
+												background-color: rgba(0, 0, 0, .4);
+												font-size: 13px;
+												font-family: scdream5;
+												transition: .35s;
+												overflow: hidden;
+												text-overflow: ellipsis;
+												white-space: nowrap;
+												opacity: 0;
+											}
+										}
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -1123,7 +1188,7 @@ section {
 					right: 0;
 					top: 0;
 					width: 100%;
-				
+
 					opacity: 0;
 				}
 			}
@@ -1364,16 +1429,48 @@ section {
 				.contents-box {
 					.contents-wrap {
 						.content {
-							&#review {
+							&#review, &#news {
 								.inner-box {
-
 									.in-ul {
 										width: 90%;
 										display: flex;
 										flex-direction: row;
 										position: relative;
+
 										.in-box {
 											width: 46%;
+										}
+									}
+								}
+							}
+
+							&#photo,
+							&#video {
+								.inner-box {
+									.in-ul {
+										width: 100%;
+										height: 100%;
+
+										.in-box {
+											width: 43%;
+											height: 100%;
+
+											a {
+												width: 100%;
+												height: 100%;
+												overflow: hidden;
+
+												img {
+													width: 100%;
+													height: 100%;
+													object-fit: cover;
+													object-position: center;
+
+													p {
+														width: 43%;
+													}
+												}
+											}
 										}
 									}
 								}
@@ -1482,12 +1579,56 @@ section {
 				.contents-box {
 					.contents-wrap {
 						.content {
-							&#review {
+							&#review,  &#news {
 								.inner-box {
 									.in-ul {
-										
 										.in-box {
 											width: 100%;
+											height: 100%;
+
+											a {
+												position: relative;
+												display: block;
+												width: 100%;
+												min-height: 200px;
+
+												.text-box {
+													p {
+														-webkit-line-clamp: 3;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+
+							&#photo,
+							&#video {
+								.inner-box {
+									.in-ul {
+										width: 100%;
+										height: 100%;
+
+										.in-box {
+											height: 100%;
+											width: 100%;
+
+											a {
+												height: 100%;
+												width: 100%;
+
+												img {
+													height: 100%;
+													width: 100%;
+													object-fit: cover;
+													display: block;
+													transform-origin: center;
+
+
+												}
+
+											}
 										}
 									}
 								}
@@ -1639,6 +1780,34 @@ section {
 
 										.in-box {
 											width: 22%;
+										}
+									}
+								}
+							}
+
+							&#photo,
+							&#video {
+								.inner-box {
+									.in-ul {
+										width: 100%;
+										flex-wrap: wrap;
+										gap: 20px;
+
+										.in-box {
+											width: 20%;
+
+											a {
+												width: 100%;
+												height: 100%;
+												overflow: hidden;
+
+												img {
+													width: 100%;
+													object-fit: cover;
+													height: 100%;
+
+												}
+											}
 										}
 									}
 								}

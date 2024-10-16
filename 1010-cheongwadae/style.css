@@ -717,6 +717,9 @@ section.sect4 .inner-box .contents-box .contents-list .lilist a {
   padding: 20px;
   transition: 0.35s;
 }
+section.sect4 .inner-box .contents-box .contents-list .lilist a.on {
+  background-color: #e33a56;
+}
 section.sect4 .inner-box .contents-box .contents-wrap {
   position: relative;
   display: flex;
@@ -749,6 +752,7 @@ section.sect4 .inner-box .contents-box .contents-wrap .content .inner-box .in-ul
   align-items: flex-start;
   width: 100%;
   flex-wrap: wrap;
+  gap: 40px;
 }
 section.sect4 .inner-box .contents-box .contents-wrap .content .inner-box .in-ul a:hover .img-box img {
   transform: translate(-50%, -50%) scale(1.2);
@@ -799,11 +803,11 @@ section.sect4 .inner-box .contents-box .contents-wrap .content .etc-btn span::af
 section.sect4 .inner-box .contents-box .contents-wrap .content .etc-btn:hover {
   background-color: rgba(200, 83, 254, 0.5);
 }
-section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul {
+section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul, section.sect4 .inner-box .contents-box .contents-wrap .content#news .in-ul {
   gap: 40px;
   transition: 0.35s;
 }
-section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box {
+section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box, section.sect4 .inner-box .contents-box .contents-wrap .content#news .in-ul .in-box {
   display: block;
   width: 45%;
   border-radius: 10px 10px 0 0;
@@ -811,22 +815,22 @@ section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in
   overflow: hidden;
   transition: 0.35s;
 }
-section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a {
+section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a, section.sect4 .inner-box .contents-box .contents-wrap .content#news .in-ul .in-box a {
   display: block;
   color: #313f4e;
   font-family: scdream4;
   font-size: 15px;
 }
-section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a:hover .img-box img {
+section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a:hover .img-box img, section.sect4 .inner-box .contents-box .contents-wrap .content#news .in-ul .in-box a:hover .img-box img {
   transform: translate(-50%, -50%) scale(1.2);
 }
-section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a .img-box {
+section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a .img-box, section.sect4 .inner-box .contents-box .contents-wrap .content#news .in-ul .in-box a .img-box {
   position: relative;
   overflow: hidden;
   width: 100%;
   height: 250px;
 }
-section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a .img-box img {
+section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a .img-box img, section.sect4 .inner-box .contents-box .contents-wrap .content#news .in-ul .in-box a .img-box img {
   object-fit: cover;
   object-position: center;
   position: absolute;
@@ -836,14 +840,14 @@ section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in
   min-height: 100%;
   transition: 0.35s;
 }
-section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a .text-box {
+section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a .text-box, section.sect4 .inner-box .contents-box .contents-wrap .content#news .in-ul .in-box a .text-box {
   width: 100%;
   height: 140px;
   padding: 20px;
   margin-top: 15px;
   transition: 0.35s;
 }
-section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a .text-box ul {
+section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a .text-box ul, section.sect4 .inner-box .contents-box .contents-wrap .content#news .in-ul .in-box a .text-box ul {
   display: flex;
   justify-content: space-between;
   font-size: 13px;
@@ -851,11 +855,11 @@ section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in
   margin-bottom: 20px;
   padding: 0 10px;
 }
-section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a .text-box ul li span {
+section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a .text-box ul li span, section.sect4 .inner-box .contents-box .contents-wrap .content#news .in-ul .in-box a .text-box ul li span {
   position: relative;
   margin-left: 20px;
 }
-section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a .text-box ul li span::before {
+section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a .text-box ul li span::before, section.sect4 .inner-box .contents-box .contents-wrap .content#news .in-ul .in-box a .text-box ul li span::before {
   font-family: xeicon;
   position: absolute;
   display: block;
@@ -864,13 +868,13 @@ section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in
   transform: translateY(-50%);
   font-size: 22px;
 }
-section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a .text-box ul li.name span::before {
+section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a .text-box ul li.name span::before, section.sect4 .inner-box .contents-box .contents-wrap .content#news .in-ul .in-box a .text-box ul li.name span::before {
   content: "\e9f5";
 }
-section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a .text-box ul li.date span::before {
+section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a .text-box ul li.date span::before, section.sect4 .inner-box .contents-box .contents-wrap .content#news .in-ul .in-box a .text-box ul li.date span::before {
   content: "\e9a2";
 }
-section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a .text-box p {
+section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in-box a .text-box p, section.sect4 .inner-box .contents-box .contents-wrap .content#news .in-ul .in-box a .text-box p {
   font-size: 14px;
   height: 60px;
   overflow: hidden;
@@ -879,6 +883,49 @@ section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+}
+section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul {
+  flex-wrap: wrap;
+}
+section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul .in-box, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul .in-box {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul .in-box a, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul .in-box a {
+  width: 100%;
+  height: 100%;
+}
+section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul .in-box a:hover img, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul .in-box a:hover img {
+  transform: scale(1.5);
+}
+section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul .in-box a:hover p, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul .in-box a:hover p {
+  opacity: 1;
+}
+section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul .in-box a img, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul .in-box a img {
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  min-height: initial;
+}
+section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul .in-box a p, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul .in-box a p {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 13px;
+  font-family: scdream5;
+  transition: 0.35s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -1075,14 +1122,36 @@ section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in
   section.sect4 .inner-box .title {
     font-size: 50px;
   }
-  section.sect4 .inner-box .contents-box .contents-wrap .content#review .inner-box .in-ul {
+  section.sect4 .inner-box .contents-box .contents-wrap .content#review .inner-box .in-ul, section.sect4 .inner-box .contents-box .contents-wrap .content#news .inner-box .in-ul {
     width: 90%;
     display: flex;
     flex-direction: row;
     position: relative;
   }
-  section.sect4 .inner-box .contents-box .contents-wrap .content#review .inner-box .in-ul .in-box {
+  section.sect4 .inner-box .contents-box .contents-wrap .content#review .inner-box .in-ul .in-box, section.sect4 .inner-box .contents-box .contents-wrap .content#news .inner-box .in-ul .in-box {
     width: 46%;
+  }
+  section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul {
+    width: 100%;
+    height: 100%;
+  }
+  section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul .in-box, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul .in-box {
+    width: 43%;
+    height: 100%;
+  }
+  section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul .in-box a, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul .in-box a {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul .in-box a img, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul .in-box a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul .in-box a img p, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul .in-box a img p {
+    width: 43%;
   }
   section.sect4 .inner-box .contents-box .contents-wrap .content .btn-box {
     z-index: 100;
@@ -1151,8 +1220,37 @@ section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in
   section.sect4 .inner-box .contents-box .contents-list .lilist {
     width: 45%;
   }
-  section.sect4 .inner-box .contents-box .contents-wrap .content#review .inner-box .in-ul .in-box {
+  section.sect4 .inner-box .contents-box .contents-wrap .content#review .inner-box .in-ul .in-box, section.sect4 .inner-box .contents-box .contents-wrap .content#news .inner-box .in-ul .in-box {
     width: 100%;
+    height: 100%;
+  }
+  section.sect4 .inner-box .contents-box .contents-wrap .content#review .inner-box .in-ul .in-box a, section.sect4 .inner-box .contents-box .contents-wrap .content#news .inner-box .in-ul .in-box a {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 200px;
+  }
+  section.sect4 .inner-box .contents-box .contents-wrap .content#review .inner-box .in-ul .in-box a .text-box p, section.sect4 .inner-box .contents-box .contents-wrap .content#news .inner-box .in-ul .in-box a .text-box p {
+    -webkit-line-clamp: 3;
+  }
+  section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul {
+    width: 100%;
+    height: 100%;
+  }
+  section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul .in-box, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul .in-box {
+    height: 100%;
+    width: 100%;
+  }
+  section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul .in-box a, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul .in-box a {
+    height: 100%;
+    width: 100%;
+  }
+  section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul .in-box a img, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul .in-box a img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    transform-origin: center;
   }
 }
 @media screen and (min-width: 769px) {
@@ -1244,5 +1342,23 @@ section.sect4 .inner-box .contents-box .contents-wrap .content#review .in-ul .in
   }
   section.sect4 .inner-box .contents-box .contents-wrap .content#review .inner-box ul .in-box {
     width: 22%;
+  }
+  section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul .in-box, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul .in-box {
+    width: 20%;
+  }
+  section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul .in-box a, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul .in-box a {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  section.sect4 .inner-box .contents-box .contents-wrap .content#photo .inner-box .in-ul .in-box a img, section.sect4 .inner-box .contents-box .contents-wrap .content#video .inner-box .in-ul .in-box a img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
   }
 }
