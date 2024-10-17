@@ -152,35 +152,35 @@ homenus.forEach(function (homenu) {
 });
 
 
-const inUl = document.querySelector('.in-ul')
+// const inUl = document.querySelector('.in-ul')
 
-const inboxs = document.querySelectorAll('.in-box')
+// const inboxs = document.querySelectorAll('.in-box')
 
-const prevBtn = document.querySelector('.prev-btn')
-const nextBtn = document.querySelector('.next-btn')
-let currentIndex = 0;
-const totalSlides = inboxs.length;
+// const prevBtn = document.querySelector('.prev-btn')
+// const nextBtn = document.querySelector('.next-btn')
+// let currentIndex = 0;
+// const totalSlides = inboxs.length;
 
-function updateSlide() {
-	inUl.computedStyleMap.marginLeft = `-${currentIndex * 25}%`;
-}
+// function updateSlide() {
+// 	inUl.computedStyleMap.marginLeft = `-${currentIndex * 25}%`;
+// }
 
-prevBtn.addEventListener('click', (e) => {
-	e.preventDefault()
-	if (currentIndex > 0) {
-		currentIndex--;
-		updateSlide();
-	}
-})
+// prevBtn.addEventListener('click', (e) => {
+// 	e.preventDefault()
+// 	if (currentIndex > 0) {
+// 		currentIndex--;
+// 		updateSlide();
+// 	}
+// })
 
-nextBtn.addEventListener('click', (e) => {
-	e.preventDefault()
-	if (currentIndex < totalSlides - 1) {
-		currentIndex++;
-		updateSlide();
-	}
+// nextBtn.addEventListener('click', (e) => {
+// 	e.preventDefault()
+// 	if (currentIndex < totalSlides - 1) {
+// 		currentIndex++;
+// 		updateSlide();
+// 	}
 
-})
+// })
 
 $(document).ready(function () {
 	$('li.lilist a').click(function (e) {
@@ -190,7 +190,9 @@ $(document).ready(function () {
 		$('li.lilist a').removeClass('on');
 		$(this).addClass('on')
 
-		$('.content').removeClass('on');
+		
+		$('.tab').removeClass('on');
 		$(href).addClass('on');
+		
 	})
 })

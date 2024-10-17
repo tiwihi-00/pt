@@ -1,0 +1,158 @@
+@import url(../reset.css);
+@import url(../font/font.css);
+
+section {
+	height: 100vh;
+
+	&.main-visual-sec {
+		position: relative;
+
+		.split-Box {
+			width: 100%;
+			height: 100%;
+
+			.word {
+				z-index: 100;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+
+				.slide {
+					width: 100%;
+					height: 100%;
+					left: 0;
+					top: 0;
+					position: absolute;
+
+					.desc {
+						color: white;
+						position: absolute;
+						font-family: YES24MyoungjoB;
+						left: 50%;
+						top: 50%;
+						font-size: 2rem;
+						transform: translate(-50%, -50%);
+					}
+
+					&.slide1 {
+
+						.desc {
+							text-align: center;
+							line-height: 1;
+
+							p {
+								font-size: 18px;
+							}
+
+							h3 {
+								font-size: 35px;
+							}
+						}
+
+					}
+
+					&.slide2 {
+
+						.desc {
+							text-align: left;
+							left: 20%;
+
+							p {
+								font-size: 23px;
+								line-height: 1.8;
+							}
+						}
+					}
+
+					&.slide3 {
+						.desc {
+							top: 30%;
+						}
+					}
+
+
+				}
+			}
+
+			.bg {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+
+				.slide {
+					width: 100%;
+					height: 100%;
+					left: 0;
+					top: 0;
+					position: absolute;
+
+					&.slide1 {
+						background-image: url(./image/v_img01_sdown.jpg);
+
+					}
+
+					&.slide2 {
+						background-image: url(./image/v_img02.jpg);
+
+					}
+
+					&.slide3 {
+						background-image: url(./image/v_img03.jpg);
+
+					}
+
+					&.slide4 {
+						background-image: url(./image/v_img04.jpg);
+					}
+
+					&.slide5 {
+						background-image: url(./image/v_img05.jpg);
+					}
+
+					&.slide6 {
+						background-image: url(./image/v_img06.jpg);
+					}
+
+					&.slide7 {
+						background-image: url(./image/v_img07.jpg);
+					}
+				}
+			}
+
+
+
+		}
+	}
+
+
+}
+@media screen and (max-width:768px) {
+	
+
+	section {
+		&.main-visual-sec {
+			.swiper-wrapper {
+				.swiper-slide {
+					background-position: center;
+					background-size: cover;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:500px) {
+	
+}
+
+
+
+@media screen and (min-width:769px) {
+	
+
+	
+}

@@ -1,0 +1,379 @@
+@import url(../reset.css);
+@import url(../font/font.css);
+header {
+  position: fixed;
+  width: 100%;
+  height: 110px;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+header .header-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 15px;
+  font-size: 13px;
+  font-family: scdream4;
+}
+header .header-box:hover {
+  background-color: rgba(253, 253, 253, 0.7);
+}
+header .header-box:hover .main-box {
+  color: #313f4e;
+}
+header .header-box:hover h1 a .logo-w {
+  z-index: -1;
+  opacity: 0;
+}
+header .header-box:hover h1 a .logo-b {
+  z-index: 1;
+  opacity: 1;
+}
+header .header-box:hover .gnb {
+  color: #313f4e;
+}
+header .header-box:hover .gnb li.btn {
+  background-color: #313f4e;
+}
+header .header-box:hover .gnb li.btn::after {
+  background-color: #313f4e;
+}
+header .header-box:hover .gnb li.btn::before {
+  background-color: #313f4e;
+}
+header .header-box h1 {
+  position: relative;
+  display: block;
+  width: 300px;
+  height: 40px;
+}
+header .header-box h1 a .logo-w {
+  z-index: 1;
+  opacity: 1;
+}
+header .header-box h1 a .logo-b {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.35s;
+}
+header .header-box h1 a img {
+  position: absolute;
+  width: 100%;
+}
+header .header-box .main-box {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  gap: 50px;
+  font-size: 15px;
+  font-family: scdream6;
+  color: #fff;
+}
+header .header-box .main-box nav {
+  width: 100%;
+}
+header .header-box .main-box nav ul.main-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+}
+header ul.gnb {
+  display: flex;
+  color: #fff;
+  font-family: scdream5;
+  font-size: 20px;
+}
+header ul.gnb li.btn {
+  margin-left: 20px;
+  position: relative;
+  top: 12px;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
+header ul.gnb li.btn:hover::before {
+  width: 10px;
+}
+header ul.gnb li.btn:hover::after {
+  width: 20px;
+}
+header ul.gnb li.btn::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  top: -8px;
+  left: 0;
+}
+header ul.gnb li.btn::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  top: 8px;
+  left: 0;
+}
+header ul.gnb li.btn a {
+  width: 50px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+header .sitemap-box {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.35s;
+}
+header .sitemap-box.on {
+  right: 0;
+  z-index: 50;
+  opacity: 1;
+}
+header .sitemap-box .inner-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+header .sitemap-box .inner-box .visual-box {
+  width: 100%;
+  height: auto;
+  color: white;
+  background: #313f4e;
+  padding: 15px 10px;
+}
+header .sitemap-box .inner-box .visual-box h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 18px;
+  font-family: scdream6;
+}
+header .sitemap-box .inner-box .visual-box h2 p {
+  padding-left: 15px;
+}
+header .sitemap-box .inner-box .mn-box {
+  width: 100%;
+  position: initial;
+  padding: initial;
+  justify-content: left;
+  align-items: flex-start;
+}
+header .sitemap-box .inner-box .mn-box .close-map-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  transition: 0.35s;
+}
+header .sitemap-box .inner-box .mn-box .close-map-btn:hover {
+  transform: rotate(180deg);
+}
+header .sitemap-box .inner-box .mn-box .close-map-btn span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+}
+header .sitemap-box .inner-box .mn-box .close-map-btn span::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transform: rotate(90deg);
+}
+header .sitemap-box .inner-box .mn-box .close-map-btn span.indent9999 {
+  display: block;
+  text-indent: -9999px;
+  font-size: 0px;
+}
+header .sitemap-box .inner-box .mn-box .sitemap-nav {
+  padding: 20px;
+  font-family: scdream5;
+  color: #333;
+}
+header .sitemap-box .inner-box .mn-box .sitemap-nav .main-mn {
+  width: 100%;
+  height: auto;
+  line-height: 40px;
+  transition: 0.35s;
+}
+header .sitemap-box .inner-box .mn-box .sitemap-nav .main-mn.on div {
+  background-color: #e33a56;
+  color: #fff;
+}
+header .sitemap-box .inner-box .mn-box .sitemap-nav .main-mn.on div .mn-updown-btn span {
+  border-color: #fff;
+  transform: rotate(225deg);
+}
+header .sitemap-box .inner-box .mn-box .sitemap-nav .main-mn.on ul.sub-mn {
+  max-height: 600px;
+  background-color: #f4f4f4;
+  color: #777;
+  pointer-events: initial;
+  padding: 10px;
+}
+header .sitemap-box .inner-box .mn-box .sitemap-nav .main-mn div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.35s;
+}
+header .sitemap-box .inner-box .mn-box .sitemap-nav .main-mn div a {
+  display: block;
+  padding: 5px 10px;
+}
+header .sitemap-box .inner-box .mn-box .sitemap-nav .main-mn div .mn-updown-btn {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 5px 10px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+header .sitemap-box .inner-box .mn-box .sitemap-nav .main-mn div .mn-updown-btn span {
+  width: 100%;
+  height: 100%;
+  border-width: 0 2.5px 2.5px 0;
+  border-style: solid;
+  border-color: #ccc;
+  transform: rotate(45deg);
+  transition: 0.35s;
+}
+header .sitemap-box .inner-box .mn-box .sitemap-nav .main-mn div .mn-updown-btn span.indent9999 {
+  display: block;
+  text-indent: -9999px;
+  font-size: 0px;
+}
+header .sitemap-box .inner-box .mn-box .sitemap-nav .main-mn ul.sub-mn {
+  font-size: 15px;
+  margin-top: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+header .sitemap-box .inner-box .mn-box .sitemap-nav .main-mn ul.sub-mn li {
+  padding: 5px 20px;
+  position: relative;
+}
+header .sitemap-box .inner-box .mn-box .sitemap-nav .main-mn ul.sub-mn li::before {
+  position: absolute;
+  content: "";
+  left: 5px;
+  top: 22px;
+  width: 5px;
+  height: 5px;
+  background-color: #777;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 70px;
+    position: fixed;
+  }
+  header .header-box {
+    position: relative;
+  }
+  header .header-box h1 a {
+    width: 240px;
+    height: 30px;
+  }
+  header .header-box .main-box nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+  }
+  header ul.gnb {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+  }
+}
+@media screen and (min-width: 769px) {
+  header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+  }
+  header .header-box h1 a {
+    width: 200px;
+    height: 25px;
+  }
+  header .header-box .main-box {
+    transition: 0.35s;
+  }
+  header .header-box .main-box nav {
+    width: 100%;
+  }
+  header .header-box .main-box nav ul.main-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+  }
+  header .header-box .main-box nav ul.main-ul li.main-menu {
+    position: relative;
+    flex-shrink: 0;
+  }
+  header .header-box .main-box nav ul.main-ul li.main-menu.on ul.sub-menu {
+    z-index: 5;
+    opacity: 1;
+    max-height: initial;
+  }
+  header .header-box .main-box nav ul.main-ul li.main-menu ul.sub-menu {
+    position: absolute;
+    display: block;
+    width: 100%;
+    min-width: 180px;
+    max-height: 0;
+    overflow: hidden;
+    top: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: 0;
+    background-color: rgba(134, 42, 191, 0.8);
+    text-align: center;
+    font-size: 15px;
+    font-family: scdream3;
+    padding: 15px 10px;
+    border-radius: 10px;
+    transition: 0.25s;
+    color: #fff;
+    line-height: 2;
+  }
+  header .sitemap-box {
+    width: 70%;
+  }
+}
