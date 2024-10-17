@@ -965,18 +965,64 @@ section {
 					height: 100%;
 
 					.tab {
-						position: relative;
+						// position: relative;
 						z-index: -1;
 						opacity: 0;
-						
+
 						transition: .35s;
-						max-height: 550px;
+						// max-height: 550px;
 						height: 100%;
 
 						&.on {
 							z-index: 100;
 							opacity: 1;
-							
+
+						}
+
+						.swiper {
+							.in-ul {
+								.in-box {
+									position: relative;
+									overflow: hidden;
+
+									a {
+
+										overflow: hidden;
+
+										&:hover img {
+											transform: scale(1.2);
+										}
+
+										&:hover p {
+											opacity: 1;
+										}
+
+										img {
+											width: 100%;
+											height: 100%;
+										}
+
+										.lip {
+											position: absolute;
+											display: block;
+											z-index: 2;
+											left: 0;
+											bottom: 0;
+											color: white;
+											width: 100%;
+											padding: 15px 20px;
+											background-color: rgba(0, 0, 0, .4);
+											font-size: 13px;
+											font-family: scdream5;
+											transition: .35s;
+											overflow: hidden;
+											text-overflow: ellipsis;
+											white-space: nowrap;
+											opacity: 0;
+										}
+									}
+								}
+							}
 						}
 
 						&#review {
@@ -987,6 +1033,7 @@ section {
 							top: 0;
 							overflow: hidden;
 							transition: .35s;
+							z-index: 10;
 
 							.in-ul {
 								width: 100%;
@@ -1117,60 +1164,20 @@ section {
 							position: absolute;
 							width: 100%;
 							height: 100%;
-							max-height: 550px;
+							// max-height: 550px;
 							left: 0;
 							top: 0;
 							overflow: hidden;
 							transition: .35s;
 
-							.in-box {
-								position: relative;
-								overflow: hidden;
 
-								a {
-
-									overflow: hidden;
-
-									&:hover img {
-										transform: scale(1.2);
-									}
-
-									&:hover p {
-										opacity: 1;
-									}
-
-									img {
-										width: 100%;
-										height: 100%;
-									}
-
-									p {
-										position: absolute;
-										display: block;
-										z-index: 2;
-										left: 0;
-										bottom: 0;
-										color: white;
-										width: 100%;
-										padding: 15px 20px;
-										background-color: rgba(0, 0, 0, .4);
-										font-size: 13px;
-										font-family: scdream5;
-										transition: .35s;
-										overflow: hidden;
-										text-overflow: ellipsis;
-										white-space: nowrap;
-										opacity: 0;
-									}
-								}
-							}
 						}
 
 						&#photo {
 							position: absolute;
 							width: 100%;
 							height: 100%;
-							max-height: 550px;
+							// max-height: 550px;
 							left: 0;
 							top: 0;
 							overflow: hidden;
@@ -1180,52 +1187,12 @@ section {
 								flex-wrap: wrap;
 								flex-direction: row;
 
-								.in-box {
-									position: relative;
-									overflow: hidden;
 
-									a {
-
-										overflow: hidden;
-
-										&:hover img {
-											transform: scale(1.2);
-										}
-
-										&:hover p {
-											opacity: 1;
-										}
-
-										img {
-											width: 100%;
-											height: 100%;
-										}
-
-										p {
-											position: absolute;
-											display: block;
-											z-index: 2;
-											left: 0;
-											bottom: 0;
-											color: white;
-											width: 100%;
-											padding: 15px 20px;
-											background-color: rgba(0, 0, 0, .4);
-											font-size: 13px;
-											font-family: scdream5;
-											transition: .35s;
-											overflow: hidden;
-											text-overflow: ellipsis;
-											white-space: nowrap;
-											opacity: 0;
-										}
-									}
-								}
 							}
 						}
 
 						&#news {
-							position: absolute;
+							// position: absolute;
 							left: 0;
 							top: 0;
 							width: 100%;
@@ -1234,47 +1201,7 @@ section {
 
 							transition: .35s;
 
-							.in-box {
-								position: relative;
-								overflow: hidden;
 
-								a {
-
-									overflow: hidden;
-
-									&:hover img {
-										transform: scale(1.2);
-									}
-
-									&:hover p {
-										opacity: 1;
-									}
-
-									img {
-										width: 100%;
-										height: 100%;
-									}
-
-									p {
-										position: absolute;
-										display: block;
-										z-index: 2;
-										left: 0;
-										bottom: 0;
-										color: white;
-										width: 100%;
-										padding: 15px 20px;
-										background-color: rgba(0, 0, 0, .4);
-										font-size: 13px;
-										font-family: scdream5;
-										transition: .35s;
-										overflow: hidden;
-										text-overflow: ellipsis;
-										white-space: nowrap;
-										opacity: 0;
-									}
-								}
-							}
 						}
 
 
@@ -1287,7 +1214,12 @@ section {
 
 	}
 }
-
+footer{
+	width: 100%;
+	height: 25vh;
+	background-color: black;
+	color: white;
+}
 
 @media screen and (max-width:768px) {
 	header {

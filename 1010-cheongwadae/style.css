@@ -782,16 +782,49 @@ section.sect4 .inner-box .contents-box .contents-wrap {
   height: 100%;
 }
 section.sect4 .inner-box .contents-box .contents-wrap .tab {
-  position: relative;
   z-index: -1;
   opacity: 0;
   transition: 0.35s;
-  max-height: 550px;
   height: 100%;
 }
 section.sect4 .inner-box .contents-box .contents-wrap .tab.on {
   z-index: 100;
   opacity: 1;
+}
+section.sect4 .inner-box .contents-box .contents-wrap .tab .swiper .in-ul .in-box {
+  position: relative;
+  overflow: hidden;
+}
+section.sect4 .inner-box .contents-box .contents-wrap .tab .swiper .in-ul .in-box a {
+  overflow: hidden;
+}
+section.sect4 .inner-box .contents-box .contents-wrap .tab .swiper .in-ul .in-box a:hover img {
+  transform: scale(1.2);
+}
+section.sect4 .inner-box .contents-box .contents-wrap .tab .swiper .in-ul .in-box a:hover p {
+  opacity: 1;
+}
+section.sect4 .inner-box .contents-box .contents-wrap .tab .swiper .in-ul .in-box a img {
+  width: 100%;
+  height: 100%;
+}
+section.sect4 .inner-box .contents-box .contents-wrap .tab .swiper .in-ul .in-box a .lip {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 13px;
+  font-family: scdream5;
+  transition: 0.35s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0;
 }
 section.sect4 .inner-box .contents-box .contents-wrap .tab#review {
   position: absolute;
@@ -801,6 +834,7 @@ section.sect4 .inner-box .contents-box .contents-wrap .tab#review {
   top: 0;
   overflow: hidden;
   transition: 0.35s;
+  z-index: 10;
 }
 section.sect4 .inner-box .contents-box .contents-wrap .tab#review .in-ul {
   width: 100%;
@@ -896,52 +930,15 @@ section.sect4 .inner-box .contents-box .contents-wrap .tab#video {
   position: absolute;
   width: 100%;
   height: 100%;
-  max-height: 550px;
   left: 0;
   top: 0;
   overflow: hidden;
   transition: 0.35s;
 }
-section.sect4 .inner-box .contents-box .contents-wrap .tab#video .in-box {
-  position: relative;
-  overflow: hidden;
-}
-section.sect4 .inner-box .contents-box .contents-wrap .tab#video .in-box a {
-  overflow: hidden;
-}
-section.sect4 .inner-box .contents-box .contents-wrap .tab#video .in-box a:hover img {
-  transform: scale(1.2);
-}
-section.sect4 .inner-box .contents-box .contents-wrap .tab#video .in-box a:hover p {
-  opacity: 1;
-}
-section.sect4 .inner-box .contents-box .contents-wrap .tab#video .in-box a img {
-  width: 100%;
-  height: 100%;
-}
-section.sect4 .inner-box .contents-box .contents-wrap .tab#video .in-box a p {
-  position: absolute;
-  display: block;
-  z-index: 2;
-  left: 0;
-  bottom: 0;
-  color: white;
-  width: 100%;
-  padding: 15px 20px;
-  background-color: rgba(0, 0, 0, 0.4);
-  font-size: 13px;
-  font-family: scdream5;
-  transition: 0.35s;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  opacity: 0;
-}
 section.sect4 .inner-box .contents-box .contents-wrap .tab#photo {
   position: absolute;
   width: 100%;
   height: 100%;
-  max-height: 550px;
   left: 0;
   top: 0;
   overflow: hidden;
@@ -951,43 +948,7 @@ section.sect4 .inner-box .contents-box .contents-wrap .tab#photo .swiper-grid-co
   flex-wrap: wrap;
   flex-direction: row;
 }
-section.sect4 .inner-box .contents-box .contents-wrap .tab#photo .swiper-grid-column > .swiper-wrapper .in-box {
-  position: relative;
-  overflow: hidden;
-}
-section.sect4 .inner-box .contents-box .contents-wrap .tab#photo .swiper-grid-column > .swiper-wrapper .in-box a {
-  overflow: hidden;
-}
-section.sect4 .inner-box .contents-box .contents-wrap .tab#photo .swiper-grid-column > .swiper-wrapper .in-box a:hover img {
-  transform: scale(1.2);
-}
-section.sect4 .inner-box .contents-box .contents-wrap .tab#photo .swiper-grid-column > .swiper-wrapper .in-box a:hover p {
-  opacity: 1;
-}
-section.sect4 .inner-box .contents-box .contents-wrap .tab#photo .swiper-grid-column > .swiper-wrapper .in-box a img {
-  width: 100%;
-  height: 100%;
-}
-section.sect4 .inner-box .contents-box .contents-wrap .tab#photo .swiper-grid-column > .swiper-wrapper .in-box a p {
-  position: absolute;
-  display: block;
-  z-index: 2;
-  left: 0;
-  bottom: 0;
-  color: white;
-  width: 100%;
-  padding: 15px 20px;
-  background-color: rgba(0, 0, 0, 0.4);
-  font-size: 13px;
-  font-family: scdream5;
-  transition: 0.35s;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  opacity: 0;
-}
 section.sect4 .inner-box .contents-box .contents-wrap .tab#news {
-  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -995,40 +956,12 @@ section.sect4 .inner-box .contents-box .contents-wrap .tab#news {
   overflow: hidden;
   transition: 0.35s;
 }
-section.sect4 .inner-box .contents-box .contents-wrap .tab#news .in-box {
-  position: relative;
-  overflow: hidden;
-}
-section.sect4 .inner-box .contents-box .contents-wrap .tab#news .in-box a {
-  overflow: hidden;
-}
-section.sect4 .inner-box .contents-box .contents-wrap .tab#news .in-box a:hover img {
-  transform: scale(1.2);
-}
-section.sect4 .inner-box .contents-box .contents-wrap .tab#news .in-box a:hover p {
-  opacity: 1;
-}
-section.sect4 .inner-box .contents-box .contents-wrap .tab#news .in-box a img {
+
+footer {
   width: 100%;
-  height: 100%;
-}
-section.sect4 .inner-box .contents-box .contents-wrap .tab#news .in-box a p {
-  position: absolute;
-  display: block;
-  z-index: 2;
-  left: 0;
-  bottom: 0;
+  height: 25vh;
+  background-color: black;
   color: white;
-  width: 100%;
-  padding: 15px 20px;
-  background-color: rgba(0, 0, 0, 0.4);
-  font-size: 13px;
-  font-family: scdream5;
-  transition: 0.35s;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  opacity: 0;
 }
 
 @media screen and (max-width: 768px) {
