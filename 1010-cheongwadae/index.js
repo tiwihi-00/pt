@@ -190,7 +190,6 @@ $(document).ready(function () {
 		$('li.lilist a').removeClass('on');
 		$(this).addClass('on')
 
-		
 		$('.tab').removeClass('on');
 		$(href).addClass('on');
 		

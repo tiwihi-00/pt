@@ -1,0 +1,145 @@
+@import url(../reset.css);
+@import url(../font/font.css);
+
+.stage {
+	position: relative; 
+  z-index: 1; 
+	width: 100%;
+	height: 100vh;
+	background-image: url(./image/back.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: overlay;
+	overflow: hidden;
+
+	.contents {
+		position: absolute;
+		width: 40%;
+		left: 10%;
+		top: 15%;
+		z-index: 10;
+		
+
+		h1 {
+
+			margin-bottom: 30px;
+			font-size: 4rem;
+			font-family: EncodeSansCondensed-Black;
+		}
+
+		h3 {
+			font-size: 4rem;
+			font-family: 
+			EncodeSansCondensed-thin;
+			margin-bottom: 30px;
+		}
+
+		p {
+			color: rgb(58, 1, 58);
+			font-size: 20px;
+			line-height: 1.6;
+			font-family: EncodeSansCondensed-light;
+		}
+
+		button {
+			color: rgb(11, 255, 247);
+			border: 1px solid rgb(1, 120, 164);
+			background-color: rgba(31, 195, 255, 0.2);
+			padding: 10px 20px;
+			border-radius: 10px;
+			margin-top: 30px;
+			font-family: EncodeSansCondensed-light;
+		}
+	}
+
+	.plnets {
+		.mainb {
+			position: absolute;
+			left: 3%;
+			top: 5%;
+			width: 30%;
+		}
+
+		.mol {
+			position: absolute;
+			width: 8%;
+			right: 5%;
+			top: -2%;
+			transform: rotate(-40deg);
+		}
+
+		.mol2 {
+			position: absolute;
+			width: 13%;
+			left: 10%;
+			bottom: 5%;
+		}
+
+		.pul {
+			position: absolute;
+			width: 7%;
+			right: -2%;
+			bottom: 15%;
+			transform: rotate(20deg);
+		}
+
+		.b2 {
+			position: absolute;
+			width: 15%;
+			right: 15%;
+			top: 35%;
+		}
+
+		.hring {
+			position: absolute;
+			width: 10%;
+			left: 32%;
+			bottom: 30%;
+			transform: rotate(-40deg);
+		}
+
+		.b3 {
+			position: absolute;
+			width: 7%;
+			left: 45%;
+			top: 25%;
+			transform: rotate(-40deg);
+		}
+
+		.stick {
+			position: absolute;
+			width: 3%;
+			left: 2%;
+			bottom: 3%;
+			transform: rotate(-40deg);
+		}
+	}
+
+	.comment {
+		position: absolute;
+		right: 5%;
+		bottom: 5%;
+
+		h4 {
+			text-align: right;
+			line-height: 1.3;
+			font-size: 20px;
+			font-family: EncodeSansCondensed-thin;
+
+			b {
+				
+				font-size:23px;
+				font-family: EncodeSansCondensed-medium;
+				strong{
+					font-family: EncodeSansCondensed-Black;
+				}
+			}
+		}
+	}
+}
+.cursor{
+	position: absolute;
+	width: 10%;
+
+}

@@ -84,3 +84,23 @@
 	font-family: xeicon;
 	src: url(./xeicon.ttf);
 }
+@font-face {
+	font-family: EncodeSansCondensed-Black;
+	src: url(./EncodeSansCondensed-Black.ttf);
+}
+@font-face {
+	font-family: EncodeSansCondensed-Bold;
+	src: url(./EncodeSansCondensed-Bold.ttf);
+}
+@font-face {
+	font-family: EncodeSansCondensed-thin;
+	src: url(./EncodeSansCondensed-Thin.ttf);
+}
+@font-face {
+	font-family: EncodeSansCondensed-light;
+	src: url(./EncodeSansCondensed-Light.ttf);
+}
+@font-face {
+	font-family: EncodeSansCondensed-medium;
+	src: url(./EncodeSansCondensed-Medium.ttf);
+}

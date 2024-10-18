@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>space</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<div class="stage">
+		<div class="contents">
+			<h1>
+				Through drifting spheres,</h1>
+			<h3>beyond all boundaries.</h3>
+
+			<p>
+				In a limitless realm where 3D spheres drift weightlessly,<br /> I embrace the art of design—unrestricted,
+				untethered,<br />
+				and inspired by the freedom around me.
+			</p>
+			<button>READ MORE</button>
+		</div>
+		<div class="plnets">
+			<img class="mainb" src="./image/b3.png" alt="">
+			<img class="mol" src="./image/mol.png" alt="">
+			<img class="mol2" src="./image/mol2.png" alt="">
+			<img class="b2" src="./image/b4.png" alt="">
+			<img class="pul" src="./image/adf.png" alt="">
+			<img class="hring" src="./image/hring.png" alt="">
+			<img class="b3" src="./image/b1.png" alt="">
+			<img class="stick" src="./image/stick.png" alt="">
+		</div>
+		<div class="comment">
+			<h4>Inspired by<br /> <b>of the fluidity<br /> <strong>form and space.</strong></b></h4>
+		</div>
+		<div class="cursor"><img src="./image/ball.png" alt=""></div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+	<script src="./splitText.js"></script>
+
+	<script>
+		const { words: h1words } = new SplitText('h1', { type: 'words' })
+		const { words: h3words } = new SplitText('h3', { type: 'words' })
+		const tl = gsap.timeline(
+			{ repeat: -1, repeatDelay: 1 }
+		)
+		const images = document.querySelectorAll('img')
+
+		tl.from('.b3, .pul', {
+			scale: 1.2,
+			duration: 1,
+			yoyo: true,
+			repeat: -1
+		});
+
+		tl.from('.b2', {
+			y: 150,
+			scale: 2,
+			duration: 5,
+			yoyo: true,
+			repeat: -1
+		});
+		tl.from('.hring, .stick', {
+			yoyo: true,
+			duration: 3,
+			rotation: 45,
+			repeat: -1
+		});
+		// tl.from(h1words, {
+		// 	filter: 'blur(20px)',
+		// 	opacity: 0,
+		// 	dutation: 3,
+		// 	stagger: {
+		// 		each: 0.5, from: 'start'
+		// 	}, duration: 2,
+		// 	repeat: -1,
+		// 	ease: 'linear'
+		// }, '<')
+		// tl.from(h3words, {
+		// 	filter: 'blur(10px)',
+		// 	opacity: 0,
+		// 	dutation: 3,
+		// 	stagger: {
+		// 		each: 0.5, from: 'start'
+		// 	}, duration: 2,
+		// 	repeat: -1,
+		// 	ease: 'linear'
+		// });
+		gsap.to(h1words, {
+			filter: 'blur(20px)',
+			opacity: 0,
+			duration: 3,
+			stagger: {
+				each: .5, from: 'start'
+			}, 
+			
+			repeat: -1,
+			ease: 'linear'
+		})
+		gsap.to(h3words, {
+			filter: 'blur(10px)',
+			opacity: 0,
+			duration: 3,
+			stagger: {
+				each: .5, from: 'start'
+			}, 
+			
+			repeat: -1,
+			ease: 'linear'
+		}, '-=.5')
+
+
+		gsap.to('.mol2', {
+			duration: 10,
+			scale: .5,
+			x: '50vw',
+			rotation: 360,
+			ease: 'power1.inOut',
+			repeat: -1,
+			yoyo: true
+		});
+
+
+		gsap.registerEffect({
+			name: 'rotateEffect',
+			effect: (targets, { duration, repeat, ease, yoyo }) => {
+				return gsap.to(targets, {
+					rotation: 360,
+					duration: duration,
+					repeat: repeat,
+					ease: ease,
+					yoyo: yoyo
+				});
+			},
+			defaults: {
+				duration: 20,
+				repeat: -1,
+				ease: 'linear',
+				yoyo: true
+			}
+		});
+
+
+		gsap.registerEffect({
+			name: 'bounceEffect',
+			effect: (targets, { duration, repeat, ease, y }) => {
+				return gsap.to(targets, {
+					yoyo: true,
+					duration: duration,
+					repeat: repeat,
+					ease: ease,
+					y: y
+				});
+			},
+			defaults: {
+				y: -20,
+				duration: 10,
+				repeat: -1,
+				ease: 'power4',
+				yoyo: true
+			}
+		});
+
+		gsap.effects.rotateEffect('.mol');
+		gsap.effects.rotateEffect('.mainb', { duration: 10 });
+		gsap.registerPlugin();
+
+		//이미지 마우스커서
+		document.addEventListener('DOMContentLoaded', function () {
+			const cursor = document.querySelector('.cursor');
+			document.addEventListener('mousemove', function (event) {
+				gsap.to(cursor, {
+					x: event.clientX - 50,
+					y: event.clientY - 50
+				});
+			});
+		});
+		//배경컬러 변경하기
+		const colorWrap = gsap.utils.wrap([
+			'rgba(128, 0, 128, 0.1)',
+			'rgba(0, 0, 255, 0.1)',
+			'rgba(0, 128, 0, 0.1)',
+			'rgba(255, 255, 0, 0.1)'
+		]);
+
+		let colorIndex = 0;
+
+		gsap.to('.stage', {
+			duration: 5,
+			repeat: -1,
+			yoyo: true,
+			ease: 'power1.inOut',
+			onRepeat: function () {
+				colorIndex = (colorIndex + 1) % 4; // 색상 인덱스를 순환시킴
+				gsap.to('.stage', {
+					backgroundColor: colorWrap(colorIndex),
+					duration: 5
+				});
+			}
+		});
+
+
+
+	</script>
+
+</body>
+
+</html>
