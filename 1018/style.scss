@@ -109,10 +109,16 @@
 
 		.stick {
 			position: absolute;
-			width: 3%;
+			width: 4%;
 			left: 2%;
 			bottom: 3%;
 			transform: rotate(-40deg);
+		}
+		.g-ball{
+			position: absolute;
+			width: 8%;
+			left: -2%;
+			top: 0%;
 		}
 	}
 

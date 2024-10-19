@@ -12,7 +12,7 @@
 	<div class="stage">
 		<div class="contents">
 			<h1>
-				Through drifting spheres,</h1>
+				Through drifting<br /> spheres,</h1>
 			<h3>beyond all boundaries.</h3>
 
 			<p>
@@ -31,6 +31,7 @@
 			<img class="hring" src="./image/hring.png" alt="">
 			<img class="b3" src="./image/b1.png" alt="">
 			<img class="stick" src="./image/stick.png" alt="">
+			<img class="g-ball" src="./image/ball19.png" alt="">
 		</div>
 		<div class="comment">
 			<h4>Inspired by<br /> <b>of the fluidity<br /> <strong>form and space.</strong></b></h4>
@@ -43,77 +44,75 @@
 	<script src="./splitText.js"></script>
 
 	<script>
-		const { words: h1words } = new SplitText('h1', { type: 'words' })
-		const { words: h3words } = new SplitText('h3', { type: 'words' })
-		const tl = gsap.timeline(
-			{ repeat: -1, repeatDelay: 1 }
-		)
-		const images = document.querySelectorAll('img')
+		const tl2 = gsap.timeline({ repeat: -1, repeatDelay: 2 });
 
-		tl.from('.b3, .pul', {
+		const splitText = new SplitText("h1, h3", { type: "chars" });
+		const chars = splitText.chars;
+
+		// 타이핑 애니메이션
+		tl2.from(chars, {
+			duration: 0.1,
+			opacity: 0,
+			y: 20,
+			ease: "power2.out",
+			stagger: 0.1,
+			onComplete: () => {
+				gsap.to(chars, { opacity: 1 });
+			}
+		});
+
+		// 글씨가 서서히 사라지기 위한 타임라인
+		const fadeOutTl = gsap.timeline({
+			repeat: -1,
+			delay: 2,
+			paused: true
+		});
+
+		fadeOutTl.to("h1, h3", {
+			duration: 1.5,
+			opacity: 0,
+			filter: 'blur(10px)',
+			ease: "power2.out",
+			onComplete: () => {
+				gsap.set(chars, { opacity: 0, y: 20, filter: "blur(0px)" });
+			}
+		});
+
+		tl2.eventCallback("onComplete", () => {
+			fadeOutTl.restart();
+		});
+
+		// 이미지 애니메이션 - 타이핑과 독립적으로 실행
+		const imageTl = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+
+		imageTl.from('.b3, .pul', {
 			scale: 1.2,
 			duration: 1,
 			yoyo: true,
 			repeat: -1
 		});
 
-		tl.from('.b2', {
+		imageTl.from('.b2', {
 			y: 150,
 			scale: 2,
 			duration: 5,
+			rotation: 360,
 			yoyo: true,
 			repeat: -1
 		});
-		tl.from('.hring, .stick', {
+
+		imageTl.from('.hring, .stick', {
 			yoyo: true,
 			duration: 3,
 			rotation: 45,
 			repeat: -1
 		});
-		// tl.from(h1words, {
-		// 	filter: 'blur(20px)',
-		// 	opacity: 0,
-		// 	dutation: 3,
-		// 	stagger: {
-		// 		each: 0.5, from: 'start'
-		// 	}, duration: 2,
-		// 	repeat: -1,
-		// 	ease: 'linear'
-		// }, '<')
-		// tl.from(h3words, {
-		// 	filter: 'blur(10px)',
-		// 	opacity: 0,
-		// 	dutation: 3,
-		// 	stagger: {
-		// 		each: 0.5, from: 'start'
-		// 	}, duration: 2,
-		// 	repeat: -1,
-		// 	ease: 'linear'
-		// });
-		gsap.to(h1words, {
-			filter: 'blur(20px)',
-			opacity: 0,
-			duration: 3,
-			stagger: {
-				each: .5, from: 'start'
-			}, 
-			
-			repeat: -1,
-			ease: 'linear'
+
+		gsap.to('.g-ball', {
+			rotation: 360, duration: 2, repeat: -1, ease: "power1.inOut"
 		})
-		gsap.to(h3words, {
-			filter: 'blur(10px)',
-			opacity: 0,
-			duration: 3,
-			stagger: {
-				each: .5, from: 'start'
-			}, 
-			
-			repeat: -1,
-			ease: 'linear'
-		}, '-=.5')
 
-
+		// 개별 애니메이션
 		gsap.to('.mol2', {
 			duration: 10,
 			scale: .5,
@@ -124,7 +123,7 @@
 			yoyo: true
 		});
 
-
+		// gsap 효과 등록
 		gsap.registerEffect({
 			name: 'rotateEffect',
 			effect: (targets, { duration, repeat, ease, yoyo }) => {
@@ -143,7 +142,6 @@
 				yoyo: true
 			}
 		});
-
 
 		gsap.registerEffect({
 			name: 'bounceEffect',
@@ -165,11 +163,11 @@
 			}
 		});
 
+		// 회전 효과 적용
 		gsap.effects.rotateEffect('.mol');
 		gsap.effects.rotateEffect('.mainb', { duration: 10 });
-		gsap.registerPlugin();
 
-		//이미지 마우스커서
+		// 이미지 마우스 커서 애니메이션
 		document.addEventListener('DOMContentLoaded', function () {
 			const cursor = document.querySelector('.cursor');
 			document.addEventListener('mousemove', function (event) {
@@ -179,7 +177,8 @@
 				});
 			});
 		});
-		//배경컬러 변경하기
+
+		// 배경 컬러 변경 애니메이션
 		const colorWrap = gsap.utils.wrap([
 			'rgba(128, 0, 128, 0.1)',
 			'rgba(0, 0, 255, 0.1)',
@@ -195,7 +194,7 @@
 			yoyo: true,
 			ease: 'power1.inOut',
 			onRepeat: function () {
-				colorIndex = (colorIndex + 1) % 4; // 색상 인덱스를 순환시킴
+				colorIndex = (colorIndex + 1) % 4;
 				gsap.to('.stage', {
 					backgroundColor: colorWrap(colorIndex),
 					duration: 5
@@ -203,7 +202,24 @@
 			}
 		});
 
-
+		// document.querySelectorAll('.plnets img').forEach(img => {
+		// 	img.addEventListener('mouseenter', () => {
+		// 		gsap.to(img, {
+		// 			scale: 1.5,
+		// 			duration: 0.5,
+		// 			ease: 'power1.out',
+		// 			filter: 'brightness(1.5)'  // 이미지의 밝기 증가
+		// 		});
+		// 	});
+		// 	img.addEventListener('mouseleave', () => {
+		// 		gsap.to(img, {
+		// 			scale: 1,
+		// 			duration: 0.5,
+		// 			ease: 'power1.out',
+		// 			filter: 'brightness(1)'  // 원래 밝기로 돌아감
+		// 		});
+		// 	});
+		// });
 
 	</script>
 

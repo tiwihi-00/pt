@@ -92,10 +92,16 @@
 }
 .stage .plnets .stick {
   position: absolute;
-  width: 3%;
+  width: 4%;
   left: 2%;
   bottom: 3%;
   transform: rotate(-40deg);
+}
+.stage .plnets .g-ball {
+  position: absolute;
+  width: 8%;
+  left: -2%;
+  top: 0%;
 }
 .stage .comment {
   position: absolute;
