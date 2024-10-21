@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>yes24</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<style>
+		html,
+		body {
+			position: relative;
+			height: 100%;
+		}
+
+		body {
+
+			margin: 0;
+			padding: 0;
+		}
+
+		.swiper {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper-slide {
+			background-position: center;
+			background-size: cover;
+		}
+
+		.swiper-slide img {
+			display: block;
+			width: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="pf-left">
+			<a href="#" class="pf-ham ">
+				<span class="pf-ham1"></span>
+				<span class="pf-ham2"></span>
+				<span class="pf-ham3"></span>
+			</a>
+			<h1><a href="#" class="pf-logo">
+					<img src="./image/yes24image/pf-logoN-w.png" alt="" class="trans"><img src="./image/yes24image/pf-logoN.png"
+						alt="" class="fixed"></a></h1>
+		</div>
+		<div class="pf-center">
+			<h2><a href="#">콘서트<span></span></a>
+
+
+			</h2>
+			<h2><a href="#">뮤지컬<span></span></a>
+
+
+			</h2>
+			<h2><a href="#">연극<span></span></a>
+
+
+			</h2>
+			<h2><a href="#">클래식<span></span></a>
+
+
+			</h2>
+			<h2><a href="#">전시<span></span></a>
+
+
+			</h2>
+			<h2><a href="#">아동<span></span></a>
+
+
+			</h2>
+		</div>
+		<div class="pf-right">
+			<div class="pf-right-menu">
+				<a href="#">MD#</a>
+				<a href="#">지역</a>
+				<a href="#">랭킹</a>
+				<a href="#">이벤트</a>
+			</div>
+			<div class="pf-top-srch">
+				<input type="text" id="searchWord">
+				<input type="hidden" name="" id="searchType" value="">
+				<a href="#"><img src="./image/yes24image/pf-srch.png" alt="" class="trans"><img
+						src="./image/yes24image/pf-srch-w.png" alt="" class="fixed"></a>
+			</div>
+			<a href="#" class="my-ticket"><span>MY티켓</span></a>
+			<a href="#" class="global"><span>GLOBAL</span></a>
+		</div>
+		<!-- side menu -->
+		<div class="pf-gnb-wrap" id="pf-gnb-wrap">
+			<div class="pf-gnb-top">
+				<a href="#" class="pf-ham">
+					<span class="pf-ham1"></span>
+					<span class="pf-ham2"></span>
+					<span class="pf-ham3"></span>
+				</a>
+			</div>
+			<div class="pf-gnb-box mCustomScrollbar _mCS_1">
+				<div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside">
+					<div id="mCSB_1_container" class="mCSB_container">
+						<div class="pf-gnb-scroll-wrap">
+							<ul class="pf-gnb-list1">
+								<li>
+									<h2><a href="#">콘서트</a></h2><span></span>
+									<ul class="pf-gnb-2depth">
+										<li><a href="#">전체보기</a></li>
+										<li><a href="#">국내뮤지션</a></li>
+										<li><a href="#">해외뮤지션</a></li>
+										<li><a href="#">페스티벌</a></li>
+									</ul>
+								</li>
+								<li>
+									<h2><a href="#">뮤지컬</a></h2><span></span>
+									<ul class="pf-gnb-2depth">
+										<li><a href="#">전체보기</a></li>
+										<li><a href="#">라이선스</a></li>
+										<li><a href="#">오리지널</a></li>
+										<li><a href="#">창작</a></li>
+										<li><a href="#">넌버벌 퍼포먼스</a></li>
+									</ul>
+								</li>
+								<li>
+									<h2><a href="#">연극</a></h2><span></span>
+									<ul class="pf-gnb-2depth">
+										<li><a href="#">전체보기</a></li>
+										<li><a href="#">대학로</a></li>
+										<li><a href="#">기타지역</a></li>
+									</ul>
+								</li>
+								<li>
+									<h2><a href="#">클래식/국악/무용</a></h2><span></span>
+									<ul class="pf-gnb-2depth">
+										<li><a href="#">전체보기</a></li>
+										<li><a href="#">클래식</a></li>
+										<li><a href="#">발레/무용</a></li>
+										<li><a href="#">국악</a></li>
+									</ul>
+								</li>
+								<li>
+									<h2><a href="#">전시/행사</a></h2><span></span>
+									<ul class="pf-gnb-2depth">
+										<li><a href="#">전체보기</a></li>
+										<li><a href="#">전시</a></li>
+										<li><a href="#">체험/행사</a></li>
+										<li><a href="#">워터파크/스파</a></li>
+									</ul>
+								</li>
+								<li>
+									<h2><a href="#">아동/가족</a></h2><span></span>
+									<ul class="pf-gnb-2depth">
+										<li><a href="#">전체보기</a></li>
+										<li><a href="#">뮤지컬</a></li>
+										<li><a href="#">연극</a></li>
+										<li><a href="#">기타</a></li>
+									</ul>
+								</li>
+							</ul><!--pf-gnb-list1-->
+							<div class="pf-gnb-list2">
+								<a href="#" class="pf-gnb-btn1">랭킹</a><a href="#" class="pf-gnb-btn2">지역별</a><a href="#"
+									class="pf-gnb-btn3">공연장</a>
+							</div><!--pf-gnb-list2-->
+							<ul class="pf-gnb-list3">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">읽을거리</a></li>
+								<li><a href="#">이용안내</a></li>
+							</ul><!--pf-gnb-list3-->
+							<div class="pf-gnb-list4">
+								<p class="pf-gnb-tit"><a href="#" id="leftMyTicket">MY티켓</a></p>
+								<ul>
+									<li><a href="#" id="leftMyOrder" class="pf-gnb-btn4">예매확인/취소</a></li>
+								</ul>
+								<p class="pf-gnb-tit">최근 본 상품</p>
+
+
+	</header>
+	<section class="sect1">
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide1"></div>
+				<div class="swiper-slide slide2"></div>
+				<div class="swiper-slide slide3"></div>
+				<div class="swiper-slide slide4"></div>
+				<div class="swiper-slide slide5"></div>
+				<div class="swiper-slide slide6"></div>
+				<div class="swiper-slide slide7"></div>
+				<div class="swiper-slide slide8"></div>
+				<div class="swiper-slide slide9"></div>
+				<div class="swiper-slide slide10"></div>
+				<div class="swiper-slide slide11"></div>
+				<div class="swiper-slide slide12"></div>
+
+			</div>
+			<div class="pf-kvslide-pager off">
+				<div class="pager-bg">
+					<a href="#" class="on">
+						<img src="./image/yes24image/sum1.jfif" alt="" class="lazyload">
+						<span>1/12</span>
+					</a>
+					<a href="#" class="">
+						<img src="./image/yes24image/sum2.jfif" alt="" class="lazyload">
+						<span>2/12</span></a>
+					<a href="#" class="">
+						<img src="./image/yes24image/slide3.jfif" alt="" class="lazyload">
+						<span>3/12</span></a>
+					<a href="#" class="">
+						<img src="./image/yes24image/sum4.jfif" alt="" class="lazyload">
+						<span>4/12</span></a>
+					<a href="#" class="">
+						<img src="./image/yes24image/sum5.jfif" alt="" class="lazyload">
+						<span>5/12</span></a>
+					<a href="#" class="">
+						<img src="./image/yes24image/sum6.jfif" alt="" class="lazyload">
+						<span>6/12</span></a>
+					<a href="#" class="">
+						<img src="./image/yes24image/sum7.jfif" alt="" class="lazyload">
+						<span>7/12</span></a>
+					<a href="#" class="">
+						<img src="./image/yes24image/sum8.jfif" alt="" class="lazyload">
+						<span>8/12</span>
+					</a>
+					<a href="#" class="">
+						<img src="./image/yes24image/sum9.jfif" alt="" class="lazyload">
+						<span>9/12</span></a>
+					<a href="#" class="">
+						<img src="./image/yes24image/sum10.jfif" alt="" class="lazyload">
+						<span>10/12</span></a>
+					<a href="#" class="thumb_movie">
+						<img src="./image/yes24image/sum11.jfif" alt="" class="lazyload">
+						<span>11/12</span></a>
+					<a href="#" class="">
+						<img src="./image/yes24image/sum12.jfif" alt="" class="lazyload">
+						<span>12/12</span>
+					</a>
+				</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+
+		</div>
+
+	</section>
+	<section class="sect2">
+		<p class="cont-tit">
+			<img src="./image/yes24image/tit1.png" alt="">
+		</p>
+
+
+
+		<div class="cont">
+			<div class="whot-area">
+
+				<!-- <li> -->
+				<div class="big-one">
+					<a href="#">
+						<img src="./image/yes24image/51103.jpg" alt="">
+						<div class="big-one-txt">
+							<p class="big-tit">뮤지컬 쿠로이 저택엔 누가 살고 있을까?</p>
+							<p class="big-detail">2024. 10. 29.~2025. 01. 19. 플러스씨어터 / <span>프리뷰 할인 35%</span></p>
+						</div>
+						<p class="big-circle">35%</p>
+					</a>
+				</div>
+				<!-- </li> -->
+				<ul id="ulWhatshot">
+					<li>
+						<div class="whot-list">
+							<a href="#">
+								<img src="./image/yes24image/50568.jpg" alt="" class="lazyload">
+								<div class="whot-list-txt">
+									<div>
+										<p class="whot-tit">뮤지컬 랭보</p>
+										<p class="whot-detail">2024. 09. 17.~2024. 12. 08.<br>예스24스테이지 1관</p>
+										<p class="whot-event">청소년 할인 30%</p>
+									</div>
+								</div>
+								<p class="whot-list-circle">
+									<span>30%</span>
+								</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="whot-list">
+							<a href="#"><img src="./image/yes24image/50610.jfif" alt="" class="lazyload">
+								<div class="whot-list-txt">
+									<div>
+										<p class="whot-tit">뮤지컬 이터니티</p>
+										<p class="whot-detail">2024. 09. 19.~2024. 12. 08.<br>예스24아트원 1관</p>
+										<p class="whot-event">재관람 할인 30%</p>
+									</div>
+								</div>
+								<p class="whot-list-circle">
+									<span>30%</span>
+								</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="whot-list">
+							<a href="#"><img src="./image/yes24image/50388.jfif" alt="" class="lazyload">
+								<div class="whot-list-txt">
+									<div>
+										<p class="whot-tit">연극 '고도를 기다리며'를 기다리며</p>
+										<p class="whot-detail">2024. 09. 07.~2024. 12. 01.<br>예스24스테이지 3관</p>
+										<p class="whot-event">고도 할인 25%</p>
+									</div>
+								</div>
+								<p class="whot-list-circle">
+									<span>25%</span>
+								</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="whot-list">
+							<a href="#"><img src="./image/yes24image/thrillme.jfif" alt="" class="lazyload">
+								<div class="whot-list-txt">
+									<div>
+										<p class="whot-tit">뮤지컬 쓰릴 미</p>
+										<p class="whot-detail">2024. 09. 10.~2024. 12. 01.<br>예스24스테이지 2관</p>
+										<p class="whot-event">재관람 할인 20%</p>
+									</div>
+								</div>
+								<p class="whot-list-circle">
+									<span>20%</span>
+								</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="whot-list">
+							<a href="#"><img src="./image/yes24image/HYPE UP.jfif" alt="" class="lazyload">
+								<div class="whot-list-txt">
+									<div>
+										<p class="whot-tit">HYPE UP FESTIVAL</p>
+										<p class="whot-detail">2024. 11. 10.<br>YES24 LIVE HALL</p>
+										<p class="whot-event">단독판매</p>
+									</div>
+								</div>
+								<p class="whot-list-circle">
+									<span>단독</span>
+								</p>
+							</a>
+						</div>
+					</li>
+					<li>
+						<div class="whot-list"><a href="#"><img src="./image/yes24image/drif.jfif" alt="" class="lazyload">
+								<div class="whot-list-txt">
+									<div>
+										<p class="whot-tit">뮤지컬 드라이 플라워</p>
+										<p class="whot-detail">2024. 09. 24.~2024. 12. 06.<br>예스24아트원 2관</p>
+										<p class="whot-event">프리뷰 할인 50%</p>
+									</div>
+								</div>
+								<p class="whot-list-circle">
+									<span>50%</span>
+								</p>
+							</a></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="sect3">
+		<div class="sect3-wrap">
+			<div class="ms5-l">
+				<p class="ms5-l-tit">WEEKLY RANKING
+					<a href="#"><img src="./image/yes24image/ms5-more.png" alt=""></a>
+				</p>
+				<ul class="rankingUl">
+					<li class="rankingLl on">
+						<a href="#" title="2024 뮤지컬 [지저스 크라이스트 수퍼스타]">
+							<dl>
+								<dt>1위
+									<span class="dash">-</span>
+								</dt>
+								<dd>
+									<img src="./image/yes24image/sum6.jfif" alt="">
+								</dd>
+								<dd class="ms5-l-txt">
+									<p class="ms5-l-txt1">2024 뮤지컬 [지저스 크라이스트 수퍼스타]</p>
+									<p class="ms5-l-txt2">2024.11.07 ~ 2025.01.12<br>광림아트센터 BBCH홀</p>
+								</dd>
+							</dl>
+						</a>
+					</li>
+					<li class="rankingLl"><a href="#" title="뮤지컬 〈랭보〉">
+							<dl>
+								<dt>2위<span class="dash">-</span></dt>
+								<dd><img src="./image/yes24image/랭보sum.jfif" alt=""></dd>
+								<dd class="ms5-l-txt">
+									<p class="ms5-l-txt1">뮤지컬 〈랭보〉</p>
+									<p class="ms5-l-txt2">2024.09.17 ~ 2024.12.08<br>예스24스테이지 1관</p>
+								</dd>
+							</dl>
+						</a></li>
+					<li class="rankingLl"><a href="#" title="뮤지컬 〈시라노〉">
+							<dl>
+								<dt>3위<span class="dash">-</span></dt>
+								<dd><img src="./image/yes24image/sum7.jfif" alt=""></dd>
+								<dd class="ms5-l-txt">
+									<p class="ms5-l-txt1">뮤지컬 〈시라노〉</p>
+									<p class="ms5-l-txt2">2024.12.06 ~ 2025.02.23<br>예술의전당 CJ 토월극장</p>
+								</dd>
+							</dl>
+						</a></li>
+					<li class="rankingLl"><a href="#" title="[광주] 뮤지컬 〈킹키부츠〉">
+							<dl>
+								<dt>4위<span class="dash">-</span></dt>
+								<dd><img src="./image/yes24image/kinky.sum.jfif" alt=""></dd>
+								<dd class="ms5-l-txt">
+									<p class="ms5-l-txt1">[광주] 뮤지컬 〈킹키부츠〉</p>
+									<p class="ms5-l-txt2">2024.12.07 ~ 2024.12.08<br>광주 예술의전당 대극장</p>
+								</dd>
+							</dl>
+						</a></li>
+					<li class="rankingLl"><a href="#" title="뮤지컬 〈이터니티〉">
+							<dl>
+								<dt>5위<span class="up"></span></dt>
+								<dd><img src="./image/yes24image/이터너티sum.jfif" alt=""></dd>
+								<dd class="ms5-l-txt">
+									<p class="ms5-l-txt1">뮤지컬 〈이터니티〉</p>
+									<p class="ms5-l-txt2">2024.09.19 ~ 2024.12.08<br>예스24아트원 1관</p>
+								</dd>
+							</dl>
+						</a></li>
+				</ul>
+			</div>
+
+
+		</div>
+	</section>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			loop: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			spaceBetween: 30,
+			effect: "fade",
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+
+		});
+
+		swiper.on('slideChange', function () {
+			const aElems = document.querySelectorAll('.pager-bg a')
+			let activeIdx = swiper.realIndex;
+
+			aElems.forEach(function (item) {
+				item.classList.remove('on')
+
+			})
+			aElems[activeIdx].classList.add('on')
+		})
+
+		const aElems = document.querySelectorAll('.pager-bg a')
+
+		aElems.forEach(function (aElem, idx) {
+			aElem.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				aElems.forEach(function (item) {
+					item.classList.remove('on')
+				});
+				aElem.classList.add('on')
+				swiper.slideToLoop(idx, 500)
+			})
+		})
+
+		const rankings = document.querySelectorAll('.rankingUl .rankingLl');
+
+		rankings.forEach(ranking => {
+			ranking.addEventListener('mouseenter', function () {
+			
+				rankings.forEach(item => item.classList.remove('on'));
+
+			
+				this.classList.add('on');
+			});
+
+			ranking.addEventListener('mouseleave', function () {
+				
+				this.classList.remove('on');
+			});
+		});
+
+
+
+	</script>
+</body>
+
+</html>
