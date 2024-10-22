@@ -312,7 +312,7 @@ section.sect1 .pf-kvslide-pager {
   position: absolute;
   bottom: -110px;
   overflow: visible;
-  z-index: 99;
+  z-index: 50;
   transition: 0.3s ease;
 }
 section.sect1 .pf-kvslide-pager:hover {
@@ -368,6 +368,9 @@ section.sect1 .pf-kvslide-pager .pager-bg a img {
   width: 86px;
   height: 120px;
   margin-top: 18px;
+}
+section.sect2 {
+  margin-bottom: 60px;
 }
 section.sect2 .cont-tit {
   width: 100%;
@@ -429,7 +432,7 @@ section.sect2 .cont .whot-area .big-one a .big-circle {
   position: absolute;
   width: 70px;
   height: 70px;
-  line-height: 65px;
+  line-height: 60px;
   text-align: center;
   border-radius: 50%;
   background-color: #ec7d2c;
@@ -564,7 +567,7 @@ section.sect3 .sect3-wrap .ms5-l .ms5-l-tit a {
   right: 0;
   top: 0px;
 }
-section.sect3 .sect3-wrap .rankingUl {
+section.sect3 .sect3-wrap .ms5-l .rankingUl {
   position: absolute;
   left: 54px;
   top: 95px;
@@ -572,31 +575,31 @@ section.sect3 .sect3-wrap .rankingUl {
   border-top: 2px solid #333;
   border-bottom: 1px solid #333;
 }
-section.sect3 .sect3-wrap .rankingUl .rankingLl {
+section.sect3 .sect3-wrap .ms5-l .rankingUl .rankingLl {
   font-family: scdream4;
   border-bottom: 1px solid #ddd;
-  padding: 23px 0;
-  height: 16px;
+  padding: 15px 0;
+  height: 50px;
   position: relative;
 }
-section.sect3 .sect3-wrap .rankingUl .rankingLl.on {
+section.sect3 .sect3-wrap .ms5-l .rankingUl .rankingLl.on {
   height: auto;
 }
-section.sect3 .sect3-wrap .rankingUl .rankingLl.on img {
+section.sect3 .sect3-wrap .ms5-l .rankingUl .rankingLl.on img {
   display: block;
 }
-section.sect3 .sect3-wrap .rankingUl .rankingLl.on .ms5-l-txt {
+section.sect3 .sect3-wrap .ms5-l .rankingUl .rankingLl.on .ms5-l-txt {
   width: 225px;
 }
-section.sect3 .sect3-wrap .rankingUl .rankingLl.on .ms5-l-txt .ms5-l-txt1 {
+section.sect3 .sect3-wrap .ms5-l .rankingUl .rankingLl.on .ms5-l-txt .ms5-l-txt1 {
   margin: 1px 0 12px 0;
   white-space: normal;
   font-family: scdream6;
 }
-section.sect3 .sect3-wrap .rankingUl .rankingLl.on .ms5-l-txt .ms5-l-txt2 {
+section.sect3 .sect3-wrap .ms5-l .rankingUl .rankingLl.on .ms5-l-txt .ms5-l-txt2 {
   opacity: 1;
 }
-section.sect3 .sect3-wrap .rankingUl .rankingLl.on a dl dt::after {
+section.sect3 .sect3-wrap .ms5-l .rankingUl .rankingLl.on a dl dt::after {
   content: "";
   display: block;
   width: 24px;
@@ -606,13 +609,13 @@ section.sect3 .sect3-wrap .rankingUl .rankingLl.on a dl dt::after {
   top: 50px;
   left: 1%;
 }
-section.sect3 .sect3-wrap .rankingUl .rankingLl a dl {
+section.sect3 .sect3-wrap .ms5-l .rankingUl .rankingLl a dl {
   height: 112px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
 }
-section.sect3 .sect3-wrap .rankingUl .rankingLl a dl dt {
+section.sect3 .sect3-wrap .ms5-l .rankingUl .rankingLl a dl dt {
   text-align: center;
   width: 41px;
   text-align: center;
@@ -620,24 +623,231 @@ section.sect3 .sect3-wrap .rankingUl .rankingLl a dl dt {
   margin-right: 9px;
   font-size: 15px;
 }
-section.sect3 .sect3-wrap .rankingUl .rankingLl a dl dd img {
+section.sect3 .sect3-wrap .ms5-l .rankingUl .rankingLl a dl dd img {
   display: block;
   width: 80px;
   height: 112px;
   margin-right: 15px;
   display: none;
 }
-section.sect3 .sect3-wrap .rankingUl .rankingLl a dl .ms5-l-txt {
+section.sect3 .sect3-wrap .ms5-l .rankingUl .rankingLl a dl .ms5-l-txt {
   width: 320px;
 }
-section.sect3 .sect3-wrap .rankingUl .rankingLl a dl .ms5-l-txt .ms5-l-txt1 {
+section.sect3 .sect3-wrap .ms5-l .rankingUl .rankingLl a dl .ms5-l-txt .ms5-l-txt1 {
   font-family: scdream5;
 }
-section.sect3 .sect3-wrap .rankingUl .rankingLl a dl .ms5-l-txt .ms5-l-txt2 {
+section.sect3 .sect3-wrap .ms5-l .rankingUl .rankingLl a dl .ms5-l-txt .ms5-l-txt2 {
   font-size: 13px;
   color: #999;
   line-height: 18px;
   opacity: 0;
+}
+section.sect3 .sect3-wrap .ms5-r {
+  width: 688px;
+  height: 486px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  position: relative;
+  margin-left: 30px;
+}
+section.sect3 .sect3-wrap .ms5-r .tab-container #tabbox2 .tabmenu li {
+  display: none;
+}
+section.sect3 .sect3-wrap .ms5-r .tab-container #tabbox2 .tabmenu li.active {
+  display: block;
+}
+section#sect4 {
+  padding: 80px 0;
+}
+section#sect4 .sect4-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+section#sect4 .sect4-container .tab-title {
+  text-align: center;
+  font-family: scdream7;
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+section#sect4 .sect4-container .tab-title .ranking4 {
+  width: 40%;
+  margin: auto;
+  font-family: scdream4;
+  font-size: 15px;
+  display: flex;
+}
+section#sect4 .sect4-container .tab-title .ranking4 .rankingli4 {
+  padding: 20px 10px;
+  flex: 1;
+}
+section#sect4 .sect4-container .tab-title .ranking4 .rankingli4 a {
+  display: block;
+  padding: 10px;
+}
+section#sect4 .sect4-container .tab-title .ranking4 .rankingli4 a.on {
+  color: #ec7d2c;
+  font-family: scdream6;
+}
+section#sect4 .sect4-container .secttabs {
+  position: relative;
+  width: 100%;
+  padding-bottom: 60px;
+  height: 420px;
+}
+section#sect4 .sect4-container .secttabs .tab {
+  max-width: 1200px;
+  margin: auto;
+  position: absolute;
+  opacity: 0;
+}
+section#sect4 .sect4-container .secttabs .tab.on {
+  opacity: 1;
+}
+section#sect4 .sect4-container .secttabs .tab .sect4-tabs {
+  width: 100%;
+  gap: 40px;
+  display: flex;
+}
+section#sect4 .sect4-container .secttabs .tab .sect4-tabs li {
+  overflow: hidden;
+  position: relative;
+}
+section#sect4 .sect4-container .secttabs .tab .sect4-tabs li:hover a img {
+  transform: scale(1.1);
+}
+section#sect4 .sect4-container .secttabs .tab .sect4-tabs li > a {
+  width: 380px;
+  height: 420px;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+}
+section#sect4 .sect4-container .secttabs .tab .sect4-tabs li > a img {
+  transition: 0.35s;
+  overflow: hidden;
+  margin: 15px 80px;
+  height: 300px;
+}
+section#sect4 .sect4-container .secttabs .tab .sect4-tabs li > a .rank-txt {
+  font-size: 13px;
+  width: 250px;
+  margin: 0 auto;
+}
+section#sect4 .sect4-container .secttabs .tab .sect4-tabs li > a .rank-txt p {
+  padding-bottom: 10px;
+}
+section#sect4 .sect4-container .secttabs .tab .sect4-tabs li > a .rank-txt p.rank-tit {
+  font-family: scdream4;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block block;
+  width: 100%;
+}
+section#sect4 .sect4-container .secttabs .tab .sect4-tabs li > a .rank-txt p.rank-detail {
+  font-family: scdream2;
+  color: #717171;
+  font-size: 13px;
+  padding: 0 50px 10px 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 250px;
+  border-bottom: 1px solid #ddd;
+}
+section#sect4 .sect4-container .secttabs .tab .sect4-tabs li > a .rank-num1 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ec7d2c;
+  color: #fff;
+  font-size: 18px;
+  border: 3px solid #fff;
+  left: 55px;
+  bottom: 118px;
+  font-family: scdream6;
+}
+section#sect4 .sect4-container .sect4-listMore {
+  display: block;
+  width: 214px;
+  height: 48px;
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+  z-index: 300;
+  transition: 0.35s;
+  bottom: 0;
+}
+section#sect4 .sect4-container .sect4-listMore a {
+  border: 1px solid #ddd;
+  font-family: scdream4;
+  font-size: 15px;
+  color: black;
+  padding: 10px 40px;
+}
+section.sect5 {
+  position: relative;
+  max-width: 1200px;
+  height: 120px;
+}
+section.sect5 .cont {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+section.sect5 .cont .con-left {
+  flex: 1;
+}
+section.sect5 .cont .con-left .tell {
+  margin-bottom: 20px;
+}
+section.sect5 .cont .con-left ul {
+  display: inline;
+  font-size: 13px;
+}
+section.sect5 .cont .con-left ul li {
+  font-family: scdream4;
+  color: #333;
+}
+section.sect5 .cont .con-left ul li b {
+  font-family: scdream6;
+  color: black;
+}
+section.sect5 .cont .con-center {
+  padding: 0 35px;
+  margin: 3px 0 0 7px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+section.sect5 .cont .con-center a {
+  display: inline-block;
+  padding-top: 80px;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  min-width: 50px;
+  font-family: scdream5;
+  margin: 0 27px;
+  margin-top: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+section.sect5 .cont .con-center a.cca1 {
+  background-image: url(./image/yes24image/cca1.png);
+  padding: 70px 0px -30px 0;
+}
+section.sect5 .cont .con-center a.cca2 {
+  background-image: url(./image/yes24image/cca2.png);
+}
+section.sect5 .cont .con-center a.cca3 {
+  background-image: url(./image/yes24image/cca3.png);
+}
+section.sect5 .cont .con-center a.cca4 {
+  background-image: url(./image/yes24image/cca4.png);
 }
 
 @keyframes ham3 {
