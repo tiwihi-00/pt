@@ -34,29 +34,39 @@ header {
 				display: block;
 				height: 2px;
 				background-color: white;
+				transition: width 0.5s;
 
 				&.pf-ham1 {
 					width: 15px;
 					margin-bottom: 5px;
-					animation-name: ham3;
-					animation-duration: 0.5s;
-					animation-fill-mode: forwards;
 				}
 
 				&.pf-ham2 {
 					width: 22px;
 					margin-bottom: 5px;
-					animation-name: ham4;
-					animation-duration: 0.5s;
-					animation-fill-mode: forwards;
+
 				}
 
 				&.pf-ham3 {
 					width: 15px;
-					animation-name: ham3;
-					animation-duration: 0.5s;
-					animation-fill-mode: forwards;
+
 				}
+			}
+
+
+			&:hover span.pf-ham1 {
+				width: 22px;
+
+			}
+
+			&:hover span.pf-ham2 {
+				width: 15px;
+
+			}
+
+			&:hover span.pf-ham3 {
+				width: 22px;
+
 			}
 		}
 
@@ -226,72 +236,30 @@ header {
 		}
 	}
 
-	.pf-gnb-wrap {
-		display: none;
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		width: 209px;
-		border-right: 1px solid #717171;
-		border-bottom: 1px solid #717171;
-		background: rgba(0, 0, 0, 0.8);
 
-		.pf-gnb-top {
-			width: 100%;
-			height: 100px;
-			background-color: black;
-			margin-bottom: 1px;
+}
 
-			a.pf-ham {
-				display: inline-block;
-				width: 22px;
-				height: 16px;
-				position: relative;
-				left: 23px;
-				top: 43px;
+.brn-slide {
+	height: 400px;
 
-				span {
-					display: block;
-					height: 2px;
-					background-color: #fff;
+	.brnslide {
+		height: 100%;
 
-					&.pf-ham1 {
-						width: 22px;
-						margin-bottom: 5px;
-					}
+		.banner {
+			height: 100%;
 
-					&.pf-ham2 {
-						width: 15px;
-						margin-bottom: 5px;
-					}
-
-					&.pf-ham3 {
-						width: 22px;
-						margin-bottom: 5px;
-					}
-				}
-			}
-		}
-
-		.pf-gnb-box {
-			width: 100%;
-			height: calc(100% - 100px);
-
-			.mCustomScrollBox {
-				position: relative;
-				height: 100%;
-				max-width: 100%;
+			img {
+				width: 100%;
+				height: 400px;
+				object-fit: cover;
 			}
 		}
 	}
-
 }
 
 section {
 	width: 100%;
 	min-width: 1300px;
-
-
 
 	&.sect1 {
 		.mySwiper {
@@ -403,7 +371,7 @@ section {
 					position: relative;
 					top: -1px;
 					margin: 0 7px;
-					height: 160px;
+					height: 120px;
 
 
 					&.on {
@@ -812,8 +780,10 @@ section {
 		}
 	}
 
+
+
 	&#sect4 {
-		padding: 80px 0;
+		padding: 80px 0 50px 0;
 
 
 		.sect4-container {
@@ -976,19 +946,78 @@ section {
 		}
 	}
 
+	&.sect45 {
+		width: 100%;
+
+		h2 {
+			text-align: center;
+			font-family: scdream7;
+			font-size: 35px;
+			padding-bottom: 55px;
+		}
+
+		.under {
+			padding-bottom: 80px;
+
+			.swiper-wrapper {
+				width: 100%;
+				height: 100%;
+
+				.swiper-slide {
+					width: 840px !important;
+					position: relative;
+					overflow: hidden;
+
+					a {
+
+						&:hover img {
+							transform: scale(1.08);
+						}
+
+						.caption {
+							width: 100%;
+							height: 80px;
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							background-color: rgba(0, 0, 0, 0.5);
+							display: none;
+							transition: .5s;
+							color: white;
+							padding: 15px;
+
+							p {
+								padding-top: 15px;
+								font-family: scdream4;
+							}
+						}
+					}
+
+					.swiper-slide-active .caption {
+						display: block;
+					}
+				}
+			}
+
+		}
+	}
+
 	&.sect5 {
 		position: relative;
 		max-width: 1200px;
-
-		height: 120px;
+		margin: auto;
+		height: 250px;
+		padding-bottom: 50px;
 
 		.cont {
-			width: 80%;
-			margin: 0 auto;
+			width: 100%;
+			justify-content: center;
 			display: flex;
+			flex-wrap: wrap;
 
 			.con-left {
-				flex: 1;
+
+				margin-right: 40px;
 
 				.tell {
 					margin-bottom: 20px;
@@ -1011,41 +1040,66 @@ section {
 			}
 
 			.con-center {
-				padding: 0 35px;
+				padding: 0 50px;
 				margin: 3px 0 0 7px;
 				border-left: 1px solid #ddd;
 				border-right: 1px solid #ddd;
+				height: 90px;
+
+				margin-right: 40px;
 
 				a {
 					display: inline-block;
-					padding-top: 80px;
+
 					font-size: 14px;
 					text-align: center;
 					color: #333;
 					min-width: 50px;
 					font-family: scdream5;
-					margin: 0 27px;
+					margin: 0 30px;
 					margin-top: 5px;
-					background-position: center;
+					padding-top: 60px;
+					background-position: top;
 					background-repeat: no-repeat;
 					background-size: contain;
+					height: 60px;
+
+					&.cca1 {
+						background-image: url(./image/yes24image/cca1.png);
+						background-size: 30px 50px;
+					}
+
+					&.cca2 {
+						background-image: url(./image/yes24image/cca2.png);
+						background-size: 50px 50px;
+					}
+
+					&.cca3 {
+						background-image: url(./image/yes24image/cca3.png);
+						background-size: 50px 50px;
+					}
+
+					&.cca4 {
+						background-image: url(./image/yes24image/cca4.png);
+						background-size: 64px 50px;
+					}
+
 				}
 
-				a.cca1 {
-					background-image: url(./image/yes24image/cca1.png);
-					padding: 70px 0px -30px 0;;
-				}
-				a.cca2 {
-					background-image: url(./image/yes24image/cca2.png);
+			}
 
-				}
-				a.cca3 {
-					background-image: url(./image/yes24image/cca3.png);
+			.con-right {
+				padding-top: 18px;
+				display: flex;
+				align-items: center;
+				height: 90px;
 
+				a {
+					padding: 15px;
 				}
-				a.cca4 {
-					background-image: url(./image/yes24image/cca4.png);
 
+				.social {
+					padding-bottom: 10px;
 				}
 			}
 		}
@@ -1053,25 +1107,6 @@ section {
 }
 
 
-@keyframes ham3 {
-	0% {
-		width: 22px;
-	}
-
-	100% {
-		width: 15px;
-	}
-}
-
-@keyframes ham4 {
-	0% {
-		width: 15px;
-	}
-
-	100% {
-		width: 22px;
-	}
-}
 
 @keyframes line {
 	0% {

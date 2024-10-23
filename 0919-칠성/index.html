@@ -548,7 +548,7 @@
 					$('.dot').stop().animate({ 'left': left + wid - 5 })
 				};
 
-				dotAni($('.tab_menu li a.on'));
+				dotAni($('.tab_menu li').first());
 
 				$(window).resize(function () {
 					dotAni($('.tab_menu li a.on'))

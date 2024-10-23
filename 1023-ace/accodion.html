@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.title {
+			background-color: rgb(250, 216, 170);
+			padding: 10px;
+			border-bottom: 1px solid #000;
+			cursor: pointer;
+			font-weight: bold;
+		}
+
+		.title.on {
+			background-color: rgb(3, 33, 37);
+			color: rgb(214, 237, 251);
+		}
+
+		.desc {
+			background-color: rgb(192, 246, 248);
+			max-height: 0;
+			overflow: hidden;
+			opacity: 0;
+			transition: max-height 0.5s ease, opacity 0.5s ease;
+		}
+
+		/* desc에 padding을주면height: 0;해도 padding을주면height 이 잡히기 때문 */
+		.inner {
+			width: 100%;
+			height: 100%;
+			padding: 10px 30px;
+		}
+
+		.tab.on desc {
+			max-height: 200px;
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="accodion">
+		<div class="tab">
+			<div class="title">london</div>
+			<div class="desc">
+				<div class="inner">
+					<h3>London</h3>
+					<p>London is the capital city of England.</p>
+				</div>
+			</div>
+		</div>
+		<div class="tab">
+			<div class="title">Paris</div>
+			<div class="desc">
+				<div class="inner">
+					<h3>Paris</h3>
+					<p>Paris is the capital of France.</p>
+				</div>
+			</div>
+		</div>
+		<div class="tab">
+			<div class="title">Tokyo</div>
+			<div class="desc">
+				<div class="inner">
+					<h3>Tokyo</h3>
+					<p>Tokyo is the capital of Japan.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		function openTab(tab) {
+			const desc = tab.querySelector('.desc');
+			tab.classList.add('on');
+			desc.style.maxHeight = desc.scrollHeight + 'px';
+			desc.style.opacity = 1;
+		}
+
+		function closeTab(tab) {
+			const desc = tab.querySelector('.desc');
+			tab.classList.remove('on');
+			desc.style.maxHeight = 0;
+			desc.style.opacity = 0;
+		}
+
+
+		const headings = document.querySelectorAll('.title');
+		let tabs = document.querySelectorAll('.tab');
+
+		//열려있는 tab을 기억하는 변수
+		let activeTab = tabs[0]
+
+		openTab(activeTab)
+
+		headings.forEach((title) => {
+			title.addEventListener('click', function () {
+				for(t of headings){
+					t.classList.remove('on')
+				}
+				this.classList.add('on')
+
+				//click한 title
+				const parentTab = title.parentNode;
+				openTab(parentTab) //click한 title open
+				if(activeTab === parentTab){return}
+
+				if (activeTab) {
+					closeTab(activeTab);//열려있는 tab remove
+
+				} 
+				
+				activeTab = parentTab //click해서 열린 해당번째를 기억해둠
+
+			});
+		});
+	</script>
+
+</body>
+
+</html>

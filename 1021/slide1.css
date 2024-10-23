@@ -1,36 +1,33 @@
-.swiper-wrapper .slide1 {
-  background-image: url(./image/yes24image/slide1.png);
+@import url(../font/font.css);
+.under .swiper-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
-.swiper-wrapper .slide2 {
-  background-image: url(./image/yes24image/slide2.png);
+.under .swiper-wrapper .swiper-slide {
+  width: 840px !important;
+  position: relative;
+  overflow: hidden;
 }
-.swiper-wrapper .slide3 {
-  background-image: url(./image/yes24image/slide3.jfif);
+.under .swiper-wrapper .swiper-slide a:hover img {
+  transform: scale(1.08);
 }
-.swiper-wrapper .slide4 {
-  background-image: url(./image/yes24image/slide4.jfif);
+.under .swiper-wrapper .swiper-slide a .caption {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  transition: 0.35s;
+  color: white;
+  padding: 15px;
 }
-.swiper-wrapper .slide5 {
-  background-image: url(./image/yes24image/slide5.jfif);
+.under .swiper-wrapper .swiper-slide a .caption p {
+  padding-top: 15px;
+  font-family: scdream4;
 }
-.swiper-wrapper .slide6 {
-  background-image: url(./image/yes24image/slide6.jfif);
-}
-.swiper-wrapper .slide7 {
-  background-image: url(./image/yes24image/slide7.jfif);
-}
-.swiper-wrapper .slide8 {
-  background-image: url(./image/yes24image/slide8.jfif);
-}
-.swiper-wrapper .slide9 {
-  background-image: url(./image/yes24image/slide9.png);
-}
-.swiper-wrapper .slide10 {
-  background-image: url(./image/yes24image/slide10.png);
-}
-.swiper-wrapper .slide11 {
-  background-image: url(./image/yes24image/slide11.jfif);
-}
-.swiper-wrapper .slide12 {
-  background-image: url(./image/yes24image/slide12.jfif);
+.under .swiper-wrapper .swiper-slide .swiper-slide-active .caption {
+  display: block;
 }

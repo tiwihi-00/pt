@@ -94,16 +94,16 @@
 		// $('ul.tab-menu li:first-child a').addClass('on')
 		// $('.tab:first-child').addClass('on')
 
-		const a_firsts = document.querySelectorAll('ul.tab-menu li:first-child a')
+		// const a_firsts = document.querySelectorAll('ul.tab-menu li:first-child a')
 
-		for (let link of a_firsts) {
-			link.classList.add('on')
-		}
-		const tabs_firsts = document.querySelectorAll('.tab:first-child')
+		// for (let link of a_firsts) {
+		// 	link.classList.add('on')
+		// }
+		// const tabs_firsts = document.querySelectorAll('.tab:first-child')
 
-		for (let tab of tabs_firsts) {
-			tab.classList.add('on')
-		}
+		// for (let tab of tabs_firsts) {
+		// 	tab.classList.add('on')
+		// }
 		// --------------------------
 
 		// $('ul.tab-menu li a').click(function(){
@@ -116,6 +116,8 @@
 
 		tabFuc('#tabbox1')
 		tabFuc('#tabbox2')
+
+
 
 		// --------------------------
 
@@ -130,12 +132,66 @@
 		// 	})
 		// }
 
+		// function tabFuc(target) {
+		// 	//target 하위에 있는
+		// 	let targetElem = document.querySelector(target)
+		// 	let aElems = targetElem.querySelectorAll('ul.tab-menu li a')
+
+		// 	// $(target).find('ul.tab-menu li a').click(function ()
+		// 	aElems.forEach(function (aElem) {
+		// 		aElem.addEventListener('click', function (e) {
+		// 			e.preventDefault()
+
+		// 			// 	$(target).find('.tab').removeClass('on')
+		// 			// 	$(this).addClass('on')
+
+		// 			// for (let menu of targetElem.querySelectorAll('ul.tab-menu li a')) {
+		// 			// 	menu.classList.remove('on')
+		// 			// }
+
+		// 			let menus = targetElem.querySelectorAll('ul.tab-menu li a')
+		// 			controlClass(menus, 'remove')
+		// 			this.classList.add('on')
+
+		// 			// 	let href = $(this).attr('href')
+		// 			// 	$(target).find('.tab').removeClass('on')
+		// 			// 	$(href).addClass('on')
+
+		// 			let href = this.getAttribute('href')
+
+		// 			// for (let tab of targetElem.querySelectorAll('.tab')) {
+		// 			// 	tab.classList.remove('on')
+		// 			// }
+
+		// 			let tabs=targetElem.querySelectorAll('.tab')
+		// 			controlClass(tabs, 'remove')
+		// 			targetElem.querySelector(href).classList.add('on')
+		// 		})
+
+		// 	})
+
+		// }
+
+		// elements:대상
+		// action: add, remove
+		// 객체[] 대괄호 표기법=>어떤 값이 들어오면 문자값으로 전달되기 때문
+		const a_firsts = document.querySelectorAll('ul.tab-menu li:first-child a')
+		const tabs_firsts = document.querySelectorAll('.tab:first-child')
+
+		function controlClass(elements, action) {
+			for (let elem of elements) {
+				elem.classList[action]('on')
+			}
+		}
+		controlClass(a_firsts, 'add')
+		controlClass(tabs_firsts, 'add')
+
+
 		function tabFuc(target) {
 			//target 하위에 있는
 			let targetElem = document.querySelector(target)
 			let aElems = targetElem.querySelectorAll('ul.tab-menu li a')
-	
-			// $(target).find('ul.tab-menu li a').click(function ()
+
 			aElems.forEach(function (aElem) {
 				aElem.addEventListener('click', function (e) {
 					e.preventDefault()
@@ -143,9 +199,12 @@
 					// 	$(target).find('.tab').removeClass('on')
 					// 	$(this).addClass('on')
 
-					for (let menu of targetElem.querySelectorAll('ul.tab-menu li a')) {
-						menu.classList.remove('on')
-					}
+					// for (let menu of targetElem.querySelectorAll('ul.tab-menu li a')) {
+					// 	menu.classList.remove('on')
+					// }
+
+					let menus = targetElem.querySelectorAll('ul.tab-menu li a')
+					controlClass(menus, 'remove')
 					this.classList.add('on')
 
 					// 	let href = $(this).attr('href')
@@ -153,20 +212,19 @@
 					// 	$(href).addClass('on')
 
 					let href = this.getAttribute('href')
-					
-					for (let tab of targetElem.querySelectorAll('.tab')) {
-						tab.classList.remove('on')
-					}
+
+					// for (let tab of targetElem.querySelectorAll('.tab')) {
+					// 	tab.classList.remove('on')
+					// }
+
+					let tabs=targetElem.querySelectorAll('.tab')
+					controlClass(tabs, 'remove')
 					targetElem.querySelector(href).classList.add('on')
 				})
 
-
 			})
 
-
-
 		}
-
 
 
 	</script>

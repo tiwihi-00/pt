@@ -53,6 +53,26 @@
 			display: block;
 			width: 100%;
 		}
+
+		.swiper4 {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper4-slide {
+			background-position: center;
+			background-size: cover;
+			padding: 30px;
+			position: relative;
+		}
+
+		.swiper4-slide img {
+			display: block;
+
+			width: 840px;
+			height: 440px;
+			transition: all 0.3s;
+		}
 	</style>
 </head>
 
@@ -111,90 +131,6 @@
 			<a href="#" class="global"><span>GLOBAL</span></a>
 		</div>
 		<!-- side menu -->
-		<div class="pf-gnb-wrap" id="pf-gnb-wrap">
-			<div class="pf-gnb-top">
-				<a href="#" class="pf-ham">
-					<span class="pf-ham1"></span>
-					<span class="pf-ham2"></span>
-					<span class="pf-ham3"></span>
-				</a>
-			</div>
-			<div class="pf-gnb-box mCustomScrollbar _mCS_1">
-				<div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside">
-					<div id="mCSB_1_container" class="mCSB_container">
-						<div class="pf-gnb-scroll-wrap">
-							<ul class="pf-gnb-list1">
-								<li>
-									<h2><a href="#">콘서트</a></h2><span></span>
-									<ul class="pf-gnb-2depth">
-										<li><a href="#">전체보기</a></li>
-										<li><a href="#">국내뮤지션</a></li>
-										<li><a href="#">해외뮤지션</a></li>
-										<li><a href="#">페스티벌</a></li>
-									</ul>
-								</li>
-								<li>
-									<h2><a href="#">뮤지컬</a></h2><span></span>
-									<ul class="pf-gnb-2depth">
-										<li><a href="#">전체보기</a></li>
-										<li><a href="#">라이선스</a></li>
-										<li><a href="#">오리지널</a></li>
-										<li><a href="#">창작</a></li>
-										<li><a href="#">넌버벌 퍼포먼스</a></li>
-									</ul>
-								</li>
-								<li>
-									<h2><a href="#">연극</a></h2><span></span>
-									<ul class="pf-gnb-2depth">
-										<li><a href="#">전체보기</a></li>
-										<li><a href="#">대학로</a></li>
-										<li><a href="#">기타지역</a></li>
-									</ul>
-								</li>
-								<li>
-									<h2><a href="#">클래식/국악/무용</a></h2><span></span>
-									<ul class="pf-gnb-2depth">
-										<li><a href="#">전체보기</a></li>
-										<li><a href="#">클래식</a></li>
-										<li><a href="#">발레/무용</a></li>
-										<li><a href="#">국악</a></li>
-									</ul>
-								</li>
-								<li>
-									<h2><a href="#">전시/행사</a></h2><span></span>
-									<ul class="pf-gnb-2depth">
-										<li><a href="#">전체보기</a></li>
-										<li><a href="#">전시</a></li>
-										<li><a href="#">체험/행사</a></li>
-										<li><a href="#">워터파크/스파</a></li>
-									</ul>
-								</li>
-								<li>
-									<h2><a href="#">아동/가족</a></h2><span></span>
-									<ul class="pf-gnb-2depth">
-										<li><a href="#">전체보기</a></li>
-										<li><a href="#">뮤지컬</a></li>
-										<li><a href="#">연극</a></li>
-										<li><a href="#">기타</a></li>
-									</ul>
-								</li>
-							</ul><!--pf-gnb-list1-->
-							<div class="pf-gnb-list2">
-								<a href="#" class="pf-gnb-btn1">랭킹</a><a href="#" class="pf-gnb-btn2">지역별</a><a href="#"
-									class="pf-gnb-btn3">공연장</a>
-							</div><!--pf-gnb-list2-->
-							<ul class="pf-gnb-list3">
-								<li><a href="#">공지사항</a></li>
-								<li><a href="#">이벤트</a></li>
-								<li><a href="#">읽을거리</a></li>
-								<li><a href="#">이용안내</a></li>
-							</ul><!--pf-gnb-list3-->
-							<div class="pf-gnb-list4">
-								<p class="pf-gnb-tit"><a href="#" id="leftMyTicket">MY티켓</a></p>
-								<ul>
-									<li><a href="#" id="leftMyOrder" class="pf-gnb-btn4">예매확인/취소</a></li>
-								</ul>
-								<p class="pf-gnb-tit">최근 본 상품</p>
 
 
 	</header>
@@ -225,7 +161,7 @@
 						<img src="./image/yes24image/sum2.jfif" alt="" class="lazyload">
 						<span>2/12</span></a>
 					<a href="#" class="">
-						<img src="./image/yes24image/slide3.jfif" alt="" class="lazyload">
+						<img src="./image/yes24image/sum3.jfif" alt="" class="lazyload">
 						<span>3/12</span></a>
 					<a href="#" class="">
 						<img src="./image/yes24image/sum4.jfif" alt="" class="lazyload">
@@ -394,7 +330,7 @@
 				</p>
 				<ul class="rankingUl">
 					<li class="rankingLl on" data-tab="star">
-						<a href="#">
+						<a href="#star">
 							<dl>
 								<dt>1위
 									<span class="dash">-</span>
@@ -409,7 +345,7 @@
 							</dl>
 						</a>
 					</li>
-					<li class="rankingLl" data-tab="langbo"><a href="#">
+					<li class="rankingLl" data-tab="langbo"><a href="#langbo">
 							<dl>
 								<dt>2위<span class="dash">-</span></dt>
 								<dd><img src="./image/yes24image/랭보sum.jfif" alt=""></dd>
@@ -429,7 +365,7 @@
 								</dd>
 							</dl>
 						</a></li>
-					<li class="rankingLl" data-tab="kinky"><a href="#">
+					<li class="rankingLl" data-tab="kinky"><a href="#cyrano">
 							<dl>
 								<dt>4위<span class="dash">-</span></dt>
 								<dd><img src="./image/yes24image/kinky.sum.jfif" alt=""></dd>
@@ -439,7 +375,7 @@
 								</dd>
 							</dl>
 						</a></li>
-					<li class="rankingLl" data-tab="etenety"><a href="#">
+					<li class="rankingLl" data-tab="etenety"><a href="#etenety">
 							<dl>
 								<dt>5위<span class="up"></span></dt>
 								<dd><img src="./image/yes24image/이터너티sum.jfif" alt=""></dd>
@@ -743,6 +679,52 @@
 		</div>
 
 	</section>
+	<section class="sect45">
+		<h2>REVIEW & INTERVIEW</h2>
+		<div class="swiper under">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="#">
+						<img src="./image/yes24image/un-gent.jfif" alt="">
+						<div class="caption">
+							<p>무시무시하게 웃기는 최고의 코미디 뮤지컬 - 뮤지컬 <젠틀맨스가이드>
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<img src="./image/yes24image/un-hades.jfif" alt="">
+						<div class="caption">
+							<p>그럼에도 계속 부르는 아주 오래된 사랑 이야기 - 뮤지컬 <하데스타운>
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<img src="./image/yes24image/un-van.jfif" alt="">
+						<div class="caption">
+							<p>자기 귀를 잘랐던 그 사람의 이야기 - 뮤지컬 <빈센트 반 고흐>
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<img src="./image/yes24image/un-hades.jfif" alt="">
+						<div class="caption">
+							<p>무시무시하게 웃기는 최고의 코미디 뮤지컬 - 뮤지컬 <젠틀맨스가이드>
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</section>
 	<section class="sect5">
 		<div class="cont">
 			<div class="con-left">
@@ -759,14 +741,16 @@
 				<a href="#" class="cca4">티켓판매안내</a>
 			</div>
 			<div class="con-right">
-				<div class="social">
-					<a href="#" class="soc1"><img src="./image/yes24image/social1.png" alt=""></a>
-					<a href="#" class="soc2"><img src="./image/yes24image/social2.png" alt=""></a>
-					<a href="#" class="soc3"><img src="./image/yes24image/social3.png" alt=""></a>
-				</div>
-				<div class="appdown">
-					<a href="#"><img src="./image/yes24image/appdown1.png" alt=""></a>
-					<a href="#"><img src="./image/yes24image/appdown2.png" alt=""></a>
+				<div class="sns">
+					<div class="social">
+						<a href="#" class="soc1"><img src="./image/yes24image/social1.png" alt=""></a>
+						<a href="#" class="soc2"><img src="./image/yes24image/social2.png" alt=""></a>
+						<a href="#" class="soc3"><img src="./image/yes24image/social3.png" alt=""></a>
+					</div>
+					<div class="appdown">
+						<a href="#"><img src="./image/yes24image/appdown1.png" alt=""></a>
+						<a href="#"><img src="./image/yes24image/appdown2.png" alt=""></a>
+					</div>
 				</div>
 				<a href="#" class="deduction"><img src="./image/yes24image/deduction.png" alt=""></a>
 			</div>
@@ -793,6 +777,7 @@
 		});
 
 
+
 		swiper.on('slideChange', function () {
 			const aElems = document.querySelectorAll('.pager-bg a')
 			let activeIdx = swiper.realIndex;
@@ -803,6 +788,9 @@
 			})
 			aElems[activeIdx].classList.add('on')
 		})
+
+
+
 
 		const aElems = document.querySelectorAll('.pager-bg a')
 
@@ -831,15 +819,23 @@
 
 
 		const a_firsts = document.querySelectorAll('.ranking4 li:first-child a')
-		for (let link of a_firsts) {
-			link.classList.add('on')
-		}
+		// for (let link of a_firsts) {
+		// 	link.classList.add('on')
+		// }
 
 		const tabs_firsts = document.querySelectorAll('.tab:first-child')
+		// for (let tab of tabs_firsts) {
+		// 	tab.classList.add('on')
+		// }
 
-		for (let tab of tabs_firsts) {
-			tab.classList.add('on')
+		function controlClass(elements, action) {
+			for (let elem of elements) {
+				elem.classList[action]('on')
+			}
 		}
+
+		controlClass(a_firsts, 'add')
+		controlClass(tabs_firsts, 'add')
 
 		tabFuc('#sect4')
 
@@ -850,21 +846,35 @@
 			aElems.forEach(function (aElem) {
 				aElem.addEventListener('click', function (e) {
 					e.preventDefault()
-					for (let menu of targetElem.querySelectorAll('.ranking4 li a')) {
-						menu.classList.remove('on')
-					}
+					let menus = targetElem.querySelectorAll('.ranking4 li a')
+					controlClass(menus, 'remove')
 					this.classList.add('on')
 
 					let href = this.getAttribute('href')
 
-					for (let tab of targetElem.querySelectorAll('.tab')) {
-						tab.classList.remove('on')
-					}
+					let tabs=targetElem.querySelectorAll('.tab')
+					controlClass(tabs, 'remove')
 					targetElem.querySelector(href).classList.add('on')
 				})
 			})
 		}
 
+		const rankingItem=document.querySelectorAll('.rankingLl')
+		const tabItm=document.querySelectorAll('.tabmenu li')
+		
+		document.querySelectorAll('.rankingLl').forEach(function (rankingItem) {
+			rankingItem.addEventListener('click', function (event) {
+				document.querySelectorAll('.tabmenu li').forEach(function (tabItem) {
+					tabItem.classList.remove('active');
+				});
+
+				const tabId = rankingItem.getAttribute('data-tab');
+				const targetTab = document.getElementById(tabId)
+				if (targetTab) {
+					targetTab.classList.add('active')
+				}
+			})
+		})
 
 		document.querySelectorAll('.rankingLl').forEach(function (rankingItem) {
 			rankingItem.addEventListener('click', function (event) {
@@ -895,6 +905,33 @@
 				el: ".swiper-pagination",
 				clickable: true,
 			},
+		});
+
+		var swiper4 = new Swiper(".under", {
+			slidesPerView: 'auto',
+			spaceBetween: 50,
+			centeredSlides: true,
+			loop: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			on: {
+				slideChangeTransitionEnd: function () {
+
+					const captions = document.querySelectorAll('.caption');
+					captions.forEach(caption => caption.style.display = 'none');
+
+
+					const activeSlide = this.slides[this.activeIndex]; // 현재 활성화된 슬라이드
+					const activeCaption = activeSlide.querySelector('.caption');
+					if (activeCaption) activeCaption.style.display = 'block'; // 설명 보이기
+				}
+			}
 		});
 	</script>
 </body>
