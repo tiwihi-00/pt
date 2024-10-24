@@ -31,7 +31,7 @@
 			<img class="hring" src="./image/hring.png" alt="">
 			<img class="b3" src="./image/b1.png" alt="">
 			<img class="stick" src="./image/stick.png" alt="">
-			<img class="g-ball" src="./image/ball19.png" alt="">
+		
 		</div>
 		<div class="comment">
 			<h4>Inspired by<br /> <b>of the fluidity<br /> <strong>form and space.</strong></b></h4>
@@ -101,16 +101,20 @@
 			repeat: -1
 		});
 
-		imageTl.from('.hring, .stick', {
+		imageTl.from('.hring', {
 			yoyo: true,
 			duration: 3,
 			rotation: 45,
 			repeat: -1
 		});
 
-		gsap.to('.g-ball', {
-			rotation: 360, duration: 2, repeat: -1, ease: "power1.inOut"
-		})
+		imageTl.from('.stick', {
+			yoyo: true,
+			duration: 5,
+			rotation: 60,
+			repeat: -1
+		});
+
 
 		// 개별 애니메이션
 		gsap.to('.mol2', {

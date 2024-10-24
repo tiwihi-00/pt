@@ -78,8 +78,8 @@
 }
 .stage .plnets .hring {
   position: absolute;
-  width: 10%;
-  left: 32%;
+  width: 9%;
+  left: 35%;
   bottom: 30%;
   transform: rotate(-40deg);
 }
@@ -96,12 +96,6 @@
   left: 2%;
   bottom: 3%;
   transform: rotate(-40deg);
-}
-.stage .plnets .g-ball {
-  position: absolute;
-  width: 8%;
-  left: -2%;
-  top: 0%;
 }
 .stage .comment {
   position: absolute;
