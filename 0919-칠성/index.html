@@ -414,7 +414,7 @@
 				<li><a href="#">롯데칠성몰</a></li>
 				<li><a href="#"></a>신문고</li>
 				<li><a href="#"></a>사이트맵</li>
-			
+
 			</ul>
 			<div class="copyright">
 				<p>서울특별시 송파구 올림픽로 269 롯데캐슬골드 5층 TEL : 02-3479-9114 FAX : 02-536-9767 대표이사 : 박윤기</p>
@@ -527,35 +527,42 @@
 
 		});
 
+
+
 		$(document).ready(function () {
 			$('.tab_menu li a').click(function (e) {
-				e.preventDefault();
-				let href = $(this).attr('href');
+				e.preventDefault()
+				let href = $(this).attr('href')
 
-				$('.tab_menu li a').removeClass('on');
-				$(this).addClass('on');
+				$('.tab_menu li a').removeClass('on')
+				$(this).addClass('on')
 
 				$('article').removeClass('on')
-				$(href).addClass('on');
+				$(href).addClass('on')
 
-				let left = $(this).offset().left;
-				let wid = $(this).width() / 2;
-				$('.dot').stop().animate({ 'left': left + wid - 5 })
+				dotAni($(this))
+				// -----------------------------
 
-				function dotAni(active) {
-					let left = active.offset().left;
-					let wid = active.width() / 2;
-					$('.dot').stop().animate({ 'left': left + wid - 5 })
-				};
-
-				dotAni($('.tab_menu li').first());
-
-				$(window).resize(function () {
-					dotAni($('.tab_menu li a.on'))
-				})
 
 			})
+			dotAni($('.tab_menu li').first())
+
+			$(window).resize(function () {
+				dotAni($('.tab_menu li').first())
+			})
+
+			// -------------------------------------------
+			function dotAni(active) {
+
+				let left = active.offset().left
+				let wid = active.width() / 2
+				$('.dot').stop().animate({ 'left': left + wid - 5 })
+			}
+
 		})
+
+
+
 
 
 	</script>

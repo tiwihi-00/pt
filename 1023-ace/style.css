@@ -29,6 +29,7 @@
 }
 .wrap header .headin {
   max-width: 1500px;
+  width: 90%;
   margin: auto;
   height: auto;
 }
@@ -230,7 +231,7 @@
 .wrap header .headin .m_all_meun_btn_mh_btn {
   display: block;
   position: absolute;
-  right: 0;
+  right: 3%;
   width: 19px;
   height: 20px;
   background: url(./image/all-menu-btn.png) no-repeat center;
@@ -241,36 +242,235 @@
   width: 100%;
   height: 100vh;
 }
+.wrap section.sect1 {
+  width: 90%;
+  margin: auto;
+}
 .wrap section.sect1 .mySwiper {
   position: relative;
   width: 100%;
   margin-top: 85px;
+  height: calc(100vh - 280px);
+  overflow: visible;
 }
 .wrap section.sect1 .mySwiper .swiper-wrapper {
   width: calc(100% - 160px);
   height: 100%;
-  margin: 0 auto;
 }
 .wrap section.sect1 .mySwiper .swiper-wrapper .swiper-slide {
   flex-shrink: 0;
-  width: 100%;
-  height: 100%;
+  width: calc(100% - 160px);
   overflow: hidden;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.wrap section.sect1 .mySwiper .swiper-wrapper .Slide1 {
+.wrap section.sect1 .mySwiper .swiper-wrapper .swiper-slide img {
+  width: calc(100% - 160px);
+}
+.wrap section.sect1 .mySwiper .swiper-wrapper .swiper-slide.Slide1 {
   background-image: url(./image/24093003265625035288.jpg);
 }
-.wrap section.sect1 .mySwiper .swiper-wrapper .Slide3 {
+.wrap section.sect1 .mySwiper .swiper-wrapper .swiper-slide.Slide3 {
   background-image: url(./image/24010208561742755197.jpg);
 }
-.wrap section.sect1 .mySwiper .swiper-wrapper .Slide4 {
+.wrap section.sect1 .mySwiper .swiper-wrapper .swiper-slide.Slide4 {
   background-image: url(./image/24100203525963385250.jpg);
 }
-.wrap section.sect1 .mySwiper .swiper-wrapper .Slide5 {
+.wrap section.sect1 .mySwiper .swiper-wrapper .swiper-slide.Slide5 {
   background-image: url(./image/22012601581515480227.jpg);
+}
+.wrap section.sect1 .mySwiper a.swiper-arrow {
+  display: block;
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  width: 50px;
+  height: 150px;
+  transform: translateY(-50%);
+}
+.wrap section.sect1 .mySwiper a.swiper-arrow.prev {
+  left: -5%;
+}
+.wrap section.sect1 .mySwiper a.swiper-arrow.next {
+  right: -5%;
+}
+.wrap section.sect1 .mySwiper a.swiper-arrow svg {
+  fill: none;
+  stroke: #ccc;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  height: 150px;
+}
+.wrap section.sect1 .mySwiper a.swiper-arrow svg path {
+  position: absolute;
+  stroke: #c9c9c9;
+  stroke-width: 4;
+  fill: transparent;
+  transition: 0.6s;
+  stroke-linecap: round;
+}
+.wrap section.sect2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 55px 0 80px;
+}
+.wrap section.sect2 .tit {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+  font-family: EncodeSansCondensed-thin;
+  color: #333;
+  transition: 1s;
+  letter-spacing: 10;
+  padding-bottom: 50px;
+}
+.wrap section.sect2 .inner {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wrap section.sect2 .inner .swiper-bullets {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 150px;
+  transition: 1s;
+}
+.wrap section.sect2 .inner .swiper-bullets .swiper-bullet {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 17px;
+  margin-bottom: 27px;
+  font-size: 16px;
+  font-family: EncodeSansCondensed-medium;
+  color: #999;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.wrap section.sect2 .inner .swiper-bullets .swiper-bullet.on {
+  font-size: 22px;
+  color: #0890c0;
+  font-family: EncodeSansCondensed-Bold;
+}
+.wrap section.sect2 .inner .roll {
+  position: relative;
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+}
+.wrap section.sect2 .inner .roll .videoes {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 710px;
+  height: 800px;
+  margin: auto;
+}
+.wrap section.sect2 .inner .roll .videoes .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.wrap section.sect2 .inner .roll .videoes .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.wrap section.sect2 .inner .roll .videoes .swiper-wrapper .swiper-slide.on {
+  display: block;
+  opacity: 1;
+}
+.wrap section.sect2 .inner .roll .videoes .swiper-wrapper .swiper-slide video {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+.wrap section.sect2 .inner .txt_area {
+  position: absolute;
+  padding-left: 20px;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+}
+.wrap section.sect2 .inner .txt_area .txt {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: 0.35s;
+}
+.wrap section.sect2 .inner .txt_area .txt.on {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+.wrap section.sect2 .inner .txt_area .txt h3 {
+  font-family: scdream8;
+  font-size: 30px;
+  line-height: 50px;
+  color: #333;
+  line-height: 45px;
+  padding-bottom: 20px;
+  transition: 0.35s;
+}
+.wrap section.sect2 .inner .txt_area .txt p {
+  font-family: scdream4;
+  font-size: 14px;
+  line-height: 25px;
+  transition: 0.35s;
+}
+.wrap section.sect2 .inner a.swiper-arrow {
+  display: block;
+  position: absolute;
+  z-index: 200;
+  top: 50%;
+  width: 50px;
+  height: 150px;
+  transform: translateY(-50%);
+}
+.wrap section.sect2 .inner a.swiper-arrow.prev2 {
+  left: -5%;
+}
+.wrap section.sect2 .inner a.swiper-arrow.next2 {
+  right: -5%;
+}
+.wrap section.sect2 .inner a.swiper-arrow svg {
+  fill: none;
+  stroke: #ccc;
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
+  height: 150px;
+}
+.wrap section.sect2 .inner a.swiper-arrow svg path {
+  position: absolute;
+  stroke: #c9c9c9;
+  stroke-width: 4;
+  fill: transparent;
+  transition: 0.6s;
+  stroke-linecap: round;
 }
 
 @media screen and (max-width: 768px) {
@@ -279,6 +479,9 @@
     padding-top: 30px;
     height: 85px;
     text-align: center;
+  }
+  .wrap header:hover::before {
+    height: 0px;
   }
   .wrap header .headin .logo {
     display: inline-block;
@@ -308,17 +511,83 @@
   .wrap header .headin .m_all_meun_btn_mh_btn {
     right: 5%;
   }
-  .wrap section.sect1 .mySwiper .swiper-wrapper .Slide1 {
+  .wrap section {
+    height: auto;
+  }
+  .wrap section.sect1 {
+    margin-top: 80px;
+  }
+  .wrap section.sect1 .mySwiper .swiper-wrapper .swiper-slide.Slide1 {
     background-image: url(./image/24093003265701262568.jpg);
   }
-  .wrap section.sect1 .mySwiper .swiper-wrapper .Slide3 {
+  .wrap section.sect1 .mySwiper .swiper-wrapper .swiper-slide.Slide3 {
     background-image: url(./image/24071103015784024482.jpg);
   }
-  .wrap section.sect1 .mySwiper .swiper-wrapper .Slide4 {
+  .wrap section.sect1 .mySwiper .swiper-wrapper .swiper-slide.Slide4 {
     background-image: url(./image/24100203525991505811.jpg);
   }
-  .wrap section.sect1 .mySwiper .swiper-wrapper .Slide5 {
+  .wrap section.sect1 .mySwiper .swiper-wrapper .swiper-slide.Slide5 {
     background-image: url(./image/22012601581605835256.jpg);
+  }
+  .wrap section.sect2 {
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+  .wrap section.sect2 .tit {
+    font-size: 35px;
+  }
+  .wrap section.sect2 .inner {
+    width: 100%;
+    height: calc(100vh - 70px);
+  }
+  .wrap section.sect2 .inner .roll {
+    width: 100%;
+  }
+  .wrap section.sect2 .inner .roll .videoes {
+    width: 100%;
+  }
+  .wrap section.sect2 .inner .roll .videoes .swiper-wrapper {
+    width: 100%;
+  }
+  .wrap section.sect2 .inner .roll .videoes .swiper-wrapper .swiper-slide {
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+  }
+  .wrap section.sect2 .inner .roll .videoes .swiper-wrapper .swiper-slide::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 75vh;
+    background: url(./image/mainsec4_gradi_m.png) no-repeat center bottom;
+    background-size: 100% 100%;
+    z-index: 100;
+    background-blend-mode: overlay;
+  }
+  .wrap section.sect2 .inner .roll .videoes .pagination {
+    display: block;
+  }
+  .wrap section.sect2 .inner .txt_area {
+    position: absolute;
+    z-index: 150;
+    color: white;
+    left: 5%;
+    bottom: 5%;
+    width: 80%;
+    height: 100%;
+  }
+  .wrap section.sect2 .inner .txt_area li {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    bottom: 10%;
+    transform: translateY(0);
+  }
+  .wrap section.sect2 .inner a.swiper-arrow.prev2 {
+    left: 0%;
+  }
+  .wrap section.sect2 .inner a.swiper-arrow.next2 {
+    right: 0%;
   }
 }
 @media screen and (min-width: 769px) {
@@ -326,11 +595,14 @@
     width: 100%;
     height: 150px;
   }
+  .wrap header .headin {
+    width: 95%;
+  }
   .wrap header .headin .logo {
-    left: 5%;
+    left: 10%;
   }
   .wrap header .headin nav {
-    padding-left: 150px;
+    padding-left: 180px;
   }
   .wrap header .headin nav .haedM {
     padding-bottom: 0;
@@ -342,7 +614,29 @@
     display: none;
   }
   .wrap header .headin .m_all_meun_btn_mh_btn {
-    top: 80px;
+    top: 90px;
+  }
+  section.sect2 {
+    width: 100%;
+    margin: auto;
+  }
+  section.sect2 .inner {
+    margin-top: 30px;
+    width: 100%;
+  }
+  section.sect2 .inner .roll {
+    width: 30%;
+  }
+  section.sect2 .inner .roll .videoes {
+    width: 40%;
+  }
+  section.sect2 .inner .txt_area {
+    padding-left: 30px;
+    width: 18%;
+  }
+  section.sect2 .inner .txt_area h3 {
+    font-family: scdream5;
+    font-size: 25px;
   }
 }
 @media screen and (min-width: 1500px) {
@@ -351,7 +645,6 @@
   }
   .wrap header {
     width: 100%;
-    height: auto;
   }
   .wrap header .headin {
     width: 100%;
@@ -378,7 +671,13 @@
     height: 100vh;
   }
   .wrap section.sect1 {
-    padding-top: 150px;
+    padding-top: 85px;
+  }
+  .wrap section.sect2 .inner {
+    margin-top: 30px;
+  }
+  .wrap section.sect2 .inner .roll {
+    width: calc(100% - 740px);
   }
 }
 @keyframes line {
