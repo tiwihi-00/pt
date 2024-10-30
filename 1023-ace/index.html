@@ -59,6 +59,25 @@
 			height: 100%;
 			object-fit: cover;
 		}
+
+		.swiper3 {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper3-slide {
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.swiper3-slide img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 	</style>
 </head>
 
@@ -277,7 +296,9 @@
 					</li>
 					<li class="txt">
 						<a href="#video4">
-							<h3 class="txt1">시원하게, 위생적으로 <br>최고의 잠을 위한 <br>새로운 기술</h3>
+							<h3 class="txt1">피부에 가까운 만큼
+								더욱 안전하게
+								당신의 하루가 건강해집니다</h3>
 							<p class="txt2">최고 품질을 위해 중요한 소재 하나하나까지 직접 개발, 생산한 신소재만을 사용합니다</p>
 						</a>
 					</li>
@@ -294,204 +315,115 @@
 				</a>
 			</div>
 		</section>
+		<section class="sect3">
+			<h2 class="tit">ACE COLLECTION</h2>
+			<div class="sect3-wrap">
+				<ul class="sect3-menu">
+					<li><a href="#">신제품</a></li>
+					<li><a href="#">추천제품</a></li>
+				</ul>
+				<div class="sect3-tabs">
+					<div class="tab">
+						<div class="swiper se3">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="#"><img src="./image/new1.jpg" alt=""></a>
+									<div class="txt_box">
+										<p class="hash"><span>부드러운</span><span> 곡선형</span><span> 엘레강스</span></p>
+										<p class="title">LUNATO-Ⅳ</p>
+										<p class="txt">우아한 곡선미와 세련된 스타일, 가죽과 패브릭의 완벽한 조화
+										</p>
+										<div class="btn_div"><a href="#" class="btn btn3"><span>VIEW</span></a></div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<a href="#"><img src="./image/new2.jpg" alt="">
+									</a>
+									<div class="txt_box">
+										<p class="hash">
+											<span>신혼</span><span> 쿠션형</span><span> 패브릭</span>
+										</p>
+										<p class="title">AMANDE</p>
+										<p class="txt">AMANDE, 세미클래식의 우아함을 담다.</p>
+										<div class="btn_div"><a href="#" class="btn btn3">
+												<span>VIEW</span></a></div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<a href="#"><img src="./image/new3.jpg" alt=""></a>
+									<div class="txt_box">
+										<p class="hash">
+											<span>싱글침대</span>
+											<span> 자석침대</span>
+											<span> 아이침대</span>
+										</p>
+										<p class="title">BACIO</p>
+										<p class="txt">당신의 감성으로 채워지는 곳, BACIO</p>
+										<div class="btn_div"><a href="#">
+												<span>VIEW</span></a></div>
+									</div>
+								</div>
+
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+					<div class="tab on">
+						<div class="swiper se3">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="#"><img src="./image/new1.jpg" alt=""></a>
+									<div class="txt_box">
+										<p class="hash"><span>부드러운</span><span> 곡선형</span><span> 엘레강스</span></p>
+										<p class="title">LUNATO-Ⅳ</p>
+										<p class="txt">우아한 곡선미와 세련된 스타일, 가죽과 패브릭의 완벽한 조화
+										</p>
+										<div class="btn_div"><a href="#" class="btn btn3"><span>VIEW</span></a></div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<a href="#"><img src="./image/new2.jpg" alt="">
+									</a>
+									<div class="txt_box">
+										<p class="hash">
+											<span>신혼</span><span> 쿠션형</span><span> 패브릭</span>
+										</p>
+										<p class="title">AMANDE</p>
+										<p class="txt">AMANDE, 세미클래식의 우아함을 담다.</p>
+										<div class="btn_div"><a href="#" class="btn btn3">
+												<span>VIEW</span></a></div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<a href="#"><img src="./image/new3.jpg" alt=""></a>
+									<div class="txt_box">
+										<p class="hash">
+											<span>싱글침대</span>
+											<span> 자석침대</span>
+											<span> 아이침대</span>
+										</p>
+										<p class="title">BACIO</p>
+										<p class="txt">당신의 감성으로 채워지는 곳, BACIO</p>
+										<div class="btn_div"><a href="#">
+												<span>VIEW</span></a></div>
+									</div>
+								</div>
+
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
 	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="./script.js"></script>
 
 	<script>
-
-		const menuItems = document.querySelectorAll('ul.haedM li.One_dep')
-		const logo = document.querySelector('.logo')
-
-		menuItems.forEach(item => {
-			item.addEventListener('mouseenter', () => {
-				menuItems.forEach(i => i.classList.add('on'))
-				logo.style.display = 'none'
-			});
-			item.addEventListener('mouseleave', () => {
-				menuItems.forEach(i => i.classList.remove('on'))
-				logo.style.display = 'block'
-			})
-		})
-
-		const CmenuItems = document.querySelectorAll('ul.headright li.One_dep')
-
-
-		CmenuItems.forEach(item => {
-			item.addEventListener('mouseenter', () => {
-				CmenuItems.forEach(i => i.classList.add('on'))
-				logo.style.display = 'none'
-			});
-			item.addEventListener('mouseleave', () => {
-				CmenuItems.forEach(i => i.classList.remove('on'))
-				logo.style.display = 'block'
-			})
-		})
-
-		let prevScollTop = 0
-		let header = document.querySelector('header')
-
-		const sectionElems = document.querySelectorAll('section')
-		window.addEventListener('scroll', function () {
-			let currentScollTop = window.pageYOffset;
-			if (currentScollTop > prevScollTop) {
-				header.style.top = '-600px';
-			} else {
-				header.style.top = '0px'
-			}
-			prevScollTop = currentScollTop;
-		})
-
-		var swiper = new Swiper(".mySwiper", {
-			spaceBetween: 100,
-			loop: true,
-
-			centeredSlides: true,
-			navigation: {
-				nextEl: ".swiper-arrow prev",
-				prevEl: ".swiper-arrow next",
-			},
-			mousewheel: true,
-			keyboard: true,
-		});
-
-
-		const prev = document.querySelector('.prev')
-		console.log(prev)
-		const next = document.querySelector('.next')
-
-		prev.addEventListener('mouseenter', function (e) {
-			e.preventDefault()
-			this.querySelector('path').setAttribute('d', 'M 40 10 Q 10 65 40 140')
-		})
-		prev.addEventListener('mouseleave', function (e) {
-			e.preventDefault()
-			this.querySelector('path').setAttribute('d', 'M 40 10 Q 40 65 40 140');
-		})
-
-		next.addEventListener('mouseenter', function (e) {
-			e.preventDefault()
-			this.querySelector('path').setAttribute('d', 'M 10 10 Q 40 65 10 140');
-		})
-		next.addEventListener('mouseleave', function (e) {
-			e.preventDefault()
-			this.querySelector('path').setAttribute('d', 'M 10 10 Q 10 65 10 140');
-		})
-		document.querySelector('.prev').addEventListener('click', function (e) {
-			e.preventDefault()
-			swiper.slidePrev()
-		})
-		document.querySelector('.next').addEventListener('click', function (e) {
-			e.preventDefault()
-			swiper.slideNext()
-		})
-
-		var swiper2 = new Swiper(".videoes", {
-			loop: true,
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
-			pagination: {
-				el: ".swiper-pagination",
-			},
-		
-		});
-
-
-		document.addEventListener("DOMContentLoaded", function () {
-			const bullets = document.querySelectorAll('ul.swiper-bullets li');
-			const videos = document.querySelectorAll('.swiper-slide video');
-			const texts = document.querySelectorAll('ul.txt_area li');
-
-			const prevButtons = document.querySelectorAll('.prev2');
-			const nextButtons = document.querySelectorAll('.next2');
-
-			let currentIndex = 0; // 현재 슬라이드 인덱스
-
-			// 불릿 클릭 이벤트 리스너
-			bullets.forEach((bullet, index) => {
-				bullet.addEventListener('click', function (e) {
-					e.preventDefault();
-					updateSlide(index);
-				});
-			});
-
-			// 이전 버튼 클릭 이벤트 리스너
-			prevButtons.forEach(button => {
-				button.addEventListener('click', function (e) {
-					e.preventDefault();
-					currentIndex = (currentIndex === 0) ? bullets.length - 1 : currentIndex - 1; // 이전 슬라이드로 이동
-					updateSlide(currentIndex);
-				});
-			});
-
-			// 다음 버튼 클릭 이벤트 리스너
-			nextButtons.forEach(button => {
-				button.addEventListener('click', function (e) {
-					e.preventDefault();
-					currentIndex = (currentIndex === bullets.length - 1) ? 0 : currentIndex + 1; // 다음 슬라이드로 이동
-					updateSlide(currentIndex);
-				});
-			});
-
-			// 슬라이드 업데이트 함수
-			function updateSlide(index) {
-				// 불릿 클래스 관리
-				bullets.forEach(b => b.classList.remove('on'));
-				bullets[index].classList.add('on');
-
-				// 비디오 관리
-				videos.forEach(video => {
-					video.parentElement.classList.remove('on');
-					video.pause();
-				});
-				videos[index].parentElement.classList.add('on');
-				videos[index].play();
-
-				// 텍스트 관리
-				texts.forEach(text => text.classList.remove('on'));
-				texts[index].classList.add('on');
-			}
-		});
-
-
-
-		document.addEventListener("DOMContentLoaded", function () {
-			const prevButtons = document.querySelectorAll('.prev2');
-			const nextButtons = document.querySelectorAll('.next2');
-
-			prevButtons.forEach(button => {
-				button.addEventListener('mouseenter', function () {
-					const path = this.querySelector('path');
-					if (path) {
-						path.setAttribute('d', 'M 40 10 Q 10 65 40 140');
-					}
-				});
-				button.addEventListener('mouseleave', function () {
-					const path = this.querySelector('path');
-					if (path) {
-						path.setAttribute('d', 'M 40 10 Q 40 65 40 140');
-					}
-				});
-			});
-
-			nextButtons.forEach(button => {
-				button.addEventListener('mouseenter', function () {
-					const path = this.querySelector('path');
-					if (path) {
-						path.setAttribute('d', 'M 10 10 Q 40 65 10 140');
-					}
-				});
-				button.addEventListener('mouseleave', function () {
-					const path = this.querySelector('path');
-					if (path) {
-						path.setAttribute('d', 'M 10 10 Q 10 65 10 140');
-					}
-				});
-			});
-		});
 
 
 	</script>

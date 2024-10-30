@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-
+	<link rel="stylesheet" href="./jquery.mCustomScrollbar.min.css">
 	<link rel="stylesheet" href="./style.css">
 </head>
 
@@ -154,42 +154,44 @@
 	<script src="./jquery.mCustomScrollbar.js"></script>
 	<script>
 
-		$('article').mCustomScrollbar({
-			theme: "minimal-dark"
-		});
-		$('article').on('mouseleave', function(){
-			$(this).mCustomScrollbar('scrollTo', '0', {
-				scrollInertia: 2500
+		$(document).ready(function () {
+			$('article').mCustomScrollbar({
+				theme: "minimal-dark"
 			});
-			
+
+			$('article').on('mouseleave', function () {
+				$(this).mCustomScrollbar('scrollTo', '0', {
+					scrollInertia: 2500
+				});
+			});
 		});
-		
+
 
 		let cnt = 0
-        $('a.prev').click(function () {
-            cnt--
-            if (cnt == 0) {
-                $("section").animate({ left: "0" });
-                $('a.prev').fadeOut()
-            } else {
-                $('section').animate({ 'left': '+=380' })
-            }
+		$('a.prev').click(function () {
+			cnt--
+			if (cnt == 0) {
+				$("section").animate({ left: "0" });
+				$('a.prev').fadeOut()
+			} else {
+				$('section').animate({ 'left': '+=380' })
+			}
 
-        })
-        $('a.next').click(function () {
-            $('a.prev').fadeIn()
-            cnt++
-            if (cnt == 5) {
-                $('section').animate({ 'left': '-=190' },function(){
-                    $('section').animate({ 'left': '0' })
-                    $('a.prev').fadeOut()
-                })
+		})
+		$('a.next').click(function () {
+			$('a.prev').fadeIn()
+			cnt++
+			if (cnt == 5) {
+				$('section').animate({ 'left': '-=190' }, function () {
+					$('section').animate({ 'left': '0' })
+					$('a.prev').fadeOut()
+				})
 
-            } else {
-                $('section').animate({ 'left': '-=380' })
-            }
+			} else {
+				$('section').animate({ 'left': '-=380' })
+			}
 
-        })
+		})
 
 
 	</script>

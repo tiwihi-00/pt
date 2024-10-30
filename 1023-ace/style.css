@@ -472,6 +472,87 @@
   transition: 0.6s;
   stroke-linecap: round;
 }
+.wrap section.sect3 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 55px 0 80px;
+}
+.wrap section.sect3 .tit {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+  font-family: EncodeSansCondensed-thin;
+  color: #333;
+  transition: 1s;
+  letter-spacing: 10;
+  padding-bottom: 50px;
+}
+.wrap section.sect3 .sect3-wrap {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  overflow: visible;
+}
+.wrap section.sect3 .sect3-wrap .sect3-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.wrap section.sect3 .sect3-wrap .sect3-menu li a {
+  display: inline-block;
+  font-family: scdream5;
+  font-size: 22px;
+  color: #888;
+}
+.wrap section.sect3 .sect3-wrap .sect3-menu.on a {
+  display: inline-block;
+  font-family: scdream5;
+  font-size: 22px;
+  color: #0890c0;
+}
+.wrap section.sect3 .sect3-wrap .sect3-tabs {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wrap section.sect3 .sect3-wrap .sect3-tabs .tab {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.wrap section.sect3 .sect3-wrap .sect3-tabs .tab.on {
+  display: block;
+}
+.wrap section.sect3 .sect3-wrap .sect3-tabs .tab .se3 .txt_box {
+  position: absolute;
+  width: 100%;
+  left: 5%;
+  top: 5%;
+  color: #fff;
+}
+.wrap section.sect3 .sect3-wrap .sect3-tabs .tab .se3 .txt_box .hash span {
+  display: inline-block;
+  height: 40px;
+  margin-right: 10px;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+.wrap section.sect3 .sect3-wrap .sect3-tabs .tab .se3 .txt_box .title {
+  font-family: scdream8;
+  font-size: 28px;
+  transition: 0.5s;
+}
 
 @media screen and (max-width: 768px) {
   .wrap header {
@@ -589,6 +670,34 @@
   .wrap section.sect2 .inner a.swiper-arrow.next2 {
     right: 0%;
   }
+  .wrap section.sect3 .sect3-wrap .tit {
+    padding-bottom: 20px;
+  }
+  .wrap section.sect3 .sect3-wrap .sect3-menu li a {
+    font-size: 17px;
+  }
+  .wrap section.sect3 .sect3-wrap .sect3-tabs .tab .wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .wrap section.sect3 .sect3-wrap .sect3-tabs .tab .wrapper .swiper3-slide {
+    width: 100%;
+    height: 360px;
+  }
+  .wrap section.sect3 .sect3-wrap .sect3-tabs .tab .wrapper .swiper3-slide img {
+    width: 100%;
+  }
+  .wrap section.sect3 .sect3-wrap .sect3-tabs .tab .wrapper .swiper3-slide .txt_box {
+    top: 100%;
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    z-index: 20;
+    border: 1px solid #000;
+  }
+  .wrap section.sect3 .sect3-wrap .sect3-tabs .tab .wrapper .swiper3-slide .txt_box .hash span {
+    color: #2a2a2a;
+  }
 }
 @media screen and (min-width: 769px) {
   .wrap header {
@@ -638,6 +747,16 @@
     font-family: scdream5;
     font-size: 25px;
   }
+  section.sect3 .sect3-wrap .tit {
+    padding-bottom: 30px;
+  }
+  section.sect3 .sect3-wrap .sect3-menu {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  section.sect3 .sect3-wrap .sect3-tabs .tab .se3 {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1500px) {
   .wrap {
@@ -678,6 +797,16 @@
   }
   .wrap section.sect2 .inner .roll {
     width: calc(100% - 740px);
+  }
+  .wrap section.sect3 .sect3-wrap .sect3-menu {
+    margin-top: 25px;
+  }
+  .wrap section.sect3 .sect3-wrap .sect3-tabs {
+    margin-top: 25px;
+  }
+  .wrap section.sect3 .sect3-wrap .sect3-tabs .tab .se3 {
+    height: 100%;
+    width: 100%;
   }
 }
 @keyframes line {
