@@ -1,0 +1,148 @@
+@import url(../reset.css);
+@import url(../font/font.css);
+h1 {
+  position: fixed;
+  left: 20px;
+  top: 10px;
+  width: 60px;
+  z-index: 100;
+}
+
+section {
+  height: 100vh;
+  border: 1px solid #000;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+section .num {
+  font-family: EncodeSansCondensed-thin;
+  font-size: 130px;
+  position: absolute;
+  width: auto;
+  height: auto;
+  right: 0%;
+  bottom: 0%;
+}
+section#intro {
+  height: 100vh;
+}
+section#intro h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: font-size 0.3s;
+  height: 100vh;
+}
+section#intro h2 .my {
+  position: absolute;
+  font-family: EncodeSansCondensed-Black;
+  font-size: 15px;
+  font-style: normal;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#intro h2 span {
+  font-family: EncodeSansCondensed-thin;
+  font-size: 55px;
+}
+section#project {
+  background-color: #d5b1fe;
+}
+section#project h2 {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: EncodeSansCondensed-thin;
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+section#project .list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+section#project .list .proj {
+  width: 250px;
+  height: 250px;
+}
+section#project .list .proj img {
+  object-fit: cover;
+  width: 100%;
+  opacity: 1;
+}
+section#project .list .proj img:hover {
+  opacity: 0.7;
+}
+section#project .list .proj p {
+  font-family: EncodeSansCondensed-light;
+  padding-top: 15px;
+  font-size: 18px;
+}
+section#work {
+  width: 100%;
+  height: 100vh;
+  background-color: #4c1c83;
+}
+section#work .text {
+  color: white;
+  font-family: EncodeSansCondensed-light;
+  text-align: center;
+  position: absolute;
+  font-size: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  width: 100%;
+  background-color: #4c1c83;
+  padding: 30px;
+}
+section#graphic {
+  width: 100%;
+}
+section#graphic h2 {
+  padding-top: 40px;
+  text-align: center;
+  font-family: EncodeSansCondensed-thin;
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+section#graphic .graphic_wrap {
+  position: relative;
+  width: 100%;
+  height: 200vh;
+}
+section#graphic .graphic_wrap article {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+section#graphic .graphic_wrap article.s1 {
+  background-color: #d5b1fe;
+  top: 20%;
+  position: sticky;
+}
+section#graphic .graphic_wrap article.s2 {
+  background-color: #b1c0fe;
+  top: 25%;
+  position: sticky;
+}
+section#graphic .graphic_wrap article.s3 {
+  background-color: #b1fef5;
+  top: 30%;
+  position: sticky;
+}
+section#graphic .graphic_wrap article.s4 {
+  background-color: #fef9b1;
+  top: 35%;
+  position: sticky;
+}
