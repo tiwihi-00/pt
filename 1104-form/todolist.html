@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jquery TODOList</title>
+	<link rel="stylesheet" href="../reset.css">
+	<style>
+		.wrap {
+			max-width: 800px;
+			margin: auto;
+			border: 1px solid #ccc;
+			padding: 10px;
+		}
+
+		button {
+			padding: 5px 10px;
+			cursor: pointer;
+		}
+
+		input[type="text"] {
+			padding: 5px;
+			width: 90%;
+		}
+
+		li {
+			margin: 10px 0;
+			border-bottom: 1px solid #ccc;
+			padding: 5px 0;
+		}
+
+		h2 {
+			margin: 10px 0;
+		}
+
+		.flex {
+			display: flex;
+			justify-content: space-between;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrap">
+		<h2>나의 할일</h2>
+		<input type="text" id="addtext" placeholder="할 일 입력">
+		<button id="addButton">추가</button>
+		<div class="container">
+			<h2>할 일 목록</h2>
+			<ul id="memo-list"></ul>
+
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script>
+
+		$('#addButton').click(function () {
+			const text = $('#addtext').val()
+			if (text) {
+				addToList(text)
+				$('#addtext').val('')
+			} else {
+				alert('값을 입력하세요')
+			}
+		})
+
+		function addToList(text) {
+			const $li = $('<li>').addClass('flex')
+			const $p = $('<p>').text(text)
+			const $div = $('<div>')
+			const $editBtn = $('<button>').text('수정').addClass('eit-btn')
+			const $delBtn = $('<button>').text('삭제').addClass('del-btn')
+
+			$('#memo-list').append($li)
+			$li.append($p, $div)
+			$div.append($editBtn, $delBtn)
+
+			$delBtn.click(function () {
+				$li.remove()
+			})
+		}
+	</script>
+</body>
+
+</html>

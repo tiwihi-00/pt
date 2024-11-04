@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>1104</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<!-- action :사용자의 데이터를 처리할 서버 프로그램 url asp, php, jsp -->
+	<!-- form tag 속성 -->
+	<!-- 1.placeholder:입력값의 설명
+		 2.disabled:비활성화 값
+		 3.required:required 속성이 적용된 input 필드는 값이 비어 있을 경우 폼을 제출할 수 없음
+		 -->
+
+
+	<form action="">
+		<fieldset>
+			<legend>필수입력사항</legend>
+			<div>
+				<label for=""></label>
+				<input type="text" placeholder="ID" disabled required>
+			</div>
+
+			<div>
+				<input type="password" placeholder="비밀번호">
+			</div>
+		</fieldset>
+
+		<div>
+			<textarea name="" id="" cols="30" rows="5"></textarea>
+		</div>
+		<div>
+			<input type="email">
+		</div>
+		<div>
+			<input type="tel">
+		</div>
+		<div>
+			<input type="number" placeholder="숫자값만 입력" min="1000" max="10000">
+		</div>
+		<div>
+			<input type="range" min="1" max="10">
+		</div>
+
+
+		<!-- ------------ -->
+		<div>
+			<input type="radio" value="femail" id="femail" name="sex">
+			<label for="femail">여</label>
+			<input type="radio" value="mail" id="mail" name="sex">
+			<label for="mail">남</label>
+		</div>
+
+		<!-- ------------ -->
+		<!-- 한 항목만 선택하는 경우 -->
+		<label>
+			<input type="checkbox" name="agreement">동의합니다.
+		</label>
+
+		<!-- 여러개의 항목을 선택하는 경우 -->
+		<div>
+			<label for="film">좋아하는 영화 장르</label><br />
+
+			<input type="checkbox" id="action" value="action" name="film">
+			<label for="action">액션</label>
+
+			<input type="checkbox" id="romance" value="romance" name="film">
+			<label for="romance">로맨스</label>
+
+		</div>
+
+		<!-- ----------- -->
+
+		<div>
+			<input type="month">
+		</div>
+		<div>
+			<input type="date">
+		</div>
+		<div>
+			<input type="week">
+		</div>
+
+		<!-- ----------- -->
+
+		<div>
+			<input type="file" placeholder="사진첨부" accept=".png, .jpg" multiple>
+		</div>
+		<div>
+			<label for="movie">movie</label>
+			<select name="" id="">
+				<option label="country"></option>
+				<option value="korean">한국영화</option>
+				<option value="forgign">외국영화</option>
+				<option label="genre"></option>
+				<option value="drama">드라마</option>
+				<option value="comedy">코메디</option>
+			</select>
+		</div>
+
+
+
+		<input type="submit">
+	</form>
+	<details>
+		<summary>Epcot Center</summary>
+		<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions,
+			award-winning fireworks and seasonal special events.</p>
+	</details>
+
+
+</body>
+
+</html>
