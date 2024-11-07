@@ -38,6 +38,10 @@
 			display: flex;
 			justify-content: space-between;
 		}
+
+		p {
+			width: 80%;
+		}
 	</style>
 </head>
 
@@ -64,6 +68,15 @@
 				alert('값을 입력하세요')
 			}
 		})
+		// --------------------------------//
+
+		$('#addtext').keydown(function (e) {
+			if (e.key === 'Enter') {
+				$('#addButton').click()
+			}
+		})
+
+		// --------------------------------//
 
 		function addToList(text) {
 			const $li = $('<li>').addClass('flex')
@@ -78,6 +91,30 @@
 
 			$delBtn.click(function () {
 				$li.remove()
+			})
+
+			$editBtn.click(function () {
+				const currentText = $p.text()
+				$p.empty()//담겨있는 값을 clear
+
+				const $editInput = $('<input>').attr('type', 'text').val(currentText)
+				const $saveBtn = $('<button>').text('저장').addClass('save-btn')
+				$p.append($editInput)
+				$editBtn.hide()
+				$delBtn.hide()
+				$div.append($saveBtn)
+
+				$saveBtn.click(function () {
+					const newText = $editInput.val()
+					if (newText) {
+						$p.text(newText)
+
+						$saveBtn.remove()
+						$editBtn.show()
+						$delBtn.show()
+					}
+				})
+
 			})
 		}
 	</script>
