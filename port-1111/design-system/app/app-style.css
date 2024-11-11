@@ -1,9 +1,33 @@
-@import url(../reset.css);
-@import url(../../font/font.css);
+@import url(../../../font/font.css);
+@import url(../../../reset.css);
+h2 {
+  font-size: 40px;
+  font-family: scdream3;
+  font-style: normal;
+  color: #590385;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: scdream2;
+  font-style: normal;
+  color: #8f03db;
+}
+
+.progress {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 3px;
+  background-color: #75fd07;
+  z-index: 10;
+}
+
 header {
   width: 100%;
   height: 100vh;
-  background-image: url(./image/1back.png);
+  background-image: url(./app-image/1back.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,12 +68,12 @@ header .head_text .head_title h4 {
   font-size: 20px;
   padding-bottom: 10px;
 }
-header .head_text .head_title h2 {
+header .head_text .head_title h5 {
   font-family: scdream1;
   font-size: 30px;
   padding-bottom: 10px;
 }
-header .head_text .head_title h2 b {
+header .head_text .head_title h5 b {
   font-family: scdream6;
   font-size: 35px;
 }
@@ -82,14 +106,14 @@ main .main_back {
   padding: 40px;
   width: 90%;
 }
-main .main_back h2 {
+main .main_back h5 {
   color: #3617CE;
   font-family: scdream9;
   font-size: 35px;
   position: relative;
   padding: 20px;
 }
-main .main_back h2::after {
+main .main_back h5::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -186,18 +210,102 @@ main .main_back .sect2 {
   padding: 50px;
   border-radius: 20px;
 }
+main .main_back .sect2 .chart {
+  padding-top: 50px;
+}
 main .main_back .sect2 .chart ul {
   display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
 }
 main .main_back .sect2 .chart ul li {
   width: 30%;
+  text-align: center;
+  position: relative;
+}
+main .main_back .sect2 .chart ul li:nth-child(1) img {
+  width: 110px;
+}
+main .main_back .sect2 .chart ul li:nth-child(3) img {
+  width: 110px;
+}
+main .main_back .sect2 .chart ul li::after {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: rgba(162, 255, 240, 0.7);
+  z-index: 0;
+}
+main .main_back .sect2 .chart ul li img {
+  width: 130px;
+  position: relative;
+  top: -15px;
+  z-index: 1;
 }
 main .main_back .sect2 .chart ul li h4 {
   font-family: scdream8;
+  padding: 10px 0;
   color: #5e0289;
+  position: relative;
+  z-index: 1;
 }
 main .main_back .sect2 .chart ul li p {
   font-family: scdream4;
+  z-index: 5;
+  width: 70%;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+main .main_back .sect2 .chart .more-p {
+  width: 90%;
+  margin: auto;
+  padding-top: 50px;
+  font-family: scdream3;
+  line-height: 2;
+}
+main .main_back .sect2 .chart .more-p strong {
+  color: #7b02b3;
+  font-family: scdream9;
+}
+main .main_back .sect2 .chart .more-p b {
+  font-family: scdream8;
+}
+main .main_back .sect2 .desc {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+}
+main .main_back .sect2 .desc h3 {
+  color: #5e0289;
+  font-family: scdream6;
+}
+main .main_back .sect2 .desc li {
+  background-color: white;
+  border: 1px solid #038B6A;
+  border-radius: 50%;
+  height: 290px;
+  width: 290px;
+  text-align: center;
+}
+main .main_back .sect2 .desc li h4 {
+  font-family: scdream8;
+  padding: 10px 0;
+  color: #038B6A;
+  z-index: 1;
+}
+main .main_back .sect2 .desc li p {
+  padding: 20px;
+  font-family: scdream4;
+  line-height: 2;
 }
 
 @media screen and (max-width: 768px) {
@@ -217,11 +325,12 @@ main .main_back .sect2 .chart ul li p {
     width: 140px;
   }
   header .head_text .head_desc {
-    padding-top: 350px;
+    padding-top: 300px;
   }
   header .head_text .head_desc p {
     width: 90%;
     bottom: 0;
+    line-height: 1.5;
   }
   main {
     width: 100%;
@@ -231,12 +340,12 @@ main .main_back .sect2 .chart ul li p {
     padding: 20px;
     width: 98%;
   }
-  main .main_back h2 {
+  main .main_back h5 {
     width: 100%;
     font-size: 25px;
     padding-bottom: 10px;
   }
-  main .main_back h2::after {
+  main .main_back h5::after {
     content: "";
     width: 100%;
     height: 1px;
@@ -340,11 +449,90 @@ main .main_back .sect2 .chart ul li p {
   main .main_back .sect2 .chart {
     padding-top: 30px;
   }
-  main .main_back .sect2 .chart ul li h4 {
-    font-size: 15px;
+  main .main_back .sect2 .chart ul {
+    display: block;
+    width: 100%;
+  }
+  main .main_back .sect2 .chart ul li {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 30px;
+    align-items: center;
+  }
+  main .main_back .sect2 .chart ul li:nth-child(1) img {
+    width: 70px;
+  }
+  main .main_back .sect2 .chart ul li:nth-child(3) img {
+    width: 70px;
+  }
+  main .main_back .sect2 .chart ul li::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 13%;
+    border-radius: 50%;
+    z-index: 0;
+  }
+  main .main_back .sect2 .chart ul li a {
+    width: 35%;
+  }
+  main .main_back .sect2 .chart ul li a img {
+    width: 80px;
+    position: relative;
+    top: -15px;
+    z-index: 1;
+  }
+  main .main_back .sect2 .chart ul li a h4 {
+    font-family: scdream8;
+    padding: 10px 0;
+    color: #5e0289;
+    position: relative;
+    z-index: 1;
+    font-size: 13px;
+    top: -10px;
   }
   main .main_back .sect2 .chart ul li p {
+    font-family: scdream4;
+    font-size: 13px;
+    line-height: 1.8;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+  }
+  main .main_back .sect2 .chart .more-p {
+    padding-top: 25px;
+    width: 80%;
+    margin-left: 10%;
+  }
+  main .main_back .sect2 .desc {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    gap: 7px;
+    justify-content: space-between;
+  }
+  main .main_back .sect2 .desc h3 {
+    font-size: 12px;
+    color: #5e0289;
+    font-family: scdream6;
+  }
+  main .main_back .sect2 .desc li {
+    width: 26%;
+    background-color: white;
+    border: 1px solid #5e0289;
+    border-radius: 10px;
+    height: 250px;
+  }
+  main .main_back .sect2 .desc li p {
     font-size: 11px;
+    padding: 11px;
+    font-family: scdream4;
+    line-height: 1.52;
   }
 }
 @media screen and (min-width: 769px) {
@@ -368,15 +556,15 @@ main .main_back .sect2 .chart ul li p {
     padding: 20px;
     width: 98%;
   }
-  main .main_back .sect1 {
-    margin-top: 30px;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  main .main_back .sect1 h2 {
+  main .main_back h5 {
     font-family: scdream9;
     font-size: 30px;
     padding-bottom: 10px;
+  }
+  main .main_back .sect1 {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
   }
   main .main_back .sect1 .seserch {
     width: 70%;
@@ -441,12 +629,40 @@ main .main_back .sect2 .chart ul li p {
     margin-left: 12%;
     font-size: 15px;
   }
+  main .main_back .sect2 {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  main .main_back .sect2 .desc {
+    padding-top: 10px;
+    width: 90%;
+    margin: auto;
+    gap: 7px;
+  }
+  main .main_back .sect2 .desc h3 {
+    font-size: 15px;
+  }
+  main .main_back .sect2 .desc li {
+    width: 26%;
+    border-radius: 10px;
+    height: 260px;
+  }
+  main .main_back .sect2 .desc li p {
+    font-size: 13px;
+    padding: 11px;
+    line-height: 1.8;
+  }
 }
 @media screen and (min-width: 1350px) {
+  header .head_text .head_title {
+    margin-top: 30px;
+  }
   header .head_text .myt {
     width: 26%;
   }
   header .head_text .head_desc {
+    padding-top: 150px;
     width: 50%;
   }
   header .head_text .head_desc p {
@@ -454,6 +670,9 @@ main .main_back .sect2 .chart ul li p {
   }
   main {
     width: 100%;
+  }
+  main .main_back .sect1 {
+    margin-top: 80px;
   }
   main .main_back .sect1 h2 {
     font-size: 30px;
