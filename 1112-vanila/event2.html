@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.alertbox {
+			padding: 50px;
+			border: 1px solid #000;
+			width: 500px;
+			display: none;
+		}
+
+		button {
+			padding: 10px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="alertbox" id="alertbox">
+		<h2>alam</h2>
+		<button id="closebtn">close</button>
+	</div>
+	<button id="showbtn">공지글보기</button>
+
+	<script>
+		//프로퍼티 이벤트 핸들러
+
+		showbtn.onclick = function () {
+			alertbox.style.display = 'block'
+		}
+		
+		closebtn.onclick = function () {
+			alertbox.style.display = 'none'
+		}
+
+	</script>
+</body>
+
+</html>

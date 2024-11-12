@@ -17,6 +17,7 @@ h3 {
 @media screen and (min-width: 1350px) {
   header .head_text .myt {
     width: 26%;
+    top: 10%;
   }
   header .head_text .head_desc {
     width: 50%;
@@ -55,7 +56,7 @@ h3 {
   }
   main .main_back .sect1 table td {
     padding: 10px;
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
   }
   main .main_back .sect1 table td img {
@@ -84,14 +85,11 @@ h3 {
     justify-content: space-between;
   }
   main .main_back .sect1 .desc h3 {
-    font-size: 15px;
-    color: #5e0289;
+    font-size: 17px;
     font-family: scdream6;
   }
   main .main_back .sect1 .desc li {
     width: 26%;
-    background-color: white;
-    border: 1px solid #5e0289;
     border-radius: 10px;
     height: 200px;
   }
@@ -102,13 +100,13 @@ h3 {
     line-height: 1.8;
   }
   main .main_back .sect1 .more-p {
-    width: 85%;
+    width: 80%;
     margin-top: 10px;
     padding: 20px;
     font-family: scdream4;
     line-height: 1.8;
     color: #038B6A;
-    margin-left: 12%;
+    margin-left: 15%;
     font-size: 15px;
   }
   main .main_back .sect2 .chart {

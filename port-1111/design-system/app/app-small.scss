@@ -113,9 +113,10 @@ h3 {
 
 
 				.seserch {
-					width: 100%;
+					width: 90%;
+
 					margin-top: 30px;
-					margin-left: 0;
+					margin-left: 5%;
 
 				}
 
@@ -132,7 +133,7 @@ h3 {
 							th {
 								font-family: scdream8;
 								color: #3617CE;
-								font-size: 9px;
+								font-size: 11px;
 								padding-bottom: 8px;
 								text-align: center;
 							}
@@ -158,7 +159,7 @@ h3 {
 					width: 78%;
 					display: flex;
 					justify-content: space-between;
-					margin-left: 30%;
+					margin-left: 25%;
 					margin-bottom: 10px;
 					padding-right: 13%;
 
@@ -192,7 +193,7 @@ h3 {
 						background-color: white;
 						border: 1px solid #5e0289;
 						border-radius: 10px;
-						height: 250px;
+						height: 230px;
 
 						p {
 							font-size: 11px;
@@ -305,8 +306,8 @@ h3 {
 
 
 					h3 {
-
-						font-size: 18px;
+						padding-bottom: 15px;
+						font-size: 16px;
 						color: #5e0289;
 						font-family: scdream6;
 						width: 20%;
@@ -326,7 +327,7 @@ h3 {
 					}
 
 					ul {
-						width: 400px;
+						width: 100%;
 						display: block;
 
 						li {
@@ -350,7 +351,7 @@ h3 {
 								h6 {
 									color: #038B6A;
 									font-family: scdream7;
-									font-size: 15px;
+									font-size: 12px;
 									position: relative;
 									top: 20px;
 								}
@@ -363,7 +364,7 @@ h3 {
 								font-family: scdream4;
 								line-height: 1.5;
 								font-size: 12px;
-
+								top: -10px;
 							}
 						}
 					}
@@ -410,13 +411,14 @@ h3 {
 			.sect4 {
 				margin-top: 30px;
 				padding: 20px;
+
 				h4 {
 					width: 120px;
 					margin: auto;
 					padding-top: 30px;
 				}
-	
-	
+
+
 				ul.main {
 					padding-top: 50px;
 					width: 90%;
@@ -426,12 +428,12 @@ h3 {
 					align-items: top;
 					padding-bottom: 50px;
 					position: relative;
-	
+
 					li.main-menu {
 						width: 22%;
-	
+
 						&>a {
-							font-size: 17px;
+							font-size: 13px;
 							display: block;
 							background-color: #3617CE;
 							color: white;
@@ -439,36 +441,36 @@ h3 {
 							border-radius: 10px;
 							font-family: scdream6;
 						}
-	
+
 						.sub-menu {
 							padding-top: 25px;
-	
+
 							li {
 								width: 90%;
 								margin-left: 10%;
 								margin-bottom: 15px;
 								font-family: scdream5;
 								padding: 10px;
-								font-size: 14px;
+								font-size: 11px;
 								color: rgb(110, 5, 159);
 								border-radius: 5px;
-	
+
 								&:nth-child(1) {
 									background-color: rgba(110, 5, 159, .4);
 								}
-	
+
 								&:nth-child(2) {
 									background-color: rgba(110, 5, 159, .3);
 								}
-	
+
 								&:nth-child(3) {
 									background-color: rgba(110, 5, 159, .2);
 								}
-	
+
 								&:nth-child(4) {
 									background-color: rgba(110, 5, 159, .1);
 								}
-	
+
 								&:nth-child(5) {
 									background-color: rgba(218, 165, 243, 0.2);
 								}

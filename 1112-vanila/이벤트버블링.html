@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		div {
+			padding: 50px;
+			border: 1px solid #000;
+		}
+
+		.outer {
+			background-color: rgb(217, 182, 250);
+		}
+
+		.mieddle {
+			background-color: rgb(166, 145, 250);
+		}
+
+		.inner {
+			background-color: rgb(156, 38, 247);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="outer">
+		OUTER div
+		<div class="mieddle">
+			mieddle div
+			<div class="inner">
+				inner div
+			</div>
+		</div>
+	</div>
+
+	<script>
+
+		document.querySelector('.outer').addEventListener('click', function () {
+			alert('outer div clicked')
+		})
+
+		document.querySelector('.mieddle').addEventListener('click', function () {
+			alert('mieddle div clicked')
+		})
+
+		document.querySelector('.inner').addEventListener('click', function () {
+			alert('inner div clicked')
+		})
+
+
+
+	</script>
+</body>
+
+</html>
