@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -108,4 +109,116 @@
 	</script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./tamplate.css">
+</head>
+
+<body>
+	<div class="progress"></div>
+	<header>
+		<p class="top-p">앱 개선 프로젝트<br />
+			<b>2024</b>
+		</p>
+		<div class="head_text">
+			<div class="head_title">
+				<h4>T World All-in-One</h4>
+				<h2>데이터, 요금제, 혜택의 <br />
+					<b>스마트한 통합 관리</b>
+				</h2>
+			</div>
+			<a href="#" class="myt"><img src="./" alt=""></a>
+			<div class="head_desc">
+				<p>현재 SKT 사용자는 T World, Bill Letter, T Membership, T Data 쿠폰 등 여러 앱을 각각 다운로드해 혜택을 확인하고 이용해야 하는 번거로움을 겪고 있습니다.
+					필요한 정보를 찾기 위해 각 앱의 메뉴를 하나하나 확인해야 하는 불편함이 존재합니다. 이를 해결하기 위해 여러 앱에 흩어진 서비스를 하나의 통합 플랫폼으로 모아, 사용자가 더욱 편리하고 일관된
+					경험을 누릴 수 있도록 개선하고자 합니다.</p>
+				<p><b>T World</b> <strong>connet</strong>는 통합 서비스 제공을 통해 사용자에게 더 나은 경험을 제공하는 것을 목표로 하고 있습니다.
+					기존에는 데이터 관리, 요금제 확인, 멤버십 혜택 등 각각의 기능이 여러 개의 앱에 분산되어 있어 사용자가 불편을 겪었습니다.
+					본 프로젝트는 이 기능들을 통합하여 사용자에게 일관된 경험을 제공하고, 필요한 혜택과 놓친 혜택을 쉽게 관리할 수 있는 앱을 개발하는 것입니다.</p>
+			</div>
+
+		</div>
+	</header>
+	<section>
+		<h2 class="title">
+			OVER VIEW
+		</h2>
+	</section>
+	<section>
+		<article class="asis">
+			<h2 class="title">As Is Tobe</h2>
+		</article>
+		<article class="goal">
+			<h2 class="title">GOAL</h2>
+		</article>
+	</section>
+	<section>
+		<article class="strategy">
+			<h2 class="title">전략</h2>
+		</article>
+		<article>
+			<h2 class="title">concept</h2>
+		</article>
+	</section>
+	<section class="style">
+		<h2 class="title">STYLE GUIDE</h2>
+		<article>
+			<h2 class="title">FONT/COLOR</h2>
+		</article>
+		<article>
+			<h3 class="title">SYMBOL</h3>
+		</article>
+	</section>
+	<section>
+		<h2 class="title">DETAIL VIEW</h2>
+	</section>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+	<script>
+
+		const progress = document.querySelector('.progress')
+		const titles = document.querySelectorAll('.title')
+
+		gsap.to(progress, {
+			width: '100%',
+			scrollTrigger:
+			{
+				trigger: document.body,
+				start: 'top top',
+				end: 'bottom bottom',
+				scrub: true
+
+			}
+
+		})
+
+		titles.forEach(title => {
+			gsap.fromTo(
+				title,
+				{ opacity: 0, y: 300 },
+				{
+					opacity: 1,
+					y: 0,
+					scrollTrigger: {
+						trigger: title,
+						start: 'top 80%',
+						end: 'top 30%',
+						scrub: true
+					}
+				}
+			)
+		})
+
+	</script>
+</body>
+
+>>>>>>> 34f924e352a97d67b54918f42c35ad4cfe7c4005
 </html>
