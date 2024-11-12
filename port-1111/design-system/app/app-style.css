@@ -429,6 +429,7 @@ main .main_back .sect4 ul.main li.main-menu .sub-menu li:nth-child(4) {
 main .main_back .sect4 ul.main li.main-menu .sub-menu li:nth-child(5) {
   background-color: rgba(218, 165, 243, 0.2);
 }
-main .main_back .sect5 .mockup1 {
-  height: 100vh;
+
+.sect5 .mockup1 {
+  width: 100%;
 }
