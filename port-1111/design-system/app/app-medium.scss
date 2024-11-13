@@ -60,6 +60,7 @@ h3 {
 
 			.head_desc {
 				width: 90%;
+				padding-top: 250px;
 
 				p {
 					width: 100%;
@@ -72,33 +73,28 @@ h3 {
 		width: 100%;
 
 		.main_back {
-			margin: auto;
-			padding: 20px;
-			width: 98%;
+
 
 			h5 {
-
-				font-family: scdream9;
+				padding-top: 80px;
 				font-size: 30px;
-
-				padding-bottom: 10px;
+				padding-bottom: 20px;
 
 			}
 
 			.sect1 {
-				margin-top: 50px;
+				background-color: rgba(255, 255, 255, .7);
 				padding: 20px;
-				border-radius: 10px;
 
 				.seserch {
-					width: 70%;
-					margin-top: 50px;
-					margin-left: 15%;
+					width: 60%;
+					margin-top: 90px;
+
 
 				}
 
 				table {
-					margin: 50px auto;
+					margin: 90px auto;
 					width: 90%;
 
 
@@ -129,119 +125,133 @@ h3 {
 					}
 				}
 
-				.logos {
-					width: 85%;
+				.reserch {
 
-					margin-left: 25%;
-					margin-bottom: 50px;
-					padding-right: 20%;
+					padding-bottom: 100px;
 
-					li {
-						width: 10%;
-						height: 30px;
+					.logo {
+						text-align: center;
 
 						img {
-							width: 100%;
-
+							width: 80px;
+							border-radius: 10px;
 						}
 					}
-				}
-
-				.desc {
-					padding-top: 10px;
-					width: 90%;
-					margin: auto;
-
-					gap: 7px;
-
 
 					h3 {
-						font-size: 17px;
+						font-size: 16px;
+
 					}
 
-					li {
-						width: 26%;
+					.li {
 
-						border-radius: 10px;
-						height: 230px;
+
 
 						p {
-							font-size: 14px;
-							padding: 11px;
-
-							line-height: 1.8;
+							font-size: 13px;
+							padding: 10px;
+							font-family: scdream4;
+							line-height: 1.7;
 						}
 					}
+
+					&>div {
+						padding: 10px;
+					}
+
+					.more-p {
+						padding-top: 50px;
+						font-size: 16px;
+						padding-bottom: 50px;
+					}
+
+
 				}
 
-				.more-p {
-					width: 85%;
-					margin-top: 10px;
-					padding: 20px;
-					padding-bottom: 40px;
-					line-height: 1.8;
-
-					margin-left: 12%;
-					font-size: 15px;
-				}
 
 			}
 
 			.sect2 {
-				margin-top: 70px;
-				padding: 20px;
-				border-radius: 10px;
-
-				.desc {
-					padding-top: 50px;
-					width: 90%;
-					display: flex;
-
-					h3 {
-						font-size: 18px;
-						color: #5e0289;
-						font-family: scdream6;
-						width: 15%;
-						text-align: center;
-
-					}
+				.chart {
+					padding-top: 80px;
 
 					ul {
-						width: 85%;
-						display: flex;
-						gap: 25px;
-						justify-content: space-between;
+						padding-bottom: 80px;
 
 						li {
-							width: 230px;
-							background-color: white;
-							border: 1px solid #038B6A;
-							border-radius: 50%;
-							height: 230px;
+							padding-top: 80px;
+
+							padding-bottom: 20px;
+						}
+					}
+
+					.more-p {
+						padding-top: 25px;
+						padding-bottom: 120px;
+						font-size: 17px;
+					}
+				}
+
+				.desc-plus {
+					padding: 80px 0;
+
+					.desc {
+
+						width: 90%;
+						display: flex;
+						margin-bottom: 50px;
+
+						h3 {
+							font-size: 18px;
+							width: 15%;
 							text-align: center;
+							position: relative;
 
-							img {
-								width: 60px;
-								height: 60px;
-								position: relative;
-								top: 20px;
-							}
-
-							h6 {
-								color: #038B6A;
-								font-family: scdream7;
-								font-size: 17px;
-								position: relative;
-								top: 40px;
-							}
-
-							p {
-								padding: 20px;
-								font-family: scdream4;
-								line-height: 1.5;
-								font-size: 14px;
-								position: relative;
+							&::before {
+								content: '';
+								position: absolute;
+								left: -50px;
 								top: 30px;
+								width: 110%;
+								height: 1px;
+								background-color: #590385;
+							}
+
+						}
+
+						ul {
+							width: 85%;
+							display: flex;
+							gap: 25px;
+							justify-content: space-between;
+
+							li {
+								width: 250px;
+
+								border-radius: 50%;
+								height: 250px;
+								text-align: center;
+
+								img {
+									width: 60px;
+									height: 60px;
+
+									top: 20px;
+								}
+
+								h6 {
+
+
+									font-size: 17px;
+
+									top: 40px;
+								}
+
+								p {
+									padding: 20px;
+									font-size: 14px;
+									top: 40px;
+								}
 							}
 						}
 					}
@@ -250,15 +260,39 @@ h3 {
 			}
 
 			.sect3 {
-				margin-top: 70px;
-				padding: 20px;
-				border-radius: 10px;
+				padding: 40px;
+				margin: auto;
+				padding-top: 50px;
+				padding-bottom: 150px;
+
+				.desc {
+					width: 100%;
+
+					ul {
+						width: 95%;
+						margin: auto;
+
+						li {
+							width: 42%;
+						}
+					}
+				}
 			}
 
 			.sect4 {
-				margin-top: 70px;
+
 				padding: 20px;
-				border-radius: 10px;
+
+				h4 {
+					width: 100px;
+					margin: auto;
+					padding-top: 80px;
+
+				}
+
+				ul.main {
+					padding-bottom: 130px;
+				}
 			}
 
 

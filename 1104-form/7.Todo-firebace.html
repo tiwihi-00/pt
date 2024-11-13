@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>todofilter</title>
+	<link rel="stylesheet" href="../reset.css">
+	<style>
+		.flex {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.wrap {
+			height: 500px;
+			width: 550px;
+			margin: auto;
+			display: flex;
+			flex-direction: column;
+		}
+
+		div.view {
+			flex: 1;
+		}
+
+		button {
+			padding: 5px 10px;
+			cursor: pointer;
+		}
+
+		input,
+		#addText {
+			padding: 5px;
+		}
+
+		li {
+			margin: 5px 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		li p {
+			flex: 1;
+		}
+
+		.compleited {
+			text-decoration: line-through;
+			color: rgb(75, 1, 127);
+		}
+
+		.filter-button {
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		.inputbox {
+			display: flex;
+		}
+
+		input[type="checkbox"] {
+			margin-right: 10px;
+		}
+
+		.inputbox p input {
+			width: 100%;
+		}
+
+		.inputbox input {
+			flex: 1;
+		}
+
+		.edit-input {
+			width: 70%;
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="view">
+			<h1 class="title"> 나의 할일</h1>
+			<div class="filter-button">
+				<button id="filter-all">ALL</button>
+				<button id="filter-active">진행 중</button>
+				<button id="filter-compleited">완료</button>
+			</div>
+			<div class="container">
+				<ul id="memo-list"></ul>
+			</div>
+		</div>
+		<div class="inputbox">
+			<input type="text" id="addText">
+			<button onclick="addTodo()" id="addBtn">추가</button>
+		</div>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+	<script>
+let todos = []; // 할 일 목록 저장
+let filter = 'all'; // 초기 필터 값
+
+// Firebase 프로젝트 설정 초기화
+const firebaseConfig = {
+    apiKey: "AIzaSyDBp1ZFpv2x1stYkNVyKzdI3nzhg0AtAbw",
+    authDomain: "todo-app-fa9f4.firebaseapp.com",
+    projectId: "todo-app-fa9f4",
+    storageBucket: "todo-app-fa9f4.firebasestorage.app",
+    messagingSenderId: "895820837228",
+    appId: "1:895820837228:web:cf41e1e682e59033ed0349"
+};
+
+firebase.initializeApp(firebaseConfig);
+
+// Firestore 데이터베이스 객체 생성
+const db = firebase.firestore();
+
+// 할 일 목록 가져오기
+function getfirebacedata() {
+    db.collection('todo-App').orderBy("timestamp", "desc")
+        .get()
+        .then(querySnapshot => {
+            todos = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+            renderList();
+        })
+        .catch(error => console.error("Error fetching todos:", error));
+}
+
+// 할 일 추가
+function addTodo(inputText) {
+    if (inputText) {
+        const newTodo = {
+            text: inputText,
+            compleited: false,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp()
+        };
+
+        db.collection('todo-App').add(newTodo)
+            .then(() => {
+							getfirebacedata();
+            })
+            .catch(error => console.error("Error adding todo:", error));
+    }
+}
+
+// 할 일 수정
+function updateTodo(id, updateText, completed) {
+    const updateTodo = { text: updateText, compleited: completed };
+
+    db.collection('todo-App').doc(id).update(updateTodo)
+        .then(() => getfirebacedata())
+        .catch(error => console.error("Error updating todo:", error));
+}
+
+// 할 일 삭제
+function deleteTodo(id) {
+    db.collection('todo-App').doc(id).delete()
+        .then(() => getfirebacedata())
+        .catch(error => console.error("Error deleting todo:", error));
+}
+
+// 할 일 목록 렌더링
+function renderList() {
+    const memoList = document.getElementById('memo-list');
+    memoList.innerHTML = '';
+
+    const filteredTodo = todos.filter(todo => {
+        if (filter === 'active') return !todo.compleited;
+        if (filter === 'compleited') return todo.compleited;
+        return true;
+    });
+
+    filteredTodo.forEach(todo => {
+        const li = document.createElement('li');
+        li.classList.add('flex');
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.checked = todo.compleited;
+        checkbox.addEventListener('change', () => {
+            todo.compleited = checkbox.checked;
+            updateTodo(todo.id, todo.text, checkbox.checked);
+        });
+
+        const p = document.createElement('p');
+        p.textContent = todo.text;
+        if (todo.compleited) p.classList.add('compleited');
+
+        const btndiv = document.createElement('div');
+        const delBtn = document.createElement('button');
+        delBtn.textContent = '삭제';
+        delBtn.addEventListener('click', () => deleteTodo(todo.id));
+
+        const editBtn = document.createElement('button');
+        editBtn.textContent = '수정';
+        editBtn.addEventListener('click', () => {
+            const editInput = document.createElement('input');
+            editInput.type = 'text';
+            editInput.value = todo.text;
+
+            const saveBtn = document.createElement('button');
+            saveBtn.textContent = '저장';
+            saveBtn.addEventListener('click', () => {
+                if (editInput.value) updateTodo(todo.id, editInput.value, todo.compleited);
+            });
+
+            p.innerHTML = '';
+            p.appendChild(editInput);
+            btndiv.replaceChild(saveBtn, editBtn);
+        });
+
+        btndiv.appendChild(editBtn);
+        btndiv.appendChild(delBtn);
+        li.appendChild(checkbox);
+        li.appendChild(p);
+        li.appendChild(btndiv);
+        memoList.appendChild(li);
+    });
+}
+
+// 이벤트 리스너 추가
+document.getElementById('addBtn').addEventListener('click', () => {
+    const text = document.getElementById('addText').value;
+    if (text) {
+        addTodo(text);
+        document.getElementById('addText').value = '';
+        document.getElementById('addText').focus();
+    }
+});
+
+document.getElementById('filter-all').addEventListener('click', () => {
+    filter = 'all';
+    renderList();
+});
+
+document.getElementById('filter-active').addEventListener('click', () => {
+    filter = 'active';
+    renderList();
+});
+
+document.getElementById('filter-compleited').addEventListener('click', () => {
+    filter = 'compleited';
+    renderList();
+});
+
+// 초기 할 일 목록 가져오기
+getfirebacedata();
+	</script>
+</body>
+
+</html>

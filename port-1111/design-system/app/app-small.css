@@ -26,12 +26,12 @@ h3 {
     margin-top: 0;
   }
   header .head_text .myt {
-    top: 20%;
+    top: 17%;
     left: 0;
-    width: 140px;
+    width: 120px;
   }
   header .head_text .head_desc {
-    padding-top: 350px;
+    padding-top: 320px;
   }
   header .head_text .head_desc p {
     width: 90%;
@@ -40,12 +40,8 @@ h3 {
   main {
     width: 100%;
   }
-  main .main_back {
-    margin: auto;
-    padding: 20px;
-    width: 98%;
-  }
   main .main_back h5 {
+    padding-top: 60px;
     width: 100%;
     font-size: 25px;
     padding-bottom: 10px;
@@ -58,18 +54,15 @@ h3 {
     bottom: 0px;
   }
   main .main_back .sect1 {
-    margin-top: 30px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
-    border-radius: 10px;
   }
   main .main_back .sect1 .seserch {
-    width: 90%;
-    margin-top: 30px;
-    margin-left: 5%;
+    width: 70%;
+    margin-top: 80px;
   }
   main .main_back .sect1 table {
-    margin: 30px auto;
+    margin: 70px auto;
     width: 100%;
     border-collapse: collapse;
   }
@@ -94,69 +87,38 @@ h3 {
   main .main_back .sect1 table td img {
     width: 20px;
   }
-  main .main_back .sect1 .logos {
-    width: 78%;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 25%;
-    margin-bottom: 10px;
-    padding-right: 13%;
-  }
-  main .main_back .sect1 .logos li {
-    width: 10%;
-    height: 30px;
-  }
-  main .main_back .sect1 .logos li img {
+  main .main_back .sect1 .reserch {
     width: 100%;
+  }
+  main .main_back .sect1 .reserch .logo {
+    text-align: center;
+  }
+  main .main_back .sect1 .reserch .logo img {
+    width: 60px;
     border-radius: 10px;
   }
-  main .main_back .sect1 .desc {
-    padding-top: 10px;
-    width: 100%;
-    display: flex;
-    gap: 7px;
-    justify-content: space-between;
+  main .main_back .sect1 .reserch h3 {
+    font-size: 14px;
   }
-  main .main_back .sect1 .desc h3 {
-    font-size: 12px;
-    color: #5e0289;
-    font-family: scdream6;
-  }
-  main .main_back .sect1 .desc li {
-    width: 26%;
-    background-color: white;
-    border: 1px solid #5e0289;
-    border-radius: 10px;
-    height: 230px;
-  }
-  main .main_back .sect1 .desc li p {
+  main .main_back .sect1 .reserch .li p {
     font-size: 11px;
-    padding: 11px;
+    padding: 5px;
     font-family: scdream4;
-    line-height: 1.52;
+    line-height: 1.6;
   }
-  main .main_back .sect1 .more-p {
-    width: 85%;
-    margin-top: 10px;
-    padding: 20px;
-    font-family: scdream4;
-    line-height: 1.8;
-    color: #038B6A;
-    margin-left: 12%;
-    font-size: 15px;
+  main .main_back .sect1 .reserch > div {
+    padding: 10px;
   }
-  main .main_back .sect2 {
-    margin-top: 30px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
+  main .main_back .sect1 .reserch .more-p {
+    font-size: 14px;
   }
   main .main_back .sect2 .chart {
-    padding-top: 30px;
+    padding-top: 60px;
   }
   main .main_back .sect2 .chart ul {
     display: block;
     width: 100%;
+    padding-bottom: 60px;
   }
   main .main_back .sect2 .chart ul li {
     display: flex;
@@ -165,6 +127,7 @@ h3 {
     justify-content: space-between;
     padding-top: 30px;
     align-items: center;
+    padding-bottom: 30px;
   }
   main .main_back .sect2 .chart ul li:nth-child(1) img {
     width: 70px;
@@ -213,13 +176,15 @@ h3 {
     padding-top: 25px;
     width: 80%;
     margin-left: 10%;
+    padding-bottom: 60px;
+    font-size: 15px;
   }
-  main .main_back .sect2 .desc {
+  main .main_back .sect2 .desc-plus .desc {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 50px;
     display: flex;
   }
-  main .main_back .sect2 .desc h3 {
+  main .main_back .sect2 .desc-plus .desc h3 {
     padding-bottom: 15px;
     font-size: 16px;
     color: #5e0289;
@@ -227,7 +192,7 @@ h3 {
     width: 20%;
     position: relative;
   }
-  main .main_back .sect2 .desc h3::before {
+  main .main_back .sect2 .desc-plus .desc h3::before {
     content: "";
     position: absolute;
     left: -20px;
@@ -236,35 +201,37 @@ h3 {
     height: 1px;
     background-color: #590385;
   }
-  main .main_back .sect2 .desc ul {
+  main .main_back .sect2 .desc-plus .desc ul {
     width: 100%;
     display: block;
   }
-  main .main_back .sect2 .desc ul li {
+  main .main_back .sect2 .desc-plus .desc ul li {
     width: 100%;
     height: auto;
     background-color: transparent;
     border: none;
     display: flex;
     padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
-  main .main_back .sect2 .desc ul li a {
+  main .main_back .sect2 .desc-plus .desc ul li a {
     width: 30%;
   }
-  main .main_back .sect2 .desc ul li a img {
+  main .main_back .sect2 .desc-plus .desc ul li a img {
     width: 40px;
     height: 40px;
     position: relative;
     top: 10px;
   }
-  main .main_back .sect2 .desc ul li a h6 {
+  main .main_back .sect2 .desc-plus .desc ul li a h6 {
     color: #038B6A;
     font-family: scdream7;
     font-size: 12px;
     position: relative;
     top: 20px;
   }
-  main .main_back .sect2 .desc ul li p {
+  main .main_back .sect2 .desc-plus .desc ul li p {
     text-align: left;
     width: 100%;
     padding: 20px;
@@ -274,11 +241,11 @@ h3 {
     top: -10px;
   }
   main .main_back .sect3 {
-    margin-top: 30px;
     padding: 20px;
   }
   main .main_back .sect3 .desc {
     padding-top: 20px;
+    padding-bottom: 100px;
   }
   main .main_back .sect3 .desc ul {
     width: 100%;
@@ -287,6 +254,7 @@ h3 {
   main .main_back .sect3 .desc ul li {
     width: 90%;
     padding: 20px;
+    margin-top: 30px;
   }
   main .main_back .sect3 .desc ul li h4 {
     font-size: 16px;
@@ -294,16 +262,15 @@ h3 {
   }
   main .main_back .sect3 .desc ul li p {
     padding-bottom: 5px;
-    font-size: 11px;
+    font-size: 12px;
   }
   main .main_back .sect4 {
-    margin-top: 30px;
     padding: 20px;
   }
   main .main_back .sect4 h4 {
-    width: 120px;
+    width: 80px;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 70px;
   }
   main .main_back .sect4 ul.main {
     padding-top: 50px;
@@ -312,7 +279,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: top;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     position: relative;
   }
   main .main_back .sect4 ul.main li.main-menu {

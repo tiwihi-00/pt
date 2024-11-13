@@ -23,6 +23,7 @@ h3 {
   }
   header .head_text .head_desc {
     width: 90%;
+    padding-top: 250px;
   }
   header .head_text .head_desc p {
     width: 100%;
@@ -30,28 +31,21 @@ h3 {
   main {
     width: 100%;
   }
-  main .main_back {
-    margin: auto;
-    padding: 20px;
-    width: 98%;
-  }
   main .main_back h5 {
-    font-family: scdream9;
+    padding-top: 80px;
     font-size: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
   main .main_back .sect1 {
-    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
-    border-radius: 10px;
   }
   main .main_back .sect1 .seserch {
-    width: 70%;
-    margin-top: 50px;
-    margin-left: 15%;
+    width: 60%;
+    margin-top: 90px;
   }
   main .main_back .sect1 table {
-    margin: 50px auto;
+    margin: 90px auto;
     width: 90%;
   }
   main .main_back .sect1 table thead tr {
@@ -68,108 +62,123 @@ h3 {
   main .main_back .sect1 table td img {
     width: 20px;
   }
-  main .main_back .sect1 .logos {
-    width: 85%;
-    margin-left: 25%;
-    margin-bottom: 50px;
-    padding-right: 20%;
+  main .main_back .sect1 .reserch {
+    padding-bottom: 100px;
   }
-  main .main_back .sect1 .logos li {
-    width: 10%;
-    height: 30px;
-  }
-  main .main_back .sect1 .logos li img {
-    width: 100%;
-  }
-  main .main_back .sect1 .desc {
-    padding-top: 10px;
-    width: 90%;
-    margin: auto;
-    gap: 7px;
-  }
-  main .main_back .sect1 .desc h3 {
-    font-size: 17px;
-  }
-  main .main_back .sect1 .desc li {
-    width: 26%;
-    border-radius: 10px;
-    height: 230px;
-  }
-  main .main_back .sect1 .desc li p {
-    font-size: 14px;
-    padding: 11px;
-    line-height: 1.8;
-  }
-  main .main_back .sect1 .more-p {
-    width: 85%;
-    margin-top: 10px;
-    padding: 20px;
-    padding-bottom: 40px;
-    line-height: 1.8;
-    margin-left: 12%;
-    font-size: 15px;
-  }
-  main .main_back .sect2 {
-    margin-top: 70px;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  main .main_back .sect2 .desc {
-    padding-top: 50px;
-    width: 90%;
-    display: flex;
-  }
-  main .main_back .sect2 .desc h3 {
-    font-size: 18px;
-    color: #5e0289;
-    font-family: scdream6;
-    width: 15%;
+  main .main_back .sect1 .reserch .logo {
     text-align: center;
   }
-  main .main_back .sect2 .desc ul {
+  main .main_back .sect1 .reserch .logo img {
+    width: 80px;
+    border-radius: 10px;
+  }
+  main .main_back .sect1 .reserch h3 {
+    font-size: 16px;
+  }
+  main .main_back .sect1 .reserch .li p {
+    font-size: 13px;
+    padding: 10px;
+    font-family: scdream4;
+    line-height: 1.7;
+  }
+  main .main_back .sect1 .reserch > div {
+    padding: 10px;
+  }
+  main .main_back .sect1 .reserch .more-p {
+    padding-top: 50px;
+    font-size: 16px;
+    padding-bottom: 50px;
+  }
+  main .main_back .sect2 .chart {
+    padding-top: 80px;
+  }
+  main .main_back .sect2 .chart ul {
+    padding-bottom: 80px;
+  }
+  main .main_back .sect2 .chart ul li {
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+  main .main_back .sect2 .chart .more-p {
+    padding-top: 25px;
+    padding-bottom: 120px;
+    font-size: 17px;
+  }
+  main .main_back .sect2 .desc-plus {
+    padding: 80px 0;
+  }
+  main .main_back .sect2 .desc-plus .desc {
+    width: 90%;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  main .main_back .sect2 .desc-plus .desc h3 {
+    font-size: 18px;
+    width: 15%;
+    text-align: center;
+    position: relative;
+  }
+  main .main_back .sect2 .desc-plus .desc h3::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 30px;
+    width: 110%;
+    height: 1px;
+    background-color: #590385;
+  }
+  main .main_back .sect2 .desc-plus .desc ul {
     width: 85%;
     display: flex;
     gap: 25px;
     justify-content: space-between;
   }
-  main .main_back .sect2 .desc ul li {
-    width: 230px;
-    background-color: white;
-    border: 1px solid #038B6A;
+  main .main_back .sect2 .desc-plus .desc ul li {
+    width: 250px;
     border-radius: 50%;
-    height: 230px;
+    height: 250px;
     text-align: center;
   }
-  main .main_back .sect2 .desc ul li img {
+  main .main_back .sect2 .desc-plus .desc ul li img {
     width: 60px;
     height: 60px;
-    position: relative;
     top: 20px;
   }
-  main .main_back .sect2 .desc ul li h6 {
-    color: #038B6A;
-    font-family: scdream7;
+  main .main_back .sect2 .desc-plus .desc ul li h6 {
     font-size: 17px;
-    position: relative;
     top: 40px;
   }
-  main .main_back .sect2 .desc ul li p {
+  main .main_back .sect2 .desc-plus .desc ul li p {
     padding: 20px;
-    font-family: scdream4;
-    line-height: 1.5;
     font-size: 14px;
-    position: relative;
-    top: 30px;
+    top: 40px;
   }
   main .main_back .sect3 {
-    margin-top: 70px;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 40px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 150px;
+  }
+  main .main_back .sect3 .desc {
+    width: 100%;
+  }
+  main .main_back .sect3 .desc ul {
+    width: 95%;
+    margin: auto;
+  }
+  main .main_back .sect3 .desc ul li {
+    width: 42%;
   }
   main .main_back .sect4 {
-    margin-top: 70px;
     padding: 20px;
-    border-radius: 10px;
+  }
+  main .main_back .sect4 h4 {
+    width: 100px;
+    margin: auto;
+    padding-top: 80px;
+  }
+  main .main_back .sect4 ul.main {
+    padding-bottom: 130px;
   }
   .sect5 .mockup1 {
     width: 100%;
