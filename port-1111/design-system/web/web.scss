@@ -1,0 +1,151 @@
+@import url(../../../font/font.css);
+@import url(../../../reset.css);
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+$font-size-h2: 40px;
+$font-size-h3: 30px;
+$font-style: normal;
+$font-family-h2: scdream3;
+$font-family-h3: scdream2;
+
+
+$main-color-400: #ddc3fa;
+$main-color-500: #8f03db;
+$main-color-600: #590385;
+
+$sub-color-400: #b5f1fc;
+$sub-color-500: #3617CE;
+$sub-color-600: #011a5a;
+
+$neutral-color-400: #adf8dd;
+$neutral-color-500: #1ffdc6;
+$neutral-color-600: #038B6A;
+
+$height-50vh: 50vh;
+$height-100vh: 100vh;
+
+@mixin font-styles($size, $family) {
+	font-size: $size;
+	font-family: $family;
+	font-style: $font-style;
+}
+
+h2 {
+	@include font-styles($font-size-h2, $font-family-h2);
+	color: $main-color-600;
+}
+
+h3 {
+	@include font-styles($font-size-h3, $font-family-h3);
+	color: $main-color-500;
+}
+
+.progress {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 1px;
+	height: 3px;
+	background-color: #75fd07;
+	z-index: 10;
+}
+
+header {
+	width: 100%;
+	height: 100vh;
+	background-image: url(./image/main\ 제주.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+	p.top-p {
+		position: absolute;
+		right: 3%;
+		top: 3%;
+		font-family: scdream3;
+		font-size: 11px;
+		color: white;
+		text-align: right;
+
+		b {
+			font-family: scdream8;
+		}
+	}
+
+	.head_text {
+		width: 80%;
+		position: absolute;
+		left: 10%;
+		top: 7%;
+
+
+		.myt {
+			position: absolute;
+			right: 5%;
+			top: 5%;
+			width: 30%;
+		}
+
+		.head_title {
+			color: white;
+			width: 30%;
+			margin-top: 100px;
+
+			h4 {
+				color: #8d76ff;
+				font-family: scdream9;
+				font-size: 18px;
+				padding-bottom: 10px;
+			}
+
+			h5 {
+				font-family: scdream1;
+				font-size: 27px;
+				padding-bottom: 10px;
+
+				b {
+					font-family: scdream6;
+					font-size: 35px;
+				}
+
+			}
+
+
+		}
+
+		.head_desc {
+			padding-top: 200px;
+
+			p {
+				width: 50%;
+				color: white;
+				font-family: scdream2;
+				font-size: 12px;
+				line-height: 2;
+				padding-bottom: 20px;
+
+				span {
+					color: #02fa82;
+				}
+
+				b {
+					color: #02fa82;
+					font-family: scdream9;
+				}
+
+				strong {
+					color: #02fa82;
+					font-family: scdream6;
+				}
+			}
+		}
+	}
+}

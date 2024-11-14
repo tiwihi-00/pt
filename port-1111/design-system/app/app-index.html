@@ -361,43 +361,88 @@
 
 	<section class="sect5">
 		<article class="mockup1">
-			<a href="#"><img src="./app-image/first-page.jpg" alt=""></a>
+			<a href="#">
+
+			</a>
 		</article>
 	</section>
 	<section class="sect6">
 		<div class="art-desc">
-			
+
 			<div class="page2">
+
 				<h4><b>T World</b><br />
 					All-in-One</h4>
 				<p>사용자에게 일관된 경험을 제공하고, 필요한 혜택과 놓친 혜택을쉽게 관리할 수 있는 앱을 개발</p>
-				<img class="" src="./app page/page-2.png" alt="">
 			</div>
-			<div class="page-mockup">
+
+			<article class="page-mockup">
 				<ul>
 					<li><img src="./app page/page2-1.png" alt="">
-					<p>한눈에 요금제, 데이터 사용량, 멤버십 혜택을 확인할 수 있는 메인 화면 제공</p>
-				</li>
+						<p>한눈에 요금제, 데이터 사용량, 멤버십 혜택을 확인할 수 있는 메인 화면 제공</p>
+					</li>
 					<li><img src="./app page/page2-2.png" alt="">
-					<p>상세 내역(사용 항목별 비용, 추가 요금 등)을 한 눈에 볼 수 있는 그래픽 차트 제공.</p></li>
-					<li><img src="./app page/page2-4.png" alt=""><p>청구서를 다운로드하거나 이메일로 보내는 옵션.</p></li>
-					<li><img src="./app page/page2-6.png" alt="">
-					<p>사용자는 받고 싶은 혜택이나 요금 관련 알림을 선택할 수 있음</p></li>
+						<p>상세 내역(사용 항목별 비용, 추가 요금 등)을 한 눈에 볼 수 있는 그래픽 차트 제공.</p>
+					</li>
+
 				</ul>
-			</div>
+			</article>
+			<article class="page-mockup2">
+				<ul>
+					<li><img src="./app page/page2-4.png" alt="">
+						<p>청구서를 다운로드하거나 이메일로 보내는 옵션.</p>
+					</li>
+					<li><img src="./app page/mainp-멤버십 혜택-3.png" alt="">
+						<p>사용자는 받고 싶은 혜택이나 요금 관련 알림을 선택할 수 있음</p>
+					</li>
+				</ul>
+			</article>
 		</div>
 	</section>
-	<article>
-		<a href="#"><img src="./app-image/mockup1.jpg" alt=""></a>
-	</article>
+	<section class="sect7">
+		
+		<div id="carousel">
+	
+			<div class="hideLeft">
+				<img src="./app-image/메인 슬라이드1.png">
+			</div>
+
+			<div class="prevLeftSecond">
+				<img src="./app-image/mainp-myt.png">
+			</div>
+
+			<div class="prev">
+				<img src="./app-image/mainp-데이터관리.png">
+			</div>
+
+			<div class="selected">
+				<img src="./app-image/mainp-멤버십 혜택.png">
+			</div>
+
+			<div class="next">
+				<img src="./app-image/mainp-요금관리-1.png">
+			</div>
+
+			<div class="nextRightSecond">
+				<img src="./app-image/mainp-요금관리.png">
+			</div>
+
+			<div class="hideRight">
+				<img src="./app-image/메인.png">
+			</div>
+
+		</div>
 	</section>
 
 
 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+	<script src="./app-index.js"></script>
 
 	<script>
 
@@ -433,6 +478,9 @@
 				}
 			)
 		})
+		$('input').on('change', function () {
+			$('body').toggleClass('blue');
+		});
 
 	</script>
 </body>

@@ -1,0 +1,524 @@
+@import url(../../../font/font.css);
+@import url(../../../reset.css);
+h2 {
+  font-size: 40px;
+  font-family: scdream3;
+  font-style: normal;
+  color: #590385;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: scdream2;
+  font-style: normal;
+  color: #8f03db;
+}
+
+@media screen and (max-width: 768px) {
+  header .head_text {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+  }
+  header .head_text .head_title {
+    width: 100%;
+    top: 10%;
+    margin-top: 0;
+  }
+  header .head_text .myt {
+    top: 17%;
+    left: 0;
+    width: 120px;
+  }
+  header .head_text .head_desc {
+    padding-top: 320px;
+  }
+  header .head_text .head_desc p {
+    width: 90%;
+    bottom: 0;
+  }
+  main {
+    width: 100%;
+  }
+  main .main_back h5 {
+    padding-top: 60px;
+    width: 100%;
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+  main .main_back h5::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0px;
+  }
+  main .main_back .sect1 {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+  }
+  main .main_back .sect1 .seserch {
+    width: 70%;
+    margin-top: 80px;
+  }
+  main .main_back .sect1 table {
+    margin: 70px auto;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  main .main_back .sect1 table thead tr {
+    margin-bottom: 20px;
+  }
+  main .main_back .sect1 table thead tr th {
+    font-family: scdream8;
+    color: #3617CE;
+    font-size: 11px;
+    padding-bottom: 8px;
+    text-align: center;
+  }
+  main .main_back .sect1 table td {
+    color: #6E059F;
+    font-family: scdream5;
+    border-bottom: 1px dotted #3617CE;
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+  }
+  main .main_back .sect1 table td img {
+    width: 20px;
+  }
+  main .main_back .sect1 .reserch {
+    width: 100%;
+  }
+  main .main_back .sect1 .reserch .logo {
+    text-align: center;
+  }
+  main .main_back .sect1 .reserch .logo img {
+    width: 60px;
+    border-radius: 10px;
+  }
+  main .main_back .sect1 .reserch h3 {
+    font-size: 14px;
+  }
+  main .main_back .sect1 .reserch .li p {
+    font-size: 11px;
+    padding: 5px;
+    font-family: scdream4;
+    line-height: 1.6;
+  }
+  main .main_back .sect1 .reserch > div {
+    padding: 10px;
+  }
+  main .main_back .sect1 .reserch .more-p {
+    font-size: 14px;
+  }
+  main .main_back .sect2 .chart {
+    padding-top: 60px;
+  }
+  main .main_back .sect2 .chart ul {
+    display: block;
+    width: 100%;
+    padding-bottom: 60px;
+  }
+  main .main_back .sect2 .chart ul li {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 30px;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  main .main_back .sect2 .chart ul li:nth-child(1) img {
+    width: 70px;
+  }
+  main .main_back .sect2 .chart ul li:nth-child(3) img {
+    width: 70px;
+  }
+  main .main_back .sect2 .chart ul li::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 13%;
+    border-radius: 50%;
+    z-index: 0;
+  }
+  main .main_back .sect2 .chart ul li a {
+    width: 35%;
+  }
+  main .main_back .sect2 .chart ul li a img {
+    width: 80px;
+    position: relative;
+    top: -25px;
+    z-index: 1;
+  }
+  main .main_back .sect2 .chart ul li a h4 {
+    font-family: scdream8;
+    padding: 10px 0;
+    color: #5e0289;
+    position: relative;
+    z-index: 1;
+    font-size: 13px;
+    top: -20px;
+  }
+  main .main_back .sect2 .chart ul li p {
+    font-family: scdream4;
+    font-size: 14px;
+    line-height: 1.8;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+  }
+  main .main_back .sect2 .chart .more-p {
+    padding-top: 25px;
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 60px;
+    font-size: 15px;
+  }
+  main .main_back .sect2 .desc-plus .desc {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+  }
+  main .main_back .sect2 .desc-plus .desc h3 {
+    padding-bottom: 15px;
+    font-size: 16px;
+    color: #5e0289;
+    font-family: scdream6;
+    width: 20%;
+    position: relative;
+  }
+  main .main_back .sect2 .desc-plus .desc h3::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 30px;
+    width: 130%;
+    height: 1px;
+    background-color: #590385;
+  }
+  main .main_back .sect2 .desc-plus .desc ul {
+    width: 100%;
+    display: block;
+  }
+  main .main_back .sect2 .desc-plus .desc ul li {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  main .main_back .sect2 .desc-plus .desc ul li a {
+    width: 30%;
+  }
+  main .main_back .sect2 .desc-plus .desc ul li a img {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 10px;
+  }
+  main .main_back .sect2 .desc-plus .desc ul li a h6 {
+    color: #038B6A;
+    font-family: scdream7;
+    font-size: 12px;
+    position: relative;
+    top: 20px;
+  }
+  main .main_back .sect2 .desc-plus .desc ul li p {
+    text-align: left;
+    width: 100%;
+    padding: 20px;
+    font-family: scdream4;
+    line-height: 1.5;
+    font-size: 12px;
+    top: -10px;
+  }
+  main .main_back .sect3 {
+    padding: 20px;
+  }
+  main .main_back .sect3 .desc {
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+  main .main_back .sect3 .desc ul {
+    width: 100%;
+    display: block;
+  }
+  main .main_back .sect3 .desc ul li {
+    width: 90%;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  main .main_back .sect3 .desc ul li h4 {
+    font-size: 16px;
+    padding-bottom: 25px;
+  }
+  main .main_back .sect3 .desc ul li p {
+    padding-bottom: 5px;
+    font-size: 12px;
+  }
+  main .main_back .sect4 {
+    padding: 20px;
+  }
+  main .main_back .sect4 h4 {
+    width: 80px;
+    margin: auto;
+    padding-top: 70px;
+  }
+  main .main_back .sect4 ul.main {
+    padding-top: 50px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding-bottom: 100px;
+    position: relative;
+  }
+  main .main_back .sect4 ul.main li.main-menu {
+    width: 22%;
+  }
+  main .main_back .sect4 ul.main li.main-menu > a {
+    font-size: 13px;
+    display: block;
+    background-color: #3617CE;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: scdream6;
+  }
+  main .main_back .sect4 ul.main li.main-menu .sub-menu {
+    padding-top: 25px;
+  }
+  main .main_back .sect4 ul.main li.main-menu .sub-menu li {
+    width: 90%;
+    margin-left: 10%;
+    margin-bottom: 15px;
+    font-family: scdream5;
+    padding: 10px;
+    font-size: 11px;
+    color: rgb(110, 5, 159);
+    border-radius: 5px;
+  }
+}
+.sect5 .mockup1 {
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.sect6 {
+  width: 100%;
+  height: 200vh;
+  padding-bottom: 30px;
+}
+.sect6 .art-desc {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.sect6 .art-desc .page2 {
+  position: relative;
+  top: 60px;
+  left: 70px;
+  width: 300px;
+}
+.sect6 .art-desc .page2 h4 {
+  padding-top: 40px;
+  font-family: scdream1;
+  font-size: 50px;
+}
+.sect6 .art-desc .page2 h4 b {
+  font-family: scdream1;
+  font-size: 65px;
+}
+.sect6 .art-desc .page2 p {
+  padding-top: 10px;
+  font-family: scdream4;
+  font-size: 13px;
+  line-height: 1.7;
+  padding-bottom: 40px;
+}
+.sect6 .art-desc .page-mockup {
+  position: absolute;
+  left: 10%;
+  top: 22%;
+  width: 100%;
+  z-index: 25;
+}
+.sect6 .art-desc .page-mockup ul {
+  width: 90%;
+}
+.sect6 .art-desc .page-mockup ul li {
+  width: 45%;
+  position: relative;
+}
+.sect6 .art-desc .page-mockup ul li:nth-child(1) p {
+  left: 20px;
+  bottom: -130px;
+  width: 150px;
+}
+.sect6 .art-desc .page-mockup ul li:nth-child(2) p {
+  left: 10px;
+  bottom: -140px;
+  width: 170px;
+}
+.sect6 .art-desc .page-mockup ul li p {
+  position: absolute;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #022783;
+  padding-bottom: 20px;
+}
+.sect6 .art-desc .page-mockup ul li p::after {
+  content: "";
+  left: -20px;
+  bottom: 0px;
+  width: 150%;
+  height: 1px;
+  background-color: #022783;
+  position: absolute;
+}
+.sect6 .art-desc .page-mockup ul li:nth-child(even) {
+  transform: translateY(40%);
+}
+.sect6 .art-desc .page-mockup ul li img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.sect6 .art-desc .page-mockup2 {
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  width: 100%;
+  z-index: 25;
+}
+.sect6 .art-desc .page-mockup2 ul {
+  width: 90%;
+}
+.sect6 .art-desc .page-mockup2 ul li {
+  width: 45%;
+  position: relative;
+}
+.sect6 .art-desc .page-mockup2 ul li:nth-child(1) p {
+  left: 20px;
+  bottom: -80px;
+  width: 150px;
+}
+.sect6 .art-desc .page-mockup2 ul li:nth-child(2) p {
+  left: 10px;
+  bottom: -80px;
+  width: 200px;
+}
+.sect6 .art-desc .page-mockup2 ul li p {
+  position: absolute;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #022783;
+  padding-bottom: 20px;
+}
+.sect6 .art-desc .page-mockup2 ul li p::after {
+  content: "";
+  left: -20px;
+  bottom: 0px;
+  width: 150%;
+  height: 1px;
+  background-color: #022783;
+  position: absolute;
+}
+.sect6 .art-desc .page-mockup2 ul li:nth-child(even) {
+  transform: translateY(40%);
+}
+.sect6 .art-desc .page-mockup2 ul li img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.sect7 {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+}
+.sect7 #carousel {
+  position: relative;
+  height: 600px;
+  top: 30%;
+  overflow: hidden;
+}
+.sect7 #carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+.sect7 #carousel div img {
+  width: 180px;
+  height: 100%;
+  transition: width 1s;
+  border-radius: 10px;
+}
+.sect7 #carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+.sect7 #carousel div.hideLeft img {
+  width: 150px;
+  height: 100%;
+}
+.sect7 #carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+.sect7 #carousel div.hideRight img {
+  width: 150px;
+}
+.sect7 #carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+.sect7 #carousel div.prev img {
+  width: 130px;
+}
+.sect7 #carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.5;
+}
+.sect7 #carousel div.prevLeftSecond img {
+  width: 100px;
+}
+.sect7 #carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sect7 #carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+.sect7 #carousel div.next img {
+  width: 130px;
+}
+.sect7 #carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.5;
+}
+.sect7 #carousel div.nextRightSecond img {
+  width: 100px;
+}
