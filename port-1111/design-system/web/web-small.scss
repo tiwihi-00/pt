@@ -58,20 +58,31 @@ h3 {
 
 			.head_title {
 				width: 100%;
-				top: 10%;
-				margin-top: 0;
-
+				top: 15%;
+				margin-top: 50px;
+				h5 {
+				
+					font-size: 25px;
+					padding-bottom: 10px;
+					
+	
+					b {
+					
+						font-size: 28px;
+					}
+	
+				}
 			}
 
 			.myt {
-				top: 17%;
+		top:20%;
 				left: 0;
-				width: 120px;
+				width: 400px;
 			}
 
 			.head_desc {
-				padding-top: 320px;
-
+				padding-top: 400px;
+		
 				p {
 					width: 90%;
 					bottom: 0;

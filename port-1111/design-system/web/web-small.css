@@ -22,16 +22,23 @@ h3 {
   }
   header .head_text .head_title {
     width: 100%;
-    top: 10%;
-    margin-top: 0;
+    top: 15%;
+    margin-top: 50px;
+  }
+  header .head_text .head_title h5 {
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+  header .head_text .head_title h5 b {
+    font-size: 28px;
   }
   header .head_text .myt {
-    top: 17%;
+    top: 20%;
     left: 0;
-    width: 120px;
+    width: 400px;
   }
   header .head_text .head_desc {
-    padding-top: 320px;
+    padding-top: 400px;
   }
   header .head_text .head_desc p {
     width: 90%;

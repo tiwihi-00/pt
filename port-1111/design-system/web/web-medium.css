@@ -16,14 +16,15 @@ h3 {
 
 @media screen and (min-width: 769px) {
   header .head_text .head_title {
-    width: 40%;
+    width: 30%;
   }
   header .head_text .myt {
-    width: 200px;
+    top: 10%;
+    width: 60%;
   }
   header .head_text .head_desc {
     width: 90%;
-    padding-top: 250px;
+    padding-top: 300px;
   }
   header .head_text .head_desc p {
     width: 100%;
