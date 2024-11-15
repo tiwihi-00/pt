@@ -62,6 +62,7 @@ h3 {
 			.head_desc {
 				width: 40%;
 				padding-top: 150px;
+
 				p {
 					width: 100%;
 				}
@@ -72,166 +73,127 @@ h3 {
 	main {
 		width: 100%;
 
-		.main_back {
 
-
-			.sect1 {
-				padding-top: 70px;
-
-				h2 {
-					font-size: 30px;
-					padding-bottom: 10px;
-
-					&::after {
-						content: '';
-
-						bottom: -5px;
-					}
-				}
-
-				.seserch {
-					width: 50%;
-					margin-top: 130px;
-					max-width: 800px;
-					margin-left: 30%;
-
-
-				}
-
-				table {
-					margin: 140px auto;
-
-
-
-					thead {
-
-						tr {
-							margin-bottom: 20px;
-
-							th {
-								font-size: 18px;
-								padding-bottom: 15px;
-								text-align: center;
-							}
-						}
-					}
-
-
-					td {
-						padding: 10px;
-						font-size: 17px;
-						text-align: center;
-
-						img {
-							width: 20px;
-						}
-					}
-				}
-
-				.logos {
-					width: 80%;
-					margin-left: 25%;
-					margin-bottom: 70px;
-					padding-right: 18%;
-
-					li {
-						width: 10%;
-						height: 30px;
-
-						img {
-							width: 100%;
-							border-radius: 10px;
-						}
-					}
-				}
-
-				.desc {
-					padding-top: 10px;
-					width: 90%;
-					margin: auto;
-					display: flex;
-					gap: 7px;
-					justify-content: space-between;
-
-					h3 {
-						font-size: 17px;
-
-						font-family: scdream6;
-
-					}
-
-					li {
-						width: 26%;
-
-						border-radius: 10px;
-						height: 200px;
-
-						p {
-							font-size: 14px;
-							padding: 11px;
-							font-family: scdream4;
-							line-height: 1.8;
-						}
-					}
-				}
-
-				.more-p {
-					width: 90%;
-					margin-top: 10px;
-					padding: 20px;
-					font-family: scdream4;
-					line-height: 1.8;
-					color: #038B6A;
-					// margin-left: 15%;
-					font-size: 15px;
-				}
-
-			}
-
-			.sect2 {
-				.chart {
-					max-width: 1350px;
-					margin: auto;
-				}
-
-				.desc-plus {
-					max-width: 1350px;
-					margin: auto;
-
-					.desc {
-						padding-top: 70px;
-
-						h3 {
-							&::before {
-								content: '';
-								position: absolute;
-								left: -100px;
-								top: 30px;
-								width: 125%;
-								height: 1px;
-								background-color: #590385;
-							}
-						}
-					}
-				}
-			}
-
-			.sect3 {
-				margin: auto;
-
-				.desc {
-					ul {
-						max-width: 1350px;
-
-						li {
-							width: 45%;
-						}
-					}
-				}
-			}
+		h5 {
+			padding-top: 80px;
+			font-size: 30px;
+			padding-bottom: 20px;
 
 		}
 
+		.sect1 {
+			width: 100%;
+			padding: 30px;
+			margin-top: 120px;
+			max-width: 1350px;
+			margin: auto;
+
+			.sect1-in {
+				width: 100%;
+
+
+				ul {
+					height: 100%;
+					width: 90%;
+					margin: auto;
+					margin-top: 100px;
+
+
+					li.as-to {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						width: 100%;
+						flex-wrap: wrap;
+						margin: 60px 0;
+						position: relative;
+
+						.as {
+							h6 {
+								font-size: 18px;
+
+								padding-bottom: 20px;
+							}
+
+							p {
+								font-size: 14px;
+
+								line-height: 1.8;
+							}
+
+							width: 45%;
+							position: relative;
+							padding: 20px;
+
+
+
+							&::before {
+								content: '';
+								position: absolute;
+								top: 0;
+								left: 0;
+								right: 0;
+								bottom: 0;
+								padding: 2px;
+								border-radius: 5px;
+
+							}
+						}
+
+						.be {
+							min-height: 100px;
+							line-height: 2;
+							font-size: 16px;
+							width: 45%;
+
+							color: white;
+							padding: 20px;
+							border-radius: 5px;
+						}
+
+						&::after {
+							content: '';
+							position: absolute;
+							top: 50%;
+							left: 45%;
+							right: 45%;
+							height: 1px;
+
+							transform: translateY(-50%);
+							z-index: 0;
+						}
+					}
+				}
+			}
+		}
+
+		.sect2 {
+			
+			.reserch-back {
+				max-width: 1350px;
+				margin: auto;
+				margin-top: 30px;
+
+				.reserch {
+					margin-top: 80px;
+					grid-template-columns: 200px repeat(2, 1fr);
+					grid-template-rows: auto;
+
+					.reserch-in {
+						display: grid;
+						grid-template-columns: 1fr 1fr;
+						grid-column: span 2;
+
+						.logo {
+							grid-column: span 1;
+
+						}
+					}
+				}
+			}
+
+
+		}
 	}
 }
 

@@ -40,43 +40,44 @@ h3 {
   main {
     width: 100%;
   }
-  main .main_back h5 {
+  main h5 {
     padding-top: 60px;
     width: 100%;
     font-size: 25px;
     padding-bottom: 10px;
   }
-  main .main_back h5::after {
+  main h5::after {
     content: "";
     width: 100%;
     height: 1px;
     left: 0;
     bottom: 0px;
   }
-  main .main_back .sect1 {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
+  main .sect1 {
+    margin: 70px 0;
+    width: 100%;
+    height: 100%;
   }
-  main .main_back .sect1 .seserch {
+  main .sect1 .seserch {
     width: 70%;
     margin-top: 80px;
   }
-  main .main_back .sect1 table {
+  main .sect1 table {
     margin: 70px auto;
     width: 100%;
     border-collapse: collapse;
   }
-  main .main_back .sect1 table thead tr {
+  main .sect1 table thead tr {
     margin-bottom: 20px;
   }
-  main .main_back .sect1 table thead tr th {
+  main .sect1 table thead tr th {
     font-family: scdream8;
     color: #3617CE;
     font-size: 11px;
     padding-bottom: 8px;
     text-align: center;
   }
-  main .main_back .sect1 table td {
+  main .sect1 table td {
     color: #6E059F;
     font-family: scdream5;
     border-bottom: 1px dotted #3617CE;
@@ -84,43 +85,47 @@ h3 {
     font-size: 10px;
     text-align: center;
   }
-  main .main_back .sect1 table td img {
+  main .sect1 table td img {
     width: 20px;
   }
-  main .main_back .sect1 .reserch {
+  main .sect1 .reserch-back {
     width: 100%;
+    height: 100%;
   }
-  main .main_back .sect1 .reserch .logo {
+  main .sect1 .reserch-back .reserch {
+    width: 90%;
+  }
+  main .sect1 .reserch-back .reserch .logo {
     text-align: center;
   }
-  main .main_back .sect1 .reserch .logo img {
+  main .sect1 .reserch-back .reserch .logo img {
     width: 60px;
     border-radius: 10px;
   }
-  main .main_back .sect1 .reserch h3 {
+  main .sect1 .reserch-back .reserch h3 {
     font-size: 14px;
   }
-  main .main_back .sect1 .reserch .li p {
+  main .sect1 .reserch-back .reserch .li p {
     font-size: 11px;
     padding: 5px;
     font-family: scdream4;
     line-height: 1.6;
   }
-  main .main_back .sect1 .reserch > div {
+  main .sect1 .reserch-back .reserch > div {
     padding: 10px;
   }
-  main .main_back .sect1 .reserch .more-p {
+  main .sect1 .reserch-back .reserch .more-p {
     font-size: 14px;
   }
-  main .main_back .sect2 .chart {
+  main .sect2 .chart {
     padding-top: 60px;
   }
-  main .main_back .sect2 .chart ul {
+  main .sect2 .chart ul {
     display: block;
     width: 100%;
     padding-bottom: 60px;
   }
-  main .main_back .sect2 .chart ul li {
+  main .sect2 .chart ul li {
     display: flex;
     width: 90%;
     margin: auto;
@@ -129,13 +134,13 @@ h3 {
     align-items: center;
     padding-bottom: 30px;
   }
-  main .main_back .sect2 .chart ul li:nth-child(1) img {
+  main .sect2 .chart ul li:nth-child(1) img {
     width: 70px;
   }
-  main .main_back .sect2 .chart ul li:nth-child(3) img {
+  main .sect2 .chart ul li:nth-child(3) img {
     width: 70px;
   }
-  main .main_back .sect2 .chart ul li::after {
+  main .sect2 .chart ul li::after {
     content: "";
     position: absolute;
     width: 130px;
@@ -144,16 +149,16 @@ h3 {
     border-radius: 50%;
     z-index: 0;
   }
-  main .main_back .sect2 .chart ul li a {
+  main .sect2 .chart ul li a {
     width: 35%;
   }
-  main .main_back .sect2 .chart ul li a img {
+  main .sect2 .chart ul li a img {
     width: 80px;
     position: relative;
     top: -25px;
     z-index: 1;
   }
-  main .main_back .sect2 .chart ul li a h4 {
+  main .sect2 .chart ul li a h4 {
     font-family: scdream8;
     padding: 10px 0;
     color: #5e0289;
@@ -162,7 +167,7 @@ h3 {
     font-size: 13px;
     top: -20px;
   }
-  main .main_back .sect2 .chart ul li p {
+  main .sect2 .chart ul li p {
     font-family: scdream4;
     font-size: 14px;
     line-height: 1.8;
@@ -172,19 +177,19 @@ h3 {
     z-index: 1;
     text-align: left;
   }
-  main .main_back .sect2 .chart .more-p {
+  main .sect2 .chart .more-p {
     padding-top: 25px;
     width: 80%;
     margin-left: 10%;
     padding-bottom: 60px;
     font-size: 15px;
   }
-  main .main_back .sect2 .desc-plus .desc {
+  main .sect2 .desc-plus .desc {
     width: 100%;
     padding-top: 50px;
-    display: flex;
+    display: block;
   }
-  main .main_back .sect2 .desc-plus .desc h3 {
+  main .sect2 .desc-plus .desc h3 {
     padding-bottom: 15px;
     font-size: 16px;
     color: #5e0289;
@@ -192,7 +197,7 @@ h3 {
     width: 20%;
     position: relative;
   }
-  main .main_back .sect2 .desc-plus .desc h3::before {
+  main .sect2 .desc-plus .desc h3::before {
     content: "";
     position: absolute;
     left: -20px;
@@ -201,11 +206,11 @@ h3 {
     height: 1px;
     background-color: #590385;
   }
-  main .main_back .sect2 .desc-plus .desc ul {
+  main .sect2 .desc-plus .desc ul {
     width: 100%;
     display: block;
   }
-  main .main_back .sect2 .desc-plus .desc ul li {
+  main .sect2 .desc-plus .desc ul li {
     width: 100%;
     height: auto;
     background-color: transparent;
@@ -215,23 +220,23 @@ h3 {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  main .main_back .sect2 .desc-plus .desc ul li a {
+  main .sect2 .desc-plus .desc ul li a {
     width: 30%;
   }
-  main .main_back .sect2 .desc-plus .desc ul li a img {
+  main .sect2 .desc-plus .desc ul li a img {
     width: 40px;
     height: 40px;
     position: relative;
     top: 10px;
   }
-  main .main_back .sect2 .desc-plus .desc ul li a h6 {
+  main .sect2 .desc-plus .desc ul li a h6 {
     color: #038B6A;
     font-family: scdream7;
     font-size: 12px;
     position: relative;
     top: 20px;
   }
-  main .main_back .sect2 .desc-plus .desc ul li p {
+  main .sect2 .desc-plus .desc ul li p {
     text-align: left;
     width: 100%;
     padding: 20px;
@@ -240,39 +245,39 @@ h3 {
     font-size: 12px;
     top: -10px;
   }
-  main .main_back .sect3 {
+  main .sect3 {
     padding: 20px;
   }
-  main .main_back .sect3 .desc {
+  main .sect3 .desc {
     padding-top: 20px;
     padding-bottom: 100px;
   }
-  main .main_back .sect3 .desc ul {
+  main .sect3 .desc ul {
     width: 100%;
     display: block;
   }
-  main .main_back .sect3 .desc ul li {
+  main .sect3 .desc ul li {
     width: 90%;
     padding: 20px;
     margin-top: 30px;
   }
-  main .main_back .sect3 .desc ul li h4 {
+  main .sect3 .desc ul li h4 {
     font-size: 16px;
     padding-bottom: 25px;
   }
-  main .main_back .sect3 .desc ul li p {
+  main .sect3 .desc ul li p {
     padding-bottom: 5px;
     font-size: 12px;
   }
-  main .main_back .sect4 {
+  main .sect4 {
     padding: 20px;
   }
-  main .main_back .sect4 h4 {
+  main .sect4 h4 {
     width: 80px;
     margin: auto;
     padding-top: 70px;
   }
-  main .main_back .sect4 ul.main {
+  main .sect4 ul.main {
     padding-top: 50px;
     width: 90%;
     margin: auto;
@@ -282,10 +287,10 @@ h3 {
     padding-bottom: 100px;
     position: relative;
   }
-  main .main_back .sect4 ul.main li.main-menu {
+  main .sect4 ul.main li.main-menu {
     width: 22%;
   }
-  main .main_back .sect4 ul.main li.main-menu > a {
+  main .sect4 ul.main li.main-menu > a {
     font-size: 13px;
     display: block;
     background-color: #3617CE;
@@ -294,10 +299,10 @@ h3 {
     border-radius: 10px;
     font-family: scdream6;
   }
-  main .main_back .sect4 ul.main li.main-menu .sub-menu {
+  main .sect4 ul.main li.main-menu .sub-menu {
     padding-top: 25px;
   }
-  main .main_back .sect4 ul.main li.main-menu .sub-menu li {
+  main .sect4 ul.main li.main-menu .sub-menu li {
     width: 90%;
     margin-left: 10%;
     margin-bottom: 15px;

@@ -31,153 +31,152 @@ h3 {
   main {
     width: 100%;
   }
-  main .main_back h5 {
+  main h5 {
     padding-top: 80px;
     font-size: 30px;
     padding-bottom: 20px;
   }
-  main .main_back .sect1 {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
+  main .sect1 {
+    margin: 100px 0;
+    width: 100%;
+    height: 100%;
   }
-  main .main_back .sect1 .seserch {
+  main .sect1 .seserch {
     width: 60%;
     margin-top: 90px;
   }
-  main .main_back .sect1 table {
+  main .sect1 table {
     margin: 90px auto;
     width: 90%;
   }
-  main .main_back .sect1 table thead tr {
+  main .sect1 table thead tr {
     margin-bottom: 20px;
   }
-  main .main_back .sect1 table thead tr th {
+  main .sect1 table thead tr th {
     font-size: 17px;
     padding-bottom: 8px;
   }
-  main .main_back .sect1 table td {
+  main .sect1 table td {
     padding: 10px;
     font-size: 14px;
   }
-  main .main_back .sect1 table td img {
+  main .sect1 table td img {
     width: 20px;
   }
-  main .main_back .sect1 .reserch {
+  main .sect1 .reserch {
     padding-bottom: 100px;
   }
-  main .main_back .sect1 .reserch .logo {
+  main .sect1 .reserch .logo {
     text-align: center;
   }
-  main .main_back .sect1 .reserch .logo img {
+  main .sect1 .reserch .logo img {
     width: 80px;
     border-radius: 10px;
   }
-  main .main_back .sect1 .reserch h3 {
+  main .sect1 .reserch h3 {
     font-size: 16px;
   }
-  main .main_back .sect1 .reserch .li p {
+  main .sect1 .reserch .li p {
     font-size: 13px;
     padding: 10px;
     font-family: scdream4;
     line-height: 1.7;
   }
-  main .main_back .sect1 .reserch > div {
+  main .sect1 .reserch > div {
     padding: 10px;
   }
-  main .main_back .sect1 .reserch .more-p {
+  main .sect1 .reserch .more-p {
     padding-top: 50px;
-    font-size: 16px;
+    font-size: 15px;
     padding-bottom: 50px;
+    line-height: 2;
   }
-  main .main_back .sect2 .chart {
+  main .sect2 .chart {
     padding-top: 80px;
   }
-  main .main_back .sect2 .chart ul {
+  main .sect2 .chart ul {
     padding-bottom: 80px;
   }
-  main .main_back .sect2 .chart ul li {
+  main .sect2 .chart ul li {
     padding-top: 80px;
     padding-bottom: 20px;
   }
-  main .main_back .sect2 .chart .more-p {
+  main .sect2 .chart .more-p {
     padding-top: 25px;
     padding-bottom: 120px;
-    font-size: 17px;
+    font-size: 16px;
   }
-  main .main_back .sect2 .desc-plus {
-    padding: 80px 0;
-  }
-  main .main_back .sect2 .desc-plus .desc {
+  main .sect2 .desc-plus .desc {
     width: 90%;
     display: flex;
     margin-bottom: 50px;
   }
-  main .main_back .sect2 .desc-plus .desc h3 {
+  main .sect2 .desc-plus .desc h3 {
     font-size: 18px;
     width: 15%;
     text-align: center;
     position: relative;
   }
-  main .main_back .sect2 .desc-plus .desc h3::before {
+  main .sect2 .desc-plus .desc h3::before {
     content: "";
     position: absolute;
-    left: -50px;
+    left: -100px;
     top: 30px;
-    width: 110%;
+    width: 125%;
     height: 1px;
     background-color: #590385;
   }
-  main .main_back .sect2 .desc-plus .desc ul {
+  main .sect2 .desc-plus .desc ul {
     width: 85%;
     display: flex;
     gap: 25px;
     justify-content: space-between;
   }
-  main .main_back .sect2 .desc-plus .desc ul li {
-    width: 250px;
+  main .sect2 .desc-plus .desc ul li {
+    width: 240px;
     border-radius: 50%;
-    height: 250px;
+    height: 240px;
     text-align: center;
   }
-  main .main_back .sect2 .desc-plus .desc ul li img {
-    width: 60px;
-    height: 60px;
+  main .sect2 .desc-plus .desc ul li img {
+    width: 45px;
+    height: 45px;
     top: 20px;
   }
-  main .main_back .sect2 .desc-plus .desc ul li h6 {
+  main .sect2 .desc-plus .desc ul li h6 {
     font-size: 17px;
     top: 40px;
   }
-  main .main_back .sect2 .desc-plus .desc ul li p {
+  main .sect2 .desc-plus .desc ul li p {
     padding: 20px;
     font-size: 14px;
     top: 40px;
   }
-  main .main_back .sect3 {
+  main .sect3 {
     padding: 40px;
     margin: auto;
     padding-top: 50px;
     padding-bottom: 150px;
   }
-  main .main_back .sect3 .desc {
+  main .sect3 .desc {
     width: 100%;
   }
-  main .main_back .sect3 .desc ul {
+  main .sect3 .desc ul {
     width: 95%;
     margin: auto;
   }
-  main .main_back .sect3 .desc ul li {
+  main .sect3 .desc ul li {
     width: 42%;
   }
-  main .main_back .sect4 {
+  main .sect4 {
     padding: 20px;
   }
-  main .main_back .sect4 h4 {
+  main .sect4 h4 {
     width: 100px;
     margin: auto;
     padding-top: 80px;
   }
-  main .main_back .sect4 ul.main {
+  main .sect4 ul.main {
     padding-bottom: 130px;
   }
 }

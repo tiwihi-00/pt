@@ -32,154 +32,113 @@ h3 {
   main {
     width: 100%;
   }
-  main .main_back h5 {
+  main h5 {
     padding-top: 80px;
     font-size: 30px;
     padding-bottom: 20px;
   }
-  main .main_back .sect1 {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
+  main .sect1 {
+    width: 100%;
+    padding: 30px;
+    margin-top: 50px;
   }
-  main .main_back .sect1 .seserch {
-    width: 60%;
-    margin-top: 90px;
-  }
-  main .main_back .sect1 table {
-    margin: 90px auto;
-    width: 90%;
-  }
-  main .main_back .sect1 table thead tr {
-    margin-bottom: 20px;
-  }
-  main .main_back .sect1 table thead tr th {
-    font-size: 17px;
-    padding-bottom: 8px;
-  }
-  main .main_back .sect1 table td {
-    padding: 10px;
-    font-size: 14px;
-  }
-  main .main_back .sect1 table td img {
-    width: 20px;
-  }
-  main .main_back .sect1 .reserch {
-    padding-bottom: 100px;
-  }
-  main .main_back .sect1 .reserch .logo {
-    text-align: center;
-  }
-  main .main_back .sect1 .reserch .logo img {
-    width: 80px;
-    border-radius: 10px;
-  }
-  main .main_back .sect1 .reserch h3 {
-    font-size: 16px;
-  }
-  main .main_back .sect1 .reserch .li p {
-    font-size: 13px;
-    padding: 10px;
-    font-family: scdream4;
-    line-height: 1.7;
-  }
-  main .main_back .sect1 .reserch > div {
-    padding: 10px;
-  }
-  main .main_back .sect1 .reserch .more-p {
-    padding-top: 50px;
-    font-size: 16px;
-    padding-bottom: 50px;
-  }
-  main .main_back .sect2 .chart {
-    padding-top: 80px;
-  }
-  main .main_back .sect2 .chart ul {
-    padding-bottom: 80px;
-  }
-  main .main_back .sect2 .chart ul li {
-    padding-top: 80px;
-    padding-bottom: 20px;
-  }
-  main .main_back .sect2 .chart .more-p {
-    padding-top: 25px;
-    padding-bottom: 120px;
-    font-size: 17px;
-  }
-  main .main_back .sect2 .desc-plus {
-    padding: 80px 0;
-  }
-  main .main_back .sect2 .desc-plus .desc {
-    width: 90%;
-    display: flex;
-    margin-bottom: 50px;
-  }
-  main .main_back .sect2 .desc-plus .desc h3 {
-    font-size: 18px;
-    width: 15%;
-    text-align: center;
-    position: relative;
-  }
-  main .main_back .sect2 .desc-plus .desc h3::before {
-    content: "";
-    position: absolute;
-    left: -50px;
-    top: 30px;
-    width: 110%;
-    height: 1px;
-    background-color: #590385;
-  }
-  main .main_back .sect2 .desc-plus .desc ul {
-    width: 85%;
-    display: flex;
-    gap: 25px;
-    justify-content: space-between;
-  }
-  main .main_back .sect2 .desc-plus .desc ul li {
-    width: 250px;
-    border-radius: 50%;
-    height: 250px;
-    text-align: center;
-  }
-  main .main_back .sect2 .desc-plus .desc ul li img {
-    width: 60px;
-    height: 60px;
-    top: 20px;
-  }
-  main .main_back .sect2 .desc-plus .desc ul li h6 {
-    font-size: 17px;
-    top: 40px;
-  }
-  main .main_back .sect2 .desc-plus .desc ul li p {
-    padding: 20px;
-    font-size: 14px;
-    top: 40px;
-  }
-  main .main_back .sect3 {
-    padding: 40px;
-    margin: auto;
-    padding-top: 50px;
-    padding-bottom: 150px;
-  }
-  main .main_back .sect3 .desc {
+  main .sect1 .sect1-in {
     width: 100%;
   }
-  main .main_back .sect3 .desc ul {
-    width: 95%;
+  main .sect1 .sect1-in ul {
+    height: 100%;
+    width: 90%;
     margin: auto;
+    margin-top: 100px;
   }
-  main .main_back .sect3 .desc ul li {
-    width: 42%;
+  main .sect1 .sect1-in ul li.as-to {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 60px 0;
+    position: relative;
   }
-  main .main_back .sect4 {
+  main .sect1 .sect1-in ul li.as-to .as {
+    width: 45%;
+    position: relative;
     padding: 20px;
+    background-color: white;
   }
-  main .main_back .sect4 h4 {
-    width: 100px;
+  main .sect1 .sect1-in ul li.as-to .as h6 {
+    font-size: 18px;
+    font-family: scdream7;
+    color: #0A7DBE;
+    padding-bottom: 20px;
+  }
+  main .sect1 .sect1-in ul li.as-to .as p {
+    font-size: 14px;
+    font-family: scdream4;
+    line-height: 1.8;
+  }
+  main .sect1 .sect1-in ul li.as-to .as::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2px;
+    border-radius: 5px;
+  }
+  main .sect1 .sect1-in ul li.as-to .be {
+    min-height: 100px;
+    line-height: 2;
+    font-size: 16px;
+    width: 45%;
+  }
+  main .sect1 .sect1-in ul li.as-to::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    right: 45%;
+    height: 1px;
+    background-color: #0A7DBE;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+  main .sect2 {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+  }
+  main .sect2 .reserch-back {
+    width: 100%;
+    max-width: 1350px;
+  }
+  main .sect2 .reserch-back .reserch {
+    margin-top: 80px;
+    width: 90%;
+    grid-template-columns: 200px repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  main .sect2 .reserch-back .reserch .logo {
+    grid-column: span 1;
+    position: relative;
+    top: 30%;
+  }
+  main .sect2 .reserch-back .reserch .reserch-in {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: span 2;
+  }
+  main .sect2 .reserch-back .reserch .reserch-in .re-desc {
+    margin-right: 30px;
+  }
+  main .sect3 .chart {
+    max-width: 1350px;
     margin: auto;
-    padding-top: 80px;
   }
-  main .main_back .sect4 ul.main {
-    padding-bottom: 130px;
+  main .sect3 .desc-plus {
+    max-width: 1350px;
+    margin: auto;
   }
 }
 .sect6 {
