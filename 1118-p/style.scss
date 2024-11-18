@@ -266,6 +266,7 @@ html {
 }
 
 .sect2 {
+	position: relative;
 	height: 100vh;
 	width: 100vw;
 
@@ -280,42 +281,118 @@ html {
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 100%;
+			height: 100vh;
 			opacity: 0;
 			transition: opacity 0.4s ease-in-out;
 
 
 			&:first-child {
-				background: url('./image/D-1.png') no-repeat center center/cover;
+				background: url('./image/D1-back.png') no-repeat center /cover;
+			}
+			.d1-in{
+				position: absolute;
+				width: 750px;
+				left: 23%;
+				top: 28%;
+				transition: all 0.7s ease-in-out 0.3s;
 			}
 
 			&:nth-child(2) {
-				background: url('./image/D-2.png') no-repeat center center/cover;
+				background: url('./image/D2-back.png') no-repeat center /cover;
+			}
+			.d2-in{
+				position: absolute;
+				width: 700px;
+				left: 17%;
+				top: 25%;
+				transition: all 0.7s ease-in-out 0.3s;
 			}
 
 			&:nth-child(3) {
-				background: url('./image/D-3.png') no-repeat center center/cover;
+				background: url('./image/D3-back.png') no-repeat bottom /cover;
 			}
-
+			.d3-in{
+				position: absolute;
+				width: 650px;
+				left: 26%;
+				top: 9%;
+				transition: all 0.7s ease-in-out 0.3s;
+			}
 			&:nth-child(4) {
-				background: url('./image/D-4.png') no-repeat center center/cover;
+				background: url('./image/D4-back.png') no-repeat center /cover;
+			}
+			.d4-in{
+				position: absolute;
+				width: 750px;
+				left: 35%;
+				top: 26%;
+				transition: all 0.7s ease-in-out 0.3s;
 			}
 
 			&:nth-child(5) {
-				background: url('./image/D-5.png') no-repeat center center/cover;
+				background: url('./image/D5-back.png') no-repeat center /cover;
+			}
+			.d5-in{
+				position: absolute;
+				width: 650px;
+				left: 27%;
+				top: 18%;
+				transition: all 0.7s ease-in-out 0.3s;
 			}
 
 			&:nth-child(6) {
-				background: url('./image/D-6.png') no-repeat center center/cover;
+				background: url('./image/D6-back.png') no-repeat bottom /cover;
 			}
+			.d6-in{
+				position: absolute;
+				width: 750px;
+				left: 23%;
+				top: 20%;
+				transition: all 0.7s ease-in-out 0.3s;
+			}
+
 			&:nth-child(7) {
-				background: url('./image/D-7.png') no-repeat center center/cover;
+				background: url('./image/D7-back.png') no-repeat center /cover;
 			}
+			.d7-in{
+				position: absolute;
+				width: 650px;
+				left: 26%;
+				top: 8%;
+				transition: all 0.7s ease-in-out 0.3s;
+			}
+
 			&:nth-child(8) {
-				background: url('./image/D-8.png') no-repeat center center/cover;
+				background: url('./image/D8-back.png') no-repeat  bottom/cover;
 			}
+			.d8-in{
+				position: absolute;
+				width: 650px;
+				left: 23%;
+				top: 21%;
+				transition: all 0.7s ease-in-out 0.3s;
+			}
+
 			&:nth-child(9) {
-				background: url('./image/D-9.png') no-repeat center center/cover;
+				background: url('./image/D9-back.png') no-repeat  center/cover;
+			}
+			.d9-in{
+				position: absolute;
+				width: 650px;
+				left: 28%;
+				top: 11%;
+				transition: all 0.7s ease-in-out 0.3s;
+			}
+			
+			&:nth-child(10) {
+				background: url('./image/D10-back.png') no-repeat  center/cover;
+			}
+			.d10-in{
+				position: absolute;
+				width: 650px;
+				left: 27%;
+				top: 22%;
+				transition: all 0.7s ease-in-out 0.3s;
 			}
 
 			&.current {
@@ -333,10 +410,10 @@ html {
 
 			.content {
 				position: absolute;
-				bottom: 70px;
+				bottom: 30px;
 				left: -600px;
 				opacity: 0;
-				width: 600px;
+				width: 400px;
 				background-color: rgba(255, 255, 255, 0.7);
 				color: black;
 				padding: 35px;
@@ -350,26 +427,26 @@ html {
 
 
 	.buttons button {
-		border: 2px solid white;
+		border: 2px solid rgb(225, 187, 255);
 		background-color: transparent;
-		color: white;
+		color: rgb(225, 187, 255);
 		cursor: pointer;
 		padding: 13px 15px;
 		border-radius: 50%;
 		outline: none;
 
 		&:hover {
-			background-color: white;
+			background-color: rgb(225, 187, 255);
 			color: #333;
 		}
 
-		#next {
+		&#next {
 			position: absolute;
 			top: 50%;
 			right: 15px;
 		}
 
-		#prev {
+		&#prev {
 			position: absolute;
 			top: 50%;
 			left: 15px;
