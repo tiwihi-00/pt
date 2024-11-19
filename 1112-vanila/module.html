@@ -10,8 +10,12 @@
 <body>
 	<script src="./file1.js"></script>
 	<script src="./file2.js"></script>
-<script>
-	showMsg()
+<script type="module">
+
+	import{msg as msg1,showMsg as showMsg1} from './file1.js'
+	import{msg as msg2,showMsg as showMsg2} from './file2.js'
+	showMsg1(msg1)
+	showMsg2(msg2)
 </script>
 </body>
 

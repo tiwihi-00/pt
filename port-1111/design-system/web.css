@@ -1,0 +1,520 @@
+@charset "UTF-8";
+@import url(../../../font/font.css);
+@import url(../../../reset.css);
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --main-color: #78f6ff;
+  --sub-color: #FF736A;
+  --sub2-color: #0A7DBE;
+  --sub3-color: #063884;
+  --sub4-color: #9747FF;
+  --sub5-color: #06B7AC;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: scdream3;
+  font-style: normal;
+  color: #590385;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: scdream2;
+  font-style: normal;
+  color: #8f03db;
+}
+
+.progress {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 3px;
+  background-color: #75fd07;
+  z-index: 10;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./image/sean.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(132, 231, 246, 0.5);
+}
+header p.top-p {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  font-family: scdream3;
+  font-size: 11px;
+  color: white;
+  text-align: right;
+  z-index: 5;
+}
+header p.top-p b {
+  font-family: scdream8;
+}
+header .head_text {
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 7%;
+  z-index: 10;
+}
+header .head_text .myt {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  width: 30%;
+}
+header .head_text .myt img {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+header .head_text .head_title {
+  width: 30%;
+  margin-top: 100px;
+}
+header .head_text .head_title h5 {
+  font-family: scdream3;
+  font-size: 30px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+header .head_text .head_title h5 b {
+  font-family: scdream6;
+  font-size: 35px;
+}
+header .head_text .head_desc {
+  padding-top: 200px;
+}
+header .head_text .head_desc p {
+  width: 50%;
+  color: rgb(5, 5, 5);
+  font-family: scdream4;
+  font-size: 12px;
+  line-height: 2;
+  padding-bottom: 20px;
+}
+header .head_text .head_desc p b {
+  color: #FF736A;
+  font-family: scdream9;
+}
+
+main h5 {
+  color: #063884;
+  font-family: EncodeSansCondensed-Black;
+  font-size: 40px;
+  position: relative;
+  padding: 20px;
+}
+main h5::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #063884;
+  left: 0;
+  bottom: -10px;
+}
+main .sect1 {
+  width: 100%;
+  padding: 30px;
+  margin-top: 100px;
+}
+main .sect1 .sect1-in {
+  width: 90%;
+  margin: auto;
+}
+main .sect1 .sect1-in ul {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+}
+main .sect1 .sect1-in ul li.as-to {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 60px 0;
+  position: relative;
+}
+main .sect1 .sect1-in ul li.as-to .as {
+  width: 45%;
+  position: relative;
+  padding: 20px;
+  background-color: white;
+}
+main .sect1 .sect1-in ul li.as-to .as h6 {
+  font-size: 18px;
+  font-family: scdream7;
+  color: #0A7DBE;
+  padding-bottom: 20px;
+}
+main .sect1 .sect1-in ul li.as-to .as p {
+  font-size: 14px;
+  font-family: scdream4;
+}
+main .sect1 .sect1-in ul li.as-to .as::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2px;
+  border-radius: 5px;
+  /* 보더 두께 */
+  background: linear-gradient(60deg, #0688b7, #06B7AC);
+  /* 그라디언트 색상 */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+}
+main .sect1 .sect1-in ul li.as-to .be {
+  min-height: 100px;
+  line-height: 2;
+  font-size: 16px;
+  width: 45%;
+  background-color: #7bcfc9;
+  font-family: scdream4;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+main .sect1 .sect1-in ul li.as-to::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  right: 45%;
+  height: 1px;
+  background-color: #0A7DBE;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+main .sect2 {
+  width: 100%;
+  padding: 30px;
+  margin-top: 100px;
+  background-color: #eee;
+}
+main .sect2 .reserch-back {
+  margin-top: 80px;
+  padding: 50px 0;
+  width: 90%;
+  margin: auto;
+}
+main .sect2 .reserch-back .reserch {
+  width: 90%;
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+main .sect2 .reserch-back .reserch .reserch-in {
+  padding: 10px;
+}
+main .sect2 .reserch-back .reserch .reserch-in .re-desc {
+  background-color: white;
+  border: 1px solid #0A7DBE;
+  border-radius: 10px;
+  padding: 20px;
+}
+main .sect2 .reserch-back .reserch .reserch-in .re-desc h3 {
+  font-size: 15px;
+  color: #0688b7;
+  font-family: scdream6;
+  padding: 10px;
+}
+main .sect2 .reserch-back .reserch .reserch-in .re-desc p {
+  font-size: 13px;
+  padding: 10px;
+  font-family: scdream4;
+  line-height: 1.6;
+}
+main .sect2 .reserch-back .reserch .reserch-in .re-desc p b {
+  font-family: scdream6;
+  color: #FF736A;
+}
+main .sect2 .reserch-back .reserch .logo {
+  text-align: center;
+}
+main .sect2 .reserch-back .reserch .logo img {
+  width: 80px;
+}
+main .sect3 {
+  width: 100%;
+  padding: 30px;
+}
+main .sect3 .chart {
+  padding-top: 70px;
+}
+main .sect3 .chart ul {
+  padding-top: 120px;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+main .sect3 .chart ul li {
+  width: 30%;
+  text-align: center;
+  position: relative;
+  flex-shrink: 0;
+}
+main .sect3 .chart ul li:nth-child(3) img {
+  padding: 5px;
+}
+main .sect3 .chart ul li::after {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #b5e4fd;
+  z-index: 0;
+}
+main .sect3 .chart ul li img {
+  height: 110px;
+  position: relative;
+  top: -15px;
+  z-index: 1;
+}
+main .sect3 .chart ul li h4 {
+  font-family: scdream8;
+  padding: 10px 0;
+  color: #FF736A;
+  position: relative;
+  z-index: 1;
+}
+main .sect3 .chart ul li p {
+  font-family: scdream4;
+  width: 60%;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+  line-height: 1.8;
+}
+main .sect3 .chart .more-p {
+  margin-top: 100px;
+  width: 90%;
+  margin: auto;
+  font-family: scdream5;
+  line-height: 2;
+  font-size: 15px;
+}
+main .sect3 .chart .more-p strong {
+  color: #FF736A;
+  font-family: scdream9;
+}
+main .sect3 .chart .more-p b {
+  font-family: scdream8;
+}
+main .sect3 .desc-plus {
+  width: 100%;
+  margin-top: 80px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+main .sect3 .desc-plus .desc {
+  padding-top: 60px;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: first baseline;
+}
+main .sect3 .desc-plus .desc h3 {
+  font-size: 18px;
+  color: #063884;
+  font-family: scdream6;
+  width: 15%;
+  position: relative;
+}
+main .sect3 .desc-plus .desc h3::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 40px;
+  width: 100%;
+  height: 1px;
+  background-color: #063884;
+}
+main .sect3 .desc-plus .desc ul {
+  width: 80%;
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+main .sect3 .desc-plus .desc ul li {
+  flex-shrink: 0;
+  width: 230px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid #0187b0;
+  border-radius: 50%;
+  height: 230px;
+  text-align: center;
+}
+main .sect3 .desc-plus .desc ul li.desc2 {
+  border: 1px solid #014b61;
+}
+main .sect3 .desc-plus .desc ul li.desc2 h6 {
+  color: #0566c7;
+}
+main .sect3 .desc-plus .desc ul li img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 20px;
+}
+main .sect3 .desc-plus .desc ul li h6 {
+  color: #0298d9;
+  font-family: scdream7;
+  font-size: 20px;
+  position: relative;
+  top: 40px;
+  font-size: 16px;
+}
+main .sect3 .desc-plus .desc ul li p {
+  padding: 20px;
+  font-family: scdream4;
+  line-height: 1.7;
+  font-size: 14px;
+  position: relative;
+  top: 30px;
+}
+main .sect4 {
+  width: 100%;
+  background-color: #eee;
+}
+main .sect4 .sect4-in {
+  width: 90%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 120px;
+}
+main .sect4 .sect4-in .desc {
+  width: 100%;
+  padding-top: 20px;
+}
+main .sect4 .sect4-in .desc ul {
+  padding-top: 50px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .sect4 .sect4-in .desc ul li {
+  width: 45%;
+  background-color: white;
+  border: 1px solid #0566c7;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 25px;
+}
+main .sect4 .sect4-in .desc ul li h4 {
+  color: #045fa9;
+  font-family: scdream8;
+  font-size: 18px;
+  padding-bottom: 55px;
+}
+main .sect4 .sect4-in .desc ul li p {
+  font-family: scdream4;
+  font-size: 14px;
+  line-height: 1.7;
+  padding-bottom: 10px;
+}
+main .sect4 .sect4-in .desc ul li p b {
+  font-family: scdream5;
+  color: #FF736A;
+}
+main .sect5 {
+  width: 100%;
+  padding: 30px;
+}
+main .sect5 .sect5-in {
+  margin-top: 80px;
+  padding: 50px 0;
+  width: 90%;
+  margin: auto;
+}
+main .sect5 .sect5-in h4 {
+  width: 120px;
+  margin: auto;
+  padding-top: 80px;
+}
+main .sect5 .sect5-in ul.main {
+  padding-top: 50px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding-bottom: 50px;
+  position: relative;
+}
+main .sect5 .sect5-in ul.main li.main-menu {
+  width: 22%;
+}
+main .sect5 .sect5-in ul.main li.main-menu > a {
+  font-size: 17px;
+  display: block;
+  background-color: #01569b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: scdream6;
+}
+main .sect5 .sect5-in ul.main li.main-menu .sub-menu {
+  padding-top: 25px;
+}
+main .sect5 .sect5-in ul.main li.main-menu .sub-menu li {
+  width: 90%;
+  margin-left: 10%;
+  margin-bottom: 15px;
+  font-family: scdream5;
+  padding: 10px;
+  font-size: 14px;
+  color: rgb(1, 84, 120);
+  border-radius: 5px;
+}
+main .sect5 .sect5-in ul.main li.main-menu .sub-menu li:nth-child(1) {
+  background-color: rgba(0, 112, 160, 0.4);
+}
+main .sect5 .sect5-in ul.main li.main-menu .sub-menu li:nth-child(2) {
+  background-color: rgba(0, 112, 160, 0.3);
+}
+main .sect5 .sect5-in ul.main li.main-menu .sub-menu li:nth-child(3) {
+  background-color: rgba(0, 112, 160, 0.2);
+}
+main .sect5 .sect5-in ul.main li.main-menu .sub-menu li:nth-child(4) {
+  background-color: rgba(0, 112, 160, 0.1);
+}
+main .sect5 .sect5-in ul.main li.main-menu .sub-menu li:nth-child(5) {
+  background-color: rgba(198, 218, 226, 0.4);
+}
