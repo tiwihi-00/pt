@@ -5,25 +5,12 @@
 
 	
 .sect2 {
-	position: relative;
-	height: 100vh;
-	width: 100vw;
-
+	
 	.slider {
-		position: relative;
-		overflow: hidden;
-		height: 100vh;
-		width: 100vw;
+	
 
 		.slide {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100vh;
-		
-			transition: opacity 0.3s ease-in-out;
-
+	
 			.num-title {
 				
 		
@@ -53,8 +40,8 @@
 
 		
 			.d1-in {
-				margin-left: -34%;
-				margin-top: -16%;
+				margin-left: -37%;
+				margin-top: -20%;
 				width: 76vw;
 
 				transform: translateX(-50%);
@@ -116,19 +103,19 @@
 		
 			.d7-in {
 
-				width: 43vw;
+				width: 61vw;
 
-				margin-left: 0%;
-				margin-top: 0%;
+				margin-left: -17%;
+				margin-top: -14%;
 
 			}
 
 		
 			.d8-in {
 
-				width: 47vw;
-				margin-left: 0%;
-				margin-top: 0%;
+				width:61vw;
+				margin-left: -30%;
+				margin-top: -22%;
 
 			}
 
@@ -136,9 +123,9 @@
 
 			.d9-in {
 
-				width: 43vw;
-				margin-left: 0%;
-				margin-top: 0%;
+				width: 63vw;
+				margin-left: -12%;
+				margin-top: -25%;
 
 
 			}
@@ -146,9 +133,9 @@
 
 			.d10-in {
 
-				width: 45vw;
-				margin-left: 0%;
-				margin-top: 0%;
+				width: 61vw;
+				margin-left:-45%;
+				margin-top: -15%;
 
 
 			}
