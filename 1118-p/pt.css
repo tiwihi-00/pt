@@ -181,17 +181,19 @@ html {
   transition: opacity 0.3s ease-in-out;
 }
 .sect2 .slider .slide .num-title {
+  width: 300px;
   position: absolute;
   right: 3%;
   top: 3%;
+  text-align: right;
 }
 .sect2 .slider .slide .num-title .num {
   font-family: Barlow-ThinItalic;
   font-size: 150px;
 }
 .sect2 .slider .slide .num-title p {
-  font-size: 30px;
-  font-family: Barlow-Light;
+  font-size: 15px;
+  font-family: scdream2;
 }
 .sect2 .slider .slide img {
   transform: translateY(-100px);

@@ -1,2 +1,128 @@
 @import url(../font/font.css);
 @import url(../font/eng-font.css);
+@media screen and (min-width: 1350px) {
+  .sect2 .slider .slide .num-title {
+    width: 300px;
+    right: 5%;
+    top: 1%;
+  }
+  .sect2 .slider .slide .num-title .num {
+    font-size: 170px;
+  }
+  .sect2 .slider .slide .num-title p {
+    font-size: 25px;
+  }
+  .sect2 .slider .slide img {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.5s ease-in-out 0.3s;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+  }
+  .sect2 .slider .slide .d0-in {
+    margin-left: -16%;
+    margin-top: -19%;
+    width: 39vw;
+    transform: translateX(-50%);
+  }
+  .sect2 .slider .slide .d1-in {
+    margin-left: -35%;
+    margin-top: -19%;
+    width: 50vw;
+    transform: translateX(-50%);
+  }
+  .sect2 .slider .slide .d2-in {
+    width: 40vw;
+    margin-left: -20%;
+    margin-top: -16%;
+  }
+  .sect2 .slider .slide .d3-in {
+    width: 45vw;
+    margin-left: -10%;
+    margin-top: -16%;
+  }
+  .sect2 .slider .slide .d4-in {
+    width: 45vw;
+    margin-left: -24%;
+    margin-top: -10%;
+  }
+  .sect2 .slider .slide .d5-in {
+    width: 56vw;
+    margin-left: -28%;
+    margin-top: -17%;
+  }
+  .sect2 .slider .slide .d6-in {
+    width: 52vw;
+    margin-left: -16%;
+    margin-top: -13%;
+  }
+  .sect2 .slider .slide .d7-in {
+    width: 61vw;
+    margin-left: -17%;
+    margin-top: -14%;
+  }
+  .sect2 .slider .slide .d8-in {
+    width: 58vw;
+    margin-left: -31%;
+    margin-top: -26%;
+  }
+  .sect2 .slider .slide .d9-in {
+    width: 60vw;
+    margin-left: -8%;
+    margin-top: -25%;
+  }
+  .sect2 .slider .slide .d10-in {
+    width: 65vw;
+    margin-left: -46%;
+    margin-top: -20%;
+  }
+  .sect2 .slider .slide.current {
+    opacity: 1;
+  }
+  .sect2 .slider .slide.current img {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  .sect2 .slider .slide.current .content {
+    /* Content of current slide */
+    opacity: 1;
+    transform: translateX(600px);
+    /* all- opacity/transform with 0.3s delay*/
+    transition: all 0.7s ease-in-out 0.3s;
+  }
+  .sect2 .slider .slide .content {
+    position: absolute;
+    bottom: 30px;
+    left: -600px;
+    width: 400px;
+    color: black;
+    padding: 35px;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  .sect2 .slider .slide .content b {
+    font-family: scdream7;
+  }
+  .sect2 .buttons button {
+    border: 2px solid rgb(225, 187, 255);
+    background-color: transparent;
+    color: rgb(225, 187, 255);
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+  }
+  .sect2 .buttons button:hover {
+    background-color: rgb(225, 187, 255);
+    color: #333;
+  }
+  .sect2 .buttons button#next {
+    top: 50%;
+    right: 20px;
+  }
+  .sect2 .buttons button#prev {
+    top: 50%;
+    left: 20px;
+  }
+}

@@ -2,14 +2,15 @@
 @import url(../font/eng-font.css);
 @media screen and (min-width: 769px) {
   .sect2 .slider .slide .num-title {
-    right: 3%;
-    top: 3%;
+    width: 300px;
+    right: 5%;
+    top: 1%;
   }
   .sect2 .slider .slide .num-title .num {
-    font-size: 150px;
+    font-size: 170px;
   }
   .sect2 .slider .slide .num-title p {
-    font-size: 30px;
+    font-size: 25px;
   }
   .sect2 .slider .slide img {
     transform: translateY(-100px);
@@ -19,36 +20,42 @@
     top: 50%;
     position: absolute;
   }
-  .sect2 .slider .slide .d1-in {
-    margin-left: -37%;
+  .sect2 .slider .slide .d0-in {
+    margin-left: -22%;
     margin-top: -20%;
-    width: 76vw;
+    width: 47vw;
+    transform: translateX(-50%);
+  }
+  .sect2 .slider .slide .d1-in {
+    margin-left: -43%;
+    margin-top: -21%;
+    width: 60vw;
     transform: translateX(-50%);
   }
   .sect2 .slider .slide .d2-in {
-    width: 57vw;
-    margin-left: -46%;
-    margin-top: -21%;
+    width: 55vw;
+    margin-left: -28%;
+    margin-top: -22%;
   }
   .sect2 .slider .slide .d3-in {
-    width: 70vw;
-    margin-left: -35%;
-    margin-top: -18%;
+    width: 55vw;
+    margin-left: -12%;
+    margin-top: -16%;
   }
   .sect2 .slider .slide .d4-in {
-    width: 66vw;
-    margin-left: -17%;
-    margin-top: -17%;
+    width: 55vw;
+    margin-left: -28%;
+    margin-top: -12%;
   }
   .sect2 .slider .slide .d5-in {
-    width: 74vw;
-    margin-left: -36%;
-    margin-top: -14%;
+    width: 56vw;
+    margin-left: -28%;
+    margin-top: -17%;
   }
   .sect2 .slider .slide .d6-in {
-    width: 82vw;
-    margin-left: -40%;
-    margin-top: -27%;
+    width: 52vw;
+    margin-left: -16%;
+    margin-top: -13%;
   }
   .sect2 .slider .slide .d7-in {
     width: 61vw;
@@ -56,19 +63,19 @@
     margin-top: -14%;
   }
   .sect2 .slider .slide .d8-in {
-    width: 61vw;
-    margin-left: -30%;
-    margin-top: -22%;
+    width: 58vw;
+    margin-left: -31%;
+    margin-top: -26%;
   }
   .sect2 .slider .slide .d9-in {
-    width: 63vw;
-    margin-left: -12%;
+    width: 60vw;
+    margin-left: -8%;
     margin-top: -25%;
   }
   .sect2 .slider .slide .d10-in {
-    width: 61vw;
-    margin-left: -45%;
-    margin-top: -15%;
+    width: 65vw;
+    margin-left: -46%;
+    margin-top: -20%;
   }
   .sect2 .slider .slide.current {
     opacity: 1;
