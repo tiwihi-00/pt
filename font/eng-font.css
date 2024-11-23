@@ -86,3 +86,11 @@
 	font-family:Barlow-Medium;
 	src: url(./eng/Dosis-Medium.ttf);
 }
+@font-face {
+	font-family: Kudryashev_Extra_Contrast;
+	src: url(./eng/Kudryashev_Extra_Contrast.otf);
+}
+@font-face {
+	font-family: Kudryashev_Contrast_Sans;
+	src: url(./eng/Kudryashev_Extra_Contrast.otf);
+}
