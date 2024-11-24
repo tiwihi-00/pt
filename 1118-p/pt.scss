@@ -106,11 +106,11 @@ html {
 					content: '';
 					width: 100%;
 					position: absolute;
-					height: 2px;
+					height: 3px;
 					background-color: black;
 					left: 0;
 					transition: .35s;
-					bottom: -9px;
+					bottom: -7px;
 					animation-name: line;
 					animation-duration: 0.5s;
 					animation-fill-mode: forwards;
@@ -124,14 +124,14 @@ html {
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		width: 30vw;
+		width: 27vw;
 		margin-left: -6%;
 		margin-top: -5%;
 	}
 
 	.comment {
 		opacity: 0;
-
+line-height: .8;
 		position: absolute;
 		left: 50%;
 		top: 50%;
