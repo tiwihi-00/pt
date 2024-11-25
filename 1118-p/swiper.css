@@ -1,0 +1,11 @@
+.sect3-1art {
+  width: 750px;
+  height: 520px;
+}
+.sect3-1art .slide {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

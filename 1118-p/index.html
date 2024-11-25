@@ -10,15 +10,45 @@
 	<link rel="stylesheet" href="./pt-small.css" media=" screen and (max-width:768px)">
 	<link rel="stylesheet" href="./pt-middle.css" media="screen and (min-width:769px)">
 	<link rel="stylesheet" href="./pt-large.css" media="screen and (min-width:1350px)">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <style>
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
 
+    body {
+  
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 </style>
 
 <body>
 	<section class="sect1">
 		<div class="symbol">
-			<img src="./image/ball21 1.png" alt="">
+			<img src="./image/ball14 1.png" alt="">
 			<h4>b's</h4>
 			<p>Inspired by<br /> <span>the fluidity of</span><br /> <b>form and space.</b></p>
 		</div>
@@ -27,6 +57,7 @@
 				<li><a href="#">#Codeworks</a></li>
 				<li><a href="#">#Project</a></li>
 				<li><a href="#">#Book Design</a></li>
+				<li><a href="#">#about me</a></li>
 			</ul>
 		</div>
 		<div class="ball">
@@ -39,28 +70,28 @@
 	</section>
 	<section class="sect2">
 		<div class="slider">
-			<div class="slide current">
+			<div class="slide">
 				<div class="num-title">
 					<div class="num">01</div>
-					<p>#hover #transform</p>
+					<p>#transform</p>
+
 				</div>
 				<img class="d0-in" src="./image/d0-in.png" alt="">
 				<div class="content">
-
-					<p><b>사용 기술 :</b><br />HTML, CSS, </p>
+					<p><b>작업기간 :</b> 24.07.04</p>
 					<p><b>디자인 컨셉 : </b><br />
-						작품별로 각기 다른 분위기를 전달하기 위해, 배경색과 이미지를 다르게 설정하여 작품의 감성을 시각적으로 표현</p>
+						hover와 transform을 이용해<br /> 동적인 페이지를 보여줌</p>
 				</div>
 			</div>
 			<div class="slide">
 				<div class="num-title">
 					<div class="num">02</div>
-					<p>#grid </p>
+					<p>#grid</p>
+					<p>#jquery</p>
 				</div>
 				<img class="d1-in" src="./image/d1-in.png" alt="">
 				<div class="content">
-
-					<p><b>사용 기술 :</b><br />HTML, CSS, JavaScript (jQuery), Grid 레이아웃</p>
+					<p><b>작업기간 :</b> 24.08.05</p>
 					<p><b>디자인 컨셉 : </b><br />
 						작품별로 각기 다른 분위기를 전달하기 위해, 배경색과 이미지를 다르게 설정하여 작품의 감성을 시각적으로 표현</p>
 				</div>
@@ -72,10 +103,11 @@
 				</div>
 				<img class="d2-in" src="./image/d2-in.png" alt="">
 				<div class="content">
-					<p>로고에 wobble 효과를 적용하여 동적인 느낌 제공.<br />
+					<p><b>작업기간 :</b> 24.08.08</p>
+					<p><b>디자인 컨셉 : </b><br />로고에 효과를 적용하여 동적인 느낌 제공.<br />
 						호버 시 배경 위치와 텍스트 스타일 변화.<br />
-						video 태그를 사용하여 자동 재생, 반복, 음소거된 뮤직비디오 삽입.<br />
-
+						video 태그를 사용하여 자동 재생, 반복, 음소거된 뮤직비디오 삽입.
+					</p>
 
 				</div>
 			</div>
@@ -84,13 +116,16 @@
 					<div class="num-title">
 						<div class="num">04</div>
 						<p>#video tag</p>
+						<p>#swiper</p>
 					</div>
 				</div>
 				<img class="d3-in" src="./image/d3-in.png" alt="">
 				<div class="content">
-					<p><b>고정 헤더 :</b> <br />네비게이션과 SNS 아이콘 항상 표시.<br />
-						<b>스크롤 애니메이션 :</b> <br />개별 article 섹션 스크롤 및 자동 초기화. <br />
-						<b>슬라이드 전환 :</b><br />좌우 버튼으로 섹션 이동.<br />
+					<p><b>작업기간 :</b> 24.08.08</p>
+					<p><b>디자인 컨셉 : </b><br />
+						jquery를 이용한 비디오 제어 작업<br />
+						swiper-slide로 이미지를 보여줌
+					</p>
 				</div>
 			</div>
 			<div class="slide">
@@ -102,9 +137,9 @@
 				</div>
 				<img class="d4-in" src="./image/d4-in.png" alt="">
 				<div class="content">
-					<h1>Slide 5</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque
-						amet assumenda, debitis ratione aspernatur omnis? Voluptates quas quaerat reprehenderit.</p>
+					<p><b>작업기간 :</b> 24.09.02</p>
+					<p><b>디자인 컨셉 : </b><br />네비게이션과 SNS 아이콘 항상 표시.<br />스크롤 애니메이션으로 개별 article 섹션 스크롤 및 자동 초기화. <br />
+						슬라이드 전환 좌우 버튼으로 섹션 이동.</p>
 				</div>
 			</div>
 
@@ -117,23 +152,27 @@
 				</div>
 				<img class="d5-in" src="./image/d5-in.png" alt="">
 				<div class="content">
-					<h1>Slide 6</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque
-						amet assumenda, debitis ratione aspernatur omnis? Voluptates quas quaerat reprehenderit.</p>
+					<p><b>작업기간 :</b> 24.09.10</p>
+					<p><b>디자인 컨셉 : </b><br />
+						뮤고, 치치, 윈디 등 교육 콘텐츠와 연관된 캐릭터들의 특징과 이미지를 소개.<br />
+						캐릭터 간 이동은 썸네일 이미지 클릭으로 가능.</p>
 				</div>
 			</div>
 			<div class="slide">
 				<div class="num-title">
 					<div class="num-title">
 						<div class="num">07</div>
-						<p>#fetch #</p>
+						<p>#fetch</p>
+						<p>#dataset</p>
 					</div>
 				</div>
 				<img class="d6-in" src="./image/d6-in.png" alt="">
 				<div class="content">
-					<h1>Slide 7</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque
-						amet assumenda, debitis ratione aspernatur omnis? Voluptates quas quaerat reprehenderit.</p>
+					<p><b>작업기간 :</b> 24.09.10</p>
+					<p><b>디자인 컨셉 : </b><br />
+						dataset 사용하여 비디오를 불러오고<br />
+						fetch를 사용해 페이지를 보여줌
+					</p>
 				</div>
 			</div>
 
@@ -141,42 +180,51 @@
 				<div class="num-title">
 					<div class="num-title">
 						<div class="num">08</div>
-						<p>#Clone Coding # slide</p>
+						<p>#Clone Coding</p>
+						<p>#slide 제어</p>
 					</div>
 				</div>
 				<img class="d8-in" src="./image/d8-in.png" alt="">
 				<div class="content">
-					<h1>Slide 8</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque
-						amet assumenda, debitis ratione aspernatur omnis? Voluptates quas quaerat reprehenderit.</p>
+					<p><b>작업기간 :</b> 24.09.19</p>
+					<p><b>디자인 컨셉 : </b><br />
+						swiper의 slide를 제어하고 section별 Scoll제어 <br />
+						상품 목록을 유동적으로 보여줌
+					</p>
 				</div>
 			</div>
 			<div class="slide">
 				<div class="num-title">
 					<div class="num-title">
 						<div class="num">09</div>
-						<p>#Scroll # slide</p>
+						<p>#SplitText</p>
+						<p>#scroll</p>
 					</div>
 				</div>
 				<img class="d9-in" src="./image/d9-in.png" alt="">
 				<div class="content">
-					<h1>Slide 9</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque
-						amet assumenda, debitis ratione aspernatur omnis? Voluptates quas quaerat reprehenderit.</p>
+					<p><b>작업기간 :</b> 24.10.12</p>
+					<p><b>디자인 컨셉 : </b><br />
+						gsap의 SplitText로 title을 보여주고<br />
+						scroll제어로 각 section을 보여줌
+					</p>
 				</div>
 			</div>
-			<div class="slide">
+			<div class="slide current">
 				<div class="num-title">
 					<div class="num-title">
 						<div class="num">10</div>
-						<p>#Scroll # slide</p>
+						<p>#swiper</p>
+						<p>#scroll</p>
 					</div>
 				</div>
 				<img class="d10-in" src="./image/d10-in.png" alt="">
 				<div class="content">
-					<h1>Slide 10</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloremque
-						amet assumenda, debitis ratione aspernatur omnis? Voluptates quas quaerat reprehenderit.</p>
+					<p><b>작업기간 :</b> 24.10.12</p>
+					<p><b>디자인 컨셉 : </b><br />
+						다양한 swiper로 이미지를 보여줌<br />
+						반응형 페이지로 작업
+					</p>
 				</div>
 			</div>
 		</div>
@@ -186,7 +234,32 @@
 		</div>
 	</section>
 	<section class="sect3">
+		<div class="sect3-box">
+			<article>
+				<div class="tab-title">
+					<p>PROJECT 01.</p>
+					<h2>Web Re-Design</h2>
+				</div>
+				<div class="tab-desc">
+					<p class="pro">웹 개선 프로젝트</p>
+					<h2>제주맥주 웹사이트 리뉴얼</h2>
+					<article class="sect3-1art">
+						<div class="swiper je-Swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="./image/jejubeer01.jpg" alt=""></div>
+								<div class="swiper-slide"><img src="./image/jejubeer02.jpg" alt=""></div>
+								<div class="swiper-slide"><img src="./image/jejubeer03.jpg" alt=""></div>
+								<div class="swiper-slide"><img src="./image/jejubeer04.jpg" alt=""></div>
+							
+				
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</article>
+				</div>
 
+			</article>
+		</div>
 		<div class="gradient-bg">
 			<svg viewBox="0 0 100vw 100vw" xmlns='http://www.w3.org/2000/svg' class="noiseBg">
 				<filter id='noiseFilterBg'>
@@ -213,6 +286,7 @@
 				<div class="interactive"></div>
 			</div>
 		</div>
+
 	</section>
 
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
@@ -220,10 +294,19 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
 	<script src="../js/splitText.js"></script>
-	<!-- <script src="./sect1.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="./sect1.js"></script>
 	<script src="./sect2.js"></script>
 	<script src="./sect3.js"></script>
 	<script>
+
+		var swiper = new Swiper(".je-Swiper", {
+			loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+				clickable: true,
+      },
+    });
 
 
 		const tl = gsap.timeline();
@@ -235,7 +318,7 @@
 		gsap.set(".symbol", { opacity: 0, y: 50 });
 		gsap.set(".menu", { opacity: 0, y: 50 });
 		gsap.set(".symbol p span, .symbol p b", { opacity: 0, y: 20 });
-	
+
 
 		tl.from(".ball", {
 			y: -150,
@@ -271,7 +354,7 @@
 				duration: 0.6,
 				ease: "power2.out",
 			})
-		
+
 			.to(".symbol p span, .symbol p b", {
 				opacity: 1,
 				y: 0,
@@ -280,19 +363,19 @@
 				ease: "power2.out",
 			})
 			.to('.menu', {
-				opacity:1, 
-				y:0, 
+				opacity: 1,
+				y: 0,
 				stagger: 0.4,
-        duration: 0.5,
-        ease: "power2.out",
+				duration: 0.5,
+				ease: "power2.out",
 			})
 			.to('.menu li', {
-				
+
 				stagger: 0.4,
-        duration: 0.5,
-        ease: "power2.out",
+				duration: 0.5,
+				ease: "power2.out",
 			})
-		
+
 			.to(".symbol img", {
 				opacity: 1,
 				scale: 1.2,
@@ -302,33 +385,35 @@
 				ease: "power2.out",
 			})
 			.to(".ball", {
-				y:180,
-				opacity:1,
-				scale:.6,
+				y: 180,
+				opacity: 1,
+				scale: .6,
 				duration: 2,
 				ease: "power1.inOut",
-			yoyo: true,
-			x:250
+				yoyo: true,
+				x: 250
 			})
 			.to(".ball", {
-				y:0,
-				opacity:1,
-				scale:.6,
+				y: 0,
+				opacity: 1,
+				scale: .6,
 				duration: 2,
 				ease: "power1.inOut",
-			yoyo: true,
-			x:250
+				yoyo: true,
+				x: 250
 			})
 			.to(".ball", {
-				y:180,
-				opacity:1,
-				scale:.6,
+				y: 200,
+				opacity: 1,
+				scale: .6,
 				duration: 2,
 				ease: "power1.inOut",
-			yoyo: true,
-			x:350
+				yoyo: true,
+				x: 350
 			})
 
+
+	
 
 	</script>
 </body>

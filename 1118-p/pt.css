@@ -8,12 +8,12 @@ html {
 :root {
   --color-bg1: rgb(247, 247, 247);
   --color-bg2: rgb(243, 243, 244);
-  --color1: 18, 113, 255;
-  --color2: 107, 74, 255;
-  --color3: 100, 100, 255;
+  --color1: 245, 190, 232;
+  --color2: 175, 100, 233;
+  --color3: 135, 144, 241;
   --color4: 50, 160, 220;
-  --color5: 80, 47, 122;
-  --color-interactive: 140, 100, 255;
+  --color5: 165, 151, 248;
+  --color-interactive: 185, 131, 255;
   --circle-size: 80%;
   --blending: hard-light;
 }
@@ -39,36 +39,29 @@ html {
   position: relative;
 }
 .sect1 .symbol {
-  position: fixed;
+  position: absolute;
   left: 30px;
   top: 30px;
   width: 250px;
 }
 .sect1 .symbol img {
-  width: 90px;
-  height: 60px;
+  width: 75px;
+  height: 55px;
   transform-origin: center;
 }
 .sect1 .symbol h4 {
-  color: rgb(58, 1, 96);
+  color: white;
   font-family: Barlow-ThinItalic;
   font-size: 25px;
   position: absolute;
-  left: 30px;
+  left: 20px;
   top: 12px;
 }
 .sect1 .symbol p {
   padding-top: 20px;
-  margin-left: 13px;
   font-size: 15px;
   line-height: 1.4;
-  font-family: Barlow-Light;
-}
-.sect1 .symbol p span {
-  font-family: Barlow-Bold;
-}
-.sect1 .symbol p b {
-  font-family: Barlow-Bold;
+  font-family: EncodeSansCondensed-medium;
 }
 .sect1 .menu {
   position: absolute;
@@ -158,10 +151,10 @@ html {
 }
 .sect2 .slider .slide .num-title .num {
   font-family: Barlow-ThinItalic;
-  font-size: 150px;
+  font-size: 110px;
 }
 .sect2 .slider .slide .num-title p {
-  font-size: 15px;
+  font-size: 12px;
   font-family: scdream2;
 }
 .sect2 .slider .slide img {
@@ -173,7 +166,7 @@ html {
   position: absolute;
 }
 .sect2 .slider .slide:first-child {
-  background: url("./image/D1-back.jpg") no-repeat bottom/cover;
+  background: url("./image/D16.png") no-repeat bottom/cover;
 }
 .sect2 .slider .slide .d1-in {
   margin-left: -27%;
@@ -197,7 +190,7 @@ html {
   margin-top: 0%;
 }
 .sect2 .slider .slide:nth-child(4) {
-  background: url("./image/D4-back.jpg") no-repeat bottom/cover;
+  background: url("./image/D17.png") no-repeat bottom/cover;
 }
 .sect2 .slider .slide .d4-in {
   width: 43vw;
@@ -213,12 +206,12 @@ html {
   margin-top: 0%;
 }
 .sect2 .slider .slide:nth-child(6) {
-  background: url("./image/D5-back.jpg") no-repeat bottom/cover;
+  background: url("./image/D13.jpg") no-repeat bottom/cover;
 }
 .sect2 .slider .slide .d6-in {
   width: 45vw;
   margin-left: 0%;
-  margin-top: 0%;
+  margin-top: 25%;
 }
 .sect2 .slider .slide:nth-child(7) {
   background: url("./image/D12.jpg") no-repeat bottom/cover;
@@ -275,8 +268,12 @@ html {
   width: 400px;
   color: black;
   padding: 35px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.sect2 .slider .slide .content h5 {
   font-size: 15px;
-  line-height: 1.8;
+  font-family: scdream5;
 }
 .sect2 .slider .slide .content b {
   font-family: scdream7;
@@ -305,6 +302,66 @@ html {
   left: 20px;
 }
 
+.sect3 {
+  position: relative;
+}
+.sect3 .sect3-box {
+  position: absolute;
+  z-index: 100;
+  left: 10%;
+  top: 13%;
+  width: 100%;
+}
+.sect3 .sect3-box article {
+  display: flex;
+}
+.sect3 .sect3-box article .tab-title {
+  width: 250px;
+  height: 100vh;
+  border-right: 1px solid #000;
+  position: sticky;
+  top: 10%;
+}
+.sect3 .sect3-box article .tab-title p {
+  font-family: Barlow-Medium;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+.sect3 .sect3-box article .tab-title h2 {
+  font-family: Barlow-Thin;
+  font-size: 30px;
+  color: black;
+}
+.sect3 .sect3-box article .tab-desc {
+  width: 70%;
+  padding-left: 40px;
+}
+.sect3 .sect3-box article .tab-desc .pro {
+  font-family: scdream4;
+  font-size: 12px;
+}
+.sect3 .sect3-box article .tab-desc h2 {
+  font-family: scdream7;
+  padding-top: 10px;
+  font-size: 20px;
+}
+.sect3 .sect3-box article .tab-desc .sect3-1art {
+  position: relative;
+  padding-top: 80px;
+  width: 800px;
+  height: 600px;
+}
+.sect3 .sect3-box article .tab-desc .sect3-1art .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.sect3 .sect3-box article .tab-desc .sect3-1art .swiper-wrapper .slide {
+  width: 100%;
+  height: 100%;
+}
+.sect3 .sect3-box article .tab-desc .sect3-1art .swiper-wrapper .slide img {
+  object-position: top;
+}
 @keyframes moveInCircle {
   0% {
     transform: rotate(0deg);

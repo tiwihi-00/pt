@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./swiper.css">
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+  
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <article class="sect3-1art">
+		<div class="swiper je-Swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="./image/jejubeer01.png" alt=""></div>
+				<div class="swiper-slide"><img src="./image/jejubeer02.png" alt=""></div>
+				<div class="swiper-slide"><img src="./image/jejubeer03.png" alt=""></div>
+				<div class="swiper-slide"><img src="./image/jejubeer04.png" alt=""></div>
+				<div class="swiper-slide"><img src="./image/jejubeer05.png" alt=""></div>
+
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</article>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".je-Swiper", {
+			loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+				clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

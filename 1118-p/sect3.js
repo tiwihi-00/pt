@@ -1,3 +1,7 @@
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
 	const interBubble = document.querySelector('.interactive');
 	let curX = 0;

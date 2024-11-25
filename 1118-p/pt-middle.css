@@ -1,16 +1,39 @@
 @import url(../font/font.css);
 @import url(../font/eng-font.css);
 @media screen and (min-width: 769px) {
+  .sect1 .menu {
+    width: 40%;
+  }
+  .sect1 .menu ul {
+    width: 100%;
+  }
+  .sect1 .menu ul li {
+    font-size: 15px;
+  }
+  .sect1 .ball {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 35vw;
+    margin-left: -6%;
+    margin-top: 0%;
+  }
+  .sect1 .comment {
+    margin-top: 0%;
+  }
+  .sect1 .comment h3 {
+    font-size: 35px;
+  }
   .sect2 .slider .slide .num-title {
     width: 300px;
-    right: 5%;
+    right: 3%;
     top: 1%;
   }
   .sect2 .slider .slide .num-title .num {
-    font-size: 170px;
+    font-size: 150px;
   }
   .sect2 .slider .slide .num-title p {
-    font-size: 25px;
+    font-size: 18px;
   }
   .sect2 .slider .slide img {
     transform: translateY(-100px);
@@ -37,8 +60,8 @@
   }
   .sect2 .slider .slide .d3-in {
     width: 55vw;
-    margin-left: -12%;
-    margin-top: -16%;
+    margin-left: -27%;
+    margin-top: -19%;
   }
   .sect2 .slider .slide .d4-in {
     width: 55vw;
@@ -48,7 +71,7 @@
   .sect2 .slider .slide .d5-in {
     width: 56vw;
     margin-left: -28%;
-    margin-top: -17%;
+    margin-top: -8%;
   }
   .sect2 .slider .slide .d6-in {
     width: 52vw;
@@ -63,12 +86,12 @@
   .sect2 .slider .slide .d8-in {
     width: 58vw;
     margin-left: -31%;
-    margin-top: -26%;
+    margin-top: -27%;
   }
   .sect2 .slider .slide .d9-in {
-    width: 60vw;
-    margin-left: -8%;
-    margin-top: -25%;
+    width: 45vw;
+    margin-left: 0%;
+    margin-top: -17%;
   }
   .sect2 .slider .slide .d10-in {
     width: 65vw;
@@ -96,7 +119,7 @@
     width: 400px;
     color: black;
     padding: 35px;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.8;
   }
   .sect2 .slider .slide .content b {
