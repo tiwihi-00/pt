@@ -93,6 +93,10 @@ html {
 
 				z-index: 200;
 				color: black;
+				&:hover {
+					color: black;
+					transition: color 0.35s ease;
+			}
 
 				&:hover::after {
 					content: '';
@@ -107,6 +111,7 @@ html {
 					animation-duration: 0.5s;
 					animation-fill-mode: forwards;
 					z-index: 20;
+					transition: width 0.35s ease, background-color 0.35s ease;
 				}
 			}
 		}
@@ -405,9 +410,9 @@ html {
 		z-index: 100;
 		left: 10%;
 		top: 13%;
-		width: 100%;
+		width: 90%;
 
-		article {
+		.sect3-art1 {
 			display: flex;
 
 
@@ -449,8 +454,8 @@ html {
 				.sect3-1art {
 					position: relative;
 					padding-top: 80px;
-					width: 800px;
-					height: 600px;
+					width: 700px;
+					height: 550px;
 
 					.swiper-wrapper {
 						width: 100%;
@@ -515,7 +520,7 @@ html {
 
 	.gradient-bg {
 		width: 100vw;
-		height: 100vh;
+		height: 200vh;
 		position: relative;
 		overflow: hidden;
 		background: linear-gradient(40deg, rgb(255, 255, 255), rgb(255, 255, 255));
