@@ -14,18 +14,20 @@
 				}
 			}
 		}
-		
-	.ball {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		width:35vw;
-		margin-left: -6%;
-		margin-top: 0%;
-	}
-		.comment{
+
+		.ball {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 35vw;
+			margin-left: -6%;
 			margin-top: 0%;
-			h3{
+		}
+
+		.comment {
+			margin-top: 0%;
+
+			h3 {
 				font-size: 35px;
 			}
 		}
@@ -50,7 +52,7 @@
 					}
 
 					p {
-						font-size: 18px;
+						font-size: 16px;
 
 					}
 				}
@@ -206,18 +208,6 @@
 
 
 		.buttons button {
-			border: 2px solid rgb(225, 187, 255);
-			background-color: transparent;
-			color: rgb(225, 187, 255);
-			cursor: pointer;
-			padding: 13px 15px;
-			border-radius: 50%;
-			outline: none;
-
-			&:hover {
-				background-color: rgb(225, 187, 255);
-				color: #333;
-			}
 
 			&#next {
 
@@ -235,6 +225,227 @@
 
 
 	}
+
+	.sect3 {
+		position: relative;
+
+		.sect3-box {
+			position: absolute;
+			z-index: 100;
+			left: 5%;
+			top: 3%;
+			width: 90%;
+
+			.sect3-art1 {
+				display: flex;
+
+
+				.tab-title {
+					width: 200px;
+
+					p {
+						font-family: Barlow-Medium;
+						font-size: 13px;
+						padding-bottom: 10px;
+					}
+
+					h2 {
+						font-family: Barlow-ExtraLight;
+						font-size: 23px;
+						color: black;
+					}
+
+					.tab-menu {
+					
+
+
+						li {
+							font-family: scdream5;
+							margin-bottom: 25px;
+							font-size: 14px;
+							z-index: 200;
+							position: relative;
+							width:105px;
+
+
+						}
+					}
+				}
+
+				.tab-desc {
+					width: 80%;
+					padding-left: 50px;
+
+					.pro {
+						font-family: scdream4;
+						font-size: 12px;
+					}
+
+					h2 {
+						font-family: scdream7;
+						padding-top: 10px;
+						font-size: 20px;
+					}
+
+					.month {
+						font-family: scdream3;
+						font-size: 12px;
+						margin-top: 20px;
+
+						b {
+							font-family: scdream6;
+						}
+					}
+
+					.exp {
+						font-family: scdream4;
+						font-size: 14px;
+						line-height: 1.7;
+						width: 550px;
+						margin-top: 30px;
+					}
+
+					.sect3-0art {
+						margin-top: 80px;
+						width: 550px;
+						height: 350px;
 	
+						a {
+							width: 100%;
+							height: 100%;
+	
+							img {
+								width: 100%;
+	
+							}
+						}
+					}
+	
+
+					.sect3-1art {
+						position: relative;
+						margin-top: 30px;
+						width: 550px;
+						height: 350px;
+
+						.swiper-wrapper {
+							width: 100%;
+							height: 100%;
+
+							.slide {
+								width: 100%;
+								height: 100%;
+
+								img {
+									object-position: top;
+								}
+							}
+						}
+					}
+
+					.sect3-2art {
+						margin-top: 80px;
+						width: 700px;
+						height: 400px;
+
+						#carousel {
+							position: relative;
+							height: 400px;
+
+							overflow: hidden;
+
+							div {
+								position: absolute;
+								transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+								opacity: 1;
+
+								img {
+									width: 183px;
+									height: 100%;
+									transition: width 1s;
+									border-radius: 10px;
+								}
+
+								&.hideLeft {
+									left: 0%;
+									opacity: 0;
+									transform: translateY(25%) translateX(-50%);
+
+									img {
+										width: 100px;
+										height: 100%;
+									}
+								}
+
+								&.hideRight {
+									left: 100%;
+									opacity: 0;
+									transform: translateY(25%) translateX(-50%);
+
+									img {
+										width: 100px;
+									}
+								}
+
+								&.prev {
+									z-index: 5;
+									left: 30%;
+									transform: translateY(30px) translateX(-50%);
+
+									img {
+										width: 150px;
+									}
+								}
+
+								&.prevLeftSecond {
+									z-index: 4;
+									left: 15%;
+									transform: translateY(25%) translateX(-50%);
+									opacity: .5;
+
+									img {
+										width: 120px;
+									}
+								}
+
+								&.selected {
+									z-index: 10;
+									left: 50%;
+									transform: translateX(-50%);
+								}
+
+								&.next {
+									z-index: 5;
+									left: 70%;
+									transform: translateY(30px) translateX(-50%);
+
+									img {
+										width: 150px;
+									}
+								}
+
+								&.nextRightSecond {
+									z-index: 4;
+									left: 85%;
+									transform: translateY(25%) translateX(-50%);
+									opacity: .5;
+
+									img {
+										width: 120px;
+									}
+								}
+							}
+						}
+
+					}
+				}
+			}
+		}
+
+
+
+
+	}
+
 
 }

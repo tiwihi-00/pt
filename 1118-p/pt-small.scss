@@ -5,27 +5,31 @@
 	.sect1 {
 		.menu {
 			width: 60%;
+			right: 2%;
 
 			ul {
 				width: 100%;
+				gap: 20px;
 
 				li {
 					font-size: 15px;
 				}
 			}
 		}
-		
-	.ball {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		width: 40vw;
-		margin-left: -1%;
-		margin-top: 11%;
-	}
-		.comment{
+
+		.ball {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 40vw;
+			margin-left: -1%;
+			margin-top: 11%;
+		}
+
+		.comment {
 			margin-top: 10%;
-			h3{
+
+			h3 {
 				font-size: 30px;
 			}
 		}
@@ -213,18 +217,9 @@
 
 
 		.buttons button {
-			border: 2px solid rgb(225, 187, 255);
-			background-color: transparent;
-			color: rgb(225, 187, 255);
-			cursor: pointer;
-			padding: 13px 15px;
-			border-radius: 50%;
-			outline: none;
 
-			&:hover {
-				background-color: rgb(225, 187, 255);
-				color: #333;
-			}
+
+			&:hover {}
 
 			&#next {
 
@@ -242,5 +237,325 @@
 
 
 	}
+
+	.sect3 {
+		position: relative;
+
+
+
+		.pro-box {
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			left: 10%;
+			top: 5%;
+			z-index: 100;
+
+			.project-title {
+				.tab-title {
+					width: 90%;
+					padding-bottom: 100px;
+					margin: auto;
+					height: auto;
+					border-right: 0px solid #000;
+
+					&:nth-child(2) {
+						height: auto;
+					}
+
+					p {
+						font-family: Barlow-Medium;
+						font-size: 15px;
+						padding-bottom: 10px;
+					}
+
+					h2 {
+
+						font-family: Barlow-ExtraLight;
+						font-size: 28px;
+						color: black;
+					}
+
+					.tab-menu {
+						margin-top: 30px;
+						display: flex;
+						gap: 20px;
+
+						li {
+							font-family: scdream5;
+							margin-bottom: 20px;
+							font-size: 14px;
+							z-index: 200;
+							position: relative;
+							width: 110px;
+
+							&:hover {
+								color: black;
+								transition: color 0.35s ease;
+								font-family: scdream7;
+							}
+
+							&:hover::after {
+								content: '';
+								width: 100px;
+								position: absolute;
+								height: 3px;
+								background-color: black;
+								left: 0;
+								transition: .35s;
+								bottom: -5px;
+								animation-name: line;
+								animation-duration: 0.5s;
+								animation-fill-mode: forwards;
+								z-index: 100;
+								transition: width 0.35s ease, background-color 0.35s ease;
+							}
+
+
+						}
+					}
+				}
+
+
+
+			}
+
+			.project-contents {
+				width: 90%;
+				margin: 60px auto;
+
+
+				.sect3-art1 {
+					margin-bottom: 200px;
+
+					.tab-desc {
+						width: 100%;
+						padding-left: 0px;
+
+						.pro {
+							font-family: scdream4;
+							font-size: 12px;
+						}
+
+						h2 {
+							font-family: scdream7;
+							padding-top: 10px;
+							font-size: 20px;
+						}
+
+						.month {
+							font-family: scdream3;
+							font-size: 12px;
+							margin-top: 20px;
+
+							b {
+								font-family: scdream6;
+							}
+						}
+
+						.exp {
+							font-family: scdream4;
+							font-size: 14px;
+							line-height: 1.7;
+							width: 500px;
+							margin-top: 30px;
+						}
+
+						.sect3-0art {
+
+							margin-top: 70px;
+							width: 500px;
+							height: 300px;
+
+							a {
+								width: 100%;
+								height: 100%;
+
+								img {
+									width: 100%;
+
+								}
+							}
+						}
+
+
+						.sect3-1art {
+							position: relative;
+							margin-top: 100px;
+							width: 500px;
+							height: 300px;
+
+							.swiper-wrapper {
+								width: 100%;
+								height: 100%;
+
+								.slide {
+									width: 100%;
+									height: 100%;
+
+									img {
+										object-position: top;
+									}
+								}
+							}
+						}
+
+						.sect3-2art {
+							margin-top: 80px;
+							width: 500px;
+							height: 300px;
+
+							#carousel {
+								position: relative;
+								height: 400px;
+
+								overflow: hidden;
+
+								div {
+									position: absolute;
+									transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+									opacity: 1;
+
+									img {
+										width: 167px;
+										height: 100%;
+										transition: width 1s;
+										border-radius: 5px;
+									}
+
+									&.hideLeft {
+										left: 0%;
+										opacity: 0;
+										transform: translateY(25%) translateX(-50%);
+
+										img {
+											width: 70px;
+											height: 100%;
+										}
+									}
+
+									&.hideRight {
+										left: 100%;
+										opacity: 0;
+										transform: translateY(25%) translateX(-50%);
+
+										img {
+											width: 70px;
+										}
+									}
+
+									&.prev {
+										z-index: 5;
+										left: 30%;
+										transform: translateY(30px) translateX(-50%);
+
+										img {
+											width: 140px;
+										}
+									}
+
+									&.prevLeftSecond {
+										z-index: 4;
+										left: 15%;
+										transform: translateY(25%) translateX(-50%);
+										opacity: .5;
+
+										img {
+											width: 100px;
+										}
+									}
+
+									&.selected {
+										z-index: 10;
+										left: 50%;
+										transform: translateX(-50%);
+									}
+
+									&.next {
+										z-index: 5;
+										left: 70%;
+										transform: translateY(30px) translateX(-50%);
+
+										img {
+											width: 140px;
+										}
+									}
+
+									&.nextRightSecond {
+										z-index: 4;
+										left: 85%;
+										transform: translateY(25%) translateX(-50%);
+										opacity: .5;
+
+										img {
+											width: 120px;
+										}
+									}
+								}
+							}
+
+						}
+					}
+				}
+			}
+		}
+
+
+		@keyframes moveInCircle {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			50% {
+				transform: rotate(180deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		@keyframes moveVertical {
+			0% {
+				transform: translateY(-50%);
+			}
+
+			50% {
+				transform: translateY(50%);
+			}
+
+			100% {
+				transform: translateY(-50%);
+			}
+		}
+
+		@keyframes moveHorizontal {
+			0% {
+				transform: translateX(-50%) translateY(-10%);
+			}
+
+			50% {
+				transform: translateX(50%) translateY(10%);
+			}
+
+			100% {
+				transform: translateX(-50%) translateY(-10%);
+			}
+		}
+
+
+		.gradient-bg {
+			width: 100vw;
+			height: 350vh;
+
+
+		}
+
+
+	}
+
+
+
 
 }

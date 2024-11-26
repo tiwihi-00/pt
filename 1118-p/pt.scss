@@ -93,10 +93,11 @@ html {
 
 				z-index: 200;
 				color: black;
+
 				&:hover {
 					color: black;
 					transition: color 0.35s ease;
-			}
+				}
 
 				&:hover::after {
 					content: '';
@@ -166,6 +167,7 @@ html {
 			width: 100%;
 			height: 100vh;
 			opacity: 0;
+			visibility: hidden;
 			transition: opacity 0.3s ease-in-out;
 
 			.num-title {
@@ -181,8 +183,10 @@ html {
 				}
 
 				p {
+					text-transform: uppercase;
 					font-size: 12px;
 					font-family: scdream2;
+					margin-top: 5px;
 				}
 			}
 
@@ -192,7 +196,7 @@ html {
 				transition: all 0.5s ease-in-out 0.3s;
 				left: 50%;
 				top: 50%;
-
+				cursor: pointer;
 				position: absolute;
 			}
 
@@ -328,6 +332,8 @@ html {
 
 			&.current {
 				opacity: 1;
+				z-index: 1;
+				visibility: visible;
 
 				img {
 					transform: translateY(0px);
@@ -405,23 +411,25 @@ html {
 .sect3 {
 	position: relative;
 
-	.sect3-box {
+
+
+	.pro-box {
 		position: absolute;
-		z-index: 100;
+		display: flex;
+		width: 100%;
 		left: 10%;
-		top: 13%;
-		width: 90%;
+		top: 5%;
+		z-index: 100;
 
-		.sect3-art1 {
-			display: flex;
-
-
+		.project-title {
 			.tab-title {
 				width: 250px;
-				height: 100vh;
+				height: 820px;
 				border-right: 1px solid #000;
-				position: sticky;
-				top: 10%;
+
+				&:nth-child(2) {
+					height: 910px;
+				}
 
 				p {
 					font-family: Barlow-Medium;
@@ -430,49 +438,229 @@ html {
 				}
 
 				h2 {
-					font-family: Barlow-Thin;
-					font-size: 30px;
+
+					font-family: Barlow-ExtraLight;
+					font-size: 28px;
 					color: black;
+				}
+
+				.tab-menu {
+					margin-top: 80px;
+
+
+					li {
+						font-family: scdream5;
+						margin-bottom: 20px;
+						font-size: 14px;
+						z-index: 200;
+						position: relative;
+						width: 110px;
+
+						&:hover {
+							color: black;
+							transition: color 0.35s ease;
+							font-family: scdream7;
+						}
+
+						&:hover::after {
+							content: '';
+							width: 100px;
+							position: absolute;
+							height: 3px;
+							background-color: black;
+							left: 0;
+							transition: .35s;
+							bottom: -5px;
+							animation-name: line;
+							animation-duration: 0.5s;
+							animation-fill-mode: forwards;
+							z-index: 100;
+							transition: width 0.35s ease, background-color 0.35s ease;
+						}
+
+
+					}
 				}
 			}
 
-			.tab-desc {
-				width: 70%;
-				padding-left: 40px;
 
-				.pro {
-					font-family: scdream4;
-					font-size: 12px;
-				}
 
-				h2 {
-					font-family: scdream7;
-					padding-top: 10px;
-					font-size: 20px;
-				}
+		}
 
-				.sect3-1art {
-					position: relative;
-					padding-top: 80px;
-					width: 700px;
-					height: 550px;
+		.project-contents {
+			.sect3-art1 {
+				margin-bottom: 200px;
 
-					.swiper-wrapper {
-						width: 100%;
-						height: 100%;
-						.slide {
+				.tab-desc {
+					width: 70%;
+					padding-left: 80px;
+
+					.pro {
+						font-family: scdream4;
+						font-size: 12px;
+					}
+
+					h2 {
+						font-family: scdream7;
+						padding-top: 10px;
+						font-size: 20px;
+					}
+
+					.month {
+						font-family: scdream3;
+						font-size: 12px;
+						margin-top: 20px;
+
+						b {
+							font-family: scdream6;
+						}
+					}
+
+					.exp {
+						font-family: scdream4;
+						font-size: 14px;
+						line-height: 1.7;
+						width: 700px;
+						margin-top: 30px;
+					}
+
+					.sect3-0art {
+						margin-top: 100px;
+						width: 700px;
+						height: 350px;
+
+						a {
 							width: 100%;
 							height: 100%;
-							img{
-								object-position: top;
+
+							img {
+								width: 100%;
+
 							}
 						}
+					}
+
+
+					.sect3-1art {
+						position: relative;
+						margin-top: 100px;
+						width: 700px;
+						height: 415px;
+
+						.swiper-wrapper {
+							width: 100%;
+							height: 100%;
+
+							.slide {
+								width: 100%;
+								height: 100%;
+
+								img {
+									object-position: top;
+								}
+							}
+						}
+					}
+
+					.sect3-2art {
+						margin-top: 80px;
+						width: 700px;
+						height: 400px;
+
+						#carousel {
+							position: relative;
+							height: 400px;
+
+							overflow: hidden;
+
+							div {
+								position: absolute;
+								transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+								opacity: 1;
+
+								img {
+									width: 183px;
+									height: 100%;
+									transition: width 1s;
+									border-radius: 10px;
+								}
+
+								&.hideLeft {
+									left: 0%;
+									opacity: 0;
+									transform: translateY(25%) translateX(-50%);
+
+									img {
+										width: 100px;
+										height: 100%;
+									}
+								}
+
+								&.hideRight {
+									left: 100%;
+									opacity: 0;
+									transform: translateY(25%) translateX(-50%);
+
+									img {
+										width: 100px;
+									}
+								}
+
+								&.prev {
+									z-index: 5;
+									left: 30%;
+									transform: translateY(30px) translateX(-50%);
+
+									img {
+										width: 150px;
+									}
+								}
+
+								&.prevLeftSecond {
+									z-index: 4;
+									left: 15%;
+									transform: translateY(25%) translateX(-50%);
+									opacity: .5;
+
+									img {
+										width: 120px;
+									}
+								}
+
+								&.selected {
+									z-index: 10;
+									left: 50%;
+									transform: translateX(-50%);
+								}
+
+								&.next {
+									z-index: 5;
+									left: 70%;
+									transform: translateY(30px) translateX(-50%);
+
+									img {
+										width: 150px;
+									}
+								}
+
+								&.nextRightSecond {
+									z-index: 4;
+									left: 85%;
+									transform: translateY(25%) translateX(-50%);
+									opacity: .5;
+
+									img {
+										width: 120px;
+									}
+								}
+							}
+						}
+
 					}
 				}
 			}
 		}
 	}
-
 
 
 	@keyframes moveInCircle {
@@ -520,7 +708,7 @@ html {
 
 	.gradient-bg {
 		width: 100vw;
-		height: 200vh;
+		height: 300vh;
 		position: relative;
 		overflow: hidden;
 		background: linear-gradient(40deg, rgb(255, 255, 255), rgb(255, 255, 255));
@@ -644,6 +832,127 @@ html {
 
 
 }
+
+// .sect4 {
+// 	position: relative;
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: center;
+// 	align-items: center;
+// 	min-height: 100vh;
+// 	width: 100%;
+// 	background-image: radial-gradient(at 40% 20%,
+// 			rgb(253, 211, 174) 0px,
+// 			transparent 50%),
+// 		radial-gradient(at 80% 0%, rgb(143, 237, 253) 0px, transparent 50%),
+// 		radial-gradient(at 0% 50%, rgb(255, 219, 222) 0px, transparent 50%),
+// 		radial-gradient(at 80% 50%, rgb(253, 188, 209) 0px, transparent 50%),
+// 		radial-gradient(at 0% 100%, rgb(255, 181, 138) 0px, transparent 50%),
+// 		radial-gradient(at 80% 100%, rgb(194, 192, 252) 0px, transparent 50%),
+// 		radial-gradient(at 0% 0%, rgb(252, 171, 194) 0px, transparent 50%);
+// 	background-repeat: no-repeat;
+
+// 	.main {
+// 		width: 800px;
+
+// 		h1 {
+// 			text-align: center;
+// 			font-size: clamp(2rem, 4vw, 2.6rem);
+// 			color: #fff;
+// 			margin-bottom: 70px;
+// 		}
+
+// 		.slider {
+// 			width: 100%;
+// 			overflow: hidden;
+
+// 			.slide-row {
+// 				display: flex;
+// 				width: 3200px;
+// 				transition: 0.5s;
+// 			}
+
+// 			.slide-col {
+// 				position: relative;
+// 				width: 800px;
+// 				height: 400px;
+
+// 				.hero {
+// 					position: absolute;
+// 					top: 0;
+// 					right: 0;
+// 					height: 100%;
+
+// 					img {
+// 						// height: 100%;
+// 						border-radius: 10px;
+// 						width: 320px;
+// 						object-fit: cover;
+// 						pointer-events: none;
+// 						user-select: none;
+// 					}
+// 				}
+
+// 				.content {
+// 					position: absolute;
+// 					left: 0;
+// 					top: 50%;
+// 					transform: translateY(-50%);
+// 					width: 520px;
+// 					height: 270px;
+// 					color: #4d4352;
+// 					background: rgba(255, 255, 255, 0.6);
+// 					box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+// 					backdrop-filter: blur(4.5px);
+// 					-webkit-backdrop-filter: blur(4.5px);
+// 					border-radius: 10px;
+// 					padding: 45px;
+// 					z-index: 2;
+// 					user-select: none;
+
+// 					p {
+// 						font-size: 1.25rem;
+// 						font-weight: 400;
+// 						line-height: 1.3;
+// 					}
+
+// 					h2 {
+// 						font-size: 1.5rem;
+// 						font-weight: 600;
+// 						margin-top: 35px;
+// 						color: #4d4352;
+// 					}
+
+// 				}
+// 			}
+
+
+// 		}
+
+// 		.indicator {
+// 			width: 800px;
+// 			display: flex;
+// 			justify-content: center;
+// 			margin-top: 4rem;
+
+// 			.btn {
+// 				display: inline-block;
+// 				height: 15px;
+// 				width: 15px;
+// 				margin: 4px;
+// 				border-radius: 15px;
+// 				background: #fff;
+// 				cursor: pointer;
+// 				transition: all 0.5s ease-in-out;
+
+// 				.active {
+// 					width: 30px;
+// 				}
+// 			}
+
+// 		}
+// 	}
+// }
 
 
 

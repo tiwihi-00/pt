@@ -1,62 +1,61 @@
-const slides = document.querySelectorAll('.slide'); // Node list with anything of slide class
+const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
-const auto = true; // automatic sliding
+const auto = true; // Automatic sliding
 const intervalTime = 5000;
 let slideInterval;
 
+// Function to move to the next slide
 const nextSlide = () => {
-  // Get current class
   const current = document.querySelector('.current');
-  // Remove current class
   current.classList.remove('current');
-  // Check for next slide
-  if(current.nextElementSibling) {
-    // Add current to next sibling
+  if (current.nextElementSibling && current.nextElementSibling.classList.contains('slide')) {
     current.nextElementSibling.classList.add('current');
   } else {
-    // If no next slide, Add current to start
-    slides[0].classList.add('current'); // The node list, array of slides. Start from beginning
+    slides[0].classList.add('current');
   }
-  setTimeout(() => current.classList.remove('current'));
-}
+};
 
+// Function to move to the previous slide
 const prevSlide = () => {
-  // Get current class
   const current = document.querySelector('.current');
-  // Remove current class
   current.classList.remove('current');
-  // Check for slide
-  if(current.previousElementSibling) {
-    // Add current to next sibling
+  if (current.previousElementSibling && current.previousElementSibling.classList.contains('slide')) {
     current.previousElementSibling.classList.add('current');
   } else {
-    // If no next slide, Add current to start
-    slides[slides.length-1].classList.add('current'); // The node list, array of slides. Start from beginning
+    slides[slides.length - 1].classList.add('current');
   }
-  setTimeout(() => current.classList.remove('current'));
-}
+};
 
 // Button events
-next.addEventListener('click', e => {
+next.addEventListener('click', () => {
   nextSlide();
-  // When user hits button, the interval resets waiting 5 seconds to change to the next slide
-  if(auto) {
+  if (auto) {
     clearInterval(slideInterval);
     slideInterval = setInterval(nextSlide, intervalTime);
   }
 });
 
-prev.addEventListener('click', e => {
+prev.addEventListener('click', () => {
   prevSlide();
-  if(auto) {
+  if (auto) {
     clearInterval(slideInterval);
     slideInterval = setInterval(nextSlide, intervalTime);
+  }
+});
+
+// Prevent slide navigation when clicking on links
+slides.forEach(slide => {
+  const link = slide.querySelector('a');
+  if (link) {
+    link.addEventListener('click', (e) => {
+      e.preventDefault(); // Stop default link behavior
+      window.open(link.href, link.target); // Open the link properly
+    });
   }
 });
 
 // Auto slide
-if(auto) {
-  // Run next slide at interval time
+if (auto) {
   slideInterval = setInterval(nextSlide, intervalTime);
 }
