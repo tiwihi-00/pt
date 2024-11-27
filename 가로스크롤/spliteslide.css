@@ -1,0 +1,35 @@
+section {
+  height: 100vh;
+  border: 1px solid #000;
+  contain: paint;
+}
+section .splide .splide__track {
+  background-color: #000;
+  transform: rotate(2deg);
+}
+section .splide .splide__track .splide__list {
+  display: flex;
+}
+section .splide .splide__track .splide__list .splide__slide {
+  padding: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+section .splide .splide__track .splide__list .splide__slide svg {
+  width: 50px;
+  padding-left: 10px;
+}
+section .splide .splide__track .splide__list .splide__slide svg path {
+  fill: white;
+}
+section .splide .splide__track .splide__list .splide__slide.is-active {
+  color: rgb(214, 154, 255);
+}
+section .splide .splide__track .splide__list .splide__slide.is-active svg {
+  margin: 5px;
+}
+section .splide .splide__track .splide__list .splide__slide.is-active svg path {
+  fill: #b4e900;
+}

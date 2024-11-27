@@ -229,19 +229,21 @@
 	.sect3 {
 		position: relative;
 
-		.sect3-box {
+
+		.pro-box {
 			position: absolute;
+
+			top: 5%;
 			z-index: 100;
-			left: 15%;
-			top: 3%;
-			width: 90%;
 
-			.sect3-art1 {
-				display: flex;
-
+			.project-title {
+				padding: 90px;
 
 				.tab-title {
 					width: 300px;
+
+					border-right: 1px solid #000;
+
 
 					p {
 						font-family: Barlow-Medium;
@@ -250,8 +252,9 @@
 					}
 
 					h2 {
+
 						font-family: Barlow-ExtraLight;
-						font-size: 33px;
+						font-size: 28px;
 						color: black;
 					}
 
@@ -261,191 +264,202 @@
 
 						li {
 							font-family: scdream5;
-							margin-bottom: 25px;
+							margin-bottom: 20px;
 							font-size: 14px;
 							z-index: 200;
 							position: relative;
 							width: 110px;
 
 
+
 						}
 					}
 				}
 
-				.tab-desc {
-					width: 80%;
-					padding-left: 120px;
 
-					.pro {
-						font-family: scdream4;
-						font-size: 12px;
-					}
 
-					h2 {
-						font-family: scdream7;
-						padding-top: 10px;
-						font-size: 30px;
-					}
+			}
 
-					.month {
-						font-family: scdream3;
-						font-size: 12px;
-						margin-top: 30px;
+			.project-contents {
+				width: 60%;
+				padding: 100px;
+				padding-left: 100px;
 
-						b {
-							font-family: scdream6;
+				.sect3-art1 {
+					margin-bottom: 200px;
+
+					.tab-desc {
+						width: 100%;
+
+						.pro {
+							font-family: scdream4;
+							font-size: 12px;
 						}
-					}
 
-					.exp {
-						font-family: scdream4;
-						font-size: 14px;
-						line-height: 1.7;
-						width: 700px;
-						margin-top: 30px;
-					}
+						h2 {
+							font-family: scdream7;
+							padding-top: 10px;
+							font-size: 20px;
+						}
 
-					.sect3-0art {
-						margin-top: 60px;
-						width: 700px;
-						height: 400px;
+						.month {
+							font-family: scdream3;
+							font-size: 12px;
+							margin-top: 20px;
 
-						a {
-							width: 100%;
-							height: 100%;
-
-							img {
-								width: 100%;
-
+							b {
+								font-family: scdream6;
 							}
 						}
-					}
 
-					.sect3-1art {
-						position: relative;
-						margin-top: 100px;
-						width: 700px;
-						height: 415px;
-
-						.swiper-wrapper {
+						.exp {
+							font-family: scdream4;
+							font-size: 14px;
+							line-height: 1.7;
 							width: 100%;
-							height: 100%;
+							margin-top: 30px;
+						}
 
-							.slide {
+						.sect3-0art {
+							margin-top: 100px;
+							width: 100%;
+
+
+							a {
 								width: 100%;
 								height: 100%;
 
 								img {
-									object-position: top;
+									width: 100%;
+
 								}
 							}
 						}
-					}
 
-					.sect3-2art {
-						margin-top: 80px;
-						width: 700px;
-						height: 400px;
 
-						#carousel {
+						.sect3-1art {
 							position: relative;
-							height: 400px;
+							margin-top: 100px;
+							width: 100%;
 
-							overflow: hidden;
 
-							div {
-								position: absolute;
-								transition: transform 1s, left 1s, opacity 1s, z-index 0s;
-								opacity: 1;
+							.swiper-wrapper {
+								width: 100%;
+								height: 100%;
 
-								img {
-									width: 183px;
+								.slide {
+									width: 100%;
 									height: 100%;
-									transition: width 1s;
-									border-radius: 10px;
-								}
-
-								&.hideLeft {
-									left: 0%;
-									opacity: 0;
-									transform: translateY(25%) translateX(-50%);
 
 									img {
-										width: 100px;
-										height: 100%;
-									}
-								}
-
-								&.hideRight {
-									left: 100%;
-									opacity: 0;
-									transform: translateY(25%) translateX(-50%);
-
-									img {
-										width: 100px;
-									}
-								}
-
-								&.prev {
-									z-index: 5;
-									left: 30%;
-									transform: translateY(30px) translateX(-50%);
-
-									img {
-										width: 150px;
-									}
-								}
-
-								&.prevLeftSecond {
-									z-index: 4;
-									left: 15%;
-									transform: translateY(25%) translateX(-50%);
-									opacity: .5;
-
-									img {
-										width: 120px;
-									}
-								}
-
-								&.selected {
-									z-index: 10;
-									left: 50%;
-									transform: translateX(-50%);
-								}
-
-								&.next {
-									z-index: 5;
-									left: 70%;
-									transform: translateY(30px) translateX(-50%);
-
-									img {
-										width: 150px;
-									}
-								}
-
-								&.nextRightSecond {
-									z-index: 4;
-									left: 85%;
-									transform: translateY(25%) translateX(-50%);
-									opacity: .5;
-
-									img {
-										width: 120px;
+										object-position: top;
 									}
 								}
 							}
 						}
 
+						.sect3-2art {
+							margin-top: 80px;
+							width: 100%;
+
+
+							#carousel {
+								position: relative;
+								height: 400px;
+
+								overflow: hidden;
+
+								div {
+									position: absolute;
+									transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+									opacity: 1;
+
+									img {
+										width: 183px;
+										height: 100%;
+										transition: width 1s;
+										border-radius: 10px;
+									}
+
+									&.hideLeft {
+										left: 0%;
+										opacity: 0;
+										transform: translateY(25%) translateX(-50%);
+
+										img {
+											width: 100px;
+											height: 100%;
+										}
+									}
+
+									&.hideRight {
+										left: 100%;
+										opacity: 0;
+										transform: translateY(25%) translateX(-50%);
+
+										img {
+											width: 100px;
+										}
+									}
+
+									&.prev {
+										z-index: 5;
+										left: 30%;
+										transform: translateY(30px) translateX(-50%);
+
+										img {
+											width: 150px;
+										}
+									}
+
+									&.prevLeftSecond {
+										z-index: 4;
+										left: 15%;
+										transform: translateY(25%) translateX(-50%);
+										opacity: .5;
+
+										img {
+											width: 120px;
+										}
+									}
+
+									&.selected {
+										z-index: 10;
+										left: 50%;
+										transform: translateX(-50%);
+									}
+
+									&.next {
+										z-index: 5;
+										left: 70%;
+										transform: translateY(30px) translateX(-50%);
+
+										img {
+											width: 150px;
+										}
+									}
+
+									&.nextRightSecond {
+										z-index: 4;
+										left: 85%;
+										transform: translateY(25%) translateX(-50%);
+										opacity: .5;
+
+										img {
+											width: 120px;
+										}
+									}
+								}
+							}
+
+						}
 					}
 				}
 			}
 		}
 
 
-
-
 	}
-
 
 
 }

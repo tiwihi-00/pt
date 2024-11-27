@@ -1,0 +1,93 @@
+@import url(../font/eng-font.css);
+@import url(../font/font.css);
+
+section {
+	height: 100vh;
+	border: 1px solid #000;
+
+	&#work {
+		width: 100%;
+		background-color: #e7cffd;
+		padding: 50px;
+		contain: paint;
+
+		.work__title {
+			font-family: scdream6;
+			font-size: 2.5vw;
+			line-height: 1.7;
+			text-transform: uppercase;
+			color: black;
+			position: sticky;
+			top: 50px;
+			z-index: 10;
+
+		
+			b {
+				font-size: 20px;
+				font-family: scdream2;
+				display: block;
+			}
+
+		}
+
+		.work__wrap {
+			padding: 50px;
+			display: flex;
+			width: 200%;
+			gap: 80px;
+			margin-top: 120px;
+			align-items: flex-start;
+
+			.work__item {
+				position: relative;
+				min-width: 200px;
+				width: 15vw;
+				flex-shrink: 0;
+				font-family: scdream3;
+				font-size: 13px;
+				aspect-ratio: 1/1.2;
+				background: rgba(195, 167, 221, 0.8);
+				padding: 1rem;
+				display: flex;
+				flex-direction: column;
+				margin-top: -30px;
+				transition: .35s;
+				
+
+				&:hover {
+					margin-top: 0;
+				}
+
+				&:hover img {
+					filter: saturate(100%);
+				}
+
+				.num {
+					font-family: Barlow-ExtraLight;
+					position: absolute;
+					font-size: 20px;
+					left: 5px;
+					top: -35px;
+				}
+
+
+				img {
+					padding: 20px 0;
+					filter: saturate(10%);
+					transition: .35s;
+				}
+
+			}
+		}
+
+
+	}
+
+
+
+
+
+
+
+
+}

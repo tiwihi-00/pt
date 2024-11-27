@@ -1,0 +1,47 @@
+section {
+	height: 100vh;
+	border: 1px solid #000;
+	contain: paint;
+	.splide {
+		
+	
+		.splide__track {
+		
+			background-color: #000;
+			transform: rotate(2deg);
+
+			.splide__list {
+				display: flex;
+
+				.splide__slide {
+					padding: 10px;
+					color: white;
+					display: flex;
+					align-items: center;
+					flex-shrink: 0;
+
+					svg {
+						width: 50px;
+						padding-left: 10px;
+
+						path {
+							fill: white;
+						}
+					}
+
+					&.is-active {
+						color: rgb(214, 154, 255);
+
+						svg {
+							margin: 5px;
+
+							path {
+								fill: #b4e900;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

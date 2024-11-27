@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../reset.css">
+	<link rel="stylesheet" href="./spliteslide.css">
+
+</head>
+
+<body>
+	<section>
+		<div class="splide" aria-label="Splide Basic HTML Example">
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide">codingworks
+						<svg viewBox="0 0 40 40">
+							<path d="m31.9 13.4-1.41 1.41 4.21 4.21h-33.1v2h33.1l-4.21 4.21 1.41 1.41 5.21-5.21 1.42-1.41-1.42-1.41z">
+							</path>
+						</svg>
+					</li>
+					<li class="splide__slide">Book design<svg viewBox="0 0 40 40">
+							<path d="m31.9 13.4-1.41 1.41 4.21 4.21h-33.1v2h33.1l-4.21 4.21 1.41 1.41 5.21-5.21 1.42-1.41-1.42-1.41z">
+							</path>
+						</svg></li>
+					<li class="splide__slide">graphic<svg viewBox="0 0 40 40">
+							<path d="m31.9 13.4-1.41 1.41 4.21 4.21h-33.1v2h33.1l-4.21 4.21 1.41 1.41 5.21-5.21 1.42-1.41-1.42-1.41z">
+							</path>
+						</svg></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<script src="path-to-the-script/splide-extension-auto-scroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"
+		integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js
+"></script>
+	<script>
+		const splide = new Splide('.splide', {
+			type: 'loop',
+			drag: false,
+			focus: 'center',
+			gap: 30,
+			autoWidth: true,
+			arrows: false,
+			pagination: false,
+			autoScoll: {
+				speed: -2,
+				pauseOnHover: true,
+				rewind: false,
+			},
+			beakPoints: {
+				1200: {perPage: 3}, 640: { perPage: 2 }
+			}
+
+
+		})
+		splide.mount(window.splide.Extensions)
+	</script>
+</body>
+
+</html>
