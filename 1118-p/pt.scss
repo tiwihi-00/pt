@@ -412,7 +412,7 @@ html {
 
 .sect3 {
 	position: relative;
-
+contain: paint;
 
 
 	.pro-box {
@@ -880,16 +880,17 @@ html {
 			.slide-col {
 				position: relative;
 				width: 800px;
-				height: 400px;
+				height: 450px;
 
 				.hero {
 					position: absolute;
 					top: 0;
 					right: 0;
 					height: 100%;
+				
 
 					img {
-						// height: 100%;
+						height: 100%;
 						border-radius: 10px;
 						width: 320px;
 						object-fit: cover;
@@ -899,11 +900,12 @@ html {
 				}
 
 				.content {
+					
 					position: absolute;
-					left: 0;
+					left: 15%;
 					top: 50%;
 					transform: translateY(-50%);
-					width: 520px;
+					width: 400px;
 					height: 170px;
 					color: #4d4352;
 					background: rgba(255, 255, 255, 0.6);
@@ -911,21 +913,29 @@ html {
 					backdrop-filter: blur(4.5px);
 					-webkit-backdrop-filter: blur(4.5px);
 					border-radius: 10px;
-					padding: 45px;
+					padding: 20px 45px;
 					z-index: 2;
 					user-select: none;
+					text-align: right;
 
 					p {
-						font-size: 1.25rem;
+						font-size: 1rem;
 						font-weight: 400;
 						line-height: 1.3;
+						font-family: scdream3;
 					}
+.num{
 
+	margin-bottom: 10px;
+	font-size: 3rem;
+	font-family:Barlow-ExtraLight;
+}
 					h2 {
-						font-size: 1.5rem;
+						font-size: 1rem;
 						font-weight: 600;
-						margin-top: 35px;
-						color: #4d4352;
+					
+						color: #000;
+						font-family:Barlow-ExtraLight;
 					}
 
 				}
