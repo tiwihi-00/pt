@@ -2,12 +2,13 @@
 @import url(../font/font.css);
 section {
   height: 100vh;
-  border: 1px solid #000;
 }
 section#work {
-  width: 100%;
-  background-color: #e7cffd;
-  padding: 50px;
+  transition: 0.35s;
+  background-image: url(../portfolio/image/sect1.1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   contain: paint;
 }
 section#work .work__title {
@@ -30,18 +31,15 @@ section#work .work__wrap {
   display: flex;
   width: 200%;
   gap: 80px;
-  margin-top: 120px;
+  margin-top: 450px;
   align-items: flex-start;
 }
 section#work .work__wrap .work__item {
   position: relative;
-  min-width: 200px;
+  min-width: 400px;
   width: 15vw;
   flex-shrink: 0;
-  font-family: scdream3;
-  font-size: 13px;
   aspect-ratio: 1/1.2;
-  background: rgba(195, 167, 221, 0.8);
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -51,18 +49,39 @@ section#work .work__wrap .work__item {
 section#work .work__wrap .work__item:hover {
   margin-top: 0;
 }
-section#work .work__wrap .work__item:hover img {
-  filter: saturate(100%);
+section#work .work__wrap .work__item:hover a .num {
+  font-family: Barlow-BoldItalic;
+}
+section#work .work__wrap .work__item:hover a .content p {
+  font-family: scdream6;
+}
+section#work .work__wrap .work__item:hover a .content p b {
+  font-family: scdream9;
 }
 section#work .work__wrap .work__item .num {
-  font-family: Barlow-ExtraLight;
+  font-family: Barlow-ThinItalic;
   position: absolute;
-  font-size: 20px;
-  left: 5px;
+  font-size: 45px;
+  left: 15px;
   top: -35px;
 }
-section#work .work__wrap .work__item img {
-  padding: 20px 0;
-  filter: saturate(10%);
-  transition: 0.35s;
+section#work .work__wrap .work__item .line {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  margin: 30px 0;
+}
+section#work .work__wrap .work__item .content {
+  font-family: scdream4;
+  color: black;
+  font-size: 14px;
+  line-height: 1.7;
+}
+section#work .work__wrap .work__item .content p {
+  font-size: 13px;
+  font-family: scdream3;
+  margin-top: 5px;
+}
+section#work .work__wrap .work__item .content p b {
+  font-family: scdream6;
 }
