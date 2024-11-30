@@ -59,7 +59,7 @@ listElems.forEach((li) => {
 
 		const href = this.getAttribute('href')
 		const secTop = document.querySelectorAll('.desc')
-		console.log(secTop)
+		
 		window.scrollTo({
 			top: secTop.offsetTop,
 			behavior: 'smooth'

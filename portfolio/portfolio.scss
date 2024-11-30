@@ -34,15 +34,60 @@ html {
 
 section {
 	&.sect1 {
-		width: 100vw;
-		height: 100vh;
-		background-image: url(./image/in-back.jpg);
-		background-position: center bottom;
-		background-repeat: no-repeat;
-		background-size: cover;
+	  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(./image/in-back.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
 		position: relative;
 		contain: paint;
 
+		.box {
+			position: relative;
+	
+			.sphere {
+				position: absolute;
+				bottom: -80%;
+				left: 60%;
+				transform: translate(-50%, -80%);
+				width: 200px;
+				height: 200px;
+				background-image: url(./image/ball13\ 1.png);
+				background-size: cover;
+				background-position: center;
+				animation: up-and-down 5s ease-in-out infinite alternate;
+	
+	
+			}
+	
+			.cy {
+				position: relative;
+				overflow: visible;
+				height: 200px;
+		}
+		
+		.sphare-shadow {
+				position: absolute;
+				bottom: -200px;
+				left: 60%;
+				transform: translateX(-50%);
+				width: 320px;
+				height: 90px;
+				background: rgba(0, 0, 0, 0.1);
+				border-radius: 50%;
+				filter: blur(10px);
+				z-index: 0;
+		
+				animation: big-shadow 5s ease-in-out infinite alternate;
+		}
+		
+	
+		}
 		.symbol {
 			position: absolute;
 			left: 30px;
@@ -75,14 +120,14 @@ section {
 			}
 		}
 
-		.menu {
+		.in-menu {
 			position: absolute;
 			right: 10%;
 			top: 25px;
 			z-index: 100;
 			width: 40%;
 
-			ul {
+			ul.nav {
 
 				width: 100%;
 				display: flex;
@@ -120,27 +165,19 @@ section {
 			}
 		}
 
-		.ball {
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			width: 27vw;
-			margin-left: -6%;
-			margin-top: -5%;
-		}
 
 		.comment {
 			opacity: 0;
 			line-height: .8;
 			position: absolute;
 			left: 50%;
-			top: 50%;
+			top: 30%;
 			margin-left: -3%;
 			margin-top: 0%;
 
 			h3 {
 				font-family: EncodeSansCondensed-thin;
-				font-size: 40px;
+				font-size: 30px;
 				line-height: 1.7;
 
 				b {
@@ -270,10 +307,10 @@ section {
 
 	}
 
-	&.sect3 {
+	&#Project {
 		position: relative;
 
-
+contain: paint;
 
 		.pro-box {
 			position: absolute;
@@ -695,124 +732,119 @@ section {
 		}
 	}
 
-
-
-
-
-}
-
-.sect4 {
-	position: relative;
-	contain: paint;
-	height: 100vh;
-	width: 100%;
-	background-image: radial-gradient(at 40% 20%,
-			rgb(253, 211, 174) 0px,
-			transparent 50%),
-		radial-gradient(at 80% 0%, rgb(143, 237, 253) 0px, transparent 50%),
-		radial-gradient(at 0% 50%, rgb(255, 219, 222) 0px, transparent 50%),
-		radial-gradient(at 80% 50%, rgb(253, 188, 209) 0px, transparent 50%),
-		radial-gradient(at 0% 100%, rgb(255, 181, 138) 0px, transparent 50%),
-		radial-gradient(at 80% 100%, rgb(194, 192, 252) 0px, transparent 50%),
-		radial-gradient(at 0% 0%, rgb(252, 171, 194) 0px, transparent 50%);
-	background-repeat: no-repeat;
-
-	.main {
-		width: 100%;
+	&#My {
+		position: relative;
+		contain: paint;
 		height: 100vh;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		.sect4-lf {
-			width: 50%;
-			margin-top: -150px;
-
-			h1 {
-				width: 100%;
-				text-align: center;
-				font-size: 3vw;
-				color: #fff;
-				margin-bottom: 70px;
-				font-family: Barlow-ExtraLight;
-				text-transform: uppercase;
-			}
-
-			ul {
+		width: 100%;
+		background-image: radial-gradient(at 40% 20%,
+				rgb(253, 211, 174) 0px,
+				transparent 50%),
+			radial-gradient(at 80% 0%, rgb(143, 237, 253) 0px, transparent 50%),
+			radial-gradient(at 0% 50%, rgb(255, 219, 222) 0px, transparent 50%),
+			radial-gradient(at 80% 50%, rgb(253, 188, 209) 0px, transparent 50%),
+			radial-gradient(at 0% 100%, rgb(255, 181, 138) 0px, transparent 50%),
+			radial-gradient(at 80% 100%, rgb(194, 192, 252) 0px, transparent 50%),
+			radial-gradient(at 0% 0%, rgb(252, 171, 194) 0px, transparent 50%);
+		background-repeat: no-repeat;
+	
+		.main {
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+	
+			.sect4-lf {
 				width: 50%;
-				position: relative;
-
-				li {
-					position: absolute;
-					left: 50%;
-					height: 250px;
-					width: 400px;
-					padding: 25px 30px;
-					background: rgba(255, 255, 255, 0.5);
-					box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-					backdrop-filter: blur(4.5px);
-					-webkit-backdrop-filter: blur(4.5px);
-					border-radius: 10px;
-					display: none;
-
-					&.on {
-						display: block;
-					}
-
-					.num {
-						font-family: Barlow-ThinItalic;
+				margin-top: -150px;
+	
+				h1 {
+					width: 100%;
+					text-align: center;
+					font-size: 3vw;
+					color: #fff;
+					margin-bottom: 70px;
+					font-family: Barlow-ExtraLight;
+					text-transform: uppercase;
+				}
+	
+				ul {
+					width: 50%;
+					position: relative;
+	display: none;
+					li {
 						position: absolute;
-						font-size: 45px;
-						left: 25px;
-						margin-bottom: 20px;
-
-					}
-
-					.line {
-
-						position: absolute;
-						width: 85%;
-						height: 1px;
-						background-color: #000;
-						margin: 50px 25px;
-						left: 0;
-						top: 15%;
-					}
-
-					.book-desc {
-						margin-top: 90px;
-						font-family: scdream4;
-						line-height: 2;
-						font-size: 13px;
-
-						b {
-							font-family: scdream6;
+						left: 50%;
+						height: 250px;
+						width: 400px;
+						padding: 25px 30px;
+						background: rgba(255, 255, 255, 0.5);
+						box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+						backdrop-filter: blur(4.5px);
+						-webkit-backdrop-filter: blur(4.5px);
+						border-radius: 10px;
+						display: none;
+	
+						&.on {
+							display: block;
+						}
+	
+						.num {
+							font-family: Barlow-ThinItalic;
+							position: absolute;
+							font-size: 45px;
+							left: 25px;
+							margin-bottom: 20px;
+	
+						}
+	
+						.line {
+	
+							position: absolute;
+							width: 85%;
+							height: 1px;
+							background-color: #000;
+							margin: 50px 25px;
+							left: 0;
+							top: 15%;
+						}
+	
+						.book-desc {
+							margin-top: 90px;
+							font-family: scdream4;
+							line-height: 2;
+							font-size: 13px;
+	
+							b {
+								font-family: scdream6;
+							}
 						}
 					}
 				}
 			}
-		}
-
-		article {
-			width: 40%;
-			display: flex;
-			justify-content: center;
-
-			.splide {
-				width: 50%;
-
-				.splide__track {
-					width: 100%;
-
-					.splide__list {
+	
+			article {
+				width: 40%;
+				display: flex;
+				justify-content: center;
+	
+				.splide {
+					width: 50%;
+	
+					.splide__track {
 						width: 100%;
-
-						li {
-							margin: 30px;
-
-							img {
-								width: 90%;
-								box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+	
+						.splide__list {
+							width: 100%;
+	
+							li {
+								margin: 30px;
+	
+								img {
+									width: 90%;
+									box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+								}
 							}
 						}
 					}
@@ -820,8 +852,33 @@ section {
 			}
 		}
 	}
+
+
+
 }
 
+
+@keyframes up-and-down {
+  0% {
+    transform: translate(-50%, -80%);
+  }
+
+  100% {
+    transform: translate(-50%, -40%);
+  }
+}
+@keyframes big-shadow {
+  0% {
+      bottom: -210px;
+      left: 100%;
+     
+  }
+  100% {
+      bottom: -160px;
+      left: 60%;
+      scale: .7;
+  }
+}
 
 
 @keyframes line {
