@@ -874,7 +874,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 		// 초기 상태 설정
 		gsap.set(chars, { opacity: 0 });
 		gsap.set(".symbol", { opacity: 0, y: 50 });
-		gsap.set(".menu", { opacity: 0, y: 50 });
+		gsap.set(".in-menu", { opacity: 0, y: 50 });
 		gsap.set(".symbol p span, .symbol p b", { opacity: 0, y: 20 });
 
 		tl.to(".comment", {
@@ -907,14 +907,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 				duration: 0.5,
 				ease: "power2.out",
 			})
-			.to(".menu", {
+			.to(".in-menu", {
 				opacity: 1,
 				y: 0,
 
 				duration: 0.5,
 				ease: "power2.out",
 			})
-			.to(".menu li", {
+			.to(".in-menu li", {
 				stagger: 0.4,
 				duration: 0.5,
 				ease: "power2.out",

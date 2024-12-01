@@ -874,9 +874,10 @@ contain: paint;
      
   }
   100% {
-      bottom: -160px;
+      bottom: -170px;
       left: 60%;
       scale: .7;
+			background: rgba(0, 0, 0, 0.15);
   }
 }
 

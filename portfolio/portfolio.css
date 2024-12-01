@@ -685,9 +685,10 @@ section#My .main article .splide .splide__track .splide__list li img {
     left: 100%;
   }
   100% {
-    bottom: -160px;
+    bottom: -170px;
     left: 60%;
     scale: 0.7;
+    background: rgba(0, 0, 0, 0.15);
   }
 }
 @keyframes line {
