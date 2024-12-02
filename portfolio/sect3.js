@@ -1,3 +1,24 @@
+const tabSections = document.querySelectorAll('.tab-section');
+
+tabSections.forEach((section) => {
+  const title = section.querySelector('.tab-title');
+  const desc = section.querySelector('.tab-desc');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        desc.classList.add('active');
+      } else {
+        desc.classList.remove('active');
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(title);
+});
+
+
+
 
 
 

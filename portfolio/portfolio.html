@@ -865,21 +865,40 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 
 
 
-		// CSS로 초기 상태 설정
-		const elements = document.querySelectorAll('.tab-title, .tab-desc');
+		gsap.registerPlugin(ScrollTrigger);
 
-		// IntersectionObserver 설정
-		const observer = new IntersectionObserver((entries, observer) => {
-			entries.forEach(entry => {
-				if (entry.isIntersecting) {
-					gsap.to(entry.target, { opacity: 1, y: 0, duration: 1 });  // 애니메이션 실행
-					observer.unobserve(entry.target);  // 애니메이션이 끝난 후에는 더 이상 관찰하지 않음
-				}
-			});
-		}, { threshold: 0.1 });  // 화면에 조금이라도 보이면 애니메이션 실행
+// 모든 .project-title 요소와 .project-contents 요소를 기본적으로 숨기기
+gsap.set('.tab-title, .tab-desc', { opacity: 0, y: 50 });
 
-		// 각 요소에 대해 observer 설정
-		elements.forEach(el => observer.observe(el));
+
+gsap.from('.tab-title', {
+  scrollTrigger: {
+    trigger: '.tab-title', 
+    start: 'top top', 
+    end: 'bottom bottom',   
+    scrub: 1,            
+  },
+  opacity: 1,           
+  y: 0,                  
+  duration: 1            
+});
+
+
+gsap.from('.tab-desc', {
+  scrollTrigger: {
+    trigger: '.tab-desc', 
+    start: 'top top',         
+    end: 'bottom bottom',  
+    scrub: 1, 
+  },
+  opacity: 1,   
+  y: 0,   
+  duration: 1
+});
+
+
+
+
 
 		var swiper = new Swiper(".je-Swiper", {
 			loop: true,
@@ -893,6 +912,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 				clickable: true,
 			},
 		});
+
+
+
+
 
 		var swiper = new Swiper(".t-Swiper", {
 			loop: true,
