@@ -1,13 +1,22 @@
+const listElems = document.querySelectorAll('.in-menu ul.nav li');
+const sections = document.querySelectorAll('section');
 
-const listElems=document.querySelectorAll('ul.nav li')
-const sections=document.querySelectorAll('section')
+listElems.forEach((li) => {
+    const link = li.querySelector('a[href^="#"]');
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
 
-listElems.forEach((li)=>{
-	const link=li.querySelector('a[href^="sect"]')
-	link.addEventListener('click', function(e){
-		e.preventDefault();
+        const href = this.getAttribute('href');
+        const targetSection = document.querySelector(href);
 
-		const href = this.gerAttribute('href')
-	
-	})
-})
+        if (targetSection) {
+            // 스크롤 이동
+            targetSection.scrollIntoView({
+                behavior: 'smooth', // 부드럽게 스크롤
+                block: 'start'     // 섹션의 상단을 기준으로 정렬
+            });
+        } else {
+            console.warn('No matching section found for:', href);
+        }
+    });
+});

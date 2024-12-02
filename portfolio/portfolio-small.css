@@ -1,18 +1,18 @@
 @import url(../font/font.css);
 @import url(../font/eng-font.css);
 @media screen and (max-width: 768px) {
-  .sect1 .menu {
+  section#work .menu {
     width: 60%;
     right: 2%;
   }
-  .sect1 .menu ul {
+  section#work .menu ul {
     width: 100%;
     gap: 20px;
   }
-  .sect1 .menu ul li {
+  section#work .menu ul li {
     font-size: 15px;
   }
-  .sect1 .ball {
+  section#work .ball {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -20,53 +20,53 @@
     margin-left: -1%;
     margin-top: 11%;
   }
-  .sect1 .comment {
+  section#work .comment {
     margin-top: 10%;
   }
-  .sect1 .comment h3 {
+  section#work .comment h3 {
     font-size: 30px;
   }
-  .sect3 {
+  section#Project {
     position: relative;
   }
-  .sect3 .pro-box {
+  section#Project .pro-box {
     position: absolute;
     display: flex;
     flex-direction: column;
     width: 100%;
-    left: 10%;
+    left: 0%;
     top: 5%;
     z-index: 100;
   }
-  .sect3 .pro-box .project-title {
+  section#Project .pro-box .project-title {
     padding: 0;
   }
-  .sect3 .pro-box .project-title .tab-title {
+  section#Project .pro-box .project-title .tab-title {
     width: 90%;
     padding-bottom: 100px;
     margin: auto;
     height: auto;
     border-right: 0px solid #000;
   }
-  .sect3 .pro-box .project-title .tab-title:nth-child(2) {
+  section#Project .pro-box .project-title .tab-title:nth-child(2) {
     height: auto;
   }
-  .sect3 .pro-box .project-title .tab-title p {
+  section#Project .pro-box .project-title .tab-title p {
     font-family: Barlow-Medium;
     font-size: 15px;
     padding-bottom: 10px;
   }
-  .sect3 .pro-box .project-title .tab-title h2 {
+  section#Project .pro-box .project-title .tab-title h2 {
     font-family: Barlow-ExtraLight;
     font-size: 28px;
     color: black;
   }
-  .sect3 .pro-box .project-title .tab-title .tab-menu {
+  section#Project .pro-box .project-title .tab-title .tab-menu {
     margin-top: 30px;
     display: flex;
     gap: 20px;
   }
-  .sect3 .pro-box .project-title .tab-title .tab-menu li {
+  section#Project .pro-box .project-title .tab-title .tab-menu li {
     font-family: scdream5;
     margin-bottom: 20px;
     font-size: 14px;
@@ -74,12 +74,12 @@
     position: relative;
     width: 110px;
   }
-  .sect3 .pro-box .project-title .tab-title .tab-menu li:hover {
+  section#Project .pro-box .project-title .tab-title .tab-menu li:hover {
     color: black;
     transition: color 0.35s ease;
     font-family: scdream7;
   }
-  .sect3 .pro-box .project-title .tab-title .tab-menu li:hover::after {
+  section#Project .pro-box .project-title .tab-title .tab-menu li:hover::after {
     content: "";
     width: 100px;
     position: absolute;
@@ -94,145 +94,146 @@
     z-index: 100;
     transition: width 0.35s ease, background-color 0.35s ease;
   }
-  .sect3 .pro-box .project-contents {
+  section#Project .pro-box .project-contents {
     width: 90%;
-    margin: 60px auto;
+    margin: 20px auto;
+    padding: 10px;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 {
-    margin-bottom: 200px;
+  section#Project .pro-box .project-contents .sect3-art1 {
+    margin-bottom: 100px;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc {
     width: 100%;
     padding-left: 0px;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .pro {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .pro {
     font-family: scdream4;
     font-size: 12px;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc h2 {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc h2 {
     font-family: scdream7;
     padding-top: 10px;
     font-size: 20px;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .month {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .month {
     font-family: scdream3;
     font-size: 12px;
     margin-top: 20px;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .month b {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .month b {
     font-family: scdream6;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .exp {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .exp {
     font-family: scdream4;
     font-size: 14px;
     line-height: 1.7;
     width: 500px;
     margin-top: 30px;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-0art {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-0art {
     margin-top: 70px;
     width: 500px;
     height: 300px;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-0art a {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-0art a {
     width: 100%;
     height: 100%;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-0art a img {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-0art a img {
     width: 100%;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-1art {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-1art {
     position: relative;
     margin-top: 100px;
     width: 500px;
     height: 300px;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-1art .swiper-wrapper {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-1art .swiper-wrapper {
     width: 100%;
     height: 100%;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-1art .swiper-wrapper .slide {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-1art .swiper-wrapper .slide {
     width: 100%;
     height: 100%;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-1art .swiper-wrapper .slide img {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-1art .swiper-wrapper .slide img {
     object-position: top;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art {
     margin-top: 80px;
     width: 500px;
     height: 300px;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel {
     position: relative;
     height: 400px;
     overflow: hidden;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div {
     position: absolute;
     transition: transform 1s, left 1s, opacity 1s, z-index 0s;
     opacity: 1;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div img {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div img {
     width: 167px;
     height: 100%;
     transition: width 1s;
     border-radius: 5px;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.hideLeft {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.hideLeft {
     left: 0%;
     opacity: 0;
     transform: translateY(25%) translateX(-50%);
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.hideLeft img {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.hideLeft img {
     width: 70px;
     height: 100%;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.hideRight {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.hideRight {
     left: 100%;
     opacity: 0;
     transform: translateY(25%) translateX(-50%);
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.hideRight img {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.hideRight img {
     width: 70px;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.prev {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.prev {
     z-index: 5;
     left: 30%;
     transform: translateY(30px) translateX(-50%);
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.prev img {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.prev img {
     width: 140px;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.prevLeftSecond {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.prevLeftSecond {
     z-index: 4;
     left: 15%;
     transform: translateY(25%) translateX(-50%);
     opacity: 0.5;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.prevLeftSecond img {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.prevLeftSecond img {
     width: 100px;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.selected {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.selected {
     z-index: 10;
     left: 50%;
     transform: translateX(-50%);
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.next {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.next {
     z-index: 5;
     left: 70%;
     transform: translateY(30px) translateX(-50%);
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.next img {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.next img {
     width: 140px;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.nextRightSecond {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.nextRightSecond {
     z-index: 4;
     left: 85%;
     transform: translateY(25%) translateX(-50%);
     opacity: 0.5;
   }
-  .sect3 .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.nextRightSecond img {
+  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.nextRightSecond img {
     width: 120px;
   }
   @keyframes moveInCircle {
@@ -268,7 +269,7 @@
       transform: translateX(-50%) translateY(-10%);
     }
   }
-  .sect3 .gradient-bg {
+  section#Project .gradient-bg {
     width: 100vw;
     height: 350vh;
   }

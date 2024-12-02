@@ -1,0 +1,109 @@
+:root {
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+  --white: #FFFFFF;
+  --greyLight-1: #E4EBF5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(#e6eefa, #bdc7e2);
+}
+.container .circle {
+  width: 19rem;
+  height: 100%;
+  justify-self: center;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.container .circle__btn {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  margin: 1.6rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 3.2rem;
+  color: #6d5dfc;
+  z-index: 300;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #FFFFFF;
+  cursor: pointer;
+  position: relative;
+}
+.container .circle__btn .play {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.container .circle__btn .play.visibility {
+  opacity: 1;
+}
+.container .circle__btn .pause {
+  position: absolute;
+  transition: all 0.2s linear;
+}
+.container .circle__btn .pause.visibility {
+  opacity: 0;
+}
+.container .circle__back-1, .container .circle__back-2 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  filter: blur(1px);
+  z-index: 100;
+}
+.container .circle__back-1 {
+  box-shadow: 0.4rem 0.4rem 0.8rem #c8d0e7, -0.4rem -0.4rem 0.8rem #fff;
+  background: linear-gradient(to bottom right, #c8d0e7 0%, #fff 100%);
+  animation: waves 4s linear infinite;
+}
+.container .circle__back-1.paused {
+  animation-play-state: paused;
+}
+.container .circle__back-2 {
+  box-shadow: 0.4rem 0.4rem 0.8rem #c8d0e7, -0.4rem -0.4rem 0.8rem #fff;
+  animation: waves 4s linear 2s infinite;
+}
+.container .circle__back-2.paused {
+  animation-play-state: paused;
+}
+
+/*  PLAY BUTTON  */
+@keyframes waves {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
