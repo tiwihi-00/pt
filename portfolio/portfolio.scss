@@ -1,5 +1,6 @@
 @import url('../font/font.css');
 @import url('../font/eng-font.css');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
 
 body,
 html {
@@ -19,6 +20,13 @@ html {
 	--blending: hard-light;
 }
 
+*,
+:after,
+:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 * {
 	margin: 0;
@@ -136,7 +144,7 @@ section {
 
 				li {
 					font-family: Barlow-Light;
-					font-size: 17px;
+					font-size: 16px;
 					position: relative;
 
 					z-index: 200;
@@ -310,108 +318,150 @@ section {
 
 	&#Project {
 		position: relative;
+		height: auto;
 
 		contain: paint;
 
-		.pro-box {
-			position: absolute;
+		* {
+			word-break: keep-all;
+		}
+
+
+
+
+		.Project_wrap {
+			position: relative;
 			display: flex;
+
 			width: 100%;
-			overflow: visible;
-			top: 3%;
-			z-index: 1000;
-
-			.project-title {
-				padding: 50px;
-
-				.tab-title {
-					position: sticky;
-					top: 80px;
-					width: 250px;
-					height: 100%;
-					border-right: 1px solid #000;
-					opacity: 0;
-					transform: translateY(50px); 
-					transition: opacity 0.3s, transform 0.3s;
-
-					&:nth-child(2) {
-						height: 910px;
-					}
-
-					p {
-						font-family: Barlow-Medium;
-						font-size: 15px;
-						padding-bottom: 10px;
-					}
-
-					h2 {
-
-						font-family: Barlow-ExtraLight;
-						font-size: 28px;
-						color: black;
-					}
-
-					.tab-menu {
-						margin-top: 30px;
+			height: 100%;
 
 
-						li {
-							font-family: scdream5;
-							margin-bottom: 20px;
-							font-size: 14px;
-							z-index: 200;
-							position: relative;
-							width: 110px;
+			// left_tit
+			.txt {
+				position: sticky;
+				top: 50px;
+				width: 50%;
+				height: 100%;
+				margin-left: 5%;
 
-							&:hover {
-								color: black;
-								transition: color 0.35s ease;
-								font-family: scdream7;
-							}
-
-							&:hover::after {
-								content: '';
-								width: 100px;
-								position: absolute;
-								height: 3px;
-								background-color: black;
-								left: 0;
-								transition: .35s;
-								bottom: -5px;
-								animation-name: line;
-								animation-duration: 0.5s;
-								animation-fill-mode: forwards;
-								z-index: 100;
-								transition: width 0.35s ease, background-color 0.35s ease;
-							}
-
-
-						}
-					}
+				h2 {
+					margin: 30px 0;
+					font-size: 35px;
+					font-family: Dosis-Bold;
+					padding-bottom: 20px;
+			
 				}
 
 
+				ul {
+					margin-top: 30px;
 
+					li {
+						position: relative;
+						font-size: 16px;
+
+						transition: all 0.3s;
+						margin-top: 30px;
+						font-family:Dosis-Medium;
+
+						margin-bottom: 30px;
+
+						.tab-menu {
+							margin-top: 15px;
+							display: none;
+							transition: all 0.3s;
+
+							li {
+								font-family: scdream5;
+								margin-bottom: 15px;
+								font-size: 13px;
+								z-index: 200;
+								position: relative;
+								width: 110px;
+								color: #5b04fc;
+								transform: translateY(-50%);
+
+								&:hover {
+									color: #5b04fc;
+									transition: color 0.35s ease;
+									font-family: scdream7;
+								}
+
+								&:hover::after {
+									content: '';
+									width: 100px;
+									position: absolute;
+									height: 3px;
+									background-color: #5b04fc;
+									left: 0;
+									transition: .35s;
+									bottom: -5px;
+									animation-name: line;
+									animation-duration: 0.5s;
+									animation-fill-mode: forwards;
+									z-index: 100;
+									transition: width 0.35s ease, background-color 0.35s ease;
+								}
+
+
+							}
+						}
+
+						&.on .tab-menu {
+							display: block;
+						}
+
+						&.on {
+							padding-left: 25px;
+							color: #111;
+							transition: all 0.3s;
+							font-family: Dosis-Bold;
+						}
+
+						&.item01.on:after {
+							content: "01.";
+							position: absolute;
+
+							top: 17%;
+							left: 0px;
+							transform: translateY(-50%);
+						}
+
+						&.item02.on:after {
+							content: "02.";
+							position: absolute;
+							top: 9%;
+							left: 0px;
+							transform: translateY(-50%);
+						}
+
+						&.item03.on:after {
+							content: "03.";
+							position: absolute;
+							top: 11%;
+							left: 0px;
+							transform: translateY(-50%);
+						}
+					}
+				}
 			}
 
-			.project-contents {
-				width: 64%;
-				padding: 80px;
-				height: 100%;
+			// right_cont
+			.cont {
+				width: 60%;
+				padding-right: 60px;
 
-				.sect3-art1 {
-					margin-bottom: 20px;
+				li {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					height: 100vh;
 
 
-					.tab-desc {
-						height: 100vh;
-						width: 100%;
-						opacity: 0;
-						transform: translateY(50px); 
-						transition: opacity 0.3s, transform 0.3s; /* 애니메이션 부드럽게 */
-
+					.txt_container {
 						.pro {
-							font-family: scdream4;
+							font-family: scdream5;
 							font-size: 12px;
 						}
 
@@ -422,12 +472,12 @@ section {
 						}
 
 						.month {
-							font-family: scdream3;
+							font-family: scdream4;
 							font-size: 12px;
 							margin-top: 20px;
 
 							b {
-								font-family: scdream6;
+								font-family: scdream7;
 							}
 						}
 
@@ -440,7 +490,7 @@ section {
 						}
 
 						.sect3-0art {
-							margin-top: 100px;
+							margin-top: 50px;
 							width: 100%;
 
 
@@ -455,10 +505,9 @@ section {
 							}
 						}
 
-
 						.sect3-1art {
 							position: relative;
-							margin-top: 100px;
+							margin-top: 50px;
 							width: 100%;
 
 
@@ -480,7 +529,7 @@ section {
 						.sect3-2art {
 							margin-top: 80px;
 							width: 100%;
-
+							margin-bottom: 250px;
 
 							#carousel {
 								position: relative;
@@ -572,19 +621,61 @@ section {
 							}
 
 						}
+
+						.img {
+							width: 100%;
+							height: 250px;
+							overflow: hidden;
+
+							&.cont01 img {
+								transform: translate(-180px, 0px);
+							}
+
+							&.cont02 img {
+								transform: translate(-135px, -235px);
+							}
+
+							&.cont03 img {
+								transform: translate(-135px, -235px);
+							}
+						}
+
+						h3 {
+							margin-top: 30px;
+						}
+
+						p {
+							margin-top: 30px;
+							font-size: 15px;
+
+						}
+
+						a {
+							position: relative;
+							display: block;
+							margin-top: 30px;
+							width: max-content;
+							transition: all 0.3s;
+							font-size: 17px;
+							font-weight: 700;
+							color: #111;
+						}
+
 					}
+
 				}
 			}
 		}
 
 		.gradient-bg {
 			width: 100vw;
-			height: 300vh;
-			position: relative;
+			height: 320vh;
+			position: absolute;
 			overflow: hidden;
 			background: linear-gradient(40deg, rgb(255, 255, 255), rgb(255, 255, 255));
 			top: 0;
 			left: 0;
+			z-index: -1;
 
 			.svgBlur {
 				display: none;
@@ -609,7 +700,7 @@ section {
 
 			.g1 {
 				position: absolute;
-				background: radial-gradient(circle at center, rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 50%) no-repeat;
+				background: radial-gradient(circle at center, rgba(var(--color1), 0.5) 0, rgba(var(--color1), 0) 50%) no-repeat;
 				mix-blend-mode: var(--blending);
 
 				width: var(--circle-size);
@@ -620,12 +711,12 @@ section {
 				transform-origin: center center;
 				animation: moveVertical 30s ease infinite;
 
-				opacity: 1;
+				opacity: .7;
 			}
 
 			.g2 {
 				position: absolute;
-				background: radial-gradient(circle at center, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 50%) no-repeat;
+				background: radial-gradient(circle at center, rgba(var(--color2), 0.5) 0, rgba(var(--color2), 0) 50%) no-repeat;
 				mix-blend-mode: var(--blending);
 
 				width: var(--circle-size);
@@ -636,12 +727,12 @@ section {
 				transform-origin: calc(50% - 400px);
 				animation: moveInCircle 20s reverse infinite;
 
-				opacity: 1;
+				opacity: .7;
 			}
 
 			.g3 {
 				position: absolute;
-				background: radial-gradient(circle at center, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 50%) no-repeat;
+				background: radial-gradient(circle at center, rgba(var(--color3), 0.5) 0, rgba(var(--color3), 0) 50%) no-repeat;
 				mix-blend-mode: var(--blending);
 
 				width: var(--circle-size);
@@ -652,12 +743,12 @@ section {
 				transform-origin: calc(50% + 400px);
 				animation: moveInCircle 40s linear infinite;
 
-				opacity: 1;
+				opacity: .7;
 			}
 
 			.g4 {
 				position: absolute;
-				background: radial-gradient(circle at center, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
+				background: radial-gradient(circle at center, rgba(var(--color4), 0.5) 0, rgba(var(--color4), 0) 50%) no-repeat;
 				mix-blend-mode: var(--blending);
 
 				width: var(--circle-size);
@@ -673,7 +764,7 @@ section {
 
 			.g5 {
 				position: absolute;
-				background: radial-gradient(circle at center, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 50%) no-repeat;
+				background: radial-gradient(circle at center, rgba(var(--color5), 0.5) 0, rgba(var(--color5), 0) 50%) no-repeat;
 				mix-blend-mode: var(--blending);
 
 				width: calc(var(--circle-size) * 2);
@@ -684,12 +775,12 @@ section {
 				transform-origin: calc(50% - 800px) calc(50% + 200px);
 				animation: moveInCircle 20s ease infinite;
 
-				opacity: 1;
+				opacity: .7;
 			}
 
 			.interactive {
 				position: absolute;
-				background: radial-gradient(circle at center, rgba(var(--color-interactive), 0.8) 0, rgba(var(--color-interactive), 0) 50%) no-repeat;
+				background: radial-gradient(circle at center, rgba(var(--color-interactive), 0.5) 0, rgba(var(--color-interactive), 0) 50%) no-repeat;
 				mix-blend-mode: var(--blending);
 
 				width: 100%;

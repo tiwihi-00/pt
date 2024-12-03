@@ -28,63 +28,67 @@
   }
   section#Project {
     position: relative;
+    height: auto;
+    contain: paint;
   }
-  section#Project .pro-box {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
+  section#Project * {
+    word-break: keep-all;
+  }
+  section#Project .Project_wrap {
+    position: relative;
     width: 100%;
-    left: 0%;
-    top: 5%;
-    z-index: 100;
+    height: 100%;
   }
-  section#Project .pro-box .project-title {
-    padding: 0;
+  section#Project .Project_wrap .txt {
+    position: sticky;
+    top: 50px;
+    width: 30%;
+    height: 100%;
+    margin-left: 5%;
   }
-  section#Project .pro-box .project-title .tab-title {
-    width: 90%;
-    padding-bottom: 100px;
-    margin: auto;
-    height: auto;
-    border-right: 0px solid #000;
+  section#Project .Project_wrap .txt h2 {
+    margin: 30px 0;
+    font-size: 35px;
+    font-family: Dosis-Bold;
+    padding-bottom: 20px;
   }
-  section#Project .pro-box .project-title .tab-title:nth-child(2) {
-    height: auto;
-  }
-  section#Project .pro-box .project-title .tab-title p {
-    font-family: Barlow-Medium;
-    font-size: 15px;
-    padding-bottom: 10px;
-  }
-  section#Project .pro-box .project-title .tab-title h2 {
-    font-family: Barlow-ExtraLight;
-    font-size: 28px;
-    color: black;
-  }
-  section#Project .pro-box .project-title .tab-title .tab-menu {
+  section#Project .Project_wrap .txt ul {
     margin-top: 30px;
-    display: flex;
-    gap: 20px;
   }
-  section#Project .pro-box .project-title .tab-title .tab-menu li {
+  section#Project .Project_wrap .txt ul li {
+    position: relative;
+    font-size: 16px;
+    transition: all 0.3s;
+    margin-top: 30px;
+    font-family: Barlow-Medium;
+    margin-bottom: 30px;
+  }
+  section#Project .Project_wrap .txt ul li .tab-menu {
+    margin-top: 15px;
+    display: none;
+    transition: all 0.3s;
+  }
+  section#Project .Project_wrap .txt ul li .tab-menu li {
     font-family: scdream5;
-    margin-bottom: 20px;
-    font-size: 14px;
+    margin-bottom: 15px;
+    font-size: 13px;
     z-index: 200;
     position: relative;
     width: 110px;
+    color: #5b04fc;
+    transform: translateY(-50%);
   }
-  section#Project .pro-box .project-title .tab-title .tab-menu li:hover {
-    color: black;
+  section#Project .Project_wrap .txt ul li .tab-menu li:hover {
+    color: #5b04fc;
     transition: color 0.35s ease;
     font-family: scdream7;
   }
-  section#Project .pro-box .project-title .tab-title .tab-menu li:hover::after {
+  section#Project .Project_wrap .txt ul li .tab-menu li:hover::after {
     content: "";
     width: 100px;
     position: absolute;
     height: 3px;
-    background-color: black;
+    background-color: #5b04fc;
     left: 0;
     transition: 0.35s;
     bottom: -5px;
@@ -94,183 +98,190 @@
     z-index: 100;
     transition: width 0.35s ease, background-color 0.35s ease;
   }
-  section#Project .pro-box .project-contents {
-    width: 90%;
-    margin: 20px auto;
-    padding: 10px;
+  section#Project .Project_wrap .txt ul li.on .tab-menu {
+    display: block;
   }
-  section#Project .pro-box .project-contents .sect3-art1 {
-    margin-bottom: 100px;
+  section#Project .Project_wrap .txt ul li.on {
+    padding-left: 25px;
+    color: #111;
+    transition: all 0.3s;
+    font-family: Barlow-Bold;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc {
-    width: 100%;
-    padding-left: 0px;
+  section#Project .Project_wrap .txt ul li.item01.on:after {
+    content: "01.";
+    position: absolute;
+    top: 17%;
+    left: 0px;
+    transform: translateY(-50%);
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .pro {
-    font-family: scdream4;
+  section#Project .Project_wrap .txt ul li.item02.on:after {
+    content: "02.";
+    position: absolute;
+    top: 9%;
+    left: 0px;
+    transform: translateY(-50%);
+  }
+  section#Project .Project_wrap .txt ul li.item03.on:after {
+    content: "03.";
+    position: absolute;
+    top: 11%;
+    left: 0px;
+    transform: translateY(-50%);
+  }
+  section#Project .Project_wrap .cont {
+    width: 65%;
+    padding-right: 10px;
+    padding-left: 30px;
+  }
+  section#Project .Project_wrap .cont li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  section#Project .Project_wrap .cont li .txt_container .pro {
+    font-family: scdream5;
     font-size: 12px;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc h2 {
+  section#Project .Project_wrap .cont li .txt_container h2 {
     font-family: scdream7;
     padding-top: 10px;
     font-size: 20px;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .month {
-    font-family: scdream3;
+  section#Project .Project_wrap .cont li .txt_container .month {
+    font-family: scdream4;
     font-size: 12px;
     margin-top: 20px;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .month b {
-    font-family: scdream6;
+  section#Project .Project_wrap .cont li .txt_container .month b {
+    font-family: scdream7;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .exp {
+  section#Project .Project_wrap .cont li .txt_container .exp {
     font-family: scdream4;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.7;
-    width: 500px;
+    width: 100%;
     margin-top: 30px;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-0art {
-    margin-top: 70px;
-    width: 500px;
-    height: 300px;
+  section#Project .Project_wrap .cont li .txt_container .sect3-0art {
+    margin-top: 50px;
+    width: 100%;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-0art a {
+  section#Project .Project_wrap .cont li .txt_container .sect3-0art a {
     width: 100%;
     height: 100%;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-0art a img {
+  section#Project .Project_wrap .cont li .txt_container .sect3-0art a img {
     width: 100%;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-1art {
+  section#Project .Project_wrap .cont li .txt_container .sect3-1art {
     position: relative;
-    margin-top: 100px;
-    width: 500px;
-    height: 300px;
+    margin-top: 50px;
+    width: 100%;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-1art .swiper-wrapper {
+  section#Project .Project_wrap .cont li .txt_container .sect3-1art .swiper-wrapper {
     width: 100%;
     height: 100%;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-1art .swiper-wrapper .slide {
+  section#Project .Project_wrap .cont li .txt_container .sect3-1art .swiper-wrapper .slide {
     width: 100%;
     height: 100%;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-1art .swiper-wrapper .slide img {
+  section#Project .Project_wrap .cont li .txt_container .sect3-1art .swiper-wrapper .slide img {
     object-position: top;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art {
+  section#Project .Project_wrap .cont li .txt_container .sect3-2art {
     margin-top: 80px;
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    margin-bottom: 250px;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel {
+  section#Project .Project_wrap .cont li .txt_container .sect3-2art #carousel {
     position: relative;
     height: 400px;
     overflow: hidden;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div {
+  section#Project .Project_wrap .cont li .txt_container .sect3-2art #carousel div {
     position: absolute;
     transition: transform 1s, left 1s, opacity 1s, z-index 0s;
     opacity: 1;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div img {
-    width: 167px;
+  section#Project .Project_wrap .cont li .txt_container .sect3-2art #carousel div img {
+    width: 183px;
     height: 100%;
     transition: width 1s;
-    border-radius: 5px;
+    border-radius: 10px;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.hideLeft {
+  section#Project .Project_wrap .cont li .txt_container .sect3-2art #carousel div.hideLeft {
     left: 0%;
     opacity: 0;
     transform: translateY(25%) translateX(-50%);
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.hideLeft img {
-    width: 70px;
+  section#Project .Project_wrap .cont li .txt_container .sect3-2art #carousel div.hideLeft img {
+    width: 100px;
     height: 100%;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.hideRight {
+  section#Project .Project_wrap .cont li .txt_container .sect3-2art #carousel div.hideRight {
     left: 100%;
     opacity: 0;
     transform: translateY(25%) translateX(-50%);
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.hideRight img {
-    width: 70px;
+  section#Project .Project_wrap .cont li .txt_container .sect3-2art #carousel div.hideRight img {
+    width: 100px;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.prev {
+  section#Project .Project_wrap .cont li .txt_container .sect3-2art #carousel div.prev {
     z-index: 5;
     left: 30%;
     transform: translateY(30px) translateX(-50%);
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.prev img {
-    width: 140px;
+  section#Project .Project_wrap .cont li .txt_container .sect3-2art #carousel div.prev img {
+    width: 150px;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.prevLeftSecond {
+  section#Project .Project_wrap .cont li .txt_container .sect3-2art #carousel div.prevLeftSecond {
     z-index: 4;
     left: 15%;
     transform: translateY(25%) translateX(-50%);
     opacity: 0.5;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.prevLeftSecond img {
-    width: 100px;
+  section#Project .Project_wrap .cont li .txt_container .sect3-2art #carousel div.prevLeftSecond img {
+    width: 120px;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.selected {
+  section#Project .Project_wrap .cont li .txt_container .sect3-2art #carousel div.selected {
     z-index: 10;
     left: 50%;
     transform: translateX(-50%);
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.next {
+  section#Project .Project_wrap .cont li .txt_container .sect3-2art #carousel div.next {
     z-index: 5;
     left: 70%;
     transform: translateY(30px) translateX(-50%);
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.next img {
-    width: 140px;
+  section#Project .Project_wrap .cont li .txt_container .sect3-2art #carousel div.next img {
+    width: 150px;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.nextRightSecond {
+  section#Project .Project_wrap .cont li .txt_container .sect3-2art #carousel div.nextRightSecond {
     z-index: 4;
     left: 85%;
     transform: translateY(25%) translateX(-50%);
     opacity: 0.5;
   }
-  section#Project .pro-box .project-contents .sect3-art1 .tab-desc .sect3-2art #carousel div.nextRightSecond img {
+  section#Project .Project_wrap .cont li .txt_container .sect3-2art #carousel div.nextRightSecond img {
     width: 120px;
   }
-  @keyframes moveInCircle {
-    0% {
-      transform: rotate(0deg);
-    }
-    50% {
-      transform: rotate(180deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  section#Project .Project_wrap .cont li .txt_container h3 {
+    margin-top: 30px;
   }
-  @keyframes moveVertical {
-    0% {
-      transform: translateY(-50%);
-    }
-    50% {
-      transform: translateY(50%);
-    }
-    100% {
-      transform: translateY(-50%);
-    }
+  section#Project .Project_wrap .cont li .txt_container p {
+    margin-top: 30px;
+    font-size: 15px;
   }
-  @keyframes moveHorizontal {
-    0% {
-      transform: translateX(-50%) translateY(-10%);
-    }
-    50% {
-      transform: translateX(50%) translateY(10%);
-    }
-    100% {
-      transform: translateX(-50%) translateY(-10%);
-    }
-  }
-  section#Project .gradient-bg {
-    width: 100vw;
-    height: 350vh;
+  section#Project .Project_wrap .cont li .txt_container a {
+    position: relative;
+    display: block;
+    margin-top: 30px;
+    width: max-content;
+    transition: all 0.3s;
+    font-size: 17px;
+    font-weight: 700;
+    color: #111;
   }
 }

@@ -117,7 +117,43 @@ $inner-shadow: inset .2rem .2rem .5rem #c8d0e7,
 		}
 	}
 }
+.card {
+	/** 
+		cannot use: overflow: hidden; as it will break 
+		preserve-3d
+	**/
 
+	// overflow: hidden;
+	position: relative;
+	transform-style: preserve-3d;	
+	transform: translate3d(0,0,0.1px);
+	
+	padding: 20px;
+	border: 1px solid transparent;
+	border-radius: 16px;
+	
+	background: 
+		linear-gradient(0deg, #2239 0% 100%) border-box, 
+		linear-gradient(0deg, #223c 0% 100%) padding-box, 
+		var(--bg) border-box;
+	background-size: cover, cover;
+	background-repeat: no-repeat;
+	
+	&:before {
+		--blursize: 25px;
+		content: "";
+		opacity: 0.5;
+		position: absolute;
+		inset: calc( var(--blursize) * -1 * 0.25);
+		background-image: var(--bg);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		filter: contrast(1.2) brightness(0.6) saturate(1.75) blur( var(--blursize) );
+		z-index: -1;
+		border-radius: 90px;
+		transform: translate3d(0, calc(var(--blursize) * 0.75),-1px);
+	}
+}
 
 /*  PLAY BUTTON  */
 

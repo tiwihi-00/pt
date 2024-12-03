@@ -4,334 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>portfolio</title>
-	<link rel="stylesheet" href="../reset.css">
-	<link rel="stylesheet" href="./portfolio.css">
-	<link rel="stylesheet" href="./portfolio-small.css" media=" screen and (max-width:768px)">
-	<link rel="stylesheet" href="./portfolio-middle.css" media="screen and (min-width:769px)">
-	<link rel="stylesheet" href="./portfolio-large.css" media="screen and (min-width:1350px)">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<title>timeline</title>
+	<link rel="stylesheet" href="./timeline.css">
 </head>
-<style>
-	html,
-	body {
-		position: relative;
-		height: 100%;
-	}
-
-	body {
-
-		margin: 0;
-		padding: 0;
-	}
-
-	.swiper {
-		width: 100%;
-		height: 100%;
-	}
-
-	.swiper-slide {
-
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.swiper-slide img {
-		display: block;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-</style>
 
 <body>
-	<section class="sect1">
-		<div class="box">
-			<div class="sphere"></div>
-
-			<div class="cy">
-
-
-				<div class="sphare-shadow"></div>
-			</div>
-		</div>
-		<div class="symbol">
-			<img src="./image/ball14 1.png" alt="">
-			<h4>b's</h4>
-			<p>Inspired by<br /> <span>the fluidity of</span><br /> <b>form and space.</b></p>
-		</div>
-		<div class="in-menu">
-			<ul class="nav">
-				<li><a href="#work">#Codeworks</a></li>
-				<li><a href="#Project">#Project</a></li>
-				<li><a href="#My">#My line of work</a></li>
-
-			</ul>
-		</div>
-
-		<div class="comment">
-			<h3><b>Through drifting spheres,</b><br />
-				beyond all boundaries.</h3>
-		</div>
-	</section>
-	<section id="work">
-		<div class="work__title">
-			codingworks <b>creative page + cone codings</b>
-		</div>
-		<div class="work__wrap">
-			<article class="work__item" data-bg="./image/sect1.1.png">
-				<a href="../0704-2 aladin/index.html" target="_blank">
-					<p class="num">01</p>
-					<div class="line"></div>
-					<div class="content">
-						<p><b>작업기간 :</b> 24.07.04</p>
-						<p><b>디자인 컨셉 : </b><br />
-							hover와 transform을 이용해 동적인 페이지 구현</p>
-					</div>
-				</a>
-			</article>
-			<article class="work__item" data-bg="./image/sect1.2.png">
-				<a href="../0805grid-yoshida/index.html" target="_blank">
-					<p class="num">02</p>
-					<div class="line"></div>
-					<div class="content">
-						<p><b>작업기간 :</b> 24.08.05</p>
-						<p><b>디자인 컨셉 : </b><br />
-							요시다 슈이치와 아야노 고가 함께한 작품을 그리드와 화면전환으로 소개, 배경색과 이미지를 다르게 설정하여 작품의 감성을 시각적으로 표현</p>
-					</div>
-				</a>
-			</article>
-			<article class="work__item" data-bg="./image/sect1.3.png">
-				<a href="../0808fallout/index.html" target="_blank">
-					<p class="num">03</p>
-					<div class="line"></div>
-					<div class="content">
-						<p><b>작업기간 :</b> 24.08.08</p>
-						<p><b>디자인 컨셉 : </b><br />로고에 효과를 적용하여 동적인 느낌 제공.<br />
-							호버 시 배경 위치와 텍스트 스타일 변화.<br />
-							video 태그를 사용하여 자동 재생, 반복, 음소거된 뮤직비디오 삽입.
-						</p>
-					</div>
-				</a>
-			</article>
-			<article class="work__item" data-bg="./image/sect1.4.png">
-				<a href="../0719-22년2개월/index.html" target="_blank">
-					<p class="num">04</p>
-					<div class="line"></div>
-					<div class="content">
-						<p><b>작업기간 :</b> 24.08.08</p>
-						<p><b>디자인 컨셉 : </b><br />
-							jquery를 이용한 비디오 제어 작업<br />
-							swiper-slide로 이미지를 보여줌
-						</p>
-					</div>
-				</a>
-			</article>
-			<article class="work__item" data-bg="./image/sect1.5.png">
-				<a href="../0902-뮤지컬/index.html" target="_blank">
-					<p class="num">05</p>
-					<div class="line"></div>
-					<div class="content">
-						<p><b>작업기간 :</b> 24.09.02</p>
-						<p><b>디자인 컨셉 :</b> 스크롤 애니메이션으로 개별 article 섹션 스크롤 및 자동 초기화. <br />
-							슬라이드 전환 좌우 버튼으로 섹션 이동.</p>
-					</div>
-				</a>
-			</article>
-			<article class="work__item" data-bg="./image/sect1.6.png">
-				<a href="../0910mugo/index.html" target="_blank">
-					<p class="num">06</p>
-					<div class="line"></div>
-					<div class="content">
-						<p><b>작업기간 :</b> 24.09.10</p>
-						<p><b>디자인 컨셉 : </b><br />
-							뮤고, 치치, 윈디 등 교육 콘텐츠와 연관된 캐릭터들의 특징과 이미지를 소개.<br />
-							캐릭터 간 이동은 썸네일 이미지 클릭으로 가능.</p>
-					</div>
-				</a>
-			</article>
-			<article class="work__item" data-bg="./image/sect1.7.png">
-				<a href="../0925/index.html" target="_blank">
-					<p class="num">07</p>
-					<div class="line"></div>
-					<div class="content">
-						<p><b>작업기간 :</b> 24.09.19</p>
-						<p><b>디자인 컨셉 : </b><br />
-							swiper의 slide를 제어하고 section별 Scoll제어
-							상품 목록을 유동적으로 보여줌
-						</p>
-					</div>
-				</a>
-			</article>
-			<article class="work__item" data-bg="./image/sect1.8.png">
-				<a href="../0919-칠성/index.html" target="_blank">
-					<p class="num">08</p>
-					<div class="line"></div>
-					<div class="content">
-						<p><b>작업기간 :</b> 24.09.10</p>
-						<p><b>디자인 컨셉 : </b><br />
-							dataset 사용하여 비디오를 불러오고<br />
-							fetch를 사용해 페이지를 보여줌
-						</p>
-					</div>
-				</a>
-			</article>
-			<article class="work__item" data-bg="./image/sect1.9.png">
-				<a href="../1009/index.html" target="_blank">
-					<p class="num">09</p>
-					<div class="line"></div>
-					<div class="content">
-						<p><b>작업기간 :</b> 24.10.12</p>
-						<p><b>디자인 컨셉 : </b><br />
-							gsap의 SplitText로 title을 보여주고<br />
-							scroll제어로 각 section을 보여줌
-						</p>
-					</div>
-				</a>
-			</article>
-			<article class="work__item" data-bg="./image/sect1.10.png">
-				<a href="../1010-cheongwadae/index.html" target="_blank">
-					<p class="num">10</p>
-					<div class="line"></div>
-					<div class="content">
-						<p><b>작업기간 :</b> 24.10.12</p>
-						<p><b>디자인 컨셉 : </b><br />
-							다양한 swiper로 이미지를 보여줌<br />
-							반응형 페이지로 작업
-						</p>
-					</div>
-				</a>
-			</article>
-		</div>
-	</section>
-	<section id="Project">
-		<div class="Project_wrap">
-      <div class="txt">
-      
-        <h2 class="tit">PROJECT</h2>
-        <ul class="cate">
-          <li class="item01">My Symbol
-            <ul class="tab-menu">
-              <li><a href="#">디자인 기획서</a></li>
-            </ul>
-          </li>
-          <li class="item02">Web Re-Design
-            <ul class="tab-menu">
-              <li><a href="#">사이트 바로가기</a></li>
-              <li><a href="#">디자인 기획서</a></li>
-            </ul>
-          </li>
-          <li class="item03">App Development
-            <ul class="tab-menu">
-              <li><a href="#">사이트 바로가기</a></li>
-              <li><a href="#">디자인 기획서</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <ul class="cont" data-aos="fade-up">
-        <li class="cont01">
-          <div class="txt_container">
-            <p class="pro">B.I 제작 프로젝트</p>
-            <h2>Move on to The Wider World</h2>
-            <p class="month"><b>작업기간 : </b>2024.06</p>
-            <p class="exp">나의 지나온 길을 바탕으로 앞으로 개척해 나아가고 싶은 길을 표현하여 <br />
-              나만의 아이덴티티를 나타내고 이를 토대로 디자인을 진행</p>
-            <div class="sect3-0art">
-              <a href="#"><img src="./image/bo-Business Card .jpg" alt=""></a>
-            </div>
-          </div>
-
-        </li>
-        <li class="cont02">
-          <div class="txt_container">
-            <p class="pro">웹 개선 프로젝트</p>
-            <h2>제주맥주 웹사이트 리뉴얼</h2>
-            <p class="month"><b>작업기간 : </b>2024.07~08</p>
-            <p class="exp">제주맥주 웹사이트 리뉴얼 프로젝트는 사용자가 제주맥주 브랜드의 정체성을 경험할 수 있도록 하고, 브랜드 스토리와 지역성을 웹사이트를 통해 전달하고자 합니다. 디자인은
-              단순히 시각적 요소에 머무르지 않고 <b>간결한 레이아웃과 사용자 친화적인 인터페이스를 채택</b>하여, 누구나 쉽게 탐색하며 브랜드에 몰입할 수 있도록 구성했습니다.</p>
-            <div class="sect3-1art">
-              <div class="swiper je-Swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="./image/jeju1.png" alt=""></div>
-                  <div class="swiper-slide"><img src="./image/jeju2.png" alt=""></div>
-                  <div class="swiper-slide"><img src="./image/jeju3.png" alt=""></div>
-                  <div class="swiper-slide"><img src="./image/jeju4.png" alt=""></div>
-                  <div class="swiper-slide"><img src="./image/jeju5.png" alt=""></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </li>
-        <li class="cont03">
-          <div class="txt_container">
-            <p class="pro">앱 개발 프로젝트</p>
-            <h2>T World connet</h2>
-            <p class="month"><b>작업기간 : </b>2024.10~11</p>
-            <p class="exp"><b>T World</b> <strong>connet</strong>는 통합 서비스 제공을 통해 사용자에게 더 나은 경험을 제공하는 것을 목표로 하고 있습니다.
-              기존에는 각각의 기능이 여러 개의 앱에 분산되어 있어 사용자가 불편을 겪었습니다.
-              본 프로젝트는 이 기능들을 통합하여 사용자에게 일관된 경험을 제공하고, 필요한 혜택과 놓친 혜택을 쉽게 관리할 수 있는 앱을 개발하는 것입니다.</p>
-            <div class="sect3-2art">
-              <div id="carousel">
-                <div class="hideLeft">
-                  <img src="./image/메인 슬라이드1.png">
-                </div>
-                <div class="prevLeftSecond">
-                  <img src="./image/mainp-myt.png">
-                </div>
-                <div class="prev">
-                  <img src="./image/mainp-데이터관리.png">
-                </div>
-                <div class="selected">
-                  <img src="./image/mainp-멤버십 혜택.png">
-                </div>
-                <div class="next">
-                  <img src="./image/mainp-요금관리-1.png">
-                </div>
-                <div class="nextRightSecond">
-                  <img src="./image/mainp-요금관리.png">
-                </div>
-                <div class="hideRight">
-                  <img src="./image/메인.png">
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </li>
-      </ul>
-    </div>
-
-		<div class="gradient-bg">
-			<svg viewBox="0 0 100vw 100vw" xmlns='http://www.w3.org/2000/svg' class="noiseBg">
-				<filter id='noiseFilterBg'>
-					<feTurbulence type='fractalNoise' baseFrequency='0.6' stitchTiles='stitch' />
-				</filter>
-
-				<rect width='100%' height='100%' preserveAspectRatio="xMidYMid meet" filter='url(#noiseFilterBg)' />
-			</svg>
-			<svg xmlns="http://www.w3.org/2000/svg" class="svgBlur">
-				<defs>
-					<filter id="goo">
-						<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-						<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
-						<feBlend in="SourceGraphic" in2="goo" />
-					</filter>
-				</defs>
-			</svg>
-			<div class="gradients-container">
-				<div class="g1"></div>
-				<div class="g2"></div>
-				<div class="g3"></div>
-				<div class="g4"></div>
-				<div class="g5"></div>
-				<div class="interactive"></div>
-			</div>
-		</div>
-
-	</section>
 	<section id="My">
 		<div class="main">
 			<div class="sect4-lf">
@@ -347,6 +24,70 @@
 					</div>
 
 				</div>
+
+				<div id="job-list-box">
+					<ul class="job-list">
+						<li>
+							<p class="num">2024</p>
+							<p class="job">mbc 아카데미 UX/UI 과정 수료</p>
+						</li>
+						<li>
+							<p class="num">2022 - 2024</p>
+							<p class="job">도서출판 배움</p>
+							<p class="job-desc">편집디자인</p>
+						</li>
+						<li>
+							<p class="num">2019 - 2022</p>
+							<p class="job">유니크 플러스</p>
+							<p class="job-desc">편집디자인</p>
+						</li>
+						<li>
+							<p class="num">2024</p>
+							<p class="job">mbc 아카데미 UX/UI 과정 수료</p>
+						</li>
+						<li>
+							<p class="num">2022 - 2024</p>
+							<p class="job">도서출판 배움</p>
+							<p class="job-desc">편집디자인</p>
+						</li>
+						<li>
+							<p class="num">2019 - 2022</p>
+							<p class="job">유니크 플러스</p>
+							<p class="job-desc">편집디자인</p>
+						</li>
+						<li>
+							<p class="num">2024</p>
+							<p class="job">mbc 아카데미 UX/UI 과정 수료</p>
+						</li>
+						<li>
+							<p class="num">2022 - 2024</p>
+							<p class="job">도서출판 배움</p>
+							<p class="job-desc">편집디자인</p>
+						</li>
+						<li>
+							<p class="num">2019 - 2022</p>
+							<p class="job">유니크 플러스</p>
+							<p class="job-desc">편집디자인</p>
+						</li>
+						<li>
+							<p class="num">2024</p>
+							<p class="job">mbc 아카데미 UX/UI 과정 수료</p>
+						</li>
+						<li>
+							<p class="num">2022 - 2024</p>
+							<p class="job">도서출판 배움</p>
+							<p class="job-desc">편집디자인</p>
+						</li>
+						<li>
+							<p class="num">2019 - 2022</p>
+							<p class="job">유니크 플러스</p>
+							<p class="job-desc">편집디자인</p>
+						</li>
+					</ul>
+
+				</div>
+
+
 
 			</div>
 
@@ -760,10 +501,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollSmoother.min.js"></script>
-	<script src="./sect1.js"></script>
-	<script src="./sect2.js"></script>
-	<script src="./sect3.js"></script>
-	<script src="./sect4.js"></script>
+
 	<script src="
 	https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js
 	"></script>
@@ -779,155 +517,31 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 	<script>
 
 
+		document.addEventListener("DOMContentLoaded", () => {
+			const jobListItems = document.querySelectorAll(".job-list li");
 
-
-		const tl = gsap.timeline();
-		const splitText = new SplitText("h3", { type: "chars" });
-		const chars = splitText.chars;
-
-		// 초기 상태 설정
-		gsap.set(chars, { opacity: 0 });
-		gsap.set(".symbol", { opacity: 0, y: 50 });
-		gsap.set(".in-menu", { opacity: 0, y: 50 });
-		gsap.set(".symbol p span, .symbol p b", { opacity: 0, y: 20 });
-
-		tl.to(".comment", {
-			opacity: 1,
-			y: -20,
-			duration: 1,
-			ease: "power2.out",
-		})
-			.fromTo(
-				chars,
-				{ opacity: 0, y: 20 },
-				{
-					opacity: 1,
-					y: 0,
-					duration: 0.1,
-					ease: "power2.out",
-					stagger: 0.1,
-				}
-			)
-			.to(".symbol", {
-				opacity: 1,
-				y: 0,
-				duration: 0.6,
-				ease: "power2.out",
-			})
-			.to(".symbol p span, .symbol p b", {
-				opacity: 1,
-				y: 0,
-				stagger: 0.3,
-				duration: 0.5,
-				ease: "power2.out",
-			})
-			.to(".in-menu", {
-				opacity: 1,
-				y: 0,
-
-				duration: 0.5,
-				ease: "power2.out",
-			})
-			.to(".in-menu li", {
-				stagger: 0.4,
-				duration: 0.5,
-				ease: "power2.out",
-			})
-			.to(".symbol img", {
-				opacity: 1,
-				scale: 1.2,
-				duration: 1,
-				yoyo: true,
-				repeat: -1,
-				ease: "power2.out",
-			})
-
-
-
-		const articles = gsap.utils.toArray('.work__item')
-		gsap.to(articles, {
-			xPercent: -100 * (articles.length - 1),
-			ease: 'none',
-			scrollTrigger: {
-				trigger: '#work',
-				start: 'top top',
-				end: '+=3000',
-				pin: true,
-				scrub: 1,
-				snap: 'none'
-			}
-		})
-		document.querySelectorAll('.work__item').forEach(function (art) {
-			art.addEventListener('mouseenter', function () {
-				let bg = art.getAttribute('data-bg')
-
-				document.querySelector('#work').style.background = `url(${bg})`;
-			})
-		})
-
-
-
-		gsap.registerPlugin(ScrollTrigger);
-
-    gsap.to(".Project_wrap .item01", {
-      scrollTrigger: {
-        trigger: ".Project_wrap .cont01",
-        start: "-100% top",
-        toggleClass: { targets: '.Project_wrap .item01', className: 'on' },
-        scrub: 2,
-      }
-    });
-
-    gsap.to(".Project_wrap .item02", {
-      scrollTrigger: {
-        trigger: ".Project_wrap .cont02",
-        start: "top top",
-        toggleClass: { targets: '.Project_wrap .item02', className: 'on' },
-        scrub: 2,
-      }
-    });
-
-    gsap.to(".Project_wrap .item03", {
-      scrollTrigger: {
-        trigger: ".Project_wrap .cont03",
-        start: "top top",
-        toggleClass: { targets: '.Project_wrap .item03', className: 'on' },
-        scrub: 2,
-      }
-    });
-
-
-
-
-
-		var swiper = new Swiper(".je-Swiper", {
-			loop: true,
-			effect: "fade",
-			autoplay: {
-				delay: 2500,
-				disableOnInteraction: false,
-			},
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-			},
+			// 각 li에 대해 ScrollTrigger 설정
+			jobListItems.forEach((item, index) => {
+				gsap.fromTo(item,
+					{
+						opacity: 0, // 초기에는 보이지 않음
+						transform: "translateY(50px)", // 아래에서 시작
+					},
+					{
+						opacity: 1, // 보이게 설정
+						transform: "translateY(0)", // 원래 위치로 이동
+						scrollTrigger: {
+							trigger: item, // 각 li를 트리거로 사용
+							start: "top 90%", // li가 화면에 거의 들어올 때 시작
+							end: "top 10%", // 화면 상단 근처로 올 때 끝
+							scrub: true, // 스크롤에 따라 동기화
+							markers: false, // 디버그용 마커
+						},
+						duration: 0.5, // 애니메이션의 지속시간
+					});
+			});
 		});
 
-
-
-
-
-		var swiper = new Swiper(".t-Swiper", {
-			loop: true,
-			autoplay: {
-				delay: 2500,
-				disableOnInteraction: false,
-			},
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-			},
-		});
 
 		document.addEventListener('DOMContentLoaded', function () {
 			const splideOdd = new Splide('.splide-odd', {
