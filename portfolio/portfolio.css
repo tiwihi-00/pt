@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("../font/font.css");
 @import url("../font/eng-font.css");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css");
@@ -270,10 +271,11 @@ section#Project .Project_wrap {
 }
 section#Project .Project_wrap .txt {
   position: sticky;
-  top: 50px;
+  top: 70px;
   width: 50%;
   height: 100%;
   margin-left: 5%;
+  margin-top: 50px;
 }
 section#Project .Project_wrap .txt h2 {
   margin: 30px 0;
@@ -290,7 +292,7 @@ section#Project .Project_wrap .txt ul li {
   transition: all 0.3s;
   margin-top: 30px;
   font-family: Dosis-Medium;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 section#Project .Project_wrap .txt ul li .tab-menu {
   margin-top: 15px;
@@ -366,6 +368,7 @@ section#Project .Project_wrap .cont li {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  margin-top: 60px;
 }
 section#Project .Project_wrap .cont li .txt_container .pro {
   font-family: scdream5;
@@ -660,14 +663,14 @@ section#Project .gradient-bg .interactive {
 section#My {
   position: relative;
   contain: paint;
-  height: 100vh;
+  height: 200vh;
   width: 100%;
   background: linear-gradient(#e6eefa, #bdc7e2);
   background-repeat: no-repeat;
 }
 section#My .main {
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -675,27 +678,53 @@ section#My .main {
 section#My .main .sect4-lf {
   width: 50%;
   position: relative;
+  height: 200vh;
+  align-self: start;
+}
+section#My .main .sect4-lf .c-line {
+  position: absolute;
+  /* 기본 위치 */
+  top: 0%;
+  left: 63%;
+  display: block;
+  width: 1px;
+  height: 300vh;
+  background: #1d57a3;
+  z-index: -10;
 }
 section#My .main .sect4-lf .container {
-  height: 500px;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Poppins", sans-serif;
+  flex-direction: column;
 }
-section#My .main .sect4-lf .container .circle {
+section#My .main .sect4-lf .container .sticky-wrapper {
+  position: relative;
+  height: 200vh;
+  width: 100%;
+}
+section#My .main .sect4-lf .container .sticky-wrapper .components {
+  position: sticky;
+  top: 5%;
+  height: 300px;
+}
+section#My .main .sect4-lf .container .sticky-wrapper .components .circle {
+  position: relative;
   width: 19rem;
   height: 100%;
-  justify-self: center;
+  justify-self: left;
   border-radius: 1rem;
   display: grid;
   grid-template-rows: 1fr;
-  justify-items: center;
   align-items: center;
 }
-section#My .main .sect4-lf .container .circle .circle-in {
+section#My .main .sect4-lf .container .sticky-wrapper .components .circle .circle-in {
   position: absolute;
-  left: 50%;
+  left: 20%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 300;
@@ -703,11 +732,11 @@ section#My .main .sect4-lf .container .circle .circle-in {
   color: #8679fa;
   font-size: 20px;
 }
-section#My .main .sect4-lf .container .circle .circle-in:hover {
+section#My .main .sect4-lf .container .sticky-wrapper .components .circle .circle-in:hover {
   color: #5b0eeb;
   transition: color 0.35s ease;
 }
-section#My .main .sect4-lf .container .circle__back-1, section#My .main .sect4-lf .container .circle__back-2 {
+section#My .main .sect4-lf .container .sticky-wrapper .components .circle__back-1, section#My .main .sect4-lf .container .sticky-wrapper .components .circle__back-2 {
   grid-row: 1/2;
   grid-column: 1/2;
   width: 8rem;
@@ -716,14 +745,89 @@ section#My .main .sect4-lf .container .circle__back-1, section#My .main .sect4-l
   filter: blur(1px);
   z-index: 100;
 }
-section#My .main .sect4-lf .container .circle__back-1 {
+section#My .main .sect4-lf .container .sticky-wrapper .components .circle__back-1 {
   box-shadow: 0.4rem 0.4rem 0.8rem #c8d0e7, -0.4rem -0.4rem 0.8rem #fff;
   background: linear-gradient(to bottom right, #c8d0e7 0%, #fff 100%);
   animation: waves 4s linear infinite;
 }
-section#My .main .sect4-lf .container .circle__back-2 {
+section#My .main .sect4-lf .container .sticky-wrapper .components .circle__back-2 {
   box-shadow: 0.4rem 0.4rem 0.8rem #c8d0e7, -0.4rem -0.4rem 0.8rem #fff;
   animation: waves 4s linear 2s infinite;
+}
+section#My .main .sect4-lf #job-list-box {
+  position: relative;
+  min-height: 100vh;
+}
+section#My .main .sect4-lf #job-list-box .job-list {
+  position: absolute;
+  right: 0%;
+  width: 70%;
+  margin: 30px auto;
+}
+section#My .main .sect4-lf #job-list-box .job-list.hidden {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+section#My .main .sect4-lf #job-list-box .job-list li {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+section#My .main .sect4-lf #job-list-box .job-list li.hidden {
+  opacity: 0;
+  transform: translateY(-70px);
+}
+section#My .main .sect4-lf #job-list-box .job-list li .num {
+  position: relative;
+  font-family: Dosis-ExtraLight;
+  font-size: 30px;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+section#My .main .sect4-lf #job-list-box .job-list li .job {
+  font-family: scdream7;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+section#My .main .sect4-lf #job-list-box .job-list li .job-desc {
+  font-family: scdream5;
+  font-size: 12px;
+}
+section#My .main .sect4-lf #job-list-box .job-list li:nth-child(odd) {
+  text-align: right;
+  padding-right: 55%;
+}
+section#My .main .sect4-lf #job-list-box .job-list li:nth-child(odd)::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #85b6f5;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  left: 47%;
+  top: 41%;
+  z-index: 200;
+}
+section#My .main .sect4-lf #job-list-box .job-list li:nth-child(even) {
+  text-align: left;
+  padding-left: 55%;
+}
+section#My .main .sect4-lf #job-list-box .job-list li:nth-child(even)::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #85b6f5;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  right: 49%;
+  top: 58%;
+  z-index: 10;
 }
 section#My .main article {
   width: 40%;
@@ -754,7 +858,7 @@ section#My .main article .splide .splide__track .splide__list li .book-desc {
   width: 90%;
   height: 100%;
   position: absolute;
-  background: rgba(253, 253, 253, 0.5);
+  background: rgba(255, 255, 255, 0.5);
   padding: 20px;
   backdrop-filter: blur(4.5px);
   -webkit-backdrop-filter: blur(4.5px);

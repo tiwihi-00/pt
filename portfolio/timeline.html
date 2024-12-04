@@ -12,80 +12,85 @@
 	<section id="My">
 		<div class="main">
 			<div class="sect4-lf">
-
+				<div class="c-line"></div>
 				<div class="container">
-					<div class="components">
-						<div class="circle">
-							<p class="circle-in"><a href="#">My line of work</a></p>
-							<span class="circle__back-1"></span>
-							<span class="circle__back-2"></span>
+					<div class="sticky-wrapper">
+						<div class="components">
+							<div class="circle">
+								<p class="circle-in"><a href="#">My line of work</a></p>
+								<span class="circle__back-1"></span>
+								<span class="circle__back-2"></span>
+							</div>
+
 						</div>
-
+						<div id="job-list-box">
+						
+							<ul class="job-list">
+								
+								<li>
+									<p class="num">2024</p>
+									<p class="job">mbc 아카데미 UX/UI 과정 수료</p>
+								</li>
+								<li>
+									<p class="num">2022 - 2024</p>
+									<p class="job">도서출판 배움</p>
+									<p class="job-desc">편집디자인</p>
+								</li>
+								<li>
+									<p class="num">2019 - 2022</p>
+									<p class="job">유니크 플러스</p>
+									<p class="job-desc">편집디자인</p>
+								</li>
+								<li>
+									<p class="num">2024</p>
+									<p class="job">mbc 아카데미 UX/UI 과정 수료</p>
+								</li>
+								<li>
+									<p class="num">2022 - 2024</p>
+									<p class="job">도서출판 배움</p>
+									<p class="job-desc">편집디자인</p>
+								</li>
+								<li>
+									<p class="num">2019 - 2022</p>
+									<p class="job">유니크 플러스</p>
+									<p class="job-desc">편집디자인</p>
+								</li>
+								<li>
+									<p class="num">2024</p>
+									<p class="job">mbc 아카데미 UX/UI 과정 수료</p>
+								</li>
+								<li>
+									<p class="num">2022 - 2024</p>
+									<p class="job">도서출판 배움</p>
+									<p class="job-desc">편집디자인</p>
+								</li>
+								<li>
+									<p class="num">2019 - 2022</p>
+									<p class="job">유니크 플러스</p>
+									<p class="job-desc">편집디자인</p>
+								</li>
+								<li>
+									<p class="num">2024</p>
+									<p class="job">mbc 아카데미 UX/UI 과정 수료</p>
+								</li>
+								<li>
+									<p class="num">2022 - 2024</p>
+									<p class="job">도서출판 배움</p>
+									<p class="job-desc">편집디자인</p>
+								</li>
+								<li>
+									<p class="num">2019 - 2022</p>
+									<p class="job">유니크 플러스</p>
+									<p class="job-desc">편집디자인</p>
+								</li>
+							</ul>
+	
+						</div>
 					</div>
-
+					
 				</div>
 
-				<div id="job-list-box">
-					<ul class="job-list">
-						<li>
-							<p class="num">2024</p>
-							<p class="job">mbc 아카데미 UX/UI 과정 수료</p>
-						</li>
-						<li>
-							<p class="num">2022 - 2024</p>
-							<p class="job">도서출판 배움</p>
-							<p class="job-desc">편집디자인</p>
-						</li>
-						<li>
-							<p class="num">2019 - 2022</p>
-							<p class="job">유니크 플러스</p>
-							<p class="job-desc">편집디자인</p>
-						</li>
-						<li>
-							<p class="num">2024</p>
-							<p class="job">mbc 아카데미 UX/UI 과정 수료</p>
-						</li>
-						<li>
-							<p class="num">2022 - 2024</p>
-							<p class="job">도서출판 배움</p>
-							<p class="job-desc">편집디자인</p>
-						</li>
-						<li>
-							<p class="num">2019 - 2022</p>
-							<p class="job">유니크 플러스</p>
-							<p class="job-desc">편집디자인</p>
-						</li>
-						<li>
-							<p class="num">2024</p>
-							<p class="job">mbc 아카데미 UX/UI 과정 수료</p>
-						</li>
-						<li>
-							<p class="num">2022 - 2024</p>
-							<p class="job">도서출판 배움</p>
-							<p class="job-desc">편집디자인</p>
-						</li>
-						<li>
-							<p class="num">2019 - 2022</p>
-							<p class="job">유니크 플러스</p>
-							<p class="job-desc">편집디자인</p>
-						</li>
-						<li>
-							<p class="num">2024</p>
-							<p class="job">mbc 아카데미 UX/UI 과정 수료</p>
-						</li>
-						<li>
-							<p class="num">2022 - 2024</p>
-							<p class="job">도서출판 배움</p>
-							<p class="job-desc">편집디자인</p>
-						</li>
-						<li>
-							<p class="num">2019 - 2022</p>
-							<p class="job">유니크 플러스</p>
-							<p class="job-desc">편집디자인</p>
-						</li>
-					</ul>
 
-				</div>
 
 
 
@@ -517,30 +522,38 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 	<script>
 
 
-		document.addEventListener("DOMContentLoaded", () => {
-			const jobListItems = document.querySelectorAll(".job-list li");
+gsap.registerPlugin(ScrollTrigger);
 
-			// 각 li에 대해 ScrollTrigger 설정
-			jobListItems.forEach((item, index) => {
-				gsap.fromTo(item,
-					{
-						opacity: 0, // 초기에는 보이지 않음
-						transform: "translateY(50px)", // 아래에서 시작
-					},
-					{
-						opacity: 1, // 보이게 설정
-						transform: "translateY(0)", // 원래 위치로 이동
-						scrollTrigger: {
-							trigger: item, // 각 li를 트리거로 사용
-							start: "top 90%", // li가 화면에 거의 들어올 때 시작
-							end: "top 10%", // 화면 상단 근처로 올 때 끝
-							scrub: true, // 스크롤에 따라 동기화
-							markers: false, // 디버그용 마커
-						},
-						duration: 0.5, // 애니메이션의 지속시간
-					});
-			});
-		});
+// 각 li 항목을 하나씩 사라지게 하기 위한 ScrollTrigger 설정
+gsap.utils.toArray('.job-list li').forEach((li, index) => {
+  gsap.fromTo(
+    li,
+    {
+      opacity: 1,
+      y: 400, // 초기 위치 설정
+    },
+    {
+      opacity:1,
+
+      y: -200, // 조금 더 부드럽게 이동
+      scrollTrigger: {
+        trigger: li, // 각 li 항목을 trigger로 설정
+        start: "top 80%", // 요소의 상단이 화면 하단에 도달할 때 애니메이션 시작
+        end: "top 20%", // 요소의 상단이 화면 상단에 도달할 때 애니메이션 끝
+        scrub: 1, // 애니메이션을 스크롤에 조금 더 부드럽게 동기화
+     duration:3,
+
+        toggleActions: "play none none none", // 애니메이션 반복 없이 한번만 실행
+      },
+    }
+  );
+});
+
+
+
+
+
+
 
 
 		document.addEventListener('DOMContentLoaded', function () {
