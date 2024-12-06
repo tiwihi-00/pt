@@ -2,7 +2,65 @@
 @import url(../font/eng-font.css);
 
 @media screen and (max-width:768px) {
+
 	section {
+		&.sect1 {
+			.in-menu {
+				position: absolute;
+				right: 2%;
+				top: 25px;
+				z-index: 100;
+				width: 50%;
+
+				ul.nav {
+
+					width: 100%;
+				
+
+					li {
+						font-family: EncodeSansCondensed-Regular;
+						font-size: 15px;
+						position: relative;
+
+						z-index: 200;
+						color: black;
+
+					
+					}
+				}
+			}
+
+			.comment {
+		
+				h3 {
+					position: relative;
+					margin: auto;
+					padding: 1vw;
+					width: 90%;
+					font-family: EncodeSansCondensed-medium;
+					font-size: 9vw;
+					color: white;
+					text-align: center;
+					line-height: 1.1;
+					
+					&:before {
+						content: '';
+						position: absolute;
+						top: -20%;
+						bottom: -30%;
+						left: 50%;
+						border-right: 1px solid #2600fe;
+						transform: rotate(45deg);
+						z-index: -1;
+					}
+				}
+		
+			
+			}
+
+
+		}
+
 		&#work {
 			.menu {
 				width: 60%;

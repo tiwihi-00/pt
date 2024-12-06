@@ -21,13 +21,3 @@ listElems.forEach((li) => {
     });
 });
 
-
-const words = ["Discover", "Build", "Dream"];
-let wordIndex = 0;
-
-function changeText() {
-  document.querySelector(".dynamic-text").textContent = words[wordIndex];
-  wordIndex = (wordIndex + 1) % words.length;
-}
-
-setInterval(changeText, 2000);

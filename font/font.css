@@ -104,3 +104,7 @@
 	font-family: EncodeSansCondensed-medium;
 	src: url(./EncodeSansCondensed-Medium.ttf);
 }
+@font-face {
+	font-family: EncodeSansCondensed-Regular;
+	src: url(./EncodeSansCondensed-Regular.ttf);
+}
