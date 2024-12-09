@@ -41,7 +41,7 @@ html {
 
 section.sect1 {
   background-color: #fad5d5;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -75,7 +75,7 @@ section.sect1 .sphere {
   height: 30vw;
   border-radius: 50%;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease;
 }
 section.sect1 .sphere img {
   width: 30vw;
@@ -85,10 +85,10 @@ section.sect1 .sphere:nth-child(1) {
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 84s;
-  animation-delay: -35s;
+  animation-duration: 11.5s;
+  animation-delay: -2.5s;
   animation-name: float-1;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease;
 }
 @keyframes float-1 {
   0% {
@@ -400,10 +400,10 @@ section.sect1 .sphere:nth-child(2) {
   background-image: transparent;
   background-color: transparent;
   z-index: 30;
-  animation-duration: 86s;
-  animation-delay: -70s;
+  animation-duration: 13s;
+  animation-delay: -5s;
   animation-name: float-2;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease;
 }
 @keyframes float-2 {
   0% {
@@ -715,10 +715,10 @@ section.sect1 .sphere:nth-child(3) {
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 85.5s;
-  animation-delay: -105s;
+  animation-duration: 6s;
+  animation-delay: -7.5s;
   animation-name: float-3;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease;
 }
 @keyframes float-3 {
   0% {
@@ -1030,10 +1030,10 @@ section.sect1 .sphere:nth-child(4) {
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 81s;
-  animation-delay: -140s;
+  animation-duration: 18s;
+  animation-delay: -10s;
   animation-name: float-4;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease;
 }
 @keyframes float-4 {
   0% {
@@ -1345,10 +1345,10 @@ section.sect1 .sphere:nth-child(5) {
   background-image: transparent;
   background-color: transparent;
   z-index: 4;
-  animation-duration: 79.5s;
-  animation-delay: -175s;
+  animation-duration: 9s;
+  animation-delay: -12.5s;
   animation-name: float-5;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease;
 }
 @keyframes float-5 {
   0% {
@@ -1660,10 +1660,10 @@ section.sect1 .sphere:nth-child(6) {
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 72s;
-  animation-delay: -210s;
+  animation-duration: 10.5s;
+  animation-delay: -15s;
   animation-name: float-6;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease;
 }
 @keyframes float-6 {
   0% {
@@ -1975,10 +1975,10 @@ section.sect1 .sphere:nth-child(7) {
   background-image: transparent;
   background-color: transparent;
   z-index: 10;
-  animation-duration: 87.5s;
-  animation-delay: -245s;
+  animation-duration: 19.5s;
+  animation-delay: -17.5s;
   animation-name: float-7;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease;
 }
 @keyframes float-7 {
   0% {
@@ -2290,10 +2290,10 @@ section.sect1 .sphere:nth-child(8) {
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 74s;
-  animation-delay: -280s;
+  animation-duration: 24.5s;
+  animation-delay: -20s;
   animation-name: float-8;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease;
 }
 @keyframes float-8 {
   0% {
@@ -2605,10 +2605,10 @@ section.sect1 .sphere:nth-child(9) {
   background-image: transparent;
   background-color: transparent;
   z-index: 50;
-  animation-duration: 72.5s;
-  animation-delay: -315s;
+  animation-duration: 7.5s;
+  animation-delay: -22.5s;
   animation-name: float-9;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease;
 }
 @keyframes float-9 {
   0% {
@@ -3720,8 +3720,38 @@ section#My .main article .splide .splide__track .splide__list li img {
 
 footer {
   width: 100%;
-  height: 30vh;
-  background: #000;
+  height: 80vh;
+  background: #d5d5e6;
+  contain: paint;
+}
+footer .contact .splide__track {
+  background: #d5d5e6;
+  margin-top: 130px;
+  border-top: 1px solid #6f6f6f;
+  border-bottom: 1px solid #6f6f6f;
+  overflow: hidden;
+  height: 85px;
+  display: flex;
+  align-items: center;
+}
+footer .contact .splide__track .splide__list {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+footer .contact .splide__track .splide__list .splide__slide {
+  font-family: Barlow-Black;
+  color: white;
+  font-size: 150px;
+  text-align: center;
+  white-space: nowrap;
+}
+footer h2 {
+  padding: 30px;
+  font-family: Barlow-Bold;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(1, 41, 77);
+  font-size: 100px;
 }
 
 @keyframes up-and-down {

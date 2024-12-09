@@ -47,11 +47,11 @@ section {
 		$blue: #0000fe;
 
 		$max-height: 400vh; // sum up all .views + some extra space
-		$duration: 70s;
+		$duration: 5s;
 		background-color: #fad5d5;
 
 
-		width: 100vw;
+		width: 100%;
 		height: 100vh;
 		display: flex;
 		justify-content: center;
@@ -91,7 +91,7 @@ section {
 			height: 30vw;
 			border-radius: 50%;
 			animation-iteration-count: infinite;
-			animation-timing-function: ease-in-out;
+			animation-timing-function: ease;
 
 			img {
 				width: 30vw;
@@ -134,7 +134,7 @@ section {
 			animation-duration: $duration + (random(40) * .5s);
 			animation-delay: $i * $duration * -0.5;
 			animation-name: float-#{$i};
-			animation-timing-function: ease-in-out;
+			animation-timing-function: ease;
 
 		}
 
@@ -1187,8 +1187,53 @@ section {
 
 footer {
 	width: 100%;
-	height: 30vh;
-	background: #000;
+	height: 80vh;
+	background: #d5d5e6;
+	contain: paint;
+
+	.contact {
+		.splide__track {
+			background: #d5d5e6;
+			margin-top: 130px;
+			border-top: 1px solid #6f6f6f;
+			border-bottom: 1px solid #6f6f6f;
+			overflow: hidden;
+			height: 85px;
+			display: flex;
+			align-items: center;
+
+
+			.splide__list {
+
+
+				display: flex;
+				align-items: center;
+				flex-shrink: 0;
+
+				.splide__slide {
+
+					font-family:Barlow-Black;
+					color: white;
+					font-size: 150px;
+					text-align: center;
+					white-space: nowrap;
+				}
+			}
+		}
+	}
+
+	h2 {
+		padding: 30px;
+		font-family:Barlow-Bold;
+
+		color: transparent;
+		-webkit-text-stroke: 1px rgb(1, 41, 77);
+		font-size: 100px;
+	}
+
+
+
+
 }
 
 

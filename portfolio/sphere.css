@@ -55,7 +55,7 @@ body {
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 106s;
+  animation-duration: 148s;
   animation-delay: -80s;
   animation-name: float-1;
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -371,7 +371,7 @@ body {
   background-image: transparent;
   background-color: transparent;
   z-index: 10;
-  animation-duration: 117s;
+  animation-duration: 120s;
   animation-delay: -160s;
   animation-name: float-2;
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -1003,7 +1003,7 @@ body {
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 140s;
+  animation-duration: 105s;
   animation-delay: -320s;
   animation-name: float-4;
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -1319,7 +1319,7 @@ body {
   background-image: transparent;
   background-color: transparent;
   z-index: 80;
-  animation-duration: 126s;
+  animation-duration: 141s;
   animation-delay: -400s;
   animation-name: float-5;
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -1635,7 +1635,7 @@ body {
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 143s;
+  animation-duration: 138s;
   animation-delay: -480s;
   animation-name: float-6;
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -1951,7 +1951,7 @@ body {
   background-image: transparent;
   background-color: transparent;
   z-index: 4;
-  animation-duration: 144s;
+  animation-duration: 148s;
   animation-delay: -560s;
   animation-name: float-7;
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -2267,7 +2267,7 @@ body {
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 109s;
+  animation-duration: 130s;
   animation-delay: -640s;
   animation-name: float-8;
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -2583,7 +2583,7 @@ body {
   background-image: transparent;
   background-color: transparent;
   z-index: 10;
-  animation-duration: 123s;
+  animation-duration: 130s;
   animation-delay: -720s;
   animation-name: float-9;
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -2899,7 +2899,7 @@ body {
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 143s;
+  animation-duration: 120s;
   animation-delay: -800s;
   animation-name: float-10;
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -3215,7 +3215,7 @@ body {
   background-image: transparent;
   background-color: transparent;
   z-index: 50;
-  animation-duration: 136s;
+  animation-duration: 150s;
   animation-delay: -880s;
   animation-name: float-11;
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -3531,7 +3531,7 @@ body {
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 141s;
+  animation-duration: 147s;
   animation-delay: -960s;
   animation-name: float-12;
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -3847,7 +3847,7 @@ body {
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 121s;
+  animation-duration: 129s;
   animation-delay: -1040s;
   animation-name: float-13;
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
