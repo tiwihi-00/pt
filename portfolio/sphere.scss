@@ -1,232 +1,175 @@
 @import url(../font/eng-font.css);
 
-$grey: #e7e7e7;
-$white: #fff;
-$blue: #0000fe;
-
-$max-height: 400vh; // sum up all .views + some extra space
-$duration: 100s;
-
-*,
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 html,
 body {
-  width: 100%;
-  height: 100%;
+  font-family: 'Dongle', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.sect1 {
-  background-color: #fad5d5;
-}
 
-.wrap-3d {
-  position: relative;
-  height: 100vh;
 
-  overflow-x: hidden;
-  overflow-y: auto;
-}
+.foot {
+  width: 100vw;
+  height: 60vh;
+  contain: paint;
 
-.items-3d {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 100vh;
-  overflow: hidden;
-}
 
-.item-3d {
+  @keyframes moveInCircle {
+    0% {
+      transform: rotate(0deg);
+    }
 
-  will-change: transform;
-}
+    50% {
+      transform: rotate(180deg);
+    }
 
-.sphere {
-  position: absolute;
-  top: $max-height - 50;
-  width: 10vw;
-  height: 10vw;
-  border-radius: 50%;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-
-  img {
-    width: 25vw;
-  }
-}
-
-$spheres: (
-  (0%, -10),
-  (10%, 10),
-
-  (40%, 50),
-  (30%, -15),
-  (75%, 80),
-  (20%, -12),
-  (70%, 4),
-  (80%, -10),
-  (100%, 10),
-  (15%, -20),
-  (20%, 50),
-  (90%, -5),
-
-  (75%, -8)
-);
-
-@mixin sphere ($left, $z) {
-  left: $left;
-  background-image: transparent;
-  background-color: transparent;
-
-  @if $z >0 {
-    z-index: $z;
-  }
-
-  @else {
-    z-index: 1;
-  }
-}
-
-@each $sphere in $spheres {
-  $i: index($spheres, $sphere);
-
-  .sphere:nth-child(#{$i}) {
-    @include sphere($sphere...);
-    animation-duration: $duration + (random(50) * 1s); // 애니메이션 지속 시간 증가
-    animation-delay: $i * $duration * -0.8; // 기존보다 부드럽게 조정
-    animation-name: float-#{$i};
-    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
-  }
-
-  @keyframes float-#{$i} {
-    @for $j from 0 through 100 {
-      #{$j * 1%} {
-        transform: translateX(#{sin($j * 0.1) * (-50% + $i)})
-        translateY(#{($max-height * -0.01) * $j})
-        translateZ(#{nth($sphere, 2) * 1vw});
-      }
+    100% {
+      transform: rotate(360deg);
     }
   }
 
-}
+  @keyframes moveVertical {
+    0% {
+      transform: translateY(-50%);
+    }
 
+    50% {
+      transform: translateY(50%);
+    }
 
-.in-menu {
-  position: absolute;
-  right: 10%;
-  top: 25px;
-  z-index: 100;
-  width: 30%;
-
-  ul.nav {
-
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-
-    li {
-      font-family: Barlow-Light;
-      font-size: 16px;
-      position: relative;
-
-      z-index: 200;
-      color: black;
-
-      &:hover {
-        color: black;
-        transition: color 0.35s ease;
-      }
-
-      &:hover::after {
-        content: '';
-        width: 100%;
-        position: absolute;
-        height: 3px;
-        background-color: black;
-        left: 0;
-        transition: .35s;
-        bottom: -7px;
-        animation-name: line;
-        animation-duration: 0.5s;
-        animation-fill-mode: forwards;
-        z-index: 20;
-        transition: width 0.35s ease, background-color 0.35s ease;
-      }
+    100% {
+      transform: translateY(-50%);
     }
   }
-}
 
-.symbol {
-  position: absolute;
-  left: 30px;
-  top: 30px;
-  width: 250px;
+  @keyframes moveHorizontal {
+    0% {
+      transform: translateX(-50%) translateY(-10%);
+    }
 
-  img {
-    width: 75px;
-    height: 55px;
-    transform-origin: center;
+    50% {
+      transform: translateX(50%) translateY(10%);
+    }
+
+    100% {
+      transform: translateX(-50%) translateY(-10%);
+    }
   }
 
-  h4 {
-    color: white;
-    font-family: Barlow-ThinItalic;
-    font-size: 25px;
-    position: absolute;
-    left: 20px;
-    top: 12px;
-  }
 
-  p {
-    padding-top: 20px;
-
-    font-size: 15px;
-    line-height: 1.4;
-    font-family: EncodeSansCondensed-medium;
-
-
-  }
-}
-
-.comment {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  z-index: 3;
-
-  h3 {
+  .gradient-bg {
+    width: 100vw;
+    height: 100vh;
     position: relative;
-    margin: auto;
-    padding: 1vw;
-    width: 70%;
-    font-family: EncodeSansCondensed-Bold;
-    font-size: 10vw;
-    color: white;
-    text-align: center;
-    line-height: 1.1;
+    overflow: hidden;
+    background: linear-gradient(40deg, #dff9fb, #ffffff);
+    top: 0;
+    left: 0;
 
-    &:before {
-      content: '';
-      position: absolute;
-      top: -25%;
-      bottom: -25%;
-      left: 50%;
-      border-right: 1px solid #2600fe;
-      transform: rotate(45deg);
-      z-index: -1;
+    svg {
+      display: none;
     }
-  }
 
-  .dynamic-text {
-    
-    color: white;
-    font-family: Barlow-Thin;
-    font-size: 80px;
+
+    .gradients-container {
+      filter: url(#goo) blur(40px);
+      width: 100%;
+      height: 100%;
+    }
+
+    .g1 {
+      position: absolute;
+      background: radial-gradient(circle at center, rgba(104, 109, 224, 0.8) 0, rgba(104, 109, 224, 0) 50%) no-repeat;
+      mix-blend-mode: hard-light;
+
+      width:  200%;
+      height:  200%;
+      top: calc(50% -  200% / 2);
+      left: calc(50% -  200% / 2);
+
+      transform-origin: center center;
+      animation: moveVertical 30s ease infinite;
+
+      opacity: 1;
+    }
+
+    .g2 {
+      position: absolute;
+      background: radial-gradient(circle at center, rgba(126, 214, 223, 0.8) 0, rgba(126, 214, 223, 0) 50%) no-repeat;
+      mix-blend-mode: hard-light;
+
+      width: 200%;
+      height: 200%;
+      top: calc(50% - 200% / 2);
+      left: calc(50% - 200% / 2);
+
+      transform-origin: calc(50% - 400px);
+      animation: moveInCircle 20s reverse infinite;
+
+      opacity: 1;
+    }
+
+    .g3 {
+      position: absolute;
+      background: radial-gradient(circle at center, rgba(223, 249, 251, 0.8) 0, rgba(223, 249, 251, 0) 50%) no-repeat;
+      mix-blend-mode:  hard-light;
+
+      width: 200%;
+      height: 200%;
+      top: calc(50% - 200% / 2 + 200px);
+      left: calc(50% - 200% / 2 - 500px);
+
+      transform-origin: calc(50% + 400px);
+      animation: moveInCircle 40s linear infinite;
+
+      opacity: 1;
+    }
+
+    .g4 {
+      position: absolute;
+      background: radial-gradient(circle at center, rgba(255, 121, 121, 0.8) 0, rgba(255, 121, 121, 0) 50%) no-repeat;
+      mix-blend-mode: hard-light;
+
+      width: 200%;
+      height: 200%;
+      top: calc(50% - 200% / 2);
+      left: calc(50% - 200% / 2);
+
+      transform-origin: calc(50% - 200px);
+      animation: moveHorizontal 40s ease infinite;
+
+      opacity: 0.7;
+    }
+
+    .g5 {
+      position: absolute;
+      background: radial-gradient(circle at center, rgba(149, 175, 192, 0.8) 0, rgba(149, 175, 192, 0) 50%) no-repeat;
+      mix-blend-mode: hard-light;
+
+      width: calc(200% * 2);
+      height: calc(200% * 2);
+      top: calc(50% - 200%);
+      left: calc(50% - 200%);
+
+      transform-origin: calc(50% - 800px) calc(50% + 200px);
+      animation: moveInCircle 20s ease infinite;
+
+      opacity: 1;
+    }
+
+    .interactive {
+      position: absolute;
+      background: radial-gradient(circle at center, rgba(140, 100, 255, 0.8) 0, rgba(140, 100, 255, 0) 50%) no-repeat;
+      mix-blend-mode: hard-light;
+
+      width: 100%;
+      height: 100%;
+      top: -50%;
+      left: -50%;
+
+      opacity: 0.7;
+    }
   }
 }
