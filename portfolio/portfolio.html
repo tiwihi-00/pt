@@ -71,16 +71,16 @@
 
 
 			<div class="items-3d">
+				<div class="item-3d sphere"><img src="./image/ball33.png" alt=""></div>
+				<div class="item-3d sphere"><img src="./image/ball33.png" alt=""></div>
 				<div class="item-3d sphere"><img src="./image/ball13 1.png" alt=""></div>
+				<div class="item-3d sphere"><img src="./image/ball33.png" alt=""></div>
 				<div class="item-3d sphere"><img src="./image/ball13 1.png" alt=""></div>
+				<div class="item-3d sphere"><img src="./image/ball33.png" alt=""></div>
 				<div class="item-3d sphere"><img src="./image/ball13 1.png" alt=""></div>
+				<div class="item-3d sphere"><img src="./image/ball33.png" alt=""></div>
 				<div class="item-3d sphere"><img src="./image/ball13 1.png" alt=""></div>
-				<div class="item-3d sphere"><img src="./image/ball13 1.png" alt=""></div>
-				<div class="item-3d sphere"><img src="./image/ball13 1.png" alt=""></div>
-				<div class="item-3d sphere"><img src="./image/ball13 1.png" alt=""></div>
-				<div class="item-3d sphere"><img src="./image/ball13 1.png" alt=""></div>
-				<div class="item-3d sphere"><img src="./image/ball13 1.png" alt=""></div>
-				<div class="item-3d sphere"><img src="./image/ball13 1.png" alt=""></div>
+				<div class="item-3d sphere"><img src="./image/ball33.png" alt=""></div>
 			</div>
 			<div class="in-menu">
 				<ul class="nav">
@@ -827,22 +827,45 @@
 
 	</section>
 	<footer>
-		<div class="splide contact">
-			<div class="splide__track">
-				<ul class="splide__list">
-					<div class="splide__slide">
-						<li>CONTACT ME</li>
-					</div>
-				</ul>
+		<div class="foot-main">
+			<div class="splide contact">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide">
+						CONNECT
+						</li>
+					</ul>
+				</div>
+			</div>
+		
+			<h5>Kim Boyeon</h5>
+			<div class="me">
+				<a href="#"><img src="./image/pepicons-pencil_cellphone-loop.png" alt=""><p>010.7162.7863</p></a>
+				<a href="#"><img src="./image/mdi-light_email-1.png" alt=""><p>tiwihi@hanmail.net</p></a>
+				
 			</div>
 		</div>
-		<!-- <h2>CONTACT ME</h2> -->
-		<h5>Kim Boyeon</h5>
-		<div class="me">
-			<a href="#"><img src="./image/pepicons-pencil_cellphone-loop.png" alt=""><p>010.7162.7863</p></a>
-			<a href="#"><img src="./image/mdi-light_email-1.png" alt=""><p>tiwihi@hanmail.net</p></a>
-			
-		</div>
+			<article class="foot">
+				<div class="gradient-bg">
+					<svg xmlns="http://www.w3.org/2000/svg">
+						<defs>
+							<filter id="goo">
+								<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+								<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+								<feBlend in="SourceGraphic" in2="goo" />
+							</filter>
+						</defs>
+					</svg>
+					<div class="gradients-container">
+						<div class="g1"></div>
+						<div class="g2"></div>
+						<div class="g3"></div>
+						<div class="g4"></div>
+						<div class="g5"></div>
+						<div class="interactive"></div>
+					</div>
+				</div>
+			</article>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
@@ -862,6 +885,7 @@
 	<script src="./sect2.js"></script>
 	<script src="./sect3.js"></script>
 	<script src="./sect4.js"></script>
+	<script src="./foot.js"></script>
 	<script src="
 	https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js
 	"></script>
@@ -1124,14 +1148,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
   type: 'loop', // 무한 반복
   drag: false, // 드래그 비활성화
   focus: 'center', // 중앙 정렬
-  gap: 30, // 슬라이드 간격
+  gap: 50, // 슬라이드 간격
   autoWidth: true, // 슬라이드 자동 너비
   arrows: false, // 화살표 비활성화
   pagination: false, // 페이지네이션 비활성화
   autoScroll: {
-    speed: -2, // 스크롤 속도 조절
-    pauseOnHover: false, // 호버 시 멈춤 비활성화
-    rewind: true, // 끝나면 다시 처음으로 이동
+    speed: 2, // 스크롤 속도 조절
+    pauseOnHover: true, // 호버 시 멈춤 비활성화
+    rewind: false, // 끝나면 다시 처음으로 이동
   },
 });
 
