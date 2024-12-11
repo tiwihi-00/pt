@@ -2,6 +2,75 @@
 
 
 
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".Project_wrap .item01", {
+	scrollTrigger: {
+		trigger: ".Project_wrap .cont01",
+		start: "-100% top",
+		toggleClass: { targets: '.Project_wrap .item01', className: 'on' },
+		scrub: 2,
+	}
+});
+
+gsap.to(".Project_wrap .item02", {
+	scrollTrigger: {
+		trigger: ".Project_wrap .cont02",
+		start: "top top",
+		toggleClass: { targets: '.Project_wrap .item02', className: 'on' },
+		scrub: 2,
+	}
+});
+
+gsap.to(".Project_wrap .item03", {
+	scrollTrigger: {
+		trigger: ".Project_wrap .cont03",
+		start: "top top",
+		toggleClass: { targets: '.Project_wrap .item03', className: 'on' },
+		scrub: 2,
+	}
+});
+
+
+
+
+
+var swiper = new Swiper(".je-Swiper", {
+	loop: true,
+	effect: "fade",
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+});
+
+
+
+
+
+var swiper = new Swiper(".t-Swiper", {
+	loop: true,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+});
+
+
+
+
+
+
+
+
 
 
 function moveToSelected(element) {
