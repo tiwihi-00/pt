@@ -253,7 +253,7 @@ main {
 								font-size: 30px;
 								position: absolute;
 								left: 15%;
-								top: 35%;
+								top: 30%;
 							}
 
 							&:nth-child(3) {
@@ -269,8 +269,8 @@ main {
 								font-size: 20px;
 								color: #52006a;
 								position: absolute;
-								left: 10%;
-								top: 60%;
+								left: 12%;
+								top: 55%;
 							}
 
 							&:nth-child(5) {
@@ -318,6 +318,42 @@ main {
 			padding: 30px;
 			margin-top: 200px;
 			height: 100vh;
+
+			.circle {
+				padding-top: 120px;
+				display: flex;
+				width: 90%;
+				margin: auto;
+				justify-content: space-between;
+				padding-bottom: 60px;
+
+				li {
+					width: 230px;
+					height: 230px;
+					text-align: center;
+					position: relative;
+					flex-shrink: 0;
+
+					&::after {
+						content: '';
+						position: absolute;
+						width: 230px;
+						height: 230px;
+						left: 50%;
+						top: 50%;
+						transform: translate(-50%, -50%);
+						border-radius: 50%;
+
+						background-color: #d5b5fd;
+						z-index: -1;
+
+					}
+				&:nth-child(2), &:nth-child(3) img{
+					width: 120px;
+					height: 120px;
+				}
+				}
+			}
 		}
 	}
 
