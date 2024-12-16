@@ -271,27 +271,133 @@ main section.sect2 .circle {
   margin: auto;
   justify-content: space-between;
   padding-bottom: 60px;
+  flex-wrap: wrap;
+  text-align: center;
 }
 main section.sect2 .circle li {
-  width: 230px;
-  height: 230px;
+  width: 30%;
   text-align: center;
   position: relative;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-main section.sect2 .circle li::after {
-  content: "";
-  position: absolute;
+main section.sect2 .circle li .circle-back {
+  position: relative;
   width: 230px;
   height: 230px;
+  border-radius: 50%;
+  background-color: #d2aefd;
+  z-index: -1;
+}
+main section.sect2 .circle li:nth-child(2) img, main section.sect2 .circle li:nth-child(3) img {
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background-color: #d5b5fd;
-  z-index: -1;
-}
-main section.sect2 .circle li:nth-child(2), main section.sect2 .circle li:nth-child(3) img {
   width: 120px;
   height: 120px;
+}
+main section.sect2 .circle li .circle-in {
+  margin-top: 20px;
+}
+main section.sect2 .circle li .circle-in h2 {
+  font-family: scdream8;
+  font-size: 25px;
+  margin: 20px 0 15px;
+}
+main section.sect2 .circle li .circle-in h6 {
+  font-family: scdream5;
+  font-size: 15px;
+  margin: 15px 0 10px;
+  color: #320163;
+}
+main section.sect2 .circle li .circle-in p {
+  font-family: scdream2;
+  font-size: 14px;
+  line-height: 1.7;
+}
+main section.sect2 .circle li .circle-in p b {
+  font-family: scdream6;
+  color: #52006a;
+}
+main section.sect3 {
+  width: 100%;
+  padding: 30px;
+  margin-top: 150px;
+  height: 100vh;
+}
+main section.sect3 .sect3-in {
+  width: 100%;
+  height: 100vh;
+  margin-top: 80px;
+}
+main section.sect3 .sect3-in .con-desc {
+  width: 80%;
+  margin: 150px auto;
+  font-family: scdream5;
+  font-size: 16px;
+  line-height: 1.8;
+}
+main section.sect3 .sect3-in .con-desc b {
+  font-family: scdream7;
+  color: #52006a;
+}
+main section.sect3 .sect3-in .con-detail {
+  display: flex;
+  position: relative;
+  height: 400px;
+}
+main section.sect3 .sect3-in .con-detail img {
+  position: absolute;
+  width: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main section.sect3 .sect3-in .con-detail li {
+  font-family: scdream4;
+  font-size: 15px;
+  line-height: 1.7;
+  position: absolute;
+  text-align: left;
+}
+main section.sect3 .sect3-in .con-detail li:nth-child(1) {
+  left: 10%;
+  top: 10%;
+  width: 20%;
+}
+main section.sect3 .sect3-in .con-detail li:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  width: 80px;
+  height: 1px;
+  background-color: #24fd03;
+}
+main section.sect3 .sect3-in .con-detail li:nth-child(2) {
+  right: 5%;
+  top: 30%;
+  width: 20%;
+}
+main section.sect3 .sect3-in .con-detail li:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  left: -110px;
+  width: 110px;
+  height: 1px;
+  background-color: #24fd03;
+}
+main section.sect3 .sect3-in .con-detail li:nth-child(3) {
+  left: 10%;
+  bottom: 25%;
+  width: 20%;
+}
+main section.sect3 .sect3-in .con-detail li:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  width: 80px;
+  height: 1px;
+  background-color: #24fd03;
 }
