@@ -14,7 +14,7 @@
 header {
   width: 100%;
   height: 100vh;
-  background-image: url(./symbol\ back-02\ 1.png);
+  background-image: url(./image/symbol\ back-02\ 1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -400,4 +400,8 @@ main section.sect3 .sect3-in .con-detail li:nth-child(3)::after {
   width: 80px;
   height: 1px;
   background-color: #24fd03;
+}
+main section.sect3 .card {
+  margin-top: 60px;
+  width: 100%;
 }

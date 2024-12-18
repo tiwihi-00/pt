@@ -15,7 +15,7 @@
 header {
 	width: 100%;
 	height: 100vh;
-	background-image: url(./symbol\ back-02\ 1.png);
+	background-image: url(./image/symbol\ back-02\ 1.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -411,7 +411,8 @@ main {
 					font-family: scdream5;
 					font-size: 16px;
 					line-height: 1.8;
-					b{
+
+					b {
 						font-family: scdream7;
 						color: #52006a;
 					}
@@ -441,27 +442,29 @@ main {
 							left: 10%;
 							top: 10%;
 							width: 20%;
-							&::after{
+
+							&::after {
 								content: '';
 								position: absolute;
 								right: -80px;
 								width: 80px;
-								height:1px;
+								height: 1px;
 								background-color: #24fd03;
 							}
 						}
 
 						&:nth-child(2) {
 
-							right:5%;
+							right: 5%;
 							top: 30%;
 							width: 20%;
-							&::after{
+
+							&::after {
 								content: '';
 								position: absolute;
 								left: -110px;
 								width: 110px;
-								height:1px;
+								height: 1px;
 								background-color: #24fd03;
 							}
 						}
@@ -471,19 +474,27 @@ main {
 							left: 10%;
 							bottom: 25%;
 							width: 20%;
-							&::after{
+
+							&::after {
 								content: '';
 								position: absolute;
 								right: -80px;
 								width: 80px;
-								height:1px;
+								height: 1px;
 								background-color: #24fd03;
 							}
 						}
 					}
 				}
+				
+			}
+			.card{
+				margin-top: 60px;
+				width: 100%;
 			}
 		}
+
+	
 	}
 
 
