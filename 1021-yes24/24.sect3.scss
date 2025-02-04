@@ -1,0 +1,195 @@
+@import url(./reset.css);
+@import url(./font/font.css);
+
+main {
+	section {
+		width: 100%;
+		min-width: 1300px;
+
+		&.sect3 {
+			background-color: #f6f6f6;
+			padding: 80px 0;
+
+			.sect3-wrap {
+				width: 1200px;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+
+				.sect3-lf {
+					width: 478px;
+					height: 486px;
+					border: 1px solid #ddd;
+					background-color: white;
+					position: relative;
+
+					.left-tit {
+						font-family: scdream7;
+						font-size: 27px;
+						width: 370px;
+						color: #333;
+						position: absolute;
+						left: 54px;
+						top: 35px;
+
+						a {
+							display: block;
+							position: absolute;
+							right: 0;
+							top: 0px;
+						}
+					}
+
+					ul.ranking {
+						position: absolute;
+						left: 54px;
+						top: 95px;
+						width: 370px;
+						border-top: 2px solid #333;
+						border-bottom: 1px solid #333;
+
+						.ranking-li {
+							font-family: scdream4;
+							border-bottom: 1px solid #ddd;
+							padding: 15px 0;
+							height: 50px;
+							position: relative;
+
+							&.on {
+								height: auto;
+							}
+
+							&.on img {
+								display: block;
+							}
+
+							&.on .left-txt {
+								width: 225px;
+							}
+
+							&.on .left-txt .left-title {
+								margin: 1px 0 12px 0;
+								font-family: scdream6;
+								white-space: normal;
+							}
+
+							&.on .left-txt .left-desc {
+								opacity: 1;
+							}
+
+							&.on a dl dt {
+								font-family: scdream6;
+							}
+
+							&.on a dl dt::after {
+								content: '';
+								position: absolute;
+								width: 24px;
+								height: 1px;
+								background-color: #333;
+								position: absolute;
+								top: 45px;
+								left: 1%;
+							}
+
+							a {
+								dl {
+									height: 112px;
+									overflow: hidden;
+									display: flex;
+									justify-content: space-between;
+
+									dt {
+										text-align: center;
+										width: 41px;
+										padding-top: 3px;
+										margin-right: 9px;
+										font-size: 15px;
+									}
+
+									dd {
+										img {
+											display: block;
+											width: 80px;
+											height: 112px;
+											margin-right: 15px;
+											display: none;
+										}
+									}
+
+									.left-txt {
+										width: 320px;
+
+										.left-title {
+											font-family: scdream4;
+										}
+
+										.left-desc {
+											font-size: 13px;
+											color: #999;
+											line-height: 18px;
+											opacity: 0;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.sect3-ri {
+					width: 700px;
+					height: 486px;
+					border: 1px solid #ddd;
+					background-color: white;
+					position: relative;
+					margin-left: 30px;
+
+					.tab-container {
+						width: 100%;
+						height: 100%;
+
+						.tab-menu {
+							width: 100%;
+							height: 100%;
+
+							li {
+								display: none;
+
+								&.active {
+									display: block;
+								}
+
+								.vedio-wrapper {
+									position: relative;
+									width: 100%;
+									height: 100%;
+									overflow: hidden;
+									cursor: pointer;
+
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.milddle-slide {
+		height: 400px;
+		width: 100%;
+
+		.banner {
+			height: 100%;
+			width: 100%;
+
+			img {
+				height: 400px;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}

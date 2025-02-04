@@ -1,0 +1,172 @@
+@import url(./reset.css);
+@import url(./font/font.css);
+:root{
+	--swiper-theme-color:#6a0182;
+}
+
+main {
+	section {
+		width: 100%;
+		min-width: 1300px;
+
+		&.sect1 {
+			position: relative;
+			margin-top: -100px;
+			height: 650px;
+			width: 100%;
+
+			.mySwiper1 {
+				height: 650px;
+				width: 100%;
+				min-width: 1300px;
+
+				.swiper-wrapper {
+					&::before {
+						content: '';
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 100%;
+						height: 100%;
+						background-image: url(./image/bm_topbg.png);
+					}
+
+					.swiper-slide {
+
+						width: 100%;
+						height: 100%;
+
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						z-index: 10;
+
+						&.slide1 {
+							background-image: url(./image/랭보L.png);
+						}
+
+						&.slide2 {
+							background-image: url(./image/yes24image/slide2.png);
+						}
+
+						&.slide3 {
+							background-image: url(./image/더픽션L.jpg);
+						}
+
+						&.slide4 {
+							background-image: url(./image/yes24image/slide4.jfif);
+						}
+
+						&.slide5 {
+							background-image: url(./image/yes24image/slide5.jfif);
+						}
+
+						&.slide6 {
+							background-image: url(./image/yes24image/slide6.jfif);
+						}
+
+						&.slide7 {
+							background-image: url(./image/yes24image/slide7.jfif);
+						}
+
+						&.slide8 {
+							background-image: url(./image/yes24image/slide8.jfif);
+						}
+
+						&.slide9 {
+							background-image: url(./image/yes24image/slide9.png);
+						}
+
+						&.slide10 {
+							background-image: url(./image/yes24image/slide10.png);
+						}
+
+						&.slide11 {
+							background-image: url(./image/퍼폼L.jpg);
+						}
+
+						&.slide12 {
+							background-image: url(./image/yes24image/slide12.jfif);
+						}
+					}
+				}
+
+				.slide-page {
+					height: 170px;
+					overflow: visible;
+					width: 100%;
+					text-align: center;
+					padding-top: 32px;
+					position: absolute;
+					bottom: -120px;
+					z-index: 150;
+					transition: .35s ease;
+
+					&:hover {
+						bottom: 10px;
+
+						// span {
+						// 	display: none;
+						// }
+
+					}
+
+					.pager-bg {
+						border-top: 1px solid rgba(215, 215, 215, .3);
+						height: 18px;
+						transition: height .35s ease;
+						top: 0;
+
+						a {
+							display: inline-block;
+							width: 86px;
+							position: relative;
+							top: -1px;
+							margin: 0 7px;
+							height: 120px;
+
+							&.on {
+								border-top: 4px solid #ec7d2c;
+								top: -5px;
+							}
+
+							&.on span {
+								display: block;
+							}
+
+							&::after {
+								content: '';
+								display: block;
+								width: 86px;
+								height: 120px;
+								background-color: rgba(0, 0, 0, .3);
+								position: absolute;
+								left: 0;
+								top: 18px;
+							}
+
+							span {
+								text-align: center;
+								color: white;
+								display: block;
+								z-index: 200;
+								position: absolute;
+								top: -28px;
+								left: 50%;
+								transform: translateX(-50%);
+								display: none;
+							}
+
+							img {
+								display: block;
+								width: 86px;
+								height: 120px;
+								margin-top: 18px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

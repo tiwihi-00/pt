@@ -1,0 +1,137 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./font/font.css);
+:root {
+  --swiper-theme-color:#6a0182;
+}
+
+main section {
+  width: 100%;
+  min-width: 1300px;
+}
+main section.sect1 {
+  position: relative;
+  margin-top: -100px;
+  height: 650px;
+  width: 100%;
+}
+main section.sect1 .mySwiper1 {
+  height: 650px;
+  width: 100%;
+  min-width: 1300px;
+}
+main section.sect1 .mySwiper1 .swiper-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./image/bm_topbg.png);
+}
+main section.sect1 .mySwiper1 .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+main section.sect1 .mySwiper1 .swiper-wrapper .swiper-slide.slide1 {
+  background-image: url(./image/랭보L.png);
+}
+main section.sect1 .mySwiper1 .swiper-wrapper .swiper-slide.slide2 {
+  background-image: url(./image/yes24image/slide2.png);
+}
+main section.sect1 .mySwiper1 .swiper-wrapper .swiper-slide.slide3 {
+  background-image: url(./image/더픽션L.jpg);
+}
+main section.sect1 .mySwiper1 .swiper-wrapper .swiper-slide.slide4 {
+  background-image: url(./image/yes24image/slide4.jfif);
+}
+main section.sect1 .mySwiper1 .swiper-wrapper .swiper-slide.slide5 {
+  background-image: url(./image/yes24image/slide5.jfif);
+}
+main section.sect1 .mySwiper1 .swiper-wrapper .swiper-slide.slide6 {
+  background-image: url(./image/yes24image/slide6.jfif);
+}
+main section.sect1 .mySwiper1 .swiper-wrapper .swiper-slide.slide7 {
+  background-image: url(./image/yes24image/slide7.jfif);
+}
+main section.sect1 .mySwiper1 .swiper-wrapper .swiper-slide.slide8 {
+  background-image: url(./image/yes24image/slide8.jfif);
+}
+main section.sect1 .mySwiper1 .swiper-wrapper .swiper-slide.slide9 {
+  background-image: url(./image/yes24image/slide9.png);
+}
+main section.sect1 .mySwiper1 .swiper-wrapper .swiper-slide.slide10 {
+  background-image: url(./image/yes24image/slide10.png);
+}
+main section.sect1 .mySwiper1 .swiper-wrapper .swiper-slide.slide11 {
+  background-image: url(./image/퍼폼L.jpg);
+}
+main section.sect1 .mySwiper1 .swiper-wrapper .swiper-slide.slide12 {
+  background-image: url(./image/yes24image/slide12.jfif);
+}
+main section.sect1 .mySwiper1 .slide-page {
+  height: 170px;
+  overflow: visible;
+  width: 100%;
+  text-align: center;
+  padding-top: 32px;
+  position: absolute;
+  bottom: -120px;
+  z-index: 150;
+  transition: 0.35s ease;
+}
+main section.sect1 .mySwiper1 .slide-page:hover {
+  bottom: 10px;
+}
+main section.sect1 .mySwiper1 .slide-page .pager-bg {
+  border-top: 1px solid rgba(215, 215, 215, 0.3);
+  height: 18px;
+  transition: height 0.35s ease;
+  top: 0;
+}
+main section.sect1 .mySwiper1 .slide-page .pager-bg a {
+  display: inline-block;
+  width: 86px;
+  position: relative;
+  top: -1px;
+  margin: 0 7px;
+  height: 120px;
+}
+main section.sect1 .mySwiper1 .slide-page .pager-bg a.on {
+  border-top: 4px solid #ec7d2c;
+  top: -5px;
+}
+main section.sect1 .mySwiper1 .slide-page .pager-bg a.on span {
+  display: block;
+}
+main section.sect1 .mySwiper1 .slide-page .pager-bg a::after {
+  content: "";
+  display: block;
+  width: 86px;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  top: 18px;
+}
+main section.sect1 .mySwiper1 .slide-page .pager-bg a span {
+  text-align: center;
+  color: white;
+  display: block;
+  z-index: 200;
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+main section.sect1 .mySwiper1 .slide-page .pager-bg a img {
+  display: block;
+  width: 86px;
+  height: 120px;
+  margin-top: 18px;
+}

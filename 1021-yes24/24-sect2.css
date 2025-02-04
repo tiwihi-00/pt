@@ -1,0 +1,179 @@
+@import url(./reset.css);
+@import url(./font/font.css);
+main {
+  position: relative;
+}
+main section.sect2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+  z-index: 200;
+}
+main section.sect2 .sect2-title {
+  width: 100%;
+  height: 155px;
+  text-align: center;
+}
+main section.sect2 .sect2-title img {
+  padding-top: 78px;
+}
+main section.sect2 .sect2-contents {
+  width: 1300px;
+  height: 100%;
+  margin: auto;
+}
+main section.sect2 .sect2-contents .what-area {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+main section.sect2 .sect2-contents .what-area .big-one {
+  width: 421px;
+  height: 684px;
+  position: relative;
+  margin-left: 25px;
+}
+main section.sect2 .sect2-contents .what-area .big-one a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+main section.sect2 .sect2-contents .what-area .big-one a img {
+  width: 100%;
+  height: 598px;
+}
+main section.sect2 .sect2-contents .what-area .big-one a .big-one-txt {
+  height: 75px;
+  text-align: center;
+  padding: 0 15px;
+  font-family: scdream6;
+  border-bottom: 1px solid #ddd;
+}
+main section.sect2 .sect2-contents .what-area .big-one a .big-one-txt .big-title {
+  font-size: 18px;
+  color: #333;
+  margin: 27px 0 15px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main section.sect2 .sect2-contents .what-area .big-one a .big-one-txt .big-detail {
+  font-size: 14px;
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main section.sect2 .sect2-contents .what-area .big-one a .big-one-txt .big-detail span {
+  color: #ed334a;
+}
+main section.sect2 .sect2-contents .what-area .big-one a .big-circle {
+  position: absolute;
+  left: 19px;
+  bottom: 65px;
+  width: 70px;
+  height: 70px;
+  line-height: 60px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  border: 5px solid #fff;
+  background-color: #ed7d2c;
+  border-radius: 50%;
+}
+main section.sect2 .sect2-contents .what-area ul#whatshot {
+  margin-left: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: scdream5;
+  width: calc(100% - 421px - 24px);
+  height: 100%;
+}
+main section.sect2 .sect2-contents .what-area ul#whatshot li {
+  width: calc((100% - 60px) / 3);
+  margin-bottom: 24px;
+}
+main section.sect2 .sect2-contents .what-area ul#whatshot li .what-list {
+  margin-bottom: 12px;
+  width: 235px;
+  height: 330px;
+  position: relative;
+}
+main section.sect2 .sect2-contents .what-area ul#whatshot li .what-list a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+main section.sect2 .sect2-contents .what-area ul#whatshot li .what-list a:hover .what-list-txt {
+  opacity: 1;
+}
+main section.sect2 .sect2-contents .what-area ul#whatshot li .what-list a:hover img {
+  transform: scale(1.1);
+}
+main section.sect2 .sect2-contents .what-area ul#whatshot li .what-list a img {
+  width: 100%;
+  height: 100%;
+  transition: 0.35s;
+  overflow: hidden;
+}
+main section.sect2 .sect2-contents .what-area ul#whatshot li .what-list a .what-list-txt {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+  opacity: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+main section.sect2 .sect2-contents .what-area ul#whatshot li .what-list a .what-list-txt .waht-title {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: scdream6;
+}
+main section.sect2 .sect2-contents .what-area ul#whatshot li .what-list a .what-list-txt .what-detail {
+  font-size: 13px;
+  line-height: 20px;
+  margin: 15px 0;
+  font-family: scdream4;
+}
+main section.sect2 .sect2-contents .what-area ul#whatshot li .what-list a .what-list-txt .what-event {
+  font-size: 18px;
+  line-height: 35px;
+  color: #ed7d2c;
+  font-family: scdream3;
+}
+main section.sect2 .sect2-contents .what-area ul#whatshot li .what-list a .what-list-circle {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: 0px;
+  bottom: -25px;
+}
+main section.sect2 .sect2-contents .what-area ul#whatshot li .what-list a .what-list-circle span {
+  display: block;
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  text-align: center;
+  background-color: #ed7d2c;
+  color: white;
+  font-size: 19px;
+  margin: 4px;
+  border-radius: 50%;
+  line-height: 55px;
+}

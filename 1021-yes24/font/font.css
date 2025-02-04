@@ -1,0 +1,106 @@
+@font-face {
+	font-family: Binggrae;
+	src: url(./Binggrae.woff);
+}
+@font-face {
+	font-family: Binggrae-bold;
+	src: url(./Binggrae-Bold.woff);
+}
+@font-face {
+	font-family: jt-font;
+	src: url(./jt-font.woff);
+}
+@font-face {
+	font-family: Noto-Light;
+	src: url(./NotoSansCJKkr-Light.woff);
+}
+@font-face {
+	font-family: Noto-Medium;
+	src: url(./NotoSansCJKkr-Medium.woff);
+}
+@font-face {
+	font-family: Noto-Regular;
+	src: url(./NotoSansCJKkr-Regular.woff);
+}
+@font-face {
+	font-family: mugo;
+	src: url(./mugo-font.woff);
+}
+@font-face {
+	font-family: AmaticB;
+	src: url(./AmaticSC-Bold.ttf);
+}
+@font-face {
+	font-family: Amaticr;
+	src: url(./AmaticSC-Regular.ttf);
+}
+@font-face {
+	font-family: scdream1;
+	src: url(./SCDream1.otf);
+}
+@font-face {
+	font-family: scdream2;
+	src: url(./SCDream2.otf);
+}
+@font-face {
+	font-family: scdream3;
+	src: url(./SCDream3.otf);
+}
+@font-face {
+	font-family: scdream4;
+	src: url(./SCDream4.otf);
+}
+@font-face {
+	font-family: scdream5;
+	src: url(./SCDream5.otf);
+}
+@font-face {
+	font-family: scdream6;
+	src: url(./SCDream6.otf);
+}
+@font-face {
+	font-family: scdream7;
+	src: url(./SCDream7.otf);
+}
+@font-face {
+	font-family: scdream8;
+	src: url(./SCDream8.otf);
+}
+@font-face {
+	font-family: scdream9;
+	src: url(./SCDream9.otf);
+}
+@font-face {
+	font-family: YES24MyoungjoB;
+	src: url(./YES24MyoungjoB.ttf);
+}
+@font-face {
+	font-family: YES24MyoungjoR;
+	src: url(./YES24MyoungjoR.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: xeicon;
+	src: url(./xeicon.ttf);
+}
+@font-face {
+	font-family: EncodeSansCondensed-Black;
+	src: url(./EncodeSansCondensed-Black.ttf);
+}
+@font-face {
+	font-family: EncodeSansCondensed-Bold;
+	src: url(./EncodeSansCondensed-Bold.ttf);
+}
+@font-face {
+	font-family: EncodeSansCondensed-thin;
+	src: url(./EncodeSansCondensed-Thin.ttf);
+}
+@font-face {
+	font-family: EncodeSansCondensed-light;
+	src: url(./EncodeSansCondensed-Light.ttf);
+}
+@font-face {
+	font-family: EncodeSansCondensed-medium;
+	src: url(./EncodeSansCondensed-Medium.ttf);
+}

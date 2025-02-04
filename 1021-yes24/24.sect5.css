@@ -1,0 +1,169 @@
+@import url(./reset.css);
+@import url(./font/font.css);
+section.sect5 {
+  width: 100%;
+}
+section.sect5 h2 {
+  text-align: center;
+  font-family: scdream7;
+  font-size: 35px;
+  padding-bottom: 55px;
+}
+section.sect5 .under {
+  padding-bottom: 80px;
+}
+section.sect5 .under .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+section.sect5 .under .swiper-wrapper .swiper-slide {
+  width: 840px;
+  position: relative;
+  overflow: hidden;
+}
+section.sect5 .under .swiper-wrapper .swiper-slide a:hover img {
+  transform: scale(1.12);
+}
+section.sect5 .under .swiper-wrapper .swiper-slide a .caption {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  transition: 0.5s;
+  color: white;
+  padding: 15px;
+}
+section.sect5 .under .swiper-wrapper .swiper-slide a .caption p {
+  padding-top: 15px;
+  font-family: scdream4;
+}
+section.sect5 .under .swiper-wrapper .swiper-slide .swiper-slide-active .caption {
+  display: block;
+}
+
+footer {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  height: 250px;
+  padding-bottom: 50px;
+}
+footer .contents {
+  width: 100%;
+  height: 120px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .contents .content-lf {
+  margin-right: 40px;
+}
+footer .contents .content-lf .tell {
+  margin-bottom: 20px;
+}
+footer .contents .content-lf .tell-desc {
+  display: inline;
+  font-size: 13px;
+}
+footer .contents .content-lf .tell-desc p {
+  font-family: scdream4;
+  color: #333;
+}
+footer .contents .content-lf .tell-desc p b {
+  font-family: scdream6;
+}
+footer .contents .content-ct {
+  padding: 0 40px;
+  margin: 3px 0 0 7px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  height: 90px;
+}
+footer .contents .content-ct ul {
+  display: flex;
+  font-size: 14px;
+  font-family: scdream5;
+  text-align: center;
+  color: #333;
+  min-width: 50px;
+  margin: 0 30px;
+  gap: 50px;
+  align-items: flex-start;
+  height: 100px;
+}
+footer .contents .content-ct ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 130px;
+  position: relative;
+}
+footer .contents .content-ct ul li:nth-child(1) {
+  background-image: url(./image/yes24image/cca1.png);
+  background-size: 30px 50px;
+}
+footer .contents .content-ct ul li:nth-child(2) {
+  background-image: url(./image/yes24image/cca2.png);
+  background-size: 50px 50px;
+}
+footer .contents .content-ct ul li:nth-child(3) {
+  width: 55px;
+  background-image: url(./image/yes24image/cca3.png);
+  background-size: 50px 50px;
+}
+footer .contents .content-ct ul li:nth-child(4) {
+  width: 105px;
+  background-image: url(./image/yes24image/cca4.png);
+  background-size: 65px 50px;
+}
+footer .contents .content-ct ul li a {
+  display: block;
+  margin-top: 15px;
+}
+footer .contents .content-ri {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  gap: 30px;
+  margin-left: 30px;
+}
+footer .contents .content-ri .sns .social {
+  display: flex;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+footer .contents .content-ri .sns .appdown {
+  display: flex;
+}
+footer .foot {
+  margin-top: 40px;
+  width: 100%;
+  height: 150px;
+}
+footer .foot .foot-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .foot .foot-top .sitelist {
+  display: flex;
+  gap: 30px;
+  font-family: scdream4;
+  font-size: 14px;
+}
+footer .foot .foot-top select {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  font-family: scdream3;
+}

@@ -1,0 +1,157 @@
+@import url(./reset.css);
+@import url(./font/font.css);
+main section {
+  width: 100%;
+  min-width: 1300px;
+}
+main section.sect3 {
+  background-color: #f6f6f6;
+  padding: 80px 0;
+}
+main section.sect3 .sect3-wrap {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+main section.sect3 .sect3-wrap .sect3-lf {
+  width: 478px;
+  height: 486px;
+  border: 1px solid #ddd;
+  background-color: white;
+  position: relative;
+}
+main section.sect3 .sect3-wrap .sect3-lf .left-tit {
+  font-family: scdream7;
+  font-size: 27px;
+  width: 370px;
+  color: #333;
+  position: absolute;
+  left: 54px;
+  top: 35px;
+}
+main section.sect3 .sect3-wrap .sect3-lf .left-tit a {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+main section.sect3 .sect3-wrap .sect3-lf ul.ranking {
+  position: absolute;
+  left: 54px;
+  top: 95px;
+  width: 370px;
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #333;
+}
+main section.sect3 .sect3-wrap .sect3-lf ul.ranking .ranking-li {
+  font-family: scdream4;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  height: 50px;
+  position: relative;
+}
+main section.sect3 .sect3-wrap .sect3-lf ul.ranking .ranking-li.on {
+  height: auto;
+}
+main section.sect3 .sect3-wrap .sect3-lf ul.ranking .ranking-li.on img {
+  display: block;
+}
+main section.sect3 .sect3-wrap .sect3-lf ul.ranking .ranking-li.on .left-txt {
+  width: 225px;
+}
+main section.sect3 .sect3-wrap .sect3-lf ul.ranking .ranking-li.on .left-txt .left-title {
+  margin: 1px 0 12px 0;
+  font-family: scdream6;
+  white-space: normal;
+}
+main section.sect3 .sect3-wrap .sect3-lf ul.ranking .ranking-li.on .left-txt .left-desc {
+  opacity: 1;
+}
+main section.sect3 .sect3-wrap .sect3-lf ul.ranking .ranking-li.on a dl dt {
+  font-family: scdream6;
+}
+main section.sect3 .sect3-wrap .sect3-lf ul.ranking .ranking-li.on a dl dt::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 1px;
+  background-color: #333;
+  position: absolute;
+  top: 45px;
+  left: 1%;
+}
+main section.sect3 .sect3-wrap .sect3-lf ul.ranking .ranking-li a dl {
+  height: 112px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+main section.sect3 .sect3-wrap .sect3-lf ul.ranking .ranking-li a dl dt {
+  text-align: center;
+  width: 41px;
+  padding-top: 3px;
+  margin-right: 9px;
+  font-size: 15px;
+}
+main section.sect3 .sect3-wrap .sect3-lf ul.ranking .ranking-li a dl dd img {
+  display: block;
+  width: 80px;
+  height: 112px;
+  margin-right: 15px;
+  display: none;
+}
+main section.sect3 .sect3-wrap .sect3-lf ul.ranking .ranking-li a dl .left-txt {
+  width: 320px;
+}
+main section.sect3 .sect3-wrap .sect3-lf ul.ranking .ranking-li a dl .left-txt .left-title {
+  font-family: scdream4;
+}
+main section.sect3 .sect3-wrap .sect3-lf ul.ranking .ranking-li a dl .left-txt .left-desc {
+  font-size: 13px;
+  color: #999;
+  line-height: 18px;
+  opacity: 0;
+}
+main section.sect3 .sect3-wrap .sect3-ri {
+  width: 700px;
+  height: 486px;
+  border: 1px solid #ddd;
+  background-color: white;
+  position: relative;
+  margin-left: 30px;
+}
+main section.sect3 .sect3-wrap .sect3-ri .tab-container {
+  width: 100%;
+  height: 100%;
+}
+main section.sect3 .sect3-wrap .sect3-ri .tab-container .tab-menu {
+  width: 100%;
+  height: 100%;
+}
+main section.sect3 .sect3-wrap .sect3-ri .tab-container .tab-menu li {
+  display: none;
+}
+main section.sect3 .sect3-wrap .sect3-ri .tab-container .tab-menu li.active {
+  display: block;
+}
+main section.sect3 .sect3-wrap .sect3-ri .tab-container .tab-menu li .vedio-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+main .milddle-slide {
+  height: 400px;
+  width: 100%;
+}
+main .milddle-slide .banner {
+  height: 100%;
+  width: 100%;
+}
+main .milddle-slide .banner img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}

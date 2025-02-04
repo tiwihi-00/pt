@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>y24</title>
+	<link rel="stylesheet" href="./yes24.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./24-sect1.css">
+	<link rel="stylesheet" href="./24-sect2.css">
+	<link rel="stylesheet" href="./24.sect3.css">
+	<link rel="stylesheet" href="./24-sect4.css">
+	<link rel="stylesheet" href="./24.sect5.css">
+	<style>
+		html,
+		body {
+			position: relative;
+			height: 100%;
+		}
+
+		body {
+
+			margin: 0;
+			padding: 0;
+		}
+
+		.mySwiper1 {
+			width: 100%;
+			height: 100%;
+		}
+
+		.mySwiper1 .swiper-slide {
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.mySwiper1 .swiper-slide img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.swiper3 {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+
+		.swiper3 .swiper-slide {
+			background-position: center;
+			background-size: cover;
+		}
+
+		.swiper3 .swiper-slide img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.swiper4 {
+			width: 100%;
+			height: 100%;
+		}
+
+		.swiper4 .swiper-slide {
+			background-position: center;
+			background-size: cover;
+			padding: 30px;
+			position: relative;
+		}
+
+		.swiper4 .swiper-slide img {
+			display: block;
+			width: 840px;
+			height: 440px;
+			transition: all .35s;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="headbox">
+			<div class="head-lf-mn">
+				<a href="#" class="pf-ham">
+					<span class="pf-ham1"></span>
+					<span class="pf-ham2"></span>
+					<span class="pf-ham3"></span>
+				</a>
+				<h1>
+					<a href="#" class="pf-logo">
+						<img src="./image/yes24image/pf-logoN-w.png" alt="" class="trans">
+						<img src="./image/yes24image/pf-logoN.png" alt="" class="fixed">
+					</a>
+				</h1>
+			</div>
+			<div class="head-center">
+				<ul class="h-ct">
+					<li><a href="#">콘서트</a></li>
+					<li><a href="#">뮤지컬</a></li>
+					<li><a href="#">연극</a></li>
+					<li><a href="#">클래식</a></li>
+					<li><a href="#">전시</a></li>
+					<li><a href="#">행사</a></li>
+				</ul>
+			</div>
+			<div class="head-right">
+				<ul class="pf-rt-mn">
+					<li><a href="#">MD#</a></li>
+					<li><a href="#">지역</a></li>
+					<li><a href="#">랭킹</a></li>
+					<li><a href="#">이벤트</a></li>
+				</ul>
+				<div class="pf-search">
+					<input type="text" id="searsh-world">
+					<input type="hidden" name="" id="searchType" value="">
+					<a href="#">
+						<img src="./image/yes24image/pf-srch.png" alt="" class="trans">
+						<img src="./image/yes24image/pf-srch-w.png" alt="" class="fixed">
+					</a>
+				</div>
+
+				<a href="#" class="my-ticket">
+					<span>MY티켓</span>
+				</a>
+				<a href="#" class="global">
+					<span>GLOBAL</span>
+				</a>
+
+			</div>
+		</div>
+		<div class="sitemap">
+			<div class="site-inner">
+				<div class="visual-box">
+					<h2 class="bar">
+						<a href="#" class="pf-ham ">
+							<span class="pf-ham1"></span>
+							<span class="pf-ham2"></span>
+							<span class="pf-ham3"></span>
+						</a>
+					</h2>
+
+				</div>
+				<div class="mn-box">
+					<button class="close-map-btn">
+						<span class="indent9999">사이트맵 닫기</span>
+					</button>
+					<ul class="sitemap-nav">
+						<li class="main-mn">
+							<a href="#">콘서트</a>
+							<ul class="sub-mn">
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">국내뮤지션</a></li>
+								<li><a href="#">해외뮤지션</a></li>
+								<li><a href="#">페스티벌</a></li>
+							</ul>
+						</li>
+						<li class="main-mn">
+							<a href="#">뮤지컬</a>
+							<ul class="sub-mn">
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">라이선스</a></li>
+								<li><a href="#">오리지널</a></li>
+								<li><a href="#">창작</a></li>
+								<li><a href="#">넌버벌 퍼포먼스</a></li>
+							</ul>
+						</li>
+						<li class="main-mn">
+							<a href="#">연극</a>
+							<ul class="sub-mn">
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">대학로</a></li>
+								<li><a href="#">기타지역</a></li>
+
+							</ul>
+						</li>
+						<li class="main-mn">
+							<a href="#">클래식/국악/무용</a>
+							<ul class="sub-mn">
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">클래식</a></li>
+								<li><a href="#">발레/무용</a></li>
+								<li><a href="#">국악</a></li>
+							</ul>
+						</li>
+						<li class="main-mn">
+							<a href="#">전시/행사</a>
+							<ul class="sub-mn">
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">전시</a></li>
+								<li><a href="#">체험/행사</a></li>
+								<li><a href="#">워터파크/스파</a></li>
+							</ul>
+						</li>
+						<li class="main-mn">
+							<a href="#">아동/가족</a>
+							<ul class="sub-mn">
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">뮤지컬</a></li>
+								<li><a href="#">연극</a></li>
+								<li><a href="#">기타</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="site-center">
+						<li class="center"><a href="#">랭킹</a></li>
+						<li class="center"><a href="#">지역별</a></li>
+						<li class="center"><a href="#">공연장</a></li>
+					</ul>
+					<div class="site-bottom">
+						<ul>
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">이벤트</a></li>
+							<li><a href="#">읽을거리</a></li>
+							<li><a href="#">이용안내</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<main>
+		<section class="sect1">
+			<div class="swiper mySwiper1">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide slide1"></div>
+					<div class="swiper-slide slide2"></div>
+					<div class="swiper-slide slide3"></div>
+					<div class="swiper-slide slide4"></div>
+					<div class="swiper-slide slide5"></div>
+					<div class="swiper-slide slide6"></div>
+					<div class="swiper-slide slide7"></div>
+					<div class="swiper-slide slide8"></div>
+					<div class="swiper-slide slide9"></div>
+					<div class="swiper-slide slide10"></div>
+					<div class="swiper-slide slide11"></div>
+					<div class="swiper-slide slide12"></div>
+				</div>
+				<div class="slide-page off">
+					<div class="pager-bg">
+						<a href="#" class="on">
+							<img src="./image/랭보썸.jpg" alt="">
+							<span>1/12</span>
+						</a>
+						<a href="#" class="">
+							<img src="./image/yes24image/sum2.jfif" alt="">
+							<span>2/12</span>
+						</a>
+						<a href="#" class="">
+							<img src="./image/더픽션썸.jpg" alt="">
+							<span>3/12</span>
+						</a>
+						<a href="#" class="">
+							<img src="./image/yes24image/sum4.jfif" alt="">
+							<span>4/12</span>
+						</a>
+						<a href="#" class="">
+							<img src="./image/yes24image/sum5.jfif" alt="">
+							<span>5/12</span>
+						</a>
+						<a href="#" class="">
+							<img src="./image/yes24image/sum6.jfif" alt="">
+							<span>6/12</span>
+						</a>
+						<a href="#" class="">
+							<img src="./image/yes24image/sum7.jfif" alt="">
+							<span>7/12</span>
+						</a>
+						<a href="#" class="">
+							<img src="./image/퍼폼썸.jpg" alt="">
+							<span>8/12</span>
+						</a>
+						<a href="#" class="">
+							<img src="./image/yes24image/sum9.jfif" alt="">
+							<span>9/12</span>
+						</a>
+						<a href="#" class="">
+							<img src="./image/yes24image/sum10.jfif" alt="">
+							<span>10/12</span>
+						</a>
+						<a href="#" class="">
+							<img src="./image/yes24image/sum11.jfif" alt="">
+							<span>11/12</span>
+						</a>
+						<a href="#" class="">
+							<img src="./image/yes24image/sum12.jfif" alt="">
+							<span>12/12</span>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
+			</div>
+
+		</section>
+		<section class="sect2">
+			<div class="sect2-title">
+				<img src="./image/yes24image/tit1.png" alt="">
+			</div>
+			<div class="sect2-contents">
+				<div class="what-area">
+					<div class="big-one">
+						<a href="#">
+							<img src="./image/yes24image/51103.jpg" alt="">
+							<div class="big-one-txt">
+								<div class="big-title">
+									뮤지컬 쿠로이 저택엔 누가 살고 있을까?
+								</div>
+								<div class="big-detail">
+									2024.10.29~2025.01.19 플러스씨어터 / <span>프리뷰 할인 35%</span>
+								</div>
+							</div>
+							<div class="big-circle">35%</div>
+						</a>
+					</div>
+					<ul id="whatshot">
+						<li>
+							<div class="what-list">
+								<a href="#">
+									<img src="./image/yes24image/50568.jpg" alt="">
+									<div class="what-list-txt">
+										<div class="waht-title">뮤지컬 랭보</div>
+										<div class="what-detail">
+											2024.09.17~2024.12.08<br />예스24스테이지 1관
+										</div>
+										<div class="what-event">
+											청소년할인 30%
+										</div>
+									</div>
+									<div class="what-list-circle">
+										<span>30%</span>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="what-list">
+								<a href="#">
+									<img src="./image/yes24image/50388.jfif" alt="">
+									<div class="what-list-txt">
+										<div class="waht-title">연극 '고도를 기다리며'</div>
+										<div class="what-detail">
+											2024.09.07~2024.12.01<br />예스24스테이지 3관
+										</div>
+										<div class="what-event">
+											고도 할인 25%
+										</div>
+									</div>
+									<div class="what-list-circle">
+										<span>25%</span>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="what-list">
+								<a href="#">
+									<img src="./image/yes24image/thrillme.jfif" alt="">
+									<div class="what-list-txt">
+										<div class="waht-title">뮤지컬 쓰릴 미</div>
+										<div class="what-detail">
+											2024.09.10~2024.12.01<br />예스24스테이지 1관
+										</div>
+										<div class="what-event">
+											재관람 할인 20%
+										</div>
+									</div>
+									<div class="what-list-circle">
+										<span>20%</span>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="what-list">
+								<a href="#">
+									<img src="./image/yes24image/50610.jfif" alt="">
+									<div class="what-list-txt">
+										<div class="waht-title">뮤지컬 이터니티</div>
+										<div class="what-detail">
+											2024.09.19~2024.12.08<br />예스24스테이지 1관
+										</div>
+										<div class="what-event">
+											재관람 할인 30%
+										</div>
+									</div>
+									<div class="what-list-circle">
+										<span>30%</span>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="what-list">
+								<a href="#">
+									<img src="./image/yes24image/HYPE UP.jfif" alt="">
+									<div class="what-list-txt">
+										<div class="waht-title">HYPE UP FESTIVAL</div>
+										<div class="what-detail">
+											2024.11.10<br />YES24 LIVE HALL
+										</div>
+										<div class="what-event">
+											단독판매
+										</div>
+									</div>
+									<div class="what-list-circle">
+										<span>단독</span>
+									</div>
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="what-list">
+								<a href="#">
+									<img src="./image/yes24image/drif.jfif" alt="">
+									<div class="what-list-txt">
+										<div class="waht-title">뮤지컬 드라이 플라워</div>
+										<div class="what-detail">
+											2024. 09. 24.~2024. 12. 06.<br />예스24아트원 2관
+										</div>
+										<div class="what-event">
+											프리뷰 할인 50%
+										</div>
+									</div>
+									<div class="what-list-circle">
+										<span>50%</span>
+									</div>
+								</a>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="sect3">
+			<div class="sect3-wrap">
+				<div class="sect3-lf">
+					<div class="left-tit">
+						WEEKLY RANKING
+						<a href="#"><img src="./image/yes24image/ms5-more.png" alt=""></a>
+					</div>
+					<ul class="ranking">
+						<li class="ranking-li on" data-tab="star">
+							<a href="#star">
+								<dl>
+									<dt>1위
+										<span class="dash"> - </span>
+									</dt>
+									<dd>
+										<img src="./image/yes24image/sum6.jfif" alt="">
+									</dd>
+									<dd class="left-txt">
+										<div class="left-title">
+											2024 뮤지컬 [지저스 크라이스트 슈퍼스타]
+										</div>
+										<div class="left-desc">
+											2024.11.07~2025.01.12<br />
+											광림아트센터 BBCH홀
+										</div>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="ranking-li" data-tab="langbo">
+							<a href="#langbo">
+								<dl>
+									<dt>2위
+										<span class="dash">-</span>
+									</dt>
+									<dd>
+										<img src="./image/yes24image/랭보sum.jfif" alt="">
+									</dd>
+									<dd class="left-txt">
+										<div class="left-title">
+											2024 뮤지컬 [랭보]
+										</div>
+										<div class="left-desc">
+											2024.09.17~2024.12.08<br />
+											예스24스테이지 1관
+										</div>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="ranking-li" data-tab="cyrano">
+							<a href="#cyrano">
+								<dl>
+									<dt>3위
+										<span class="dash">-</span>
+									</dt>
+									<dd>
+										<img src="./image/yes24image/sum7.jfif" alt="">
+									</dd>
+									<dd class="left-txt">
+										<div class="left-title">
+											2024 뮤지컬 [시라노]
+										</div>
+										<div class="left-desc">
+											2024.12.16~2025.02.23<br />
+											예술의전당 CJ 토월극장
+										</div>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="ranking-li" data-tab="kinky">
+							<a href="#kinky">
+								<dl>
+									<dt>4위
+										<span class="dash">-</span>
+									</dt>
+									<dd>
+										<img src="./image/yes24image/kinky.sum.jfif" alt="">
+									</dd>
+									<dd class="left-txt">
+										<div class="left-title">
+											2024 뮤지컬 [킹키부츠]
+										</div>
+										<div class="left-desc">
+											2024.12.07~2025.02.23<br />
+											예술의전당 대극장
+										</div>
+									</dd>
+								</dl>
+							</a>
+						</li>
+						<li class="ranking-li" data-tab="etenety">
+							<a href="#etenety">
+								<dl>
+									<dt>5위
+										<span class="dash">-</span>
+									</dt>
+									<dd>
+										<img src="./image/yes24image/이터너티sum.jfif" alt="">
+									</dd>
+									<dd class="left-txt">
+										<div class="left-title">
+											2024 뮤지컬 [이터니티]
+										</div>
+										<div class="left-desc">
+											2024.09.19~2024.12.08<br />
+											예스24아트원 1관
+										</div>
+									</dd>
+								</dl>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				<div class="sect3-ri">
+					<div class="tab-container">
+						<ul class="tab-menu">
+							<li id="star" class="active">
+								<a href="#">
+									<div class="vedio-wrapper">
+
+										<iframe class="video-frame" width="100%" height="486px"
+											src="https://www.youtube.com/embed/RIXfnAMA0Dg?si=1s80bd_dO1TTkc1z" title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+											referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									</div>
+								</a>
+							</li>
+							<li id="langbo">
+								<a href="#">
+									<div class="vedio-wrapper">
+										<iframe class="video-frame" width="100%" height="486px"
+											src="https://www.youtube.com/embed/CJ1T9ut04ms?si=C6XqT_xJ0TDgZPFK" title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+											referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									</div>
+								</a>
+							</li>
+							<li id="cyrano">
+								<a href="#">
+									<div class="vedio-wrapper">
+										<iframe class="video-frame" width="100%" height="486px"
+											src="https://www.youtube.com/embed/b3yuelwGw2Y?si=B2ZoflUAV5H5qa0k" title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+											referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									</div>
+								</a>
+							</li>
+							<li id="kinky">
+								<a href="#">
+									<div class="vedio-wrapper">
+										<iframe class="video-frame" width="100%" height="486px"
+											src="https://www.youtube.com/embed/JhFbgvajFk4?si=7yveVcOTH33zGQBW" title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+											referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									</div>
+								</a>
+							</li>
+							<li id="etenety">
+								<a href="#">
+									<div class="vedio-wrapper">
+										<iframe class="video-frame" width="100%" height="486px"
+											src="https://www.youtube.com/embed/dB72SLdwnpQ?si=Suz8W0iVqSD_sv01" title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+											referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									</div>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="milddle-slide">
+			<div class="swiper banner">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="./image/yes24image/kinkybaner.png" alt=""></div>
+					<div class="swiper-slide"><img src="./image/yes24image/leebanner.png" alt=""></div>
+					<div class="swiper-slide"><img src="./image/yes24image/anibanner.png" alt=""></div>
+					<div class="swiper-slide"><img src="./image/고흐swiper.png" alt=""></div>
+
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<section id="sect4">
+			<div class="sect4-container">
+				<div class="tab-title">
+					<h2>RANKING</h2>
+					<ul class="rank">
+						<li class="rank-li">
+							<a href="#musical">#뮤지컬</a></li>
+						<li class="rank-li">
+							<a href="#concert">#콘서트</a></li>
+						<li class="rank-li">
+							<a href="#play">#연극</a></li>
+						<li class="rank-li">
+							<a href="#classic">#클래식</a></li>
+						<li class="rank-li">
+							<a href="#ex">#전시</a></li>
+					</ul>
+				</div>
+				<div class="sect4-tabs">
+					<div class="tab" id="musical">
+						<ul class="tabMenu">
+							<li class="menu">
+								<a href="#">
+									<img src="./image/yes24image/50610.jfif" alt="">
+									<div class="rank-txt">
+										<div class="rank-title">뮤지컬 〈이터니티〉</div>
+										<div class="rank-datail">
+											2024.09.19 ~ 2024.12.08 예스24아트원 1관
+										</div>
+									
+									</div>
+									<div class="rank-num">1위</div>
+								</a>
+							</li>
+							<li class="menu">
+								<a href="#">
+									<img src="./image/yes24image/thrillme.jfif" alt="">
+									<div class="rank-txt">
+										<div class="rank-title">뮤지컬〈쓰릴 미〉</div>
+										<div class="rank-datail">
+											2024.09.10 ~ 2024.12.01 예스24스테이지 2관
+										</div>
+										
+									</div>
+									<div class="rank-num">2위</div>
+								</a>
+							</li>
+							<li class="menu">
+								<a href="#">
+									<img src="./image/yes24image/sea100.jfif" alt="">
+									<div class="rank-txt">
+										<div class="rank-title">[광주] 뮤지컬 〈바다 100층짜리 집〉</div>
+										<div class="rank-datail">
+											2024.12.28 ~ 2024.12.29 광주 5.18 기념문화센터 민주홀
+										</div>
+									
+									</div>
+									<div class="rank-num">3위</div>
+								</a>
+							</li>
+						
+						</ul>
+					</div>
+					<div class="tab" id="concert">
+						<ul class="tabMenu">
+							<li class="menu">
+								<a href="#">
+									<img src="./image/yes24image/chan.jfif" alt="">
+									<div class="rank-txt">
+										<div class="rank-title">[서울 앵콜] 2024 이찬원 콘서트 ‘ 찬가（燦歌）’</div>
+										<div class="rank-datail">
+											2024.12.13 ~ 2024.12.15 KSPO DOME(올림픽체조경기장)
+										</div>
+								
+									</div>
+									<div class="rank-num">1위</div>
+								</a>
+							</li>
+							<li class="menu">
+								<a href="#">
+									<img src="./image/yes24image/zhang.jfif" alt="">
+									<div class="rank-txt">
+										<div class="rank-title">ZHANGZHEHAN 2024 CONCERT [PRIMORDIAL THEATER II] IN SEOUL</div>
+										<div class="rank-datail">
+											2024.11.16 ~ 2024.11.16 일산 KINTEX 제2전시장 9A홀
+										</div>
+									
+									</div>
+									<div class="rank-num">2위</div>
+								</a>
+							</li>
+							<li class="menu">
+								<a href="#">
+									<img src="./image/yes24image/seodo.jfif" alt="">
+									<div class="rank-txt">
+										<div class="rank-title">서도밴드(sEODo BAND) 단독 콘서트 [UNCERTAINTY]</div>
+										<div class="rank-datail">
+											2024.11.02 ~ 2024.11.02 SA Hall
+										</div>
+										
+									</div>
+									<div class="rank-num">3위</div>
+								</a>
+							</li>
+						
+						</ul>
+					</div>
+					<div class="tab" id="play">
+						<ul class="tabMenu">
+							<li class="menu">
+								<a href="#">
+									<img src="./image/yes24image/23.jfif" alt="">
+									<div class="rank-txt">
+										<div class="rank-title">2024 연극 〈친정엄마와 2박3일〉 - 익산</div>
+										<div class="rank-datail">
+											2024.11.16 ~ 2024.11.17 익산 예술의전당 대공연장
+										</div>
+									
+									</div>
+									<div class="rank-num">1위</div>
+								</a>
+							</li>
+							<li class="menu">
+								<a href="#">
+									<img src="./image/yes24image/killo.jfif" alt="">
+									<div class="rank-txt">
+										<div class="rank-title">연극 〈킬롤로지〉 : 연극열전10_세 번째 작품</div>
+										<div class="rank-datail">
+											2024.09.27 ~ 2024.12.01 대학로 TOM 2관
+										</div>
+									
+									</div>
+									<div class="rank-num">2위</div>
+								</a>
+							</li>
+							<li class="menu">
+								<a href="#">
+									<img src="./image/yes24image/letter.jfif" alt="">
+									<div class="rank-txt">
+										<div class="rank-title">[대전] 연극 〈러브레터〉</div>
+										<div class="rank-datail">
+											2024.12.07 ~ 2024.12.08 대전 평송청소년문화센터 대극장
+										</div>
+								
+									</div>
+									<div class="rank-num">3위</div>
+								</a>
+							</li>
+						
+						</ul>
+					</div>
+					<div class="tab" id="classic">
+						<ul class="tabMenu">
+							<li class="menu">
+								<a href="#">
+									<img src="./image/yes24image/thisload.jfif" alt="">
+									<div class="rank-txt">
+										<div class="rank-title">라이프로드싱어즈 찬양콘서트</div>
+										<div class="rank-datail">
+											2024.11.21 ~ 2024.11.21 광림아트센터 장천홀
+										</div>
+										<div class="rank-num">1위</div>
+									</div>
+								</a>
+							</li>
+							<li class="menu">
+								<a href="#">
+									<img src="./image/yes24image/classic.jfif" alt="">
+									<div class="rank-txt">
+										<div class="rank-title">강남심포니오케스트라 특별공연 [GSO x 시네마 뮤직 클래시컬 레트로]</div>
+										<div class="rank-datail">
+											2024.10.26 ~ 2024.10.26 강남구민회관
+										</div>
+										<div class="rank-num">2위</div>
+									</div>
+								</a>
+							</li>
+							<li class="menu">
+								<a href="#">
+									<img src="./image/yes24image/carman.jfif" alt="">
+									<div class="rank-txt">
+										<div class="rank-title">제1256회 서초금요음악회 [팜므파탈 카르멘]</div>
+										<div class="rank-datail">
+											2024.11.01 ~ 2024.11.01 서초문화예술회관 아트홀
+										</div>
+										<div class="rank-num">3위</div>
+									</div>
+								</a>
+							</li>
+						
+						</ul>
+					</div>
+					<div class="tab" id="ex">
+						<ul class="tabMenu">
+							<li class="menu">
+								<a href="#">
+									<img src="./image/yes24image/anime.jfif" alt="">
+									<div class="rank-txt">
+										<div class="rank-title">Anime X Game Festival 2024 - 일반 입장권</div>
+										<div class="rank-datail">
+											2024.12.07 ~ 2024.12.08 KINTEX 제1전시장 1/2/3/4/5 HALL
+										</div>
+									
+									</div>
+									<div class="rank-num">1위</div>
+								</a>
+							</li>
+							<li class="menu">
+								<a href="#">
+									<img src="./image/yes24image/junji.jfif" alt="">
+									<div class="rank-txt">
+										<div class="rank-title">[연장 전시] 이토 준지 호러하우스</div>
+										<div class="rank-datail">
+											2024.09.09 ~ 2024.11.03 DUEX(홍대 LC TOWER B3F)
+										</div>
+									
+									</div>
+									<div class="rank-num">2위</div>
+								</a>
+							</li>
+							<li class="menu">
+								<a href="#">
+									<img src="./image/yes24image/vangogh.jfif" alt="">
+									<div class="rank-txt">
+										<div class="rank-title">불멸의 화가 반 고흐</div>
+										<div class="rank-datail">
+											2024.11.29 ~ 2025.03.16 예술의전당 한가람미술관 제1,2 전시실
+										</div>
+										
+									</div>
+									<div class="rank-num">3위</div>
+								</a>
+							</li>
+						
+						</ul>
+					</div>
+				</div>
+				<div class="sect4-listMore">
+					<a href="#">랭킹 더보기 +</a>
+				</div>
+			</div>
+		</section>
+		<section class="sect5">
+
+			<h2>REVIEW & INTERVIEW</h2>
+			<div class="swiper under">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="./image/yes24image/un-hades.jfif" alt="">
+							<div class="caption">
+								<p>그럼에도 계속 부르는 아주 오래된 사랑 이야기 - 뮤지컬 <하데스타운></p>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="./image/yes24image/un-gent.jfif" alt="">
+							<div class="caption">
+								<p>무시무시하게 웃기는 최고의 코미디 뮤지컬 - 뮤지컬 <젠틀맨스가이드></p>
+							</div>
+						</a>
+					</div>
+				
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="./image/yes24image/un-van.jfif" alt="">
+							<div class="caption">
+								<p>자기 귀를 잘랐던 그 사람의 이야기 - 뮤지컬 <빈센트 반 고흐></p>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#">
+							<img src="./image/yes24image/un-gent.jfif" alt="">
+							<div class="caption">
+								<p>무시무시하게 웃기는 최고의 코미디 뮤지컬 - 뮤지컬 <젠틀맨스가이드></p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="contents">
+			<div class="content-lf">
+				<div class="tell"><img src="./image/yes24image/tell.png" alt=""></div>
+				<div class="tell-desc">
+					<p>평일 &nbsp; <b>09:00~18:00</b></p>
+					<p>토요일 &nbsp; <b>09:00~17:00 <span>(일요일 및 공휴일 휴무)</span></b></p>
+				</div>
+			</div>
+			<div class="content-ct">
+				<ul>
+					<li><a href="#">공지사항</a></li>
+					<li><a href="#">이용안내</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">티켓판매안내</a></li>
+				</ul>
+			</div>
+			<div class="content-ri">
+				<div class="sns">
+					<ul class="social">
+						<li><a href="#"><img src="./image/yes24image/social1.png" alt=""></a></li>
+						<li><a href="#"><img src="./image/yes24image/social2.png" alt=""></a></li>
+						<li><a href="#"><img src="./image/yes24image/social3.png" alt=""></a></li>
+					</ul>
+					<ul class="appdown">
+						<li><a href="#"><img src="./image/yes24image/appdown1.png" alt=""></a></li>
+						<li><a href="#"><img src="./image/yes24image/appdown2.png" alt=""></a></li>
+					</ul>
+				</div>
+				<a href="#" class="deduction"><img src="./image/yes24image/deduction.png" alt=""></a>
+			</div>
+		</div>
+		<div class="foot">
+			<div class="foot-top">
+				<ul class="sitelist">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">청소년보호정책</a></li>
+					<li><a href="#">이용안내내</a></li>
+					<li><a href="#">티켓판매정책</a></li>
+				</ul>
+				<select name="text" id="text">
+					<option value="Family site">Family site</option>
+					<option value="한세예스24홀딩스">한세예스24홀딩스</option>
+					<option value="한세실업">한세실업</option>
+					<option value="한세드림">한세드림</option>
+					<option value="한세MK">한세MK</option>
+					<option value="컬리수">컬리수</option>
+				</select>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="./24-header.js"></script>
+	<script src="./24-sect1.js"></script>
+	<script src="./24.sect3.js"></script>
+	<script src="./24.middle-slide.js"></script>
+	<script src="./24-sect4.js"></script>
+	<script src="./24.sect5.js"></script>
+
+
+</body>
+
+</html>

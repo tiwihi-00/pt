@@ -1,0 +1,142 @@
+@import url(./reset.css);
+@import url(./font/font.css);
+section {
+  width: 100%;
+  height: 100%;
+}
+section#sect4 {
+  width: 100%;
+  height: 100%;
+  padding: 80px 0 50px 0;
+}
+section#sect4 .sect4-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+section#sect4 .sect4-container .tab-title {
+  text-align: center;
+  font-family: scdream7;
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+section#sect4 .sect4-container .tab-title ul.rank {
+  width: 40%;
+  margin: auto;
+  font-family: scdream4;
+  font-size: 15px;
+  display: flex;
+}
+section#sect4 .sect4-container .tab-title ul.rank .rank-li {
+  padding: 20px 10px;
+  flex: 1;
+}
+section#sect4 .sect4-container .tab-title ul.rank .rank-li a {
+  display: block;
+  padding: 10px;
+}
+section#sect4 .sect4-container .tab-title ul.rank .rank-li a.on {
+  color: #ec7d2c;
+  font-family: scdream6;
+}
+section#sect4 .sect4-container .sect4-tabs {
+  position: relative;
+  width: 100%;
+  padding-bottom: 60px;
+  height: 420px;
+}
+section#sect4 .sect4-container .sect4-tabs .tab {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  display: none;
+}
+section#sect4 .sect4-container .sect4-tabs .tab.on {
+  opacity: 1;
+  display: block;
+}
+section#sect4 .sect4-container .sect4-tabs .tab.on .tabMenu .menu:hover a img {
+  transform: scale(1.1);
+  transition: transform 0.35s ease;
+}
+section#sect4 .sect4-container .sect4-tabs .tab .tabMenu {
+  width: 100%;
+  gap: 40px;
+  display: flex;
+}
+section#sect4 .sect4-container .sect4-tabs .tab .tabMenu .menu {
+  overflow: hidden;
+  position: relative;
+}
+section#sect4 .sect4-container .sect4-tabs .tab .tabMenu .menu a {
+  width: 380px;
+  height: 420px;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+}
+section#sect4 .sect4-container .sect4-tabs .tab .tabMenu .menu a img {
+  transition: transform 0.35s ease;
+  overflow: hidden;
+  margin: 15px 80px;
+  height: 300px;
+}
+section#sect4 .sect4-container .sect4-tabs .tab .tabMenu .menu a .rank-txt {
+  font-size: 13px;
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+}
+section#sect4 .sect4-container .sect4-tabs .tab .tabMenu .menu a .rank-txt .rank-title {
+  font-family: scdream4;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 90%;
+  overflow: hidden;
+}
+section#sect4 .sect4-container .sect4-tabs .tab .tabMenu .menu a .rank-txt .rank-datail {
+  font-family: scdream2;
+  color: #717171;
+  font-size: 13px;
+  padding: 0 50px 10px 50px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 90%;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+section#sect4 .sect4-container .sect4-tabs .tab .tabMenu .menu a .rank-num {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ec7d2c;
+  color: white;
+  font-size: 15px;
+  border: 3px solid #fff;
+  left: 55px;
+  bottom: 105px;
+  font-family: scdream4;
+}
+section#sect4 .sect4-container .sect4-listMore {
+  display: block;
+  width: 214px;
+  height: 48px;
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+  transition: 0.35s;
+  bottom: 0;
+}
+section#sect4 .sect4-container .sect4-listMore a {
+  border: 1px solid #ddd;
+  font-family: scdream4;
+  font-size: 15px;
+  color: black;
+  padding: 10px 40px;
+}
