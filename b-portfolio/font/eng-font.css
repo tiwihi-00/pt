@@ -1,0 +1,96 @@
+@font-face {
+	font-family: Dosis-Bold;
+	src: url(./eng/Dosis-Bold.ttf);
+}
+@font-face {
+	font-family:Dosis-ExtraBold;
+	src: url(./eng/Dosis-ExtraBold.ttf);
+}
+@font-face {
+	font-family:Dosis-ExtraLight;
+	src: url(./eng/Dosis-ExtraLight.ttf);
+}
+@font-face {
+	font-family:Dosis-Light;
+	src: url(./eng/Dosis-Light.ttf);
+}
+@font-face {
+	font-family:Dosis-Medium;
+	src: url(./eng/Dosis-Medium.ttf);
+}
+@font-face {
+	font-family:Dosis-Regular;
+	src: url(./eng/Dosis-Regular.ttf);
+}
+@font-face {
+	font-family:Dosis-SemiBold;
+	src: url(./eng/Dosis-SemiBold.ttf);
+}
+@font-face {
+	font-family:EduSABeginner-Bold;
+	src: url(./eng/EduSABeginner-Bold.ttf);
+}
+@font-face {
+	font-family:EduSABeginner-Medium;
+	src: url(./eng/EduSABeginner-Medium.ttf);
+}
+@font-face {
+	font-family:EduSABeginner-Regular;
+	src: url(./eng/EduSABeginner-Regular.ttf);
+}
+@font-face {
+	font-family:Barlow-Thin;
+	src: url(./eng/Barlow-Thin.ttf);
+}
+@font-face {
+	font-family:Barlow-ThinItalic;
+	src: url(./eng/Barlow-ThinItalic.ttf);
+}
+@font-face {
+	font-family:Barlow-Black;
+	src: url(./eng/Barlow-Black.ttf);
+}
+@font-face {
+	font-family:Barlow-BlackItalic;
+	src: url(./eng/Barlow-BlackItalic.ttf);
+}
+@font-face {
+	font-family:Barlow-Bold;
+	src: url(./eng/Barlow-Bold.ttf);
+}
+@font-face {
+	font-family:Barlow-BoldItalic;
+	src: url(./eng/Barlow-BoldItalic.ttf);
+}
+@font-face {
+	font-family:Barlow-ExtraLight;
+	src: url(./eng/Barlow-ExtraLight.ttf);
+}
+@font-face {
+	font-family:Barlow-ExtraLightItalic;
+	src: url(./eng/Barlow-ExtraLightItalic.ttf);
+}
+@font-face {
+	font-family:Barlow-Italic;
+	src: url(./eng/Barlow-Italic.ttf);
+}
+@font-face {
+	font-family:Barlow-Light;
+	src: url(./eng/Barlow-Light.ttf);
+}
+@font-face {
+	font-family:Barlow-LightItalic;
+	src: url(./eng/Barlow-LightItalic.ttf);
+}
+@font-face {
+	font-family:Barlow-Medium;
+	src: url(./eng/Dosis-Medium.ttf);
+}
+@font-face {
+	font-family: Kudryashev_Extra_Contrast;
+	src: url(./eng/Kudryashev_Extra_Contrast.otf);
+}
+@font-face {
+	font-family: Kudryashev_Contrast_Sans;
+	src: url(./eng/Kudryashev_Extra_Contrast.otf);
+}

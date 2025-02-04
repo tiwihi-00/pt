@@ -1,0 +1,244 @@
+@import url(./font/font.css);
+@import url(./font/eng-font.css);
+@import url(./reset.css);
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+
+:root {
+	--color-bg1: rgb(247, 247, 247);
+	--color-bg2: rgb(243, 243, 244);
+	--color1: 245, 190, 232;
+	--color2: 175, 100, 233;
+	--color3: 135, 144, 241;
+	--color4: 50, 160, 220;
+	--color5: 165, 151, 248;
+	--color-interactive: 185, 131, 255;
+	--circle-size: 80%;
+	--blending: hard-light;
+}
+
+*,
+:after,
+:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+
+	background: transparent;
+	border: none;
+}
+
+.intro {
+	$grey: #e7e7e7;
+	$white: #fff;
+	$blue: #011c8a;
+
+	$max-height: 400vh; // sum up all .views + some extra space
+	$duration: 5s;
+	background-color: #fad5d5;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	contain: paint;
+
+	.symbol{
+		position: absolute;
+		left: 30px;
+		top: 30px;
+		width: 250px;
+
+		img{
+			width: 75px;
+			height: 55px;
+			transform-origin: center;
+		}
+		h4{
+			color: white;
+			font-family: Barlow-ThinItalic;
+			font-size: 25px;
+			position: absolute;
+			left: 20px;
+			top: 12px;
+		}
+		.symbol-in{
+			font-family: EncodeSansCondensed-medium;
+			padding-top: 15px;
+			font-size: 15px;
+			line-height: 1.4;
+		}
+	}
+
+	.wrap-3d{
+		position: relative;
+		height: 100vh;
+		width: 100vw;
+
+		.comment{
+			position: relative;
+			height: 100vh;
+			display: flex;
+			z-index: 3;
+
+			h3{
+				position: relative;
+				margin: auto;
+				padding: 2vw;
+				width: 70%;
+				font-family: EncodeSansCondensed-medium;
+				font-size: 8vw;
+				color: white;
+				text-align: center;
+				line-height: 1.1;
+
+				&::before{
+					content: '';
+					position: absolute;
+					top: -20%;
+					bottom: -30%;
+					left: 50%;
+					border-right: 1px solid #510285;
+					transform: rotate(45deg);
+					z-index: -1;
+				}
+			}
+		}
+		
+		.items-3d{
+			width: 100vw;
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			height: 100vh;
+			overflow: hidden;
+			will-change: transform;
+
+			
+		}
+		.sphere{
+				position: absolute;
+				top: $max-height - 50;
+				width: 25vw;
+				height: 25vw;
+				border-radius: 50%;
+				animation-iteration-count: infinite;
+				animation-timing-function: ease;
+
+				img{
+					width: 25vw;
+				}
+		}
+		$spheres: (
+			(0%, -10),
+			(15%, 30),
+			(30%, -20),
+
+			(20%, -12),
+			(70%, 4),
+			(80%, -20),
+			(100%, 10),
+			(50%, -5),
+			(90%, 50),
+
+		);
+
+		
+	@mixin sphere ($left, $z) {
+		left: $left;
+		background-image: transparent;
+		background-color: transparent;
+
+		@if $z >0 {
+			z-index: $z;
+		}
+
+		@else {
+			z-index: 1;
+		}
+	}
+
+	@each $sphere in $spheres {
+		$i: index($spheres, $sphere);
+
+		.sphere:nth-child(#{$i}) {
+			@include sphere($sphere...);
+			animation-duration: $duration + (random(40) * .5s);
+			animation-delay: $i * $duration * -0.5;
+			animation-name: float-#{$i};
+			animation-timing-function: ease;
+
+		}
+
+		@keyframes float-#{$i} {
+			@for $j from 0 through 100 {
+				#{$j * 1%} {
+					transform: translateX(#{sin($j * 0.1) * (-50% + $i)}) translateY(#{($max-height * -0.01) * $j}) translateZ(#{nth($sphere, 2) * 1vw});
+				}
+			}
+		}
+
+	}
+
+	.in-menu{
+		position: absolute;
+		right: 5%;
+		top: 25px;
+		z-index: 100;
+		width: 30%;
+
+		ul.nav{
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+
+			li{
+				font-family: EncodeSansCondensed-Regular;
+				font-size: 15px;
+				position: relative;
+				z-index: 200;
+				color: black;
+
+				&:hover{
+					transition: color .35s ease;
+				}
+
+				&:hover::after{
+					content: '';
+					position: absolute;
+					height: 3px;
+					background-color: black;
+					left: 0;
+					transition: .35s;
+					bottom: -7px;
+					animation-name: line;
+					animation-duration: 0.5s;
+					animation-fill-mode: forwards;
+					z-index: 20;
+					transition: width 0.35s ease, background-color 0.35s ease;
+				}
+			}
+		}
+	}
+	}
+}
+
+@keyframes line {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
