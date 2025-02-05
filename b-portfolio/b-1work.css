@@ -1,0 +1,91 @@
+@import url(./font/font.css);
+@import url(./font/eng-font.css);
+@import url(./reset.css);
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css");
+section#work {
+  background-image: url(./image/sect1.1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  contain: paint;
+  height: 100vh;
+  overflow: visible;
+}
+section#work .work-title {
+  font-family: Barlow-Medium;
+  font-size: 30px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color: black;
+  margin-top: 60px;
+  z-index: 100;
+  margin-left: 50px;
+}
+section#work .work-title b {
+  font-size: 18px;
+  font-family: Barlow-Thin;
+  display: block;
+}
+section#work .work__wrap {
+  padding: 50px;
+  display: flex;
+  width: 200%;
+  gap: 80px;
+  margin-top: 450px;
+  align-items: flex-start;
+}
+section#work .work__wrap .work__item {
+  position: relative;
+  min-width: 350px;
+  width: 15vw;
+  flex-shrink: 0;
+  height: 270px;
+  aspect-ratio: 1/1.2;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  transition: 0.35s;
+}
+section#work .work__wrap .work__item:hover {
+  margin-top: -30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+}
+section#work .work__wrap .work__item:hover a .num {
+  font-family: Barlow-Italic;
+}
+section#work .work__wrap .work__item:hover a .contents p span {
+  font-family: scdream7;
+}
+section#work .work__wrap .work__item .num {
+  font-family: Barlow-ThinItalic;
+  position: absolute;
+  font-size: 45px;
+  left: 25px;
+  margin-bottom: 20px;
+}
+section#work .work__wrap .work__item .line {
+  position: absolute;
+  width: 85%;
+  height: 1px;
+  background-color: black;
+  margin: 50px 25px;
+  left: 0;
+  top: 15%;
+}
+section#work .work__wrap .work__item .contents {
+  font-family: scdream4;
+  margin-top: 90px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+section#work .work__wrap .work__item .contents p {
+  margin-top: 5px;
+}
+section#work .work__wrap .work__item .contents p span {
+  font-family: scdream5;
+}

@@ -128,7 +128,7 @@
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 25s;
+  animation-duration: 6s;
   animation-delay: -2.5s;
   animation-name: float-1;
   animation-timing-function: ease;
@@ -443,7 +443,7 @@
   background-image: transparent;
   background-color: transparent;
   z-index: 30;
-  animation-duration: 25s;
+  animation-duration: 12.5s;
   animation-delay: -5s;
   animation-name: float-2;
   animation-timing-function: ease;
@@ -758,7 +758,7 @@
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 21s;
+  animation-duration: 8s;
   animation-delay: -7.5s;
   animation-name: float-3;
   animation-timing-function: ease;
@@ -1073,7 +1073,7 @@
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 24.5s;
+  animation-duration: 23s;
   animation-delay: -10s;
   animation-name: float-4;
   animation-timing-function: ease;
@@ -1388,7 +1388,7 @@
   background-image: transparent;
   background-color: transparent;
   z-index: 4;
-  animation-duration: 10s;
+  animation-duration: 11s;
   animation-delay: -12.5s;
   animation-name: float-5;
   animation-timing-function: ease;
@@ -1703,7 +1703,7 @@
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 8.5s;
+  animation-duration: 20.5s;
   animation-delay: -15s;
   animation-name: float-6;
   animation-timing-function: ease;
@@ -2018,7 +2018,7 @@
   background-image: transparent;
   background-color: transparent;
   z-index: 10;
-  animation-duration: 17.5s;
+  animation-duration: 18s;
   animation-delay: -17.5s;
   animation-name: float-7;
   animation-timing-function: ease;
@@ -2333,7 +2333,7 @@
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 23.5s;
+  animation-duration: 12.5s;
   animation-delay: -20s;
   animation-name: float-8;
   animation-timing-function: ease;
@@ -2648,7 +2648,7 @@
   background-image: transparent;
   background-color: transparent;
   z-index: 50;
-  animation-duration: 20s;
+  animation-duration: 14.5s;
   animation-delay: -22.5s;
   animation-name: float-9;
   animation-timing-function: ease;
