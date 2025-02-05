@@ -2,3 +2,438 @@
 @import url(./font/eng-font.css);
 @import url(./reset.css);
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css");
+body,
+html {
+  height: 100%;
+}
+
+:root {
+  --color-bg1: rgb(247, 247, 247);
+  --color-bg2: rgb(243, 243, 244);
+  --color1: 245, 190, 232;
+  --color2: 175, 100, 233;
+  --color3: 135, 144, 241;
+  --color4: 50, 160, 220;
+  --color5: 165, 151, 248;
+  --color-interactive: 185, 131, 255;
+  --circle-size: 80%;
+  --blending: hard-light;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+}
+
+section#project {
+  position: relative;
+  height: auto;
+  contain: paint;
+}
+section#project * {
+  word-break: keep-all;
+}
+section#project .project-wrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+section#project .project-wrap .txt {
+  position: sticky;
+  top: 70px;
+  width: 50%;
+  height: 100%;
+  margin-left: 5%;
+  margin-top: 60px;
+}
+section#project .project-wrap .txt h2 {
+  margin: 30px 0;
+  font-size: 35px;
+  font-family: Dosis-Bold;
+  padding-bottom: 20px;
+}
+section#project .project-wrap .txt ul.category {
+  margin-top: 30px;
+}
+section#project .project-wrap .txt ul.category li {
+  position: relative;
+  font-size: 16px;
+  transition: all 0.3s;
+  margin-top: 20px;
+  font-family: Dosis-Medium;
+  margin-bottom: 30px;
+}
+section#project .project-wrap .txt ul.category li ul.tab-menu {
+  margin-top: 10px;
+  display: none;
+  transition: all 0.3s;
+}
+section#project .project-wrap .txt ul.category li ul.tab-menu li.tab {
+  font-family: scdream5;
+  margin-bottom: 10px;
+  font-size: 13px;
+  z-index: 200;
+  position: relative;
+  width: 110px;
+  color: rgb(1, 81, 184);
+  transform: translateY(-50%);
+}
+section#project .project-wrap .txt ul.category li ul.tab-menu li.tab:nth-child(1) {
+  margin-top: 30px;
+}
+section#project .project-wrap .txt ul.category li ul.tab-menu li.tab:hover {
+  color: rgb(113, 0, 183);
+  transition: color 0.35s ease;
+  font-family: scdream7;
+}
+section#project .project-wrap .txt ul.category li ul.tab-menu li.tab:hover::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: rgb(113, 0, 183);
+  left: 0;
+  transition: 0.35s;
+  bottom: -5px;
+  animation-name: line;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  z-index: 100;
+  transition: width 0.35s ease, background-color 0.35s ease;
+}
+section#project .project-wrap .txt ul.category li.on ul.tab-menu {
+  display: block;
+}
+section#project .project-wrap .txt ul.category li.on {
+  padding-left: 25px;
+  color: black;
+  transition: all 0.3s;
+  font-family: Dosis-Bold;
+}
+section#project .project-wrap .txt ul.category li.item01.on::after {
+  content: "01.";
+  position: absolute;
+  top: 17%;
+  left: 0px;
+  transform: translateY(-50%);
+}
+section#project .project-wrap .txt ul.category li.item02.on::after {
+  content: "02.";
+  position: absolute;
+  top: 9%;
+  left: 0px;
+  transform: translateY(-50%);
+}
+section#project .project-wrap .txt ul.category li.item03.on::after {
+  content: "03.";
+  position: absolute;
+  top: 9%;
+  left: 0px;
+  transform: translateY(-50%);
+}
+section#project .project-wrap ul.content {
+  width: 60%;
+  padding-right: 60px;
+}
+section#project .project-wrap ul.content li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 60px;
+}
+section#project .project-wrap ul.content li .txt-container .pro-title {
+  font-family: scdream5;
+  font-size: 12px;
+}
+section#project .project-wrap ul.content li .txt-container h2 {
+  font-family: scdream7;
+  padding-top: 10px;
+  font-size: 20px;
+}
+section#project .project-wrap ul.content li .txt-container .month {
+  font-family: scdream4;
+  font-size: 12px;
+  margin-top: 20px;
+}
+section#project .project-wrap ul.content li .txt-container .month b {
+  font-family: scdream7;
+}
+section#project .project-wrap ul.content li .txt-container .explain {
+  font-family: scdream4;
+  font-size: 13px;
+  line-height: 1.8;
+  width: 100%;
+  margin-top: 30px;
+}
+section#project .project-wrap ul.content li .txt-container .pro-art {
+  margin-top: 50px;
+  width: 100%;
+}
+section#project .project-wrap ul.content li .txt-container .pro-art a {
+  width: 100%;
+  height: 100%;
+}
+section#project .project-wrap ul.content li .txt-container .pro-art a img {
+  width: 100%;
+}
+section#project .project-wrap ul.content li .txt-container .pro-1art {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+}
+section#project .project-wrap ul.content li .txt-container .pro-1art .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+section#project .project-wrap ul.content li .txt-container .pro-1art .swiper-wrapper .slide {
+  width: 100%;
+  height: 100%;
+}
+section#project .project-wrap ul.content li .txt-container .pro-1art .swiper-wrapper .slide img {
+  object-position: top;
+}
+section#project .project-wrap ul.content li .txt-container .pro-2art {
+  margin-top: 80px;
+  width: 100%;
+  margin-bottom: 250px;
+}
+section#project .project-wrap ul.content li .txt-container .pro-2art #carousel {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+section#project .project-wrap ul.content li .txt-container .pro-2art #carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+section#project .project-wrap ul.content li .txt-container .pro-2art #carousel div img {
+  width: 183px;
+  height: 100%;
+  transition: width 1s;
+  border-radius: 10px;
+}
+section#project .project-wrap ul.content li .txt-container .pro-2art #carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(25%) translateX(-50%);
+}
+section#project .project-wrap ul.content li .txt-container .pro-2art #carousel div.hideLeft img {
+  width: 100px;
+  height: 100%;
+}
+section#project .project-wrap ul.content li .txt-container .pro-2art #carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(25%) translateX(-50%);
+}
+section#project .project-wrap ul.content li .txt-container .pro-2art #carousel div.hideRight img {
+  width: 100px;
+}
+section#project .project-wrap ul.content li .txt-container .pro-2art #carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(30px) translateX(-50%);
+}
+section#project .project-wrap ul.content li .txt-container .pro-2art #carousel div.prev img {
+  width: 150px;
+}
+section#project .project-wrap ul.content li .txt-container .pro-2art #carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(25%) translateX(-50%);
+  opacity: 0.5;
+}
+section#project .project-wrap ul.content li .txt-container .pro-2art #carousel div.prevLeftSecond img {
+  width: 120px;
+}
+section#project .project-wrap ul.content li .txt-container .pro-2art #carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section#project .project-wrap ul.content li .txt-container .pro-2art #carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(30px) translateX(-50%);
+}
+section#project .project-wrap ul.content li .txt-container .pro-2art #carousel div.next img {
+  width: 150px;
+}
+section#project .project-wrap ul.content li .txt-container .pro-2art #carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(25%) translateX(-50%);
+  opacity: 0.5;
+}
+section#project .project-wrap ul.content li .txt-container .pro-2art #carousel div.nextRightSecond img {
+  width: 120px;
+}
+section#project .project-wrap ul.content li .txt-container img {
+  width: 100%;
+  overflow: hidden;
+}
+section#project .project-wrap ul.content li .txt-container img.content01 img {
+  transform: translate(-180px, 0px);
+}
+section#project .project-wrap ul.content li .txt-container img.content02 img {
+  transform: translate(-135px, -235px);
+}
+section#project .project-wrap ul.content li .txt-container img.content03 img {
+  transform: translate(-135px, -235px);
+}
+section#project .gradient-bg {
+  width: 100vw;
+  height: 350vh;
+  position: absolute;
+  overflow: hidden;
+  background: linear-gradient(40deg, rgb(255, 255, 255), rgb(255, 255, 255));
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+section#project .gradient-bg .svgBlur {
+  display: none;
+}
+section#project .gradient-bg .noiseBg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  mix-blend-mode: soft-light;
+  opacity: 0.6;
+}
+section#project .gradient-bg .gradients-container {
+  filter: url(#goo) blur(40px);
+  width: 100%;
+  height: 100%;
+}
+section#project .gradient-bg .g1 {
+  position: absolute;
+  background: radial-gradient(circle at center, rgba(var(--color1), 0.6) 0, rgba(var(--color1), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2);
+  left: calc(50% - var(--circle-size) / 2);
+  transform-origin: center center;
+  animation: moveVertical 30s ease infinite;
+  opacity: 0.7;
+}
+section#project .gradient-bg .g2 {
+  position: absolute;
+  background: radial-gradient(circle at center, rgba(var(--color2), 0.6) 0, rgba(var(--color2), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2);
+  left: calc(50% - var(--circle-size) / 2);
+  transform-origin: calc(50% - 400px);
+  animation: moveInCircle 20s reverse infinite;
+  opacity: 0.7;
+}
+section#project .gradient-bg .g3 {
+  position: absolute;
+  background: radial-gradient(circle at center, rgba(var(--color3), 0.6) 0, rgba(var(--color3), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2 + 200px);
+  left: calc(50% - var(--circle-size) / 2 - 500px);
+  transform-origin: calc(50% + 400px);
+  animation: moveInCircle 40s linear infinite;
+  opacity: 0.7;
+}
+section#project .gradient-bg .g4 {
+  position: absolute;
+  background: radial-gradient(circle at center, rgba(var(--color4), 0.6) 0, rgba(var(--color4), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2);
+  left: calc(50% - var(--circle-size) / 2);
+  transform-origin: calc(50% - 200px);
+  animation: moveHorizontal 40s ease infinite;
+  opacity: 0.7;
+}
+section#project .gradient-bg .g5 {
+  position: absolute;
+  background: radial-gradient(circle at center, rgba(var(--color5), 0.6) 0, rgba(var(--color5), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: calc(var(--circle-size) * 2);
+  height: calc(var(--circle-size) * 2);
+  top: calc(50% - var(--circle-size));
+  left: calc(50% - var(--circle-size));
+  transform-origin: calc(50% - 800px) calc(50% + 200px);
+  animation: moveInCircle 20s ease infinite;
+  opacity: 0.7;
+}
+section#project .gradient-bg .interactive {
+  position: absolute;
+  background: radial-gradient(circle at center, rgba(var(--color-interactive), 0.6) 0, rgba(var(--color-interactive), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: 100%;
+  height: 100%;
+  top: -50%;
+  left: -50%;
+  opacity: 0.7;
+}
+
+@keyframes moveInCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes moveVertical {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+  50% {
+    transform: translateX(50%) translateY(10%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+}
+@keyframes line {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

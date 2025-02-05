@@ -14,7 +14,47 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/SplitText.min.js"></script>
 </head>
+<style>
+	html,
+	body {
+		position: relative;
+		height: 100%;
 
+	}
+
+	body {
+
+		margin: 0;
+		padding: 0;
+	}
+
+	.swiper {
+		width: 100%;
+		height: 100%;
+	}
+
+	.swiper-slide {
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.swiper-slide img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.textSwiper .swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		display: flex;
+		justify-content: center;
+		/* align-items: center; */
+	}
+</style>
 <body>
 	<div class="intro">
 		<div class="symbol">
@@ -188,7 +228,134 @@
 		</div>
 	</section>
 	<section id="project">
+		<div class="project-wrap">
+			<div class="txt">
+				<h2 class="title">PROJECT</h2>
+				<ul class="category">
+					<li class="item01">My Symbol
+						<ul class="tab-menu">
+							<li class="tab"><a href="../port-1111/design-system/symbol/symbolindex.html" target="_blank"></a></li>
+						</ul>
+					</li>
+					<li class="item02">Web Re-Design
+						<ul class="tab-menu">
+							<li class="tab"><a href="../project-jejubeer/index.html" target="_blank">사이트 바로가기</a></li>
+							<li class="tab"><a href="../port-1111/design-system/web/web.html" target="_blank">디자인 기획서</a></li>
+						</ul>
+					</li>
+					<li class="item03">App Development
+						<ul class="tab-menu">
+							<li class="tab"><a
+									href="https://www.figma.com/proto/W51IJhfTILrJX5zOR0YAYP/app-project?node-id=336-3433&node-type=frame&t=K3fMtMd2mCQGl8EW-0&scaling=min-zoom&content-scaling=fixed&page-id=1%3A443&starting-point-node-id=336%3A3081&show-proto-sidebar=1"
+									target="_blank">figman&nbsp;디자인</a></li>
+							<li class="tab"><a href="../port-1111/design-system/app/app-index.html" target="_blank">디자인 기획서</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<ul class="content" data-aos="fade-up">
+				<li class="content01">
+					<div class="txt-container">
+						<div class="pro-title">B.I 제작 프로젝트</div>
+						<h2>Move on to The Wider World</h2>
+						<div class="month"><b>작업기간 : </b>2024.06</div>
+						<div class="explain">
+							나의 지나온 길을 바탕으로 앞으로 개척해 나아가고 싶은 길을 표현하여 <br />
+							나만의 아이덴티티를 나타내고 이를 토대로 디자인을 진행
+						</div>
+						<div class="pro-art">
+							<a href="#"><img src="./image/bo-Business Card .jpg" alt=""></a>
+						</div>
+					</div>
+				</li>
+				<li class="content02">
+					<div class="txt-container">
+						<div class="pro-title">웹 개선 프로젝트</div>
+						<h2>제주맥주 웹사이트 리뉴얼</h2>
+						<div class="month"><b>작업기간 : </b>2024.07~08</div>
+						<div class="explain">
+							제주맥주 웹사이트 리뉴얼 프로젝트는 사용자가 제주맥주 브랜드의 정체성을 경험할 수 있도록 하고, 브랜드 스토리와 지역성을 웹사이트를 통해 전달하고자 합니다. 디자인은
+							단순히 시각적 요소에 머무르지 않고 <b>간결한 레이아웃과 사용자 친화적인 인터페이스를 채택</b>하여, 누구나 쉽게 탐색하며 브랜드에 몰입할 수 있도록 구성했습니다.
+						</div>
+						<div class="pro-1art">
+							<div class="swiper je-Swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="./image/jeju1.png" alt=""></div>
+									<div class="swiper-slide"><img src="./image/jeju2.png" alt=""></div>
+									<div class="swiper-slide"><img src="./image/jeju3.png" alt=""></div>
+									<div class="swiper-slide"><img src="./image/jeju4.png" alt=""></div>
+									<div class="swiper-slide"><img src="./image/jeju5.png" alt=""></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="content03">
+					<div class="txt-container">
+						<div class="pro-title">앱 개발 프로젝트</div>
+						<h2>T World connet</h2>
+						<div class="month"><b>작업기간 : </b>2024.10~11</div>
+						<div class="explain">
+							<b>T World</b> <strong>connet</strong>는 통합 서비스 제공을 통해 사용자에게 더 나은 경험을 제공하는 것을 목표로 하고 있습니다.
+							기존에는 각각의 기능이 여러 개의 앱에 분산되어 있어 사용자가 불편을 겪었습니다.
+							본 프로젝트는 이 기능들을 통합하여 사용자에게 일관된 경험을 제공하고, 필요한 혜택과 놓친 혜택을 쉽게 관리할 수 있는 앱을 개발하는 것입니다.
+						</div>
+						<div class="pro-2art">
+							<div id="carousel">
+								<div class="hideLeft">
+									<img src="./image/메인 슬라이드1.png">
+								</div>
+								<div class="prevLeftSecond">
+									<img src="./image/mainp-myt.png">
+								</div>
+								<div class="prev">
+									<img src="./image/mainp-데이터관리.png">
+								</div>
+								<div class="selected">
+									<img src="./image/mainp-멤버십 혜택.png">
+								</div>
+								<div class="next">
+									<img src="./image/mainp-요금관리-1.png">
+								</div>
+								<div class="nextRightSecond">
+									<img src="./image/mainp-요금관리.png">
+								</div>
+								<div class="hideRight">
+									<img src="./image/메인.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
 
+		<div class="gradient-bg">
+			<svg viewBox="0 0 100vw 100vw" xmlns='http://www.w3.org/2000/svg' class="noiseBg">
+				<filter id='noiseFilterBg'>
+					<feTurbulence type='fractalNoise' baseFrequency='0.6' stitchTiles='stitch' />
+				</filter>
+
+				<rect width='100%' height='100%' preserveAspectRatio="xMidYMid meet" filter='url(#noiseFilterBg)' />
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" class="svgBlur">
+				<defs>
+					<filter id="goo">
+						<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+						<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+						<feBlend in="SourceGraphic" in2="goo" />
+					</filter>
+				</defs>
+			</svg>
+			<div class="gradients-container">
+				<div class="g1"></div>
+				<div class="g2"></div>
+				<div class="g3"></div>
+				<div class="g4"></div>
+				<div class="g5"></div>
+				<div class="interactive"></div>
+			</div>
+		</div>
 	</section>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
