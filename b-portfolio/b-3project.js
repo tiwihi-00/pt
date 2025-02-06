@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.to('.project-wrap .item01', {
 	scrollTrigger:{
 		trigger:'.project-wrap .content01',
-		start:'-100% top',
+		start:'-100%, top',
 		toggleClass:{targets:'.project-wrap .item01', className:'on'},
 		scrub:2,
 	}
@@ -12,7 +12,7 @@ gsap.to('.project-wrap .item01', {
 gsap.to('.project-wrap .item02', {
 	scrollTrigger:{
 		trigger:'.project-wrap .content02',
-		start:'top top',
+		start:'-100%, top',
 		toggleClass:{targets:'.project-wrap .item02', className:'on'},
 		scrub:2,
 	}
@@ -21,7 +21,7 @@ gsap.to('.project-wrap .item02', {
 gsap.to('.project-wrap .item03', {
 	scrollTrigger:{
 		trigger:'.project-wrap .content03',
-		start:'top top',
+		start:'-100%, top',
 		toggleClass:{targets:'.project-wrap .item03', className:'on'},
 		scrub:2,
 	}

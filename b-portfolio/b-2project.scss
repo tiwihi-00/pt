@@ -63,7 +63,7 @@ section {
 			.txt {
 				position: sticky;
 				top: 70px;
-				width: 50%;
+				width: 40%;
 				height: 100%;
 				margin-left: 5%;
 				margin-top: 60px;
@@ -142,7 +142,7 @@ section {
 						&.item01.on::after {
 							content: '01.';
 							position: absolute;
-							top: 17%;
+							top: 50%;
 							left: 0px;
 							transform: translateY(-50%);
 						}
@@ -175,7 +175,8 @@ section {
 					flex-direction: column;
 					justify-content: center;
 					height: 100vh;
-					margin-top: 60px;
+					margin-top: 40px;
+					
 
 					.txt-container {
 						.pro-title {
@@ -230,6 +231,7 @@ section {
 							.swiper-wrapper {
 								width: 100%;
 								height: 100%;
+								margin-bottom: 50px;
 
 								.slide {
 									width: 100%;
@@ -245,7 +247,7 @@ section {
 						.pro-2art {
 							margin-top: 80px;
 							width: 100%;
-							margin-bottom: 250px;
+							margin-bottom: 150px;
 
 							#carousel {
 								position: relative;
