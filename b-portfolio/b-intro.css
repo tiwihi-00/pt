@@ -121,14 +121,14 @@
   animation-timing-function: ease;
 }
 .intro .wrap-3d .sphere img {
-  width: 25vw;
+  width: 23vw;
 }
 .intro .wrap-3d .sphere:nth-child(1) {
   left: 0%;
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 14.5s;
+  animation-duration: 18s;
   animation-delay: -2.5s;
   animation-name: float-1;
   animation-timing-function: ease;
@@ -443,7 +443,7 @@
   background-image: transparent;
   background-color: transparent;
   z-index: 30;
-  animation-duration: 23s;
+  animation-duration: 16s;
   animation-delay: -5s;
   animation-name: float-2;
   animation-timing-function: ease;
@@ -758,7 +758,7 @@
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 8s;
+  animation-duration: 5.5s;
   animation-delay: -7.5s;
   animation-name: float-3;
   animation-timing-function: ease;
@@ -1073,7 +1073,7 @@
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 6.5s;
+  animation-duration: 11.5s;
   animation-delay: -10s;
   animation-name: float-4;
   animation-timing-function: ease;
@@ -1388,7 +1388,7 @@
   background-image: transparent;
   background-color: transparent;
   z-index: 4;
-  animation-duration: 21s;
+  animation-duration: 17s;
   animation-delay: -12.5s;
   animation-name: float-5;
   animation-timing-function: ease;
@@ -1703,7 +1703,7 @@
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 12.5s;
+  animation-duration: 9.5s;
   animation-delay: -15s;
   animation-name: float-6;
   animation-timing-function: ease;
@@ -2018,7 +2018,7 @@
   background-image: transparent;
   background-color: transparent;
   z-index: 10;
-  animation-duration: 9.5s;
+  animation-duration: 14s;
   animation-delay: -17.5s;
   animation-name: float-7;
   animation-timing-function: ease;
@@ -2333,7 +2333,7 @@
   background-image: transparent;
   background-color: transparent;
   z-index: 1;
-  animation-duration: 21s;
+  animation-duration: 22s;
   animation-delay: -20s;
   animation-name: float-8;
   animation-timing-function: ease;
@@ -2648,7 +2648,7 @@
   background-image: transparent;
   background-color: transparent;
   z-index: 50;
-  animation-duration: 11.5s;
+  animation-duration: 9s;
   animation-delay: -22.5s;
   animation-name: float-9;
   animation-timing-function: ease;
@@ -2963,7 +2963,7 @@
   right: 5%;
   top: 25px;
   z-index: 100;
-  width: 30%;
+  width: 40%;
 }
 .intro .wrap-3d .in-menu ul.nav {
   width: 100%;

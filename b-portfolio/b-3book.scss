@@ -103,7 +103,7 @@ section {
 
 						#book-list-box {
 							position: absolute;
-							height: 500px;
+							height: 450px;
 							left: 0%;
 							top: 40%;
 							width: 100%;
@@ -113,7 +113,7 @@ section {
 								left: 50%;
 								transform: translateX(-50%);
 								width: 65%;
-								margin: 30px auto;
+								margin: 20px auto;
 
 								&.left {
 									text-align: right;
@@ -155,8 +155,8 @@ section {
 									position: relative;
 									font-family: Dosis-ExtraLight;
 									font-size: 25px;
-									padding-bottom: 15px;
-									padding-top: 20px;
+									padding-bottom: 10px;
+									padding-top: 10px;
 								}
 
 								.job {
