@@ -46,8 +46,9 @@ section#work .work__wrap .work__item {
   flex-direction: column;
   margin-top: 0px;
   transition: 0.35s;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  object-fit: cover;
 }
 section#work .work__wrap .work__item:hover {
   margin-top: -30px;

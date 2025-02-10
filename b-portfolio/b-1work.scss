@@ -7,10 +7,10 @@ section {
 	&#work {
 		// transition: .35s;
 		background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+		background-size: cover;
+		background-repeat: no-repeat;
 		background-image: url(./image/sect1.1.png);
-	
+
 		contain: paint;
 		height: 100vh;
 		overflow: visible;
@@ -52,8 +52,9 @@ section {
 				flex-direction: column;
 				margin-top: 0px;
 				transition: .35s;
+				background-size: cover;
+				background-position: center;
 				background-repeat: no-repeat;
-				object-fit: cover;
 
 				&:hover {
 					margin-top: -30px;
@@ -72,7 +73,7 @@ section {
 					font-family: scdream7;
 				}
 
-				.num{
+				.num {
 					font-family: Barlow-ThinItalic;
 					position: absolute;
 					font-size: 45px;
@@ -80,7 +81,7 @@ section {
 					margin-bottom: 20px;
 				}
 
-				.line{
+				.line {
 					position: absolute;
 					width: 85%;
 					height: 1px;
@@ -90,16 +91,16 @@ section {
 					top: 15%;
 				}
 
-				.contents{
+				.contents {
 					font-family: scdream4;
 					margin-top: 90px;
 					font-size: 14px;
 					line-height: 1.7;
 
-					p{
+					p {
 						margin-top: 5px;
 
-						span{
+						span {
 							font-family: scdream5;
 						}
 					}
