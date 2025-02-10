@@ -1,33 +1,34 @@
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to('.project-wrap .item01', {
-	scrollTrigger:{
-		trigger:'.project-wrap .content01',
-		start:'-100%, top',
-		toggleClass:{targets:'.project-wrap .item01', className:'on'},
-		scrub:2,
+	scrollTrigger: {
+		trigger: '.project-wrap .content01',
+		start: '-100%, top',
+		toggleClass: { targets: '.project-wrap .item01', className: 'on' },
+		scrub: 2,
+		toggleActions: "play reverse none reverse" // ✅ 추가
 	}
 });
 
 gsap.to('.project-wrap .item02', {
-	scrollTrigger:{
-		trigger:'.project-wrap .content02',
-		start:'-100%, top',
-		toggleClass:{targets:'.project-wrap .item02', className:'on'},
-		scrub:2,
+	scrollTrigger: {
+		trigger: '.project-wrap .content02',
+		start: '-100%, top',
+		toggleClass: { targets: '.project-wrap .item02', className: 'on' },
+		scrub: 2,
+		toggleActions: "play reverse none reverse" // ✅ 추가
 	}
 });
 
 gsap.to('.project-wrap .item03', {
-	scrollTrigger:{
-		trigger:'.project-wrap .content03',
-		start:'-100%, top',
-		toggleClass:{targets:'.project-wrap .item03', className:'on'},
-		scrub:2,
+	scrollTrigger: {
+		trigger: '.project-wrap .content03',
+		start: '-100%, top',
+		toggleClass: { targets: '.project-wrap .item03', className: 'on' },
+		scrub: 2,
+		toggleActions: "play reverse none reverse" // ✅ 추가
 	}
 });
-
-
 
 
 

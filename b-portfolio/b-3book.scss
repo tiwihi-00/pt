@@ -35,15 +35,26 @@ section {
 					flex-direction: column;
 
 					.stiky-wrap {
+						display: flex;
+						// flex-direction: column;
+						align-items: center;
+						justify-content: center;
 						position: relative;
 						height: 100vh;
 						width: 100%;
+						gap: 3rem;
 
 						.components {
 							position: absolute;
 							top: 5%;
-							left: 28%;
+							left: 50%;
+							transform: translateX(-50%);
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						
 							height: 300px;
+
 
 							.circle {
 								position: relative;
@@ -104,7 +115,9 @@ section {
 						#book-list-box {
 							position: absolute;
 							height: 450px;
-							left: 0%;
+							left: 50%;
+							transform: translateX(-50%);
+							
 							top: 40%;
 							width: 100%;
 
@@ -127,7 +140,8 @@ section {
 										background-color: #85b6f5;
 										border: 3px solid #fff;
 										border-radius: 50%;
-										left: 48%;
+										left: 50%;
+										transform: translateX(-50%);
 										top: 41%;
 										z-index: 200;
 									}
@@ -145,7 +159,8 @@ section {
 										background-color: #85b6f5;
 										border: 3px solid #fff;
 										border-radius: 50%;
-										right: 48%;
+										right: 45%;
+										transform: translateX(-45%);
 										top: 58%;
 										z-index: 10;
 									}
@@ -162,12 +177,13 @@ section {
 								.job {
 									font-family: scdream6;
 									font-size: 12px;
-									padding-bottom: 10px;
+									padding-bottom: 5px;
 								}
 
 								.job-desc {
 									font-family: scdream5;
 									font-size: 12px;
+									padding-bottom: 10px;
 								}
 							}
 						}
@@ -196,32 +212,33 @@ section {
 				}
 			}
 
-			article{
+			article {
 				width: 40%;
 				display: flex;
 				justify-content: center;
 
-				.splide{
+				.splide {
 					width: 100%;
 
-					.splide__track{
+					.splide__track {
 						width: 100%;
 
-						.splide__list{
+						.splide__list {
 							width: 100%;
 
-							li{
+							li {
 								margin: 30px;
 								position: relative;
 
-								&:hover .book-desc{
+								&:hover .book-desc {
 									opacity: 1;
 								}
 
-								img{
+								img {
 									box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 								}
-								.book-desc{
+
+								.book-desc {
 									opacity: 0;
 									left: 0;
 									top: 50%;
@@ -232,19 +249,19 @@ section {
 									background-color: rgba(255, 255, 255, .5);
 									padding: 20px;
 									backdrop-filter: blur(4.5px);
-								-webkit-backdrop-filter: blur(4.5px);
+									-webkit-backdrop-filter: blur(4.5px);
 
-								.book-contents{
-									margin-top: 70px;
-									font-family: scdream4;
-									line-height: 1.7;
-									font-size: 13px;
-									color: #1d57a3;
+									.book-contents {
+										margin-top: 70px;
+										font-family: scdream4;
+										line-height: 1.7;
+										font-size: 13px;
+										color: #1d57a3;
 
-									b{
-										font-family: scdream6;
+										b {
+											font-family: scdream6;
+										}
 									}
-								}
 								}
 							}
 						}

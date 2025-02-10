@@ -33,14 +33,22 @@ section#book .main .book-lf .container {
   flex-direction: column;
 }
 section#book .main .book-lf .container .stiky-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   height: 100vh;
   width: 100%;
+  gap: 3rem;
 }
 section#book .main .book-lf .container .stiky-wrap .components {
   position: absolute;
   top: 5%;
-  left: 28%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 300px;
 }
 section#book .main .book-lf .container .stiky-wrap .components .circle {
@@ -88,7 +96,8 @@ section#book .main .book-lf .container .stiky-wrap .components .circle__back-2 {
 section#book .main .book-lf .container .stiky-wrap #book-list-box {
   position: absolute;
   height: 450px;
-  left: 0%;
+  left: 50%;
+  transform: translateX(-50%);
   top: 40%;
   width: 100%;
 }
@@ -111,7 +120,8 @@ section#book .main .book-lf .container .stiky-wrap #book-list-box .job-list.left
   background-color: #85b6f5;
   border: 3px solid #fff;
   border-radius: 50%;
-  left: 48%;
+  left: 50%;
+  transform: translateX(-50%);
   top: 41%;
   z-index: 200;
 }
@@ -127,7 +137,8 @@ section#book .main .book-lf .container .stiky-wrap #book-list-box .job-list.righ
   background-color: #85b6f5;
   border: 3px solid #fff;
   border-radius: 50%;
-  right: 48%;
+  right: 45%;
+  transform: translateX(-45%);
   top: 58%;
   z-index: 10;
 }
@@ -141,11 +152,12 @@ section#book .main .book-lf .container .stiky-wrap #book-list-box .job-list .num
 section#book .main .book-lf .container .stiky-wrap #book-list-box .job-list .job {
   font-family: scdream6;
   font-size: 12px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 section#book .main .book-lf .container .stiky-wrap #book-list-box .job-list .job-desc {
   font-family: scdream5;
   font-size: 12px;
+  padding-bottom: 10px;
 }
 section#book .main .book-lf .c-line {
   position: absolute;

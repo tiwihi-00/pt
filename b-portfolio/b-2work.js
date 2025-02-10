@@ -15,7 +15,8 @@ gsap.to(articles, {
 
 document.querySelectorAll('.work__item').forEach(function(art){
 	art.addEventListener('mouseenter', function(){
-		let bg=art.getAttribute('data-bg')
+		let bg=art.getAttribute('data-bg');
+		console.log("배경 이미지 경로: ", bg);
 
 		document.querySelector('#work').style.background=`url(${bg})`;
 	})

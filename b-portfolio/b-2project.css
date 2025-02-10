@@ -211,6 +211,7 @@ section#project .project-wrap ul.content li .txt-container .pro-1art .swiper-wra
 section#project .project-wrap ul.content li .txt-container .pro-2art {
   margin-top: 80px;
   width: 100%;
+  max-width: 750px;
   margin-bottom: 150px;
 }
 section#project .project-wrap ul.content li .txt-container .pro-2art #carousel {
