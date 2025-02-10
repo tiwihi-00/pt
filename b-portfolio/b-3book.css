@@ -137,8 +137,8 @@ section#book .main .book-lf .container .stiky-wrap #book-list-box .job-list.righ
   background-color: #85b6f5;
   border: 3px solid #fff;
   border-radius: 50%;
-  right: 45%;
-  transform: translateX(-45%);
+  left: 50%;
+  transform: translateX(-50%);
   top: 58%;
   z-index: 10;
 }

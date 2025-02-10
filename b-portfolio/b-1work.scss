@@ -6,7 +6,10 @@
 section {
 	&#work {
 		// transition: .35s;
-		background: url(./image/sect1.1.png) center cover no-repeat;
+		background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+		background-image: url(./image/sect1.1.png);
 	
 		contain: paint;
 		height: 100vh;
@@ -50,6 +53,7 @@ section {
 				margin-top: 0px;
 				transition: .35s;
 				background-repeat: no-repeat;
+				object-fit: cover;
 
 				&:hover {
 					margin-top: -30px;

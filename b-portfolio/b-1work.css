@@ -3,7 +3,10 @@
 @import url(./reset.css);
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css");
 section#work {
-  background: url(./image/sect1.1.png) center cover no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./image/sect1.1.png);
   contain: paint;
   height: 100vh;
   overflow: visible;
@@ -44,6 +47,7 @@ section#work .work__wrap .work__item {
   margin-top: 0px;
   transition: 0.35s;
   background-repeat: no-repeat;
+  object-fit: cover;
 }
 section#work .work__wrap .work__item:hover {
   margin-top: -30px;
